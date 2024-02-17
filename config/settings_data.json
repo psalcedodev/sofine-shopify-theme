@@ -100,6 +100,7 @@
     "content_style_product": "left",
     "product_collection_show_label_in_stock": false,
     "product_collection_show_label_out_stock": false,
+    "product_collection_show_label_sale": true,
     "product_collection_show_label_new": true,
     "product_collection_show_label_hot": true,
     "product_page_new_product": "9999",
@@ -2467,7 +2468,7 @@
               "menu": "",
               "show_icon": false,
               "icon": "<i class=\"lnr lnr-store\"><\/i>",
-              "lb": "New",
+              "lb": "",
               "lb_cl": "#d93939"
             }
           },
