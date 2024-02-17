@@ -1826,7 +1826,7 @@
           "header_use_search_home": true,
           "style_search": "1",
           "header_use_cart_home": true,
-          "header_use_wishlist_home": true,
+          "header_use_wishlist_home": false,
           "header_use_compare_home": false,
           "header_use_account": true,
           "color_icon": "#1a1a1a",
