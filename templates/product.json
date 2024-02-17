@@ -146,6 +146,7 @@
         },
         "d07132a9-cf30-4c47-a9f5-6b3bd410c124": {
           "type": "tab_custom_html",
+          "disabled": true,
           "settings": {
             "title": "Shipping & Return",
             "page_content": "shipping-return"
@@ -153,11 +154,13 @@
         },
         "22f75249-e4ab-453e-84d5-0006118d5803": {
           "type": "tab_metafields",
+          "disabled": true,
           "settings": {
           }
         },
         "0e2c2c01-948c-43f1-ae77-e8dbabaf8f55": {
           "type": "tab_reviews",
+          "disabled": true,
           "settings": {
             "title_reviews": "Reviews"
           }
