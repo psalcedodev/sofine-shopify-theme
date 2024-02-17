@@ -94,7 +94,7 @@
           "type": "show_description",
           "settings": {
             "title": "Description",
-            "tr_words": "35",
+            "tr_words": "1000",
             "des_size": 16,
             "view_more": "",
             "des_mg_top": 0,
