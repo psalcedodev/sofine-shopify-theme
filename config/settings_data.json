@@ -1753,7 +1753,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "\/collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1761,7 +1761,7 @@
               "lb": "",
               "lb_cl": "",
               "pos_rel": false,
-              "wid": "full container",
+              "wid": "full",
               "cus_wid": 1200,
               "bg": "#ffffff"
             }
