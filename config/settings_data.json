@@ -2,7 +2,7 @@
   "current": {
     "home_keywords": "Sofine theme, Fastest, Ajax Shop, Minimal, Lazyload",
     "shop_author": "Sofine theme",
-    "production_mode": false,
+    "production_mode": true,
     "rtl": true,
     "show_button_rtl": false,
     "show_load_page": true,
@@ -16,6 +16,7 @@
     "show_key_word": true,
     "key_word": "Vegetables,Meat,Drink Juice",
     "logo_text": "Alotheme",
+    "logo": "shopify:\/\/shop_images\/2.jpg",
     "logo_max_width": 95,
     "color_body_bg": "#ffffff",
     "color_body_text": "#666666",
@@ -1788,10 +1789,10 @@
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
             "settings": {
-              "url": "shopify:\/\/collections\/women-s",
+              "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "enable_content_banner": true,
-              "coll_name": "Women’s",
+              "coll_name": "Gift for Her",
               "col": "3"
             }
           },
@@ -1882,12 +1883,12 @@
         ],
         "settings": {
           "header_design": "logo-center-menu-left",
-          "sticky_top": false,
+          "sticky_top": true,
           "Background_header": "rgba(0,0,0,0)",
           "bg_header_sticky": "#ffffff",
           "layout": "container",
-          "header_use_currency": true,
-          "header_use_language": true,
+          "header_use_currency": false,
+          "header_use_language": false,
           "header_use_search_home": true,
           "style_search": "1",
           "header_use_cart_home": true,
