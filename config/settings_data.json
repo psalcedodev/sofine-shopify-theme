@@ -818,6 +818,7 @@
           "title": "Recently viewed products",
           "sub_title": "~ Top Related in this week ~",
           "content": "Commodo sociosqu venenatis cras dolor sagittis integer luctus maecenas.",
+          "text_size": "medium",
           "limit": 24,
           "use-slider": true,
           "slides-To-Scroll": 1,
@@ -1085,6 +1086,7 @@
           "title": "Related Products",
           "sub_title": "",
           "content": "",
+          "text_size": "medium",
           "max_count": 15,
           "use-slider": true,
           "slides-To-Scroll": 1,
@@ -1184,53 +1186,8 @@
               "menu": "footer"
             }
           },
-          "collection-sidebar-1": {
-            "type": "filters",
-            "settings": {
-              "title": "Filter ByColor",
-              "default_state": "open",
-              "type": "colors",
-              "items": "Cornsilk|Black|LightGray|MediumPurple|Tomato|White|LightBlue|SaddleBrown|Snow|Olive|Gold|BurlyWood|Silver|LightSteelBlue|LightYellow",
-              "hide_icon": false,
-              "multiple_filter_value": false
-            }
-          },
-          "41295cd3-c11a-42f8-bd4b-ae8ff7b9af6e": {
-            "type": "filters",
-            "settings": {
-              "title": "Filter By Price",
-              "default_state": "open",
-              "type": "tags",
-              "items": "$0.00 - $25.00|$25.00 - $50.00|$50.00 - $75.00|$75.00 - $100.00|$100.00 - $200.00|$200.00 - $300.00",
-              "hide_icon": false,
-              "multiple_filter_value": true
-            }
-          },
-          "be73363c-c6f4-4c02-a269-887b403057a6": {
-            "type": "filters",
-            "settings": {
-              "title": "Filter By Size Shoes",
-              "default_state": "open",
-              "type": "tags",
-              "items": "38|39|40|41|42|43",
-              "hide_icon": false,
-              "multiple_filter_value": false
-            }
-          },
-          "a896ae79-37fc-43c1-9ab1-91cb535167ed": {
-            "type": "filters",
-            "settings": {
-              "title": "Filter By Size Shirt",
-              "default_state": "open",
-              "type": "tags",
-              "items": "S|M|L|XL|XXL",
-              "hide_icon": false,
-              "multiple_filter_value": false
-            }
-          },
           "7b5dae7d-cfa6-4238-b0fe-20687faef6c0": {
             "type": "promobox",
-            "disabled": true,
             "settings": {
               "url": "#"
             }
@@ -1238,10 +1195,6 @@
         },
         "block_order": [
           "f06ffe84-907f-4bb2-8764-22ca9d5584e4",
-          "collection-sidebar-1",
-          "41295cd3-c11a-42f8-bd4b-ae8ff7b9af6e",
-          "be73363c-c6f4-4c02-a269-887b403057a6",
-          "a896ae79-37fc-43c1-9ab1-91cb535167ed",
           "7b5dae7d-cfa6-4238-b0fe-20687faef6c0"
         ],
         "settings": {
@@ -4098,11 +4051,11 @@
       "banner-collection": {
         "type": "banner-collection",
         "settings": {
-          "show_name_collection": true,
-          "show_collection_description": true,
-          "show_collection_image": true,
-          "use_eq_height": true,
-          "image_ratio": "ratio4_1",
+          "show_name_collection": false,
+          "show_collection_description": false,
+          "show_collection_image": false,
+          "use_eq_height": false,
+          "image_ratio": "ratio3_1",
           "cl_bg": "#ffffff",
           "mg": "0,0,10px,0",
           "pd": "",
