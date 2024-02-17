@@ -1181,7 +1181,7 @@
               "title": "Category",
               "default_state": "open",
               "show_counter": true,
-              "menu": "category"
+              "menu": "footer"
             }
           },
           "collection-sidebar-1": {
@@ -1203,7 +1203,7 @@
               "type": "tags",
               "items": "$0.00 - $25.00|$25.00 - $50.00|$50.00 - $75.00|$75.00 - $100.00|$100.00 - $200.00|$200.00 - $300.00",
               "hide_icon": false,
-              "multiple_filter_value": false
+              "multiple_filter_value": true
             }
           },
           "be73363c-c6f4-4c02-a269-887b403057a6": {
