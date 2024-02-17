@@ -92,6 +92,7 @@
         },
         "c78dd46d-d065-4e43-aaa7-13423da0532f": {
           "type": "show_description",
+          "disabled": true,
           "settings": {
             "title": "Description",
             "tr_words": "1000",
