@@ -1183,7 +1183,7 @@
               "title": "Category",
               "default_state": "open",
               "show_counter": true,
-              "menu": "footer"
+              "menu": "category-menu"
             }
           },
           "7b5dae7d-cfa6-4238-b0fe-20687faef6c0": {
