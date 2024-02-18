@@ -2674,11 +2674,6 @@
         "label": "Show social media tumblr"
       },
       {
-        "type": "checkbox",
-        "id": "footer_social_tiktok",
-        "label": "Show social media TikTok"
-      },
-      {
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr",
@@ -2740,6 +2735,23 @@
         "id": "footer_social_vimeo_text",
         "label": "Title of vimeo",
         "default": "Vimeo"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_social_tiktok",
+        "label": "Show social media TikTok"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "TikTok",
+        "info": "https://www.tiktok.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "footer_social_tiktok_text",
+        "label": "Title of TikTok",
+        "default": "TikTok"
       }
     ]
   },
