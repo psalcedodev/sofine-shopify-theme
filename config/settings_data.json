@@ -86,7 +86,7 @@
     "height_zoom": "0",
     "product_page_design": "thumb_left",
     "nb_thumb": 10,
-    "show_free_shipping": true,
+    "show_free_shipping": false,
     "free_shipping": 500,
     "custom_color_free_shipping": true,
     "bg_free_shipping": "#f2f2f6",
@@ -176,18 +176,18 @@
     "share_telegram": false,
     "share_whatsapp": false,
     "footer_social_facebook_enable": true,
-    "footer_social_facebook_link": "",
+    "footer_social_facebook_link": "https:\/\/www.facebook.com\/giftofbliss",
     "footer_social_facebook_text": "Facebook",
-    "footer_social_twitter_enable": true,
+    "footer_social_twitter_enable": false,
     "footer_social_twitter_link": "",
     "footer_social_twitter_text": "Twitter",
     "footer_social_google_enable": false,
     "footer_social_google_link": "",
     "footer_social_google_text": "Google",
-    "footer_social_instargram_enable": false,
-    "footer_social_instargram_link": "",
+    "footer_social_instargram_enable": true,
+    "footer_social_instargram_link": "https:\/\/www.instagram.com\/giftofblissco\/",
     "footer_social_instargram_text": "Instargram",
-    "footer_social_pinterest_enable": false,
+    "footer_social_pinterest_enable": true,
     "footer_social_pinterest_link": "",
     "footer_social_pinterest_text": "Pinterest",
     "footer_social_tumblr_enable": false,
@@ -196,8 +196,8 @@
     "footer_social_snapchat_enable": false,
     "social_snapchat_link": "",
     "footer_social_snapchat_text": "Snapchat",
-    "footer_social_youtube_enable": false,
-    "social_youtube_link": "",
+    "footer_social_youtube_enable": true,
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCuDOmJzfwWQtqlXre2P6XrA",
     "footer_social_youtube_text": "Youtube",
     "footer_social_vimeo_enable": false,
     "social_vimeo_link": "",
@@ -1431,12 +1431,24 @@
       "top-header": {
         "type": "top-header",
         "blocks": {
+          "top_header_3_8E6e4w": {
+            "type": "top_header_3",
+            "settings": {
+              "menu_topbar": "",
+              "header_use_currency": false,
+              "header_use_language": false,
+              "header_use_social": true,
+              "type_social": "1",
+              "text_align": "topbar-left",
+              "col": "4"
+            }
+          },
           "33b63695-e95e-42b4-9b51-1247e8ed2e6f": {
             "type": "message",
             "settings": {
-              "message_text": "Free shipping on all orders over <span>$79<\/span>",
-              "text_link": "Shop Now",
-              "btn_link": "shopify:\/\/collections",
+              "message_text": "Welcome to Gift of Bliss",
+              "text_link": "",
+              "btn_link": "",
               "open_link": "_blank",
               "text_align": "topbar-center",
               "col": "12",
@@ -1455,19 +1467,29 @@
               "text_align": "topbar-right",
               "col": "6"
             }
+          },
+          "top_header_4_yDqGzt": {
+            "type": "top_header_4",
+            "settings": {
+              "menu_topbar": "",
+              "text_align": "topbar-left",
+              "col": "4"
+            }
           }
         },
         "block_order": [
+          "top_header_3_8E6e4w",
           "33b63695-e95e-42b4-9b51-1247e8ed2e6f",
-          "de36584c-fcc1-4588-a155-f3b7b209a423"
+          "de36584c-fcc1-4588-a155-f3b7b209a423",
+          "top_header_4_yDqGzt"
         ],
         "settings": {
           "header_use_top_header": true,
           "hide_top_header_mobile": true,
           "home_page_only": false,
           "layout": "container",
-          "bg_top_header": "#d93939",
-          "cl_text": "#ffffff",
+          "bg_top_header": "#ffffff",
+          "cl_text": "#000000",
           "cl_text_h": "#efad2a"
         }
       },
