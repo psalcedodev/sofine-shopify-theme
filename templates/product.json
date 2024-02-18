@@ -14,11 +14,6 @@
             "np_mg_bottom": 10
           }
         },
-        "6ff5677e-1d98-482d-bd86-4c67fe63a2af": {
-          "type": "show_reviews",
-          "settings": {
-          }
-        },
         "f1e09af0-0154-41e2-996f-755cdde44ea4": {
           "type": "show_price",
           "settings": {
@@ -110,7 +105,6 @@
       },
       "block_order": [
         "ed5dec54-d995-4f88-87d3-102460e07067",
-        "6ff5677e-1d98-482d-bd86-4c67fe63a2af",
         "f1e09af0-0154-41e2-996f-755cdde44ea4",
         "13e81aa9-7b67-436e-b0c6-e7f0ecc9d514",
         "5c909704-7273-41b5-b5b9-38085bf8c176",
