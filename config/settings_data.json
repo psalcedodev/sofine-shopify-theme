@@ -1827,7 +1827,7 @@
           "407f6f92-2819-4cb0-a735-a3caec3c4cd2"
         ],
         "settings": {
-          "header_design": "logo-center-menu-left",
+          "header_design": "logo-left-menu-left",
           "sticky_top": true,
           "Background_header": "rgba(0,0,0,0)",
           "bg_header_sticky": "#ffffff",
