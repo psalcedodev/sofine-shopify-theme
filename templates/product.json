@@ -22,7 +22,7 @@
         "13e81aa9-7b67-436e-b0c6-e7f0ecc9d514": {
           "type": "countdown",
           "settings": {
-            "text": "Hurry up! Sale ends in:",
+            "text": "Hurry up! Sale ends in:y",
             "custom_liquid": "{{product.metafields.custom.time_countdown}}",
             "bg": "#fdefee",
             "bd": "#f8cccc",
