@@ -1742,6 +1742,16 @@
               "col": "1"
             }
           },
+          "cat_RYKrkD": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "2",
+              "hoverz": true,
+              "collection": "for-him",
+              "title": "Gift for Him",
+              "col": "4"
+            }
+          },
           "3681d0ce-afc6-4344-b966-cfda71fb5b43": {
             "type": "dropdown",
             "settings": {
@@ -1809,6 +1819,7 @@
           "2edb69f1-946f-44fb-9516-b508ad1dbadc",
           "c82034d8-9761-4095-be7b-cbc7c165b914",
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
+          "cat_RYKrkD",
           "3681d0ce-afc6-4344-b966-cfda71fb5b43",
           "91d39423-2228-4261-a575-2a91514f5de6",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
