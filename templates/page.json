@@ -27,46 +27,13 @@
         "pd_mb": "50px,0,50px,0"
       }
     },
-    "maestrooo_instagram_fcNFXG": {
-      "type": "maestrooo-instagram",
-      "settings": {
-        "title": "Instagram feed",
-        "subheading": "<p>Write content about your brand<\/p>",
-        "button_text": "",
-        "button_link": "",
-        "layout": "grid",
-        "image_size": "small",
-        "full_width": false,
-        "add_spacing": true,
-        "rows_count": 2,
-        "mg_top": 0,
-        "mg_right": 0,
-        "mg_bottom": 0,
-        "mg_left": 0,
-        "content_box": "Follow us on instagram",
-        "shop_name": "@gosto shop",
-        "shop_link": "",
-        "show_author": false,
-        "show_caption": true,
-        "show_date": true,
-        "show_info": true,
-        "click_action": "open_instagram",
-        "heading_color": "#000000",
-        "subheading_color": "#000000",
-        "button_background": "#000000",
-        "button_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_text_color": "#ffffff",
-        "overlay_opacity": 65
-      }
-    },
     "170824052888212485": {
       "type": "apps",
       "blocks": {
         "maestrooo_section_feed_app_block_aBz4Yn": {
           "type": "shopify:\/\/apps\/maestrooo-section-feed\/blocks\/app-block\/43cd482b-515a-4e82-b170-05d391763cd2",
           "settings": {
-            "title": "Instagram feed",
+            "title": "Follow us on Instagram",
             "subheading": "",
             "button_text": "",
             "button_link": "",
@@ -98,7 +65,6 @@
   "order": [
     "breadcrumb",
     "main",
-    "maestrooo_instagram_fcNFXG",
     "170824052888212485"
   ]
 }
