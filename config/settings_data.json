@@ -4230,82 +4230,73 @@
       "footer1": {
         "type": "footer1",
         "blocks": {
-          "ce1c3204-2b0c-4a4a-9584-c8ed8c85c033": {
-            "type": "logo-footer",
+          "menu_GnCAYh": {
+            "type": "menu",
             "settings": {
-              "use_logo_footer": false,
-              "logo_footer": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
-              "logo_max_width": 115,
-              "use_social": true,
-              "title_social": "Follow Us",
-              "type_social": "1",
+              "title": "Help",
+              "menu": "help",
+              "cl": "15",
+              "cl_tb": "4",
+              "cl_mb": "12",
               "h_position": "left",
-              "txt_align": "left",
-              "cl": "3",
-              "cl_tb": "6",
-              "cl_mb": "12"
+              "txt_align": "left"
             }
           },
-          "e667f7e9-b124-4bfe-8c4d-f9a360e1a6ae": {
-            "type": "contact_information",
+          "menu_eJyf8Y": {
+            "type": "menu",
             "settings": {
-              "title": "Let’s Talk",
-              "show_phone": false,
-              "show_email": true,
-              "cl": "3",
+              "title": "Company",
+              "menu": "company",
+              "cl": "15",
               "cl_tb": "6",
               "cl_mb": "12",
               "h_position": "left",
               "txt_align": "left"
             }
           },
-          "9d2ce28c-0923-4b81-8f99-6245e7115e92": {
-            "type": "image",
+          "menu_gBznMc": {
+            "type": "menu",
             "settings": {
-              "title": "We Accept",
-              "max_width": 230,
-              "h_position": "left",
-              "txt_align": "left",
-              "cl": "3",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "mail_hzEirW": {
-            "type": "mail",
-            "settings": {
-              "title": "Newsletter Signup",
-              "sub_title": "Subscribe to our newsletter and get 10% off your first purchase",
-              "cl_text": "#fff",
-              "cl_sub": "#232020",
-              "cl_sub_hover": "#f51f1f",
-              "h_position": "left",
-              "v_position": "top",
-              "txt_align": "left",
+              "title": "Connect",
+              "menu": "connect",
               "cl": "15",
               "cl_tb": "6",
-              "cl_mb": "12"
+              "cl_mb": "12",
+              "h_position": "left",
+              "txt_align": "left"
             }
           },
-          "html_rUTMf6": {
-            "type": "html",
+          "text_J4fBYD": {
+            "type": "text",
             "settings": {
-              "title": "HTML",
-              "content": "<i class=\"fa fa-cc-visa\" aria-hidden=\"true\"><\/i>",
-              "h_position": "left",
-              "txt_align": "left",
-              "cl": "3",
+              "title": "_",
+              "content": "",
+              "cl": "12",
               "cl_tb": "6",
-              "cl_mb": "12"
+              "cl_mb": "12",
+              "h_position": "left",
+              "txt_align": "left"
+            }
+          },
+          "menu_yNTxyB": {
+            "type": "menu",
+            "settings": {
+              "title": "Help",
+              "menu": "help",
+              "cl": "15",
+              "cl_tb": "4",
+              "cl_mb": "12",
+              "h_position": "left",
+              "txt_align": "left"
             }
           }
         },
         "block_order": [
-          "ce1c3204-2b0c-4a4a-9584-c8ed8c85c033",
-          "e667f7e9-b124-4bfe-8c4d-f9a360e1a6ae",
-          "9d2ce28c-0923-4b81-8f99-6245e7115e92",
-          "mail_hzEirW",
-          "html_rUTMf6"
+          "menu_GnCAYh",
+          "menu_eJyf8Y",
+          "menu_gBznMc",
+          "text_J4fBYD",
+          "menu_yNTxyB"
         ],
         "settings": {
           "cl_bg": "#ffffff",
@@ -4731,7 +4722,6 @@
           },
           "728b9c92-f684-4755-b78d-0376c5f14f66": {
             "type": "wishlist",
-            "disabled": true,
             "settings": {
             }
           }

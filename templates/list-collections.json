@@ -7,10 +7,10 @@
         "h_position": "center",
         "v_position": "middle",
         "txt_align": "center",
-        "bg": "#f2f2f6",
+        "bg": "#ffffff",
         "b_height": 110,
         "mg_bottom": 30,
-        "mobile_bg": "#f2f2f6",
+        "mobile_bg": "#ffffff",
         "mobile_ht": 100,
         "mobile_mg_bottom": 30
       }
