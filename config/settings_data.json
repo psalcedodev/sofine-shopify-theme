@@ -1475,7 +1475,7 @@
         "settings": {
           "show_title_page": false,
           "h_position": "left",
-          "v_position": "bottom",
+          "v_position": "middle",
           "txt_align": "left",
           "bg": "#fafafa",
           "b_height": 70,
@@ -4274,18 +4274,6 @@
               "txt_align": "left"
             }
           },
-          "c8c34e4c-83a5-46d5-92fd-922ee173399e": {
-            "type": "html",
-            "settings": {
-              "title": "Find Us",
-              "content": "<p>1418 Riverwood Drive, Suite 3245 Cottonwood<\/p>\n<p>CA 96052, United States<\/p><p><\/p>",
-              "h_position": "left",
-              "txt_align": "left",
-              "cl": "3",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
           "9d2ce28c-0923-4b81-8f99-6245e7115e92": {
             "type": "image",
             "settings": {
@@ -4306,10 +4294,22 @@
               "cl_text": "#fff",
               "cl_sub": "#232020",
               "cl_sub_hover": "#f51f1f",
-              "h_position": "center",
-              "v_position": "middle",
+              "h_position": "left",
+              "v_position": "top",
               "txt_align": "left",
-              "cl": "4",
+              "cl": "15",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "html_rUTMf6": {
+            "type": "html",
+            "settings": {
+              "title": "HTML",
+              "content": "<i class=\"fa fa-cc-visa\" aria-hidden=\"true\"><\/i>",
+              "h_position": "left",
+              "txt_align": "left",
+              "cl": "3",
               "cl_tb": "6",
               "cl_mb": "12"
             }
@@ -4318,9 +4318,9 @@
         "block_order": [
           "ce1c3204-2b0c-4a4a-9584-c8ed8c85c033",
           "e667f7e9-b124-4bfe-8c4d-f9a360e1a6ae",
-          "c8c34e4c-83a5-46d5-92fd-922ee173399e",
           "9d2ce28c-0923-4b81-8f99-6245e7115e92",
-          "mail_hzEirW"
+          "mail_hzEirW",
+          "html_rUTMf6"
         ],
         "settings": {
           "cl_bg": "#ffffff",
