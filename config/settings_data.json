@@ -1752,12 +1752,6 @@
               "col": "2"
             }
           },
-          "91d39423-2228-4261-a575-2a91514f5de6": {
-            "type": "logo",
-            "settings": {
-              "logo_max_width": 200
-            }
-          },
           "bab6430c-5d2b-4e8e-8e42-224c6d149882": {
             "type": "dropdown",
             "settings": {
@@ -1774,9 +1768,8 @@
           },
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879": {
             "type": "simple",
-            "disabled": true,
             "settings": {
-              "title": "About",
+              "title": "About Us",
               "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
@@ -1820,7 +1813,6 @@
           "link_rzB9Ax",
           "c82034d8-9761-4095-be7b-cbc7c165b914",
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
-          "91d39423-2228-4261-a575-2a91514f5de6",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879",
           "407f6f92-2819-4cb0-a735-a3caec3c4cd2",
