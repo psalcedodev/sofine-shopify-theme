@@ -2490,56 +2490,40 @@
           "mobile_menu-1": {
             "type": "menu_mb",
             "settings": {
-              "title": "Shop",
-              "url": "shopify:\/\/collections\/all",
+              "title": "Products",
+              "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "category-menu",
               "show_icon": false,
               "icon": "<i class=\"lnr lnr-store\"><\/i>",
               "lb": "",
               "lb_cl": "#d93939"
             }
           },
-          "mobile_menu-2": {
+          "menu_mb_3PFHXc": {
             "type": "menu_mb",
             "settings": {
-              "title": "page",
+              "title": "Seasonal",
               "url": "",
               "open_link": "_self",
-              "menu": "",
-              "show_icon": false,
-              "icon": "<i class=\"lab la-skyatlas\"><\/i>",
+              "menu": "seasonal",
+              "show_icon": true,
+              "icon": "",
               "lb": "",
               "lb_cl": ""
             }
           },
-          "mobile_menu-3": {
+          "menu_mb_jdgLhC": {
             "type": "menu_mb",
             "settings": {
-              "title": "Blog",
-              "url": "shopify:\/\/blogs\/shopping",
+              "title": "About Us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "menu": "",
-              "show_icon": false,
-              "icon": "<i class=\"lar la-sticky-note\"><\/i>",
+              "show_icon": true,
+              "icon": "",
               "lb": "",
               "lb_cl": ""
-            }
-          },
-          "mobile_menu-4": {
-            "type": "wishlist",
-            "settings": {
-              "title": "Wishlist",
-              "show_icon": true,
-              "icon": "<i class=\"icon-heart\"><\/i>"
-            }
-          },
-          "mobile_menu-5": {
-            "type": "compare",
-            "settings": {
-              "title": "Compare",
-              "show_icon": true,
-              "icon": "<i class=\"icon-layers\"><\/i>"
             }
           },
           "961fa2fa-0c91-4435-8f22-2faa48b985c5": {
@@ -2550,21 +2534,9 @@
               "open_link": "_self",
               "menu": "",
               "show_icon": false,
-              "icon": "<i class=\"las la-campground\"><\/i>",
+              "icon": "",
               "lb": "",
               "lb_cl": ""
-            }
-          },
-          "26105932-65d4-4cfe-94cd-fcbd4cb9028d": {
-            "type": "language",
-            "settings": {
-              "title": "Language"
-            }
-          },
-          "270d75a6-8583-4127-aa6a-d3998aad9660": {
-            "type": "currency",
-            "settings": {
-              "title": "Currency"
             }
           }
         },
@@ -2573,13 +2545,9 @@
           "mobile_menu-7",
           "mobile_menu-0",
           "mobile_menu-1",
-          "mobile_menu-2",
-          "mobile_menu-3",
-          "mobile_menu-4",
-          "mobile_menu-5",
-          "961fa2fa-0c91-4435-8f22-2faa48b985c5",
-          "26105932-65d4-4cfe-94cd-fcbd4cb9028d",
-          "270d75a6-8583-4127-aa6a-d3998aad9660"
+          "menu_mb_3PFHXc",
+          "menu_mb_jdgLhC",
+          "961fa2fa-0c91-4435-8f22-2faa48b985c5"
         ],
         "settings": {
           "show_close": true,
