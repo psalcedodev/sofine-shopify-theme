@@ -1829,7 +1829,7 @@
         "settings": {
           "header_design": "logo-left-menu-left",
           "sticky_top": true,
-          "Background_header": "rgba(0,0,0,0)",
+          "Background_header": "#ffffff",
           "bg_header_sticky": "#ffffff",
           "layout": "container",
           "header_use_currency": false,
