@@ -1479,10 +1479,10 @@
           "v_position": "middle",
           "txt_align": "left",
           "bg": "#ffffff",
-          "b_height": 70,
+          "b_height": 100,
           "mg_bottom": 30,
           "mobile_bg": "#ffffff",
-          "mobile_ht": 50,
+          "mobile_ht": 70,
           "mobile_mg_bottom": 15
         }
       },
