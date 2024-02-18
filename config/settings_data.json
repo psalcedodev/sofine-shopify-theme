@@ -1734,7 +1734,6 @@
           },
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
-            "disabled": true,
             "settings": {
               "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
@@ -1745,7 +1744,6 @@
           },
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
-            "disabled": true,
             "settings": {
               "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
