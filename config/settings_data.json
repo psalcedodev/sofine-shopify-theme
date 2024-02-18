@@ -16,7 +16,7 @@
     "show_key_word": true,
     "key_word": "Vegetables,Meat,Drink Juice",
     "logo_text": "Alotheme",
-    "logo": "shopify:\/\/shop_images\/2.jpg",
+    "logo": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0_b0828f63-123d-44da-a25a-e62ad99dc07a.png",
     "logo_max_width": 95,
     "color_body_bg": "#ffffff",
     "color_body_text": "#666666",
@@ -1691,6 +1691,12 @@
       "header1": {
         "type": "header1",
         "blocks": {
+          "91d39423-2228-4261-a575-2a91514f5de6": {
+            "type": "logo",
+            "settings": {
+              "logo_max_width": 200
+            }
+          },
           "d68538b5-22d3-4082-9b4b-6cf2ab00a70b": {
             "type": "dropdown",
             "settings": {
@@ -1752,14 +1758,23 @@
               "col": "2"
             }
           },
-          "91d39423-2228-4261-a575-2a91514f5de6": {
-            "type": "logo",
+          "dropdown_bHE3Cy": {
+            "type": "dropdown",
             "settings": {
-              "logo_max_width": 200
+              "title": "Seasonal",
+              "url": "",
+              "open_link": "_self",
+              "menu": "seasonal",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
             }
           },
           "bab6430c-5d2b-4e8e-8e42-224c6d149882": {
             "type": "dropdown",
+            "disabled": true,
             "settings": {
               "title": "Blog",
               "url": "shopify:\/\/blogs\/shopping",
@@ -1774,7 +1789,6 @@
           },
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879": {
             "type": "simple",
-            "disabled": true,
             "settings": {
               "title": "About",
               "url": "shopify:\/\/pages\/about-us",
@@ -1798,33 +1812,19 @@
               "lb": "",
               "lb_cl": ""
             }
-          },
-          "dropdown_bHE3Cy": {
-            "type": "dropdown",
-            "settings": {
-              "title": "Seasonal",
-              "url": "",
-              "open_link": "_self",
-              "menu": "seasonal",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
           }
         },
         "block_order": [
+          "91d39423-2228-4261-a575-2a91514f5de6",
           "d68538b5-22d3-4082-9b4b-6cf2ab00a70b",
           "2edb69f1-946f-44fb-9516-b508ad1dbadc",
           "link_rzB9Ax",
           "c82034d8-9761-4095-be7b-cbc7c165b914",
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
-          "91d39423-2228-4261-a575-2a91514f5de6",
+          "dropdown_bHE3Cy",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879",
-          "407f6f92-2819-4cb0-a735-a3caec3c4cd2",
-          "dropdown_bHE3Cy"
+          "407f6f92-2819-4cb0-a735-a3caec3c4cd2"
         ],
         "settings": {
           "header_design": "logo-center-menu-left",
