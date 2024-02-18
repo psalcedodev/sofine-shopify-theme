@@ -2465,15 +2465,6 @@
               "icon": "<i class=\"icon-search\"><\/i>"
             }
           },
-          "mobile_menu-7": {
-            "type": "account",
-            "settings": {
-              "title": "Login \/ Register",
-              "show_icon": true,
-              "icon": "<i class=\"icon-users\"><\/i>",
-              "icon2": "<i class=\"icon-user-x\"><\/i>"
-            }
-          },
           "mobile_menu-0": {
             "type": "menu_mb",
             "settings": {
@@ -2538,16 +2529,25 @@
               "lb": "",
               "lb_cl": ""
             }
+          },
+          "mobile_menu-7": {
+            "type": "account",
+            "settings": {
+              "title": "Login \/ Register",
+              "show_icon": true,
+              "icon": "<i class=\"icon-users\"><\/i>",
+              "icon2": "<i class=\"icon-user-x\"><\/i>"
+            }
           }
         },
         "block_order": [
           "mobile_menu-6",
-          "mobile_menu-7",
           "mobile_menu-0",
           "mobile_menu-1",
           "menu_mb_3PFHXc",
           "menu_mb_jdgLhC",
-          "961fa2fa-0c91-4435-8f22-2faa48b985c5"
+          "961fa2fa-0c91-4435-8f22-2faa48b985c5",
+          "mobile_menu-7"
         ],
         "settings": {
           "show_close": true,
