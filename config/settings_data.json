@@ -2893,16 +2893,17 @@
         "type": "promotion-newsletter-popup",
         "settings": {
           "use_newsletter_popup": true,
-          "bg_color": "#ffffff",
+          "bg_newsletter": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
+          "bg_color": "#cad5ca",
           "title_newslette": "Our Newsletter",
-          "description": "Subscribe to the Orfarm Store get notified about exclusive offers every week!",
-          "placeholder_newsletter": "Your email address...",
+          "description": "Subscribe to the Gift of Bliss Store and get notified about exclusive offers!",
+          "placeholder_newsletter": "Your email address",
           "button_newsletter": "Sign up",
-          "no_show_popup_again": "I would like to receive news and special offers.",
+          "no_show_popup_again": "Don't show this popup again",
           "max_width": "820",
-          "max_height": "500",
+          "max_height": "700",
           "timeout": 5,
-          "day_next": 10
+          "day_next": 6
         }
       },
       "top-bar": {
