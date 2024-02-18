@@ -1729,17 +1729,17 @@
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Her",
-              "col": "3"
+              "col": "15"
             }
           },
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
             "settings": {
-              "url": "shopify:\/\/collections\/shirts",
+              "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
               "enable_content_banner": true,
-              "coll_name": "Shirts",
-              "col": "3"
+              "coll_name": "Gift for Him",
+              "col": "15"
             }
           },
           "3681d0ce-afc6-4344-b966-cfda71fb5b43": {
