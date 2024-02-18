@@ -1728,7 +1728,7 @@
               "tt_hd": "Heading",
               "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
-              "menu": "",
+              "menu": "category-menu",
               "col": "4"
             }
           },
