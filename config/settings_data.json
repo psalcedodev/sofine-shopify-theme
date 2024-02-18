@@ -1478,10 +1478,10 @@
           "h_position": "left",
           "v_position": "middle",
           "txt_align": "left",
-          "bg": "#fafafa",
+          "bg": "#ffffff",
           "b_height": 70,
           "mg_bottom": 30,
-          "mobile_bg": "#f2f2f6",
+          "mobile_bg": "#ffffff",
           "mobile_ht": 50,
           "mobile_mg_bottom": 15
         }

@@ -7,7 +7,7 @@
           "type": "name_product",
           "settings": {
             "np_text_transform": "none",
-            "np_size": 24,
+            "np_size": 30,
             "np_weight": 500,
             "np_size_mobile": 24,
             "np_mg_top": 0,
@@ -24,7 +24,7 @@
           "settings": {
             "show_title": true,
             "show_size_guide": true,
-            "size_guide_page": "size-guide"
+            "size_guide_page": ""
           }
         },
         "26205a69-31b8-41d3-83bf-2e25db4c4dfa": {
