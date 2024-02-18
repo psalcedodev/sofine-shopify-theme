@@ -31,7 +31,6 @@
         },
         "5c909704-7273-41b5-b5b9-38085bf8c176": {
           "type": "product_variants",
-          "disabled": true,
           "settings": {
             "show_title": true,
             "show_size_guide": true,
