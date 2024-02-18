@@ -16,7 +16,7 @@
     "show_key_word": false,
     "key_word": "",
     "logo_text": "Alotheme",
-    "logo": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0_b0828f63-123d-44da-a25a-e62ad99dc07a.png",
+    "logo": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0_b0828f63-123d-44da-a25a-e62ad99dc07a.png",
     "logo_max_width": 95,
     "color_body_bg": "#ffffff",
     "color_body_text": "#666666",
@@ -125,11 +125,11 @@
     "use_custom_variants": true,
     "custom_color_variants": "black:#000",
     "name_material_1": "material-1",
-    "img_material_1": "shopify://shop_images/1.png",
+    "img_material_1": "shopify:\/\/shop_images\/1.png",
     "name_material_2": "material-2",
-    "img_material_2": "shopify://shop_images/2.png",
+    "img_material_2": "shopify:\/\/shop_images\/2.png",
     "name_material_3": "material-3",
-    "img_material_3": "shopify://shop_images/3.png",
+    "img_material_3": "shopify:\/\/shop_images\/3.png",
     "collection_fullwidth": false,
     "layout_collection": "1",
     "grid_list": "4",
@@ -165,7 +165,7 @@
     "shipping_calculator_default_country": "United States",
     "shipping_calculator_submit_button_label": "Upload",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
-    "newsletter_form_action": "https://myshopify.us1.list-manage.com/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
+    "newsletter_form_action": "https:\/\/myshopify.us1.list-manage.com\/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
     "tooltips_animation_type": "perspective",
     "product_hover_animation_type": "fade",
     "share_facebook": true,
@@ -176,7 +176,7 @@
     "share_telegram": false,
     "share_whatsapp": false,
     "footer_social_facebook_enable": true,
-    "footer_social_facebook_link": "https://www.facebook.com/giftofbliss",
+    "footer_social_facebook_link": "https:\/\/www.facebook.com\/giftofbliss",
     "footer_social_facebook_text": "Facebook",
     "footer_social_twitter_enable": false,
     "footer_social_twitter_link": "",
@@ -185,7 +185,7 @@
     "footer_social_google_link": "",
     "footer_social_google_text": "Google",
     "footer_social_instargram_enable": true,
-    "footer_social_instargram_link": "https://www.instagram.com/giftofblissco/",
+    "footer_social_instargram_link": "https:\/\/www.instagram.com\/giftofblissco\/",
     "footer_social_instargram_text": "Instargram",
     "footer_social_pinterest_enable": true,
     "footer_social_pinterest_link": "",
@@ -197,20 +197,20 @@
     "social_snapchat_link": "",
     "footer_social_snapchat_text": "Snapchat",
     "footer_social_youtube_enable": true,
-    "social_youtube_link": "https://www.youtube.com/channel/UCuDOmJzfwWQtqlXre2P6XrA",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCuDOmJzfwWQtqlXre2P6XrA",
     "footer_social_youtube_text": "Youtube",
     "footer_social_vimeo_enable": false,
     "social_vimeo_link": "",
     "footer_social_vimeo_text": "Vimeo",
-    "footer_social_tiktok_enable": false,
-    "social_tiktok_link": "",
+    "footer_social_tiktok": true,
+    "social_tiktok_link": "sadasdasd",
     "footer_social_tiktok_text": "Tiktok",
     "custom_css": false,
     "global_css": "",
-    "favicon": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
-    "favicon_apple": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
-    "checkout_header_image": "shopify://shop_images/bg_breadcrum_blog.jpg",
-    "checkout_logo_image": "shopify://shop_images/logo.png",
+    "favicon": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
+    "favicon_apple": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/bg_breadcrum_blog.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
@@ -223,6 +223,7 @@
     "checkout_accent_color": "#75c1e4",
     "checkout_button_color": "#3c535e",
     "checkout_error_color": "#ff6d6d",
+    "footer_social_tiktok_enable": false,
     "show_text_countdown": false,
     "border_menu_sub": "#d93939",
     "collection_product_collection_short_description": false,
@@ -319,33 +320,33 @@
     "filter_brand_title": "Brands",
     "filter_size_title": "Size",
     "filter_size_name": "XL,XXL,M,N,S,XS",
-    "filter_banner_category": "//cdn.shopify.com/s/files/1/2205/7421/files/banner21.jpg?6868281452874600976",
+    "filter_banner_category": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner21.jpg?6868281452874600976",
     "filter_banner_category_link": "#",
     "filter_title_new_product": "NEW PRODUCTS",
     "filter_collection_new_product": "",
     "filter_collection_new_product_limit": "4",
     "use_autoplay_brand_shortcode": true,
-    "about_brand_slider1": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider1": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider1_url": "#",
-    "about_brand_slider2": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider2": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider2_url": "#",
-    "about_brand_slider3": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider3": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider3_url": "#",
-    "about_brand_slider4": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider4": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider4_url": "#",
-    "about_brand_slider5": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider5": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider5_url": "#",
-    "about_brand_slider6": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider6": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider6_url": "#",
-    "about_brand_slider7": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider7": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider7_url": "#",
-    "about_brand_slider8": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider8": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider8_url": "#",
-    "about_brand_slider9": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider9": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider9_url": "#",
-    "about_brand_slider10": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider10": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider10_url": "#",
-    "about_content_image": "//cdn.shopify.com/s/files/1/2205/7421/files/banner24.jpg?16775973811137863711",
+    "about_content_image": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner24.jpg?16775973811137863711",
     "about_title_block": "SOME WORKS ABOUT US",
     "about_content_detail": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
     "about_content_detail_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
@@ -354,23 +355,23 @@
     "about_team_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
     "about_team_name1": "Michael Jordan's",
     "about_team_desc1": "Director",
-    "about_team_photo1": "//cdn.shopify.com/s/files/1/2205/7421/files/avata1.jpg?16775973811137863711",
+    "about_team_photo1": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata1.jpg?16775973811137863711",
     "use_member_1": true,
     "about_team_name2": "Susan Mcsain",
     "about_team_desc2": "Manager",
-    "about_team_photo2": "//cdn.shopify.com/s/files/1/2205/7421/files/avata2.jpg?17157095864961728421",
+    "about_team_photo2": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata2.jpg?17157095864961728421",
     "use_member_2": true,
     "about_team_name3": "Join Smith",
     "about_team_desc3": "Ceo Founder",
-    "about_team_photo3": "//cdn.shopify.com/s/files/1/2205/7421/files/avata3.jpg?8994979638735563279",
+    "about_team_photo3": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata3.jpg?8994979638735563279",
     "use_member_3": true,
     "about_team_name4": "Ms. Clinton",
     "about_team_desc4": "Delivery Driver",
-    "about_team_photo4": "//cdn.shopify.com/s/files/1/2205/7421/files/avata4.jpg?17866946063447923058",
+    "about_team_photo4": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata4.jpg?17866946063447923058",
     "use_member_4": true,
     "about_team_name5": "Ms. Clinton",
     "about_team_desc5": "Delivery Driver",
-    "about_team_photo5": "//cdn.shopify.com/s/files/1/2205/7421/files/avata5.jpg?11036065312311386555",
+    "about_team_photo5": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata5.jpg?11036065312311386555",
     "use_member_5": false,
     "about_infor_title_1": "What we really do?",
     "about_infor_desc_1": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.",
@@ -381,7 +382,7 @@
     "about_infor_title_4": "Cooperate with Us!",
     "about_infor_desc_4": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     "about_service_block_title": "WHAT WE CAN DO FOR YOU",
-    "about_service_title_1": "Support 24/7",
+    "about_service_title_1": "Support 24\/7",
     "about_service_content_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
     "about_service_title_2": "Best Quanlity",
     "about_service_content_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
@@ -412,11 +413,11 @@
     "desc1_item3_title_contact": "Sed ut perspiciatis unde omnis Street Name, Los Angeles",
     "right_title_block": "Get in touch",
     "use_contact_map": true,
-    "map_iframe": "<iframe width=\"2000\" height=\"400\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/search?q=1200+Beverly+Street,+Mountain+View,+CA,+United+States&key=AIzaSyCeVrTUW_JTL2UKUT0-85wiwusOJZ48yMM\" allowfullscreen=\"\"></iframe>",
+    "map_iframe": "<iframe width=\"2000\" height=\"400\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/search?q=1200+Beverly+Street,+Mountain+View,+CA,+United+States&key=AIzaSyCeVrTUW_JTL2UKUT0-85wiwusOJZ48yMM\" allowfullscreen=\"\"><\/iframe>",
     "bg_color_404": true,
     "color_404": "#e1e1e1",
     "select_home_page": "1",
-    "background_banner_collection": "//cdn.shopify.com/s/files/1/2205/7421/files/banner22.jpg",
+    "background_banner_collection": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner22.jpg",
     "collection_page_sale_title": "Hot",
     "collection_page_sale_desc": "Bestseller",
     "collection_page_new_title": "New",
@@ -442,10 +443,10 @@
     "product_page_title_second_featured_box": "MONEY BACK GUARANTEE",
     "product_page_desc_second_featured_box": "100% money back guarantee",
     "product_page_link_second_featured_box": "#",
-    "product_page_title_third_featured_box": "ONLINE SUPPORT 24/7",
-    "product_page_desc_third_featured_box": "Online support 24/7",
+    "product_page_title_third_featured_box": "ONLINE SUPPORT 24\/7",
+    "product_page_desc_third_featured_box": "Online support 24\/7",
     "product_page_link_third_featured_box": "#",
-    "product_page_banner_image": "//cdn.shopify.com/s/files/1/2205/7421/files/banner23.jpg?921035063584660721",
+    "product_page_banner_image": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner23.jpg?921035063584660721",
     "product_page_banner_image_link": "#",
     "product_page_title_best_selling": "BESTSELLER",
     "product_page_bestseller_collection": "",
@@ -493,7 +494,7 @@
     "error_title": "404 PAGE NOT FOUND",
     "error_description": "This page couldn't be found! Back to home page if you like. Please use search for help!",
     "bg_image_404": true,
-    "background_img_404": "//cdn.shopify.com/s/files/1/2087/4637/files/404.jpg?2494754347742990656",
+    "background_img_404": "\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/404.jpg?2494754347742990656",
     "type_header_base_size": "26px",
     "type_base_family": "Google_Open+Sans_400_sans",
     "type_base_size": "14px",
@@ -518,7 +519,7 @@
     "product_page_placeholder_email_to_friend": "Enter Address Here",
     "filter_tag_title": "Popular Tags",
     "enable_use_filter_tag": true,
-    "background_banner_blog": "//cdn.shopify.com/s/files/1/2087/4637/files/heading-banner.jpg?17663267177497323306",
+    "background_banner_blog": "\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/heading-banner.jpg?17663267177497323306",
     "left_address_infor": "1200 Beverly Hill. Moutain View CA 90768, United States.",
     "autoplay_team_shortcode": true,
     "use_heading_shortcode": true,
@@ -526,8 +527,8 @@
     "use_skill_shortcode": true,
     "about_skill_title": "OUR AWESOME SKILLS",
     "about_skill_desc": "Some facts about us!",
-    "about_skill_shortcode": "[skill title=\"Adobe/Photoshop\" percent=\"85%\"]\n[skill title=\"Layout/Frame\" percent=\"70%\"]\n[skill title=\"UI Design\" percent=\"90%\"]\n[skill title=\"Font/Typography\" percent=\"75%\"]",
-    "about_team_shortcode": "[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/10.jpg?13298334219951642726\" link_avatar=\"#\" name=\"John Doe\" job=\"CEO/Founder Mazano\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/3.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Christiana Q\" job=\"Art Director/Founder Mazano\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/2.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Jonathan Doe\" job=\"Senior Designer\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/4.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Andy Dao\" job=\"Team leader\"]",
+    "about_skill_shortcode": "[skill title=\"Adobe\/Photoshop\" percent=\"85%\"]\n[skill title=\"Layout\/Frame\" percent=\"70%\"]\n[skill title=\"UI Design\" percent=\"90%\"]\n[skill title=\"Font\/Typography\" percent=\"75%\"]",
+    "about_team_shortcode": "[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/10.jpg?13298334219951642726\" link_avatar=\"#\" name=\"John Doe\" job=\"CEO\/Founder Mazano\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/3.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Christiana Q\" job=\"Art Director\/Founder Mazano\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/2.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Jonathan Doe\" job=\"Senior Designer\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/4.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Andy Dao\" job=\"Team leader\"]",
     "type_bold_product_titles": false,
     "color_small_button": "#ffffff",
     "color_small_button_text": "#3d4246",
@@ -548,7 +549,7 @@
             "type": "mega",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -577,7 +578,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "shopify://collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -619,7 +620,7 @@
           "b1319552-01e5-4272-a870-3892c592ae86": {
             "type": "cat",
             "settings": {
-              "image": "shopify://shop_images/img_1.png",
+              "image": "shopify:\/\/shop_images\/img_1.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "sale",
@@ -630,7 +631,7 @@
           "c490410c-525d-4806-ae6e-a35641364691": {
             "type": "cat",
             "settings": {
-              "image": "shopify://shop_images/img_2.png",
+              "image": "shopify:\/\/shop_images\/img_2.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "new",
@@ -656,7 +657,7 @@
             "type": "dropdown",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -670,7 +671,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/fashion",
+              "url": "shopify:\/\/blogs\/fashion",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -684,7 +685,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact-1",
+              "url": "shopify:\/\/pages\/contact-1",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -758,31 +759,38 @@
         "blocks": {
           "cart_widget-0": {
             "type": "price",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-1": {
             "type": "tax",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-2": {
             "type": "agree",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-3": {
             "type": "btnc",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-4": {
             "type": "btnck",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-5": {
             "type": "btnmr",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-6": {
             "type": "img",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-7": {
             "type": "btn",
@@ -912,7 +920,7 @@
             "settings": {
               "title": "Search blog",
               "place_holder_search_sidebar": "Search blog",
-              "icon_search": "<i class=\"icon-search\"></i>"
+              "icon_search": "<i class=\"icon-search\"><\/i>"
             }
           },
           "431a5a5d-8c97-4c27-9b33-050b9307dcee": {
@@ -1129,7 +1137,7 @@
             "type": "item",
             "settings": {
               "shortcode_show_item": true,
-              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"/search/?section_id=1602387027386\"><div class=\"lds_bginfinity pr\"></div></div>",
+              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"\/search\/?section_id=1602387027386\"><div class=\"lds_bginfinity pr\"><\/div><\/div>",
               "shortcode_show_title": true,
               "mg": "0px,0px,0px,0px",
               "pd": "0px,0px,0px,0px"
@@ -1139,7 +1147,7 @@
             "type": "item",
             "settings": {
               "shortcode_show_item": false,
-              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"/search/?section_id=16039489369a370a93\"><div class=\"lds_bginfinity pr\"></div></div>",
+              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"\/search\/?section_id=16039489369a370a93\"><div class=\"lds_bginfinity pr\"><\/div><\/div>",
               "shortcode_show_title": true,
               "mg": "30px,0px,0px,0px",
               "pd": "0px,0px,0px,0px"
@@ -1150,7 +1158,8 @@
           "4dc77721-6150-4a24-b8c6-cae90f7f6eb9",
           "04e733b0-0ea7-4559-beab-4145208f2683"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "collection": {
         "type": "collection",
@@ -1205,12 +1214,12 @@
       "footer_5": {
         "type": "footer_5",
         "settings": {
-          "footer_logo": "shopify://shop_images/logo_5.png",
+          "footer_logo": "shopify:\/\/shop_images\/logo_5.png",
           "logo_width": 205,
           "footer_description": "Evening under, midst years third their without darkness shall creature. Of likeness, called and there spirit let two winged whose above beginning creeping air behold for firmament given make very life female. Set Saying blessed given. Own Divide fly multiply midst to beast. Have he fish you’re good signs whose. Days, moving, sixth. Us a air meat stars upon Give.",
           "footer_use_social_link": true,
           "bg": "#ffffff",
-          "image": "shopify://shop_images/background_footer.png"
+          "image": "shopify:\/\/shop_images\/background_footer.png"
         }
       },
       "service-section-home1": {
@@ -1260,7 +1269,7 @@
           "mg_left": 0,
           "title": "",
           "sub_title": "",
-          "url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
           "enable_number": false
         }
       },
@@ -1270,8 +1279,8 @@
           "6ab48ed0-1e14-4d98-bbaa-7efa16fa6c5a": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1280,8 +1289,8 @@
           "a84b6de0-c116-495f-b188-745da174cca0": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1290,8 +1299,8 @@
           "56a9acb1-eef5-42ce-97b3-a427bd580c3b": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1300,8 +1309,8 @@
           "60667878-3e15-4363-837c-f43455609ec9": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1324,14 +1333,14 @@
           "arrows": true,
           "dots": false,
           "infinite": false,
-          "bg_image": "shopify://shop_images/bg_testimonials2.jpg",
+          "bg_image": "shopify:\/\/shop_images\/bg_testimonials2.jpg",
           "cl_bg": "#f6f7f9"
         }
       },
       "content-404": {
         "type": "content-404",
         "settings": {
-          "bg_img_404": "shopify://shop_images/404.jpg",
+          "bg_img_404": "shopify:\/\/shop_images\/404.jpg",
           "title": "Opps! Page not found.",
           "content": "Sorry for the inconvenience. Go to our homepage or check out our latest collections."
         }
@@ -1346,7 +1355,9 @@
             }
           }
         },
-        "block_order": ["480a1ba9-2a83-40fc-9eda-0ea314a35691"],
+        "block_order": [
+          "480a1ba9-2a83-40fc-9eda-0ea314a35691"
+        ],
         "settings": {
           "hoverz": true,
           "display_type": "all",
@@ -1361,7 +1372,7 @@
             "settings": {
               "title": "Search blog",
               "place_holder_search_sidebar": "Search blog",
-              "icon_search": "<i class=\"icon-search\"></i>"
+              "icon_search": "<i class=\"icon-search\"><\/i>"
             }
           },
           "8a89b01e-d234-45b8-a6a1-7682031c230a": {
@@ -1533,7 +1544,7 @@
             "settings": {
               "icon": "fa fa-truck",
               "title": "Help Center",
-              "text": "Dedicated 24/7 Support"
+              "text": "Dedicated 24\/7 Support"
             }
           },
           "ed98dbcb-49fd-4b52-a21b-22a9910e5466": {
@@ -1559,7 +1570,7 @@
           "col_pr_tb": "6",
           "col_pr_mb": "6",
           "layout": "container",
-          "bg_image": "shopify://shop_images/bg_footer_b4a6812c-889e-4487-80a8-e5e71f31d752.png",
+          "bg_image": "shopify:\/\/shop_images\/bg_footer_b4a6812c-889e-4487-80a8-e5e71f31d752.png",
           "cl_bg": "#2d2a6e",
           "mg": "",
           "pd": "50px,0,45px",
@@ -1574,10 +1585,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_1.jpg",
+              "image": "shopify:\/\/shop_images\/about_1.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1586,10 +1597,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_2.jpg",
+              "image": "shopify:\/\/shop_images\/about_2.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1598,10 +1609,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_3.jpg",
+              "image": "shopify:\/\/shop_images\/about_3.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1699,7 +1710,7 @@
           "faq_title_page": "FAQS",
           "show_content": true,
           "faq_title": "How can we help you?",
-          "faq_desc": "<p>Returns are free for orders shipped within the U.S. We include a UPS return label in every package which is at no cost to use.</p>\n\n<p>Follow the steps below for a seamless returns process:</p>\n<ul>\n\t<li>-   Please indicate a reason for return using one of the Return Codes listed on the order form included in your package. </li>\n\t<li>-   Attach your UPS return label to the outside of the package. There is no cost to use this label.</li>\n\t<li>-   Please make note of your tracking number so that you are able to track it on its way back to us.</li>\n</ul>\n\n<p style=\"color:#c6452c;\">You will receive an email once your return has been processed. Please allow 06 - 12 business days from the time your package arrives back to us for a refund to be issued.</p>",
+          "faq_desc": "<p>Returns are free for orders shipped within the U.S. We include a UPS return label in every package which is at no cost to use.<\/p>\n\n<p>Follow the steps below for a seamless returns process:<\/p>\n<ul>\n\t<li>-   Please indicate a reason for return using one of the Return Codes listed on the order form included in your package. <\/li>\n\t<li>-   Attach your UPS return label to the outside of the package. There is no cost to use this label.<\/li>\n\t<li>-   Please make note of your tracking number so that you are able to track it on its way back to us.<\/li>\n<\/ul>\n\n<p style=\"color:#c6452c;\">You will receive an email once your return has been processed. Please allow 06 - 12 business days from the time your package arrives back to us for a refund to be issued.<\/p>",
           "show_menu": true,
           "menu_page": "menu-page"
         }
@@ -1717,7 +1728,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1731,7 +1742,7 @@
             "type": "mega",
             "settings": {
               "title": "Products",
-              "url": "shopify://collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": true,
@@ -1748,7 +1759,7 @@
             "type": "link",
             "settings": {
               "tt_hd": "Category",
-              "url": "shopify://collections/for-her",
+              "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "menu": "category-menu",
               "col": "15"
@@ -1757,7 +1768,7 @@
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
             "settings": {
-              "url": "shopify://collections/for-her",
+              "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Her",
@@ -1767,7 +1778,7 @@
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
             "settings": {
-              "url": "shopify://collections/for-him",
+              "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Him",
@@ -1793,7 +1804,7 @@
             "disabled": true,
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1807,7 +1818,7 @@
             "type": "simple",
             "settings": {
               "title": "About Us",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1820,7 +1831,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact Us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1929,7 +1940,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1943,7 +1954,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "shopify://collections/all",
+              "url": "shopify:\/\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1954,7 +1965,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "a618dad2-d519-49b8-9351-ea33a6aa4deb": {
@@ -2015,7 +2026,7 @@
             "type": "dropdown",
             "settings": {
               "title": "blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2029,7 +2040,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2042,7 +2053,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2086,7 +2097,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "home-page",
               "icon": "",
@@ -2100,7 +2111,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "/collections/all",
+              "url": "\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2111,7 +2122,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "8bc3161a-ae7f-4e9d-aacc-b10140216f51": {
@@ -2138,7 +2149,7 @@
             "type": "link",
             "settings": {
               "tt_hd": "Other shop page",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "other-shop-page",
               "col": "4"
@@ -2172,7 +2183,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/uncategorized",
+              "url": "shopify:\/\/blogs\/uncategorized",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2186,7 +2197,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2199,7 +2210,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2242,7 +2253,7 @@
             "type": "mega",
             "settings": {
               "title": "Top Deals",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2292,7 +2303,7 @@
             "type": "mega",
             "settings": {
               "title": "Top Selling Products",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2328,7 +2339,7 @@
             "type": "simple",
             "settings": {
               "title": "Top Featured Products",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2341,7 +2352,7 @@
             "type": "simple",
             "settings": {
               "title": "Fruits & Vegetables",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2354,7 +2365,7 @@
             "type": "simple",
             "settings": {
               "title": "Health & Beauty",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2367,7 +2378,7 @@
             "type": "simple",
             "settings": {
               "title": "Fresh Vegetables",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2380,7 +2391,7 @@
             "type": "simple",
             "settings": {
               "title": "Fresh Meat",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2393,7 +2404,7 @@
             "type": "simple",
             "settings": {
               "title": "Package Foods",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2406,7 +2417,7 @@
             "type": "simple",
             "settings": {
               "title": "Baby & Infants",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2419,7 +2430,7 @@
             "type": "simple",
             "settings": {
               "title": "Dairy Bread & Eggs",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2463,7 +2474,7 @@
               "title": "WHAT ARE YOU LOOKING FOR?",
               "search": "Search",
               "show_icon": true,
-              "icon": "<i class=\"icon-search\"></i>"
+              "icon": "<i class=\"icon-search\"><\/i>"
             }
           },
           "mobile_menu-0": {
@@ -2474,7 +2485,7 @@
               "open_link": "_self",
               "menu": "",
               "show_icon": false,
-              "icon": "<i class=\"las la-campground\"></i>",
+              "icon": "<i class=\"las la-campground\"><\/i>",
               "lb": "",
               "lb_cl": "#fafafa"
             }
@@ -2487,7 +2498,7 @@
               "open_link": "_self",
               "menu": "category-menu",
               "show_icon": false,
-              "icon": "<i class=\"lnr lnr-store\"></i>",
+              "icon": "<i class=\"lnr lnr-store\"><\/i>",
               "lb": "",
               "lb_cl": "#d93939"
             }
@@ -2509,7 +2520,7 @@
             "type": "menu_mb",
             "settings": {
               "title": "About Us",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "menu": "",
               "show_icon": true,
@@ -2522,7 +2533,7 @@
             "type": "menu_mb",
             "settings": {
               "title": "Contact Us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "menu": "",
               "show_icon": false,
@@ -2535,10 +2546,10 @@
             "type": "account",
             "disabled": true,
             "settings": {
-              "title": "Login / Register",
+              "title": "Login \/ Register",
               "show_icon": true,
-              "icon": "<i class=\"icon-users\"></i>",
-              "icon2": "<i class=\"icon-user-x\"></i>"
+              "icon": "<i class=\"icon-users\"><\/i>",
+              "icon2": "<i class=\"icon-user-x\"><\/i>"
             }
           }
         },
@@ -2575,7 +2586,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "4daa8953-4f85-430d-b1fe-06fbdb826464": {
@@ -2588,7 +2599,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "c82d20f7-b89b-4bf9-b24c-7c0cea68532b": {
@@ -2601,7 +2612,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "3ba529df-17fc-4b02-acb8-fc6532317d9c": {
@@ -2614,7 +2625,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "6bcb12ec-cd3e-4a65-b80b-37b6c53fc5e2": {
@@ -2627,7 +2638,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "0e09efd7-cb43-42d0-8d32-aaf6d9842e7c": {
@@ -2640,7 +2651,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "73752c23-c406-488c-944c-0c3c5ea79c50": {
@@ -2653,7 +2664,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "1d2aa826-bfd9-4a2c-939a-adab5109c160": {
@@ -2666,7 +2677,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "8d2d3bc3-6460-4741-841a-c51b4d58b080": {
@@ -2679,7 +2690,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "3ca0b8db-40c4-4aa6-8184-f1780a5b7318": {
@@ -2692,7 +2703,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "76c7fbb4-c9d5-4662-b3fb-8d46f0d7ea79": {
@@ -2756,7 +2767,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "home-page",
               "icon": "",
@@ -2770,7 +2781,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "/collections/all",
+              "url": "\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2781,7 +2792,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "836f4dfd-342b-43ef-ad78-387fb17729d0": {
@@ -2828,7 +2839,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Pages",
-              "url": "shopify://pages/page",
+              "url": "shopify:\/\/pages\/page",
               "open_link": "_self",
               "menu": "page",
               "icon": "",
@@ -2842,7 +2853,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2856,7 +2867,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2869,7 +2880,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2909,7 +2920,7 @@
         "type": "promotion-newsletter-popup",
         "settings": {
           "use_newsletter_popup": true,
-          "bg_newsletter": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
+          "bg_newsletter": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
           "bg_color": "#cad5ca",
           "title_newslette": "Our Newsletter",
           "description": "Subscribe to the Gift of Bliss Store and get notified about exclusive offers!",
@@ -2928,7 +2939,7 @@
           "0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2": {
             "type": "message",
             "settings": {
-              "message_text": "Due to the <span>COVID-19 </span>epidemic, orders may be processed with a slight delay.",
+              "message_text": "Due to the <span>COVID-19 <\/span>epidemic, orders may be processed with a slight delay.",
               "text_link": "Shop Now",
               "btn_link": "",
               "open_link": "_blank",
@@ -2941,7 +2952,9 @@
             }
           }
         },
-        "block_order": ["0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2"],
+        "block_order": [
+          "0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2"
+        ],
         "settings": {
           "header_use_top_header": false,
           "hide_top_header_mobile": true,
@@ -2959,7 +2972,7 @@
           "c6b80bd9-0d84-4cc3-b51f-36b6f5ce00c9": {
             "type": "banner_img",
             "settings": {
-              "image_sl": "shopify://shop_images/img_about.jpg",
+              "image_sl": "shopify:\/\/shop_images\/img_about.jpg",
               "col": "12",
               "ipad_col": "12",
               "link_img": "#",
@@ -3110,7 +3123,7 @@
           "578691c6-031a-4b5b-b99d-789e9c996f59": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_1.png",
+              "image": "shopify:\/\/shop_images\/brand_1.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3118,7 +3131,7 @@
           "1fba3b0a-f03f-4191-94a5-1be0f851f0e0": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_2.png",
+              "image": "shopify:\/\/shop_images\/brand_2.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3126,7 +3139,7 @@
           "93eb0a23-07ba-41dd-8da9-752f13687d98": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_3.png",
+              "image": "shopify:\/\/shop_images\/brand_3.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3134,7 +3147,7 @@
           "573ed64e-8c05-4586-bd2a-cc5f85e8e0b2": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_4.png",
+              "image": "shopify:\/\/shop_images\/brand_4.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3142,7 +3155,7 @@
           "7d6f6d7e-fe48-4e49-8f8f-536bef309d98": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_5.png",
+              "image": "shopify:\/\/shop_images\/brand_5.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3150,7 +3163,7 @@
           "58f8a5be-3dbe-4cdb-8ad4-fc08b66d3596": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_6.png",
+              "image": "shopify:\/\/shop_images\/brand_6.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3158,7 +3171,7 @@
           "22d33cff-b917-407a-bc39-75da79068c5c": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_7.png",
+              "image": "shopify:\/\/shop_images\/brand_7.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3166,7 +3179,7 @@
           "1f3d52bd-5db3-4cc0-a4dc-01f1b38f19b0": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_8.png",
+              "image": "shopify:\/\/shop_images\/brand_8.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3185,7 +3198,7 @@
         "settings": {
           "hidden": false,
           "layout": "container",
-          "bg_brand": "shopify://shop_images/bg_brand.jpg",
+          "bg_brand": "shopify:\/\/shop_images\/bg_brand.jpg",
           "cl_bg": "#f6f7f9",
           "mg_top": 0,
           "mg_bottom": 0,
@@ -3211,7 +3224,7 @@
           "4af7bc62-46e3-4c16-9bca-2bb667ed07a3": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/our-team10.jpg",
+              "image": "shopify:\/\/shop_images\/our-team10.jpg",
               "cl": "6",
               "cl_tb": "6",
               "cl_mb": "12"
@@ -3222,7 +3235,7 @@
             "settings": {
               "title": "we create trends",
               "sub_title": "endless passion",
-              "text": "<p>It is accompanied by a case that can contain up to three different <br/>diffusers and can be used for dry storage of loose tea.</p><p>The perfect way to enjoy brewing tea on low hanging fruit to identify. <br/>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <br/>molestie consequat, vel illum dolore eu feugiat nulla facilisis. </p>",
+              "text": "<p>It is accompanied by a case that can contain up to three different <br\/>diffusers and can be used for dry storage of loose tea.<\/p><p>The perfect way to enjoy brewing tea on low hanging fruit to identify. <br\/>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <br\/>molestie consequat, vel illum dolore eu feugiat nulla facilisis. <\/p>",
               "btn_text": "Discover now",
               "link_btn": "",
               "open_link": "_blank",
@@ -3252,7 +3265,7 @@
             "type": "html",
             "settings": {
               "title": "Let Us Help You",
-              "content": "<p>If you have any question, please<br>\ncontact us at: <a href=\"mailto:%20support@example.com\">support@example.com</a></p>",
+              "content": "<p>If you have any question, please<br>\ncontact us at: <a href=\"mailto:%20support@example.com\">support@example.com<\/a><\/p>",
               "content2": "",
               "use_social": true,
               "title_social": "Social Media:",
@@ -3268,8 +3281,8 @@
             "type": "html",
             "settings": {
               "title": "Looking for Orfarm?",
-              "content": "<p>68 St. Vicent Place, Glasgow, Greater </p>\n<p>Newyork NH2012, UK.</p>",
-              "content2": "<p>Monday – Friday: <span>8:10 AM – 6:10 PM</span></p>\n<p>Saturday: <span>10:10 AM – 06:10 PM</span></p>\n<p>Sunday: <span>Close</span> </p>",
+              "content": "<p>68 St. Vicent Place, Glasgow, Greater <\/p>\n<p>Newyork NH2012, UK.<\/p>",
+              "content2": "<p>Monday – Friday: <span>8:10 AM – 6:10 PM<\/span><\/p>\n<p>Saturday: <span>10:10 AM – 06:10 PM<\/span><\/p>\n<p>Sunday: <span>Close<\/span> <\/p>",
               "use_social": false,
               "title_social": "Social Media:",
               "type_social": "2",
@@ -3322,8 +3335,8 @@
           "cl_text2": "#ffffff",
           "cl_menu_footer": "#b0afcc",
           "cl_menu_hover_footer": "#ffffff",
-          "footer_payment": "shopify://shop_images/payment_e6fefb98-71bb-44c8-85b3-0b1031f2fc2b.png",
-          "copyright_text": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM</a> all rights reserved. Powered by <a href=\"#\" title=\"#\">Alothemes.</a></p>",
+          "footer_payment": "shopify:\/\/shop_images\/payment_e6fefb98-71bb-44c8-85b3-0b1031f2fc2b.png",
+          "copyright_text": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM<\/a> all rights reserved. Powered by <a href=\"#\" title=\"#\">Alothemes.<\/a><\/p>",
           "cl_copyright_text": "#b0afcc",
           "cl_copyright_a": "#96ae00",
           "bg_line": "#484492",
@@ -3345,7 +3358,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "06df68fc-a66a-4343-b6ca-2a4c2569601a": {
@@ -3358,7 +3371,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "c3cbfb07-318b-45e1-bc89-bb13c089838a": {
@@ -3371,7 +3384,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "a2806a48-eeaa-45c3-abde-659de1da5a72": {
@@ -3384,7 +3397,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "da3a48ac-b80a-4357-851d-8d8af263756e": {
@@ -3397,7 +3410,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "715b6906-1b6a-4416-aaad-d7d9ce9943c6": {
@@ -3410,7 +3423,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "37a8e5d3-2f48-4527-a997-3fe877fa8efc": {
@@ -3423,7 +3436,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "ca2148a5-b639-4663-81b0-3ad5e5f38d5d": {
@@ -3436,7 +3449,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "8e31828a-c9b6-416a-8150-9823b38dfab7": {
@@ -3449,7 +3462,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "db794c85-5ac1-433e-b30e-e06a80f9023f": {
@@ -3462,7 +3475,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "54d44c66-ff7a-4714-b9e9-e4606373baf3": {
@@ -4048,15 +4061,15 @@
               "source": "3",
               "show_benefit_1": true,
               "icon": "icon-codesandbox",
-              "text_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M12 21.61V12.54\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M9.9306 2.48L4.59061 5.45003C3.38061 6.12003 2.39062 7.80001 2.39062 9.18001V14.83C2.39062 16.21 3.38061 17.89 4.59061 18.56L9.9306 21.53C11.0706 22.16 12.9406 22.16 14.0806 21.53L19.4206 18.56C20.6306 17.89 21.6206 16.21 21.6206 14.83V9.18001C21.6206 7.80001 20.6306 6.12003 19.4206 5.45003L14.0806 2.48C12.9306 1.84 11.0706 1.84 9.9306 2.48Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M16.9998 13.2401V9.58014L7.50977 4.1001\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M12 21.61V12.54\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M9.9306 2.48L4.59061 5.45003C3.38061 6.12003 2.39062 7.80001 2.39062 9.18001V14.83C2.39062 16.21 3.38061 17.89 4.59061 18.56L9.9306 21.53C11.0706 22.16 12.9406 22.16 14.0806 21.53L19.4206 18.56C20.6306 17.89 21.6206 16.21 21.6206 14.83V9.18001C21.6206 7.80001 20.6306 6.12003 19.4206 5.45003L14.0806 2.48C12.9306 1.84 11.0706 1.84 9.9306 2.48Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M16.9998 13.2401V9.58014L7.50977 4.1001\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title": "Free shipping apply to all <br>orders over $90",
               "show_benefit_2": true,
               "icon2": "icon-shield",
-              "text_svg2": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.4902 2.23006L5.50016 4.11006C4.35016 4.54006 3.41016 5.90006 3.41016 7.12006V14.5501C3.41016 15.7301 4.19016 17.2801 5.14016 17.9901L9.44016 21.2001C10.8502 22.2601 13.1702 22.2601 14.5802 21.2001L18.8802 17.9901C19.8302 17.2801 20.6102 15.7301 20.6102 14.5501V7.12006C20.6102 5.89006 19.6702 4.53006 18.5202 4.10006L13.5302 2.23006C12.6802 1.92006 11.3202 1.92006 10.4902 2.23006Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M9.05078 11.8702L10.6608 13.4802L14.9608 9.18018\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg2": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M10.4902 2.23006L5.50016 4.11006C4.35016 4.54006 3.41016 5.90006 3.41016 7.12006V14.5501C3.41016 15.7301 4.19016 17.2801 5.14016 17.9901L9.44016 21.2001C10.8502 22.2601 13.1702 22.2601 14.5802 21.2001L18.8802 17.9901C19.8302 17.2801 20.6102 15.7301 20.6102 14.5501V7.12006C20.6102 5.89006 19.6702 4.53006 18.5202 4.10006L13.5302 2.23006C12.6802 1.92006 11.3202 1.92006 10.4902 2.23006Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M9.05078 11.8702L10.6608 13.4802L14.9608 9.18018\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title2": "Guaranteed 100% Organic <br>from nature farms",
               "show_benefit_3": true,
               "icon3": "icon-check-circle",
-              "text_svg3": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.38086 12.0001L10.7909 14.4201L15.6209 9.58008\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M10.7509 2.44982C11.4409 1.85982 12.5709 1.85982 13.2709 2.44982L14.8509 3.80982C15.1509 4.06982 15.7109 4.27982 16.1109 4.27982H17.8109C18.8709 4.27982 19.7409 5.14982 19.7409 6.20982V7.90982C19.7409 8.29982 19.9509 8.86982 20.2109 9.16982L21.5709 10.7498C22.1609 11.4398 22.1609 12.5698 21.5709 13.2698L20.2109 14.8498C19.9509 15.1498 19.7409 15.7098 19.7409 16.1098V17.8098C19.7409 18.8698 18.8709 19.7398 17.8109 19.7398H16.1109C15.7209 19.7398 15.1509 19.9498 14.8509 20.2098L13.2709 21.5698C12.5809 22.1598 11.4509 22.1598 10.7509 21.5698L9.17086 20.2098C8.87086 19.9498 8.31086 19.7398 7.91086 19.7398H6.18086C5.12086 19.7398 4.25086 18.8698 4.25086 17.8098V16.0998C4.25086 15.7098 4.04086 15.1498 3.79086 14.8498L2.44086 13.2598C1.86086 12.5698 1.86086 11.4498 2.44086 10.7598L3.79086 9.16982C4.04086 8.86982 4.25086 8.30982 4.25086 7.91982V6.19982C4.25086 5.13982 5.12086 4.26982 6.18086 4.26982H7.91086C8.30086 4.26982 8.87086 4.05982 9.17086 3.79982L10.7509 2.44982Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg3": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M8.38086 12.0001L10.7909 14.4201L15.6209 9.58008\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10.7509 2.44982C11.4409 1.85982 12.5709 1.85982 13.2709 2.44982L14.8509 3.80982C15.1509 4.06982 15.7109 4.27982 16.1109 4.27982H17.8109C18.8709 4.27982 19.7409 5.14982 19.7409 6.20982V7.90982C19.7409 8.29982 19.9509 8.86982 20.2109 9.16982L21.5709 10.7498C22.1609 11.4398 22.1609 12.5698 21.5709 13.2698L20.2109 14.8498C19.9509 15.1498 19.7409 15.7098 19.7409 16.1098V17.8098C19.7409 18.8698 18.8709 19.7398 17.8109 19.7398H16.1109C15.7209 19.7398 15.1509 19.9498 14.8509 20.2098L13.2709 21.5698C12.5809 22.1598 11.4509 22.1598 10.7509 21.5698L9.17086 20.2098C8.87086 19.9498 8.31086 19.7398 7.91086 19.7398H6.18086C5.12086 19.7398 4.25086 18.8698 4.25086 17.8098V16.0998C4.25086 15.7098 4.04086 15.1498 3.79086 14.8498L2.44086 13.2598C1.86086 12.5698 1.86086 11.4498 2.44086 10.7598L3.79086 9.16982C4.04086 8.86982 4.25086 8.30982 4.25086 7.91982V6.19982C4.25086 5.13982 5.12086 4.26982 6.18086 4.26982H7.91086C8.30086 4.26982 8.87086 4.05982 9.17086 3.79982L10.7509 2.44982Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title3": "60 days returns if you change <br>your mind"
             }
           },
@@ -4064,7 +4077,7 @@
             "type": "promobox",
             "settings": {
               "title": "Hot deals",
-              "sub_title": "Nuts & dried <span>weekend Promo</span>",
+              "sub_title": "Nuts & dried <span>weekend Promo<\/span>",
               "content": "Everything You Need",
               "url": "#"
             }
@@ -4129,7 +4142,7 @@
           "newsletter_button_text": "Notify me",
           "signup_form_success": "We will send you an email right before we open!",
           "social": "1",
-          "copyright": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM</a> all rights reserved. Powered by <a href=\"#\" title=\"#\">alotheme</a>.</p>",
+          "copyright": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM<\/a> all rights reserved. Powered by <a href=\"#\" title=\"#\">alotheme<\/a>.<\/p>",
           "show_image": false,
           "location": "right",
           "layout": "container",
@@ -4397,7 +4410,7 @@
             "type": "btn",
             "settings": {
               "title": "Shop Men’s",
-              "btn_link": "shopify://collections/men-s",
+              "btn_link": "shopify:\/\/collections\/men-s",
               "open_link": "_blank",
               "cl_txt": "#ffffff",
               "cl_txt_hover": "#1a1a1a",
@@ -4710,30 +4723,35 @@
         "blocks": {
           "a7cf5703-f58d-4304-9260-a31926b7759d": {
             "type": "home",
-            "settings": {}
+            "settings": {
+            }
           },
           "746102d6-51b9-4e1a-bf0a-e7a380a34b6f": {
             "type": "collections",
             "settings": {
               "collection": "",
-              "btn_link": "shopify://collections"
+              "btn_link": "shopify:\/\/collections"
             }
           },
           "b8c292b1-c78e-4394-bedd-9e1fa69e8a2c": {
             "type": "cart",
-            "settings": {}
+            "settings": {
+            }
           },
           "f0f66887-2b9f-480f-ad4c-623933307c76": {
             "type": "search",
-            "settings": {}
+            "settings": {
+            }
           },
           "c77b59fb-85b6-4b30-9f5c-bb13dc2ce1fc": {
             "type": "account",
-            "settings": {}
+            "settings": {
+            }
           },
           "728b9c92-f684-4755-b78d-0376c5f14f66": {
             "type": "wishlist",
-            "settings": {}
+            "settings": {
+            }
           }
         },
         "block_order": [
@@ -4787,10 +4805,13 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         }
       },
-      "content_for_index": []
+      "content_for_index": [
+
+      ]
     },
     "Light": {
       "color_text": "#162950",
@@ -4841,10 +4862,13 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         }
       },
-      "content_for_index": []
+      "content_for_index": [
+
+      ]
     }
   }
 }
