@@ -1708,7 +1708,7 @@
           "2edb69f1-946f-44fb-9516-b508ad1dbadc": {
             "type": "mega",
             "settings": {
-              "title": "Shop",
+              "title": "Products",
               "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
@@ -1725,11 +1725,11 @@
           "link_rzB9Ax": {
             "type": "link",
             "settings": {
-              "tt_hd": "Heading",
+              "tt_hd": "Gift Boxes",
               "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "menu": "category-menu",
-              "col": "4"
+              "col": "15"
             }
           },
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
