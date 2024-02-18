@@ -863,7 +863,7 @@
         "settings": {
           "product_footbar_show_title": true,
           "product_footbar_show_price": true,
-          "product_footbar_show_reviews": true,
+          "product_footbar_show_reviews": false,
           "product_footbar_show_options": true,
           "product_footbar_show_quantity": true,
           "product_footbar_show_button_add_to_cart": true
