@@ -4,8 +4,8 @@
     "theme_name": "Sofine theme",
     "theme_author": "Alothemes",
     "theme_version": "2.0.0",
-    "theme_documentation_url": "https:\/\/shopifydocs.alothemes.com\/dukamarket",
-    "theme_support_url": "https:\/\/alothemes.com\/support\/"
+    "theme_documentation_url": "https://shopifydocs.alothemes.com/dukamarket",
+    "theme_support_url": "https://alothemes.com/support/"
   },
   {
     "name": "Generals",
@@ -865,7 +865,7 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "To offer multiple currencies on your online store, you must first [edit your store's currency formatting](https:\/\/docs.shopify.com\/support\/settings\/general\/tell-my-script-where-to-find-money-formats)."
+        "content": "To offer multiple currencies on your online store, you must first [edit your store's currency formatting](https://docs.shopify.com/support/settings/general/tell-my-script-where-to-find-money-formats)."
       },
       {
         "type": "checkbox",
@@ -895,7 +895,7 @@
         "id": "supported_currencies",
         "label": "Supported currencies",
         "default": "GBP USD EUR CAD JPY AUD CNY VND",
-        "info": "Use the country's ISO [currency code](http:\/\/www.xe.com\/iso4217.php). Separate your currency codes with a space."
+        "info": "Use the country's ISO [currency code](http://www.xe.com/iso4217.php). Separate your currency codes with a space."
       },
       {
         "type": "text",
@@ -1362,7 +1362,7 @@
         "type": "checkbox",
         "id": "product_collection_show_reviews",
         "label": "Show product reviews",
-        "info": "You have to install product reviews app. At our demo, we use a free [Product Reviews](https:\/\/apps.shopify.com\/product-reviews) app",
+        "info": "You have to install product reviews app. At our demo, we use a free [Product Reviews](https://apps.shopify.com/product-reviews) app",
         "default": true
       },
       {
@@ -1503,7 +1503,7 @@
         "type": "text",
         "id": "product_options_type_circle_color",
         "label": "Options type 'Circle color'",
-        "info": "Separator is '|'. Show product option as circle with color background. Option name should have a [CSS color value](https:\/\/www.w3schools.com\/cssref\/css_colors.asp). ",
+        "info": "Separator is '|'. Show product option as circle with color background. Option name should have a [CSS color value](https://www.w3schools.com/cssref/css_colors.asp). ",
         "default": "Color|Colour"
       },
       {
@@ -1554,7 +1554,7 @@
         "id": "use_custom_variants",
         "label": "Use Custom Variants",
         "default": false,
-        "info": "Names of colors that are not in the webiste standard color list [w3schools.com](https:\/\/www.w3schools.com\/colors\/colors_names.asp)."
+        "info": "Names of colors that are not in the webiste standard color list [w3schools.com](https://www.w3schools.com/colors/colors_names.asp)."
       },
       {
         "type": "textarea",
@@ -2302,7 +2302,7 @@
         "type": "checkbox",
         "id": "collection_info_hide_reviews",
         "label": "Show product reviews",
-        "info": "You have to install product reviews app. At our demo, we use a free [Product Reviews](https:\/\/apps.shopify.com\/product-reviews) app",
+        "info": "You have to install product reviews app. At our demo, we use a free [Product Reviews](https://apps.shopify.com/product-reviews) app",
         "default": true
       },
       {
@@ -2450,7 +2450,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Do not forget to include the snippet shipping-calculator in your cart.liquid template where you want the shipping  calculator to appear. You can get the snippet here: [shipping-calculator.liquid](https:\/\/github.com\/carolineschnapp\/shipping-calculator\/blob\/master\/shipping-calculator.liquid) ."
+        "content": "Do not forget to include the snippet shipping-calculator in your cart.liquid template where you want the shipping  calculator to appear. You can get the snippet here: [shipping-calculator.liquid](https://github.com/carolineschnapp/shipping-calculator/blob/master/shipping-calculator.liquid) ."
       }
     ]
   },
@@ -2465,8 +2465,8 @@
         "type": "text",
         "id": "newsletter_form_action",
         "label": "MailChimp form action URL",
-        "default": "https:\/\/myshopify.us1.list-manage.com\/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
-        "info": "[How to create form builder with mail chimp](https:\/\/mailchimp.com\/help\/how-the-form-builder-works\/#About_the_form_builder)."
+        "default": "https://myshopify.us1.list-manage.com/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
+        "info": "[How to create form builder with mail chimp](https://mailchimp.com/help/how-the-form-builder-works/#About_the_form_builder)."
       }
     ]
   },
@@ -2590,7 +2590,7 @@
         "type": "text",
         "id": "footer_social_facebook_link",
         "label": "Your facebook",
-        "info": "https:\/\/facebook.com\/shopify"
+        "info": "https://facebook.com/shopify"
       },
       {
         "type": "text",
@@ -2608,7 +2608,7 @@
         "type": "text",
         "id": "footer_social_twitter_link",
         "label": "Your twitter",
-        "info": "https:\/\/twitter.com\/shopify"
+        "info": "https://twitter.com/shopify"
       },
       {
         "type": "text",
@@ -2642,7 +2642,7 @@
         "type": "text",
         "id": "footer_social_instargram_link",
         "label": "Your instargram",
-        "info": "http:\/\/instagram.com\/shopify"
+        "info": "http://instagram.com/shopify"
       },
       {
         "type": "text",
@@ -2660,7 +2660,7 @@
         "type": "text",
         "id": "footer_social_pinterest_link",
         "label": "Your pinterest",
-        "info": "https:\/\/pinterest.com\/shopify"
+        "info": "https://pinterest.com/shopify"
       },
       {
         "type": "text",
@@ -2677,7 +2677,7 @@
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr",
-        "info": "http:\/\/shopify.tumblr.com"
+        "info": "http://shopify.tumblr.com"
       },
       {
         "type": "text",
@@ -2694,7 +2694,7 @@
         "type": "text",
         "id": "social_snapchat_link",
         "label": "Snapchat",
-        "info": "https:\/\/www.snapchat.com\/add\/shopify"
+        "info": "https://www.snapchat.com/add/shopify"
       },
       {
         "type": "text",
@@ -2711,7 +2711,7 @@
         "type": "text",
         "id": "social_youtube_link",
         "label": "YouTube",
-        "info": "https:\/\/www.youtube.com\/shopify"
+        "info": "https://www.youtube.com/shopify"
       },
       {
         "type": "text",
@@ -2728,7 +2728,7 @@
         "type": "text",
         "id": "social_vimeo_link",
         "label": "Vimeo",
-        "info": "https:\/\/vimeo.com\/shopify"
+        "info": "https://vimeo.com/shopify"
       },
       {
         "type": "text",
@@ -2738,14 +2738,14 @@
       },
       {
         "type": "checkbox",
-        "id": "footer_social_tiktok",
+        "id": "footer_social_tiktok_enable",
         "label": "Show social media TikTok"
       },
       {
         "type": "text",
         "id": "social_tiktok_link",
         "label": "TikTok",
-        "info": "https:\/\/www.tiktok.com\/shopify"
+        "info": "https://www.tiktok.com/shopify"
       },
       {
         "type": "text",
