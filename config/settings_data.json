@@ -4317,6 +4317,21 @@
               "h_position": "left",
               "txt_align": "left"
             }
+          },
+          "logo_footer_wgJF86": {
+            "type": "logo-footer",
+            "settings": {
+              "use_logo_footer": false,
+              "logo_max_width": 115,
+              "use_social": true,
+              "title_social": "Social Media:",
+              "type_social": "1",
+              "h_position": "left",
+              "txt_align": "left",
+              "cl": "3",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
           }
         },
         "block_order": [
@@ -4324,7 +4339,8 @@
           "menu_eJyf8Y",
           "menu_gBznMc",
           "text_J4fBYD",
-          "menu_yNTxyB"
+          "menu_yNTxyB",
+          "logo_footer_wgJF86"
         ],
         "settings": {
           "cl_bg": "#ffffff",
