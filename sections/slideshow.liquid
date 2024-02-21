@@ -53,7 +53,7 @@
                     <div class="container wrap_text">
                       <div class="wrapper_caption flex h_{{block.settings.h_position}} v_{{block.settings.v_position}} text_{{block.settings.txt_align}}">
 
-                        <div class="caption" style="background-color: rgba({{block.settings.cl_overlay | split: ',' | join: ', '}}, 0.5); backdrop-filter: blur(10px); opacity:{{block.settings.cl_opacity | times:10 }}">
+                        <div class="caption" style=" backdrop-filter: blur(3px); padding: 2rem; border-radius: 24px; opacity:{{block.settings.cl_opacity | times:10 }}">
                           <div class="outner-caption">
                             <div class="inner-caption">                            	
                               {% for block in section_blocks offset:index %}
