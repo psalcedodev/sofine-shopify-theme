@@ -1732,7 +1732,7 @@
               "open_link": "_self",
               "menu": "",
               "icon": "",
-              "cus_cl": false,
+              "cus_cl": true,
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": ""
@@ -1745,7 +1745,7 @@
               "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
-              "cus_cl": true,
+              "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": "",
