@@ -53,7 +53,7 @@
                     <div class="container wrap_text">
                       <div class="wrapper_caption flex h_{{block.settings.h_position}} v_{{block.settings.v_position}} text_{{block.settings.txt_align}}">
 
-                        <div class="caption" style="color:{{block.settings.cl_overlay}}; opacity:{{block.settings.cl_opacity | times:10 }}">
+                        <div class="caption" style="background-color: rgba({{block.settings.cl_overlay | split: ',' | join: ', '}}, 0.5); backdrop-filter: blur(10px); opacity:{{block.settings.cl_opacity | times:10 }}">
                           <div class="outner-caption">
                             <div class="inner-caption">                            	
                               {% for block in section_blocks offset:index %}
@@ -855,13 +855,31 @@
           },
           {
             "type": "range",
-            "id": "cl_opacity",
+            "id": "cl_overlay_opacity",
             "label": "Overlay opacity",
             "default": 100,
             "min": 0,
             "max": 100,
             "step": 10,
             "unit": "%"
+          }
+          {
+            "type": "range",
+            "id": "cl_overlay_padding",
+            "label": "Overlay padding",
+            "default": 100,
+            "min": 0,
+            "max": 100,
+            "step": 1,
+          }
+          {
+            "type": "range",
+            "id": "cl_overlay_radius",
+            "label": "Overlay radius",
+            "default": 100,
+            "min": 0,
+            "max": 100,
+            "step": 1,
           }
         ]
       },
