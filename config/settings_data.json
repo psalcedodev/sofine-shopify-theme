@@ -1732,7 +1732,7 @@
               "open_link": "_self",
               "menu": "",
               "icon": "",
-              "cus_cl": true,
+              "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": ""
@@ -3522,6 +3522,8 @@
           "165018826364c02d6a-0": {
             "type": "img",
             "settings": {
+              "image_sl": "shopify:\/\/shop_images\/IMG_6420-2.jpg",
+              "image_sl_mobile": "shopify:\/\/shop_images\/HIM6Small_1.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "1",
