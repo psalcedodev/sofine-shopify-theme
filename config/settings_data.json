@@ -2919,7 +2919,7 @@
       "promotion-newsletter-popup": {
         "type": "promotion-newsletter-popup",
         "settings": {
-          "use_newsletter_popup": true,
+          "use_newsletter_popup": false,
           "bg_newsletter": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
           "bg_color": "#cad5ca",
           "title_newslette": "Our Newsletter",
@@ -3529,8 +3529,8 @@
               "caption_w": "1",
               "h_position": "left",
               "v_position": "middle",
-              "txt_align": "left",
-              "cl_overlay": "#111111",
+              "txt_align": "center",
+              "cl_overlay": "#000000",
               "cl_opacity": 100
             }
           },
@@ -4004,8 +4004,8 @@
           "portrait": 1,
           "mobile": 1,
           "rows": 1,
-          "autoplay": false,
-          "speed": "900",
+          "autoplay": true,
+          "speed": "2000",
           "autoplay-Speed": "6000",
           "arrows": true,
           "fade": true,
