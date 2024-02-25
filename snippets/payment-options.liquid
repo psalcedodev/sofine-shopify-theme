@@ -1,8 +1,5 @@
-{%- liquid
-  assign pm_padding = block.settings.pm_padding
--%}
-<div id="payment-methods" class="payment-methods-section" style="padding: {{ pm_padding }};">
-  {{ pm_padding }}
+
+<div id="payment-methods" class="payment-methods-section">
   <div class="payment-methods_container">
     <ul class="payment-methods-list">
       <li class="payment-method-item">
@@ -168,6 +165,96 @@
     </ul>
   </div>
 </div>
+{%- liquid
+  assign pm_padding = block.settings.pm_padding
+-%}
+{%- capture style -%}
+  .payment-methods-section {
+    padding: {{ pm_padding }};
+  }
+
+{%- endcapture -%}
+{%- style -%}
+  .payment-methods-section {
+    width: 100%;
+  }
+  .payment-methods_container {
+    text-align: center;
+  }
+
+  .payment-methods-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .payment-method-item {
+    padding: 10px;
+  }
+{%- endstyle -%}
+{%- endcapture -%}
+{%- style -%}
+  .payment-methods-section {
+    width: 100%;
+  }
+  .payment-methods_container {
+    text-align: center;
+  }
+
+  .payment-methods-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .payment-method-item {
+    padding: 10px;
+  }
+{%- endstyle -%}
+{%- endcapture -%}
+{%- style -%}
+  .payment-methods-section {
+    width: 100%;
+  }
+  .payment-methods_container {
+    text-align: center;
+  }
+
+  .payment-methods-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .payment-method-item {
+    padding: 10px;
+  }
+{%- endstyle -%}
+{%- endcapture -%}
+{%- style -%}
+  .payment-methods-section {
+    width: 100%;
+  }
+  .payment-methods_container {
+    text-align: center;
+  }
+
+  .payment-methods-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+
+{%- endcapture -%}
 
 {%- style -%}
   .payment-methods-section {
@@ -190,3 +277,5 @@
     padding: 10px;
   }
 {%- endstyle -%}
+
+
