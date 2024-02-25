@@ -16,7 +16,7 @@
     "show_key_word": false,
     "key_word": "",
     "logo_text": "Alotheme",
-    "logo": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0_b0828f63-123d-44da-a25a-e62ad99dc07a.png",
+    "logo": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0_b0828f63-123d-44da-a25a-e62ad99dc07a.png",
     "logo_max_width": 95,
     "color_body_bg": "#ffffff",
     "color_body_text": "#666666",
@@ -125,11 +125,11 @@
     "use_custom_variants": true,
     "custom_color_variants": "black:#000",
     "name_material_1": "material-1",
-    "img_material_1": "shopify://shop_images/1.png",
+    "img_material_1": "shopify:\/\/shop_images\/1.png",
     "name_material_2": "material-2",
-    "img_material_2": "shopify://shop_images/2.png",
+    "img_material_2": "shopify:\/\/shop_images\/2.png",
     "name_material_3": "material-3",
-    "img_material_3": "shopify://shop_images/3.png",
+    "img_material_3": "shopify:\/\/shop_images\/3.png",
     "collection_fullwidth": false,
     "layout_collection": "1",
     "grid_list": "4",
@@ -165,7 +165,7 @@
     "shipping_calculator_default_country": "United States",
     "shipping_calculator_submit_button_label": "Upload",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
-    "newsletter_form_action": "https://myshopify.us1.list-manage.com/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
+    "newsletter_form_action": "https:\/\/myshopify.us1.list-manage.com\/subscribe?u=95ad0059b8584d1288d9196cc&id=bf0c692fb4",
     "tooltips_animation_type": "perspective",
     "product_hover_animation_type": "fade",
     "share_facebook": true,
@@ -176,7 +176,7 @@
     "share_telegram": false,
     "share_whatsapp": false,
     "footer_social_facebook_enable": true,
-    "footer_social_facebook_link": "https://www.facebook.com/giftofbliss",
+    "footer_social_facebook_link": "https:\/\/www.facebook.com\/giftofbliss",
     "footer_social_facebook_text": "Facebook",
     "footer_social_twitter_enable": false,
     "footer_social_twitter_link": "",
@@ -185,7 +185,7 @@
     "footer_social_google_link": "",
     "footer_social_google_text": "Google",
     "footer_social_instargram_enable": true,
-    "footer_social_instargram_link": "https://www.instagram.com/giftofblissco/",
+    "footer_social_instargram_link": "https:\/\/www.instagram.com\/giftofblissco\/",
     "footer_social_instargram_text": "Instargram",
     "footer_social_pinterest_enable": true,
     "footer_social_pinterest_link": "",
@@ -197,20 +197,20 @@
     "social_snapchat_link": "",
     "footer_social_snapchat_text": "Snapchat",
     "footer_social_youtube_enable": true,
-    "social_youtube_link": "https://www.youtube.com/channel/UCuDOmJzfwWQtqlXre2P6XrA",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCuDOmJzfwWQtqlXre2P6XrA",
     "footer_social_youtube_text": "Youtube",
     "footer_social_vimeo_enable": false,
     "social_vimeo_link": "",
     "footer_social_vimeo_text": "Vimeo",
     "footer_social_tiktok_enable": true,
-    "social_tiktok_link": "https://www.tiktok.com/@giftofbliss",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@giftofbliss",
     "footer_social_tiktok_text": "Tiktok",
     "custom_css": false,
     "global_css": "",
-    "favicon": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
-    "favicon_apple": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
-    "checkout_header_image": "shopify://shop_images/bg_breadcrum_blog.jpg",
-    "checkout_logo_image": "shopify://shop_images/logo.png",
+    "favicon": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
+    "favicon_apple": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pink_E5D8D0.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/bg_breadcrum_blog.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
@@ -320,33 +320,33 @@
     "filter_brand_title": "Brands",
     "filter_size_title": "Size",
     "filter_size_name": "XL,XXL,M,N,S,XS",
-    "filter_banner_category": "//cdn.shopify.com/s/files/1/2205/7421/files/banner21.jpg?6868281452874600976",
+    "filter_banner_category": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner21.jpg?6868281452874600976",
     "filter_banner_category_link": "#",
     "filter_title_new_product": "NEW PRODUCTS",
     "filter_collection_new_product": "",
     "filter_collection_new_product_limit": "4",
     "use_autoplay_brand_shortcode": true,
-    "about_brand_slider1": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider1": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider1_url": "#",
-    "about_brand_slider2": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider2": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider2_url": "#",
-    "about_brand_slider3": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider3": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider3_url": "#",
-    "about_brand_slider4": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider4": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider4_url": "#",
-    "about_brand_slider5": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider5": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider5_url": "#",
-    "about_brand_slider6": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider6": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider6_url": "#",
-    "about_brand_slider7": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider7": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider7_url": "#",
-    "about_brand_slider8": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider8": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider8_url": "#",
-    "about_brand_slider9": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider9": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider9_url": "#",
-    "about_brand_slider10": "//cdn.shopify.com/s/files/1/2205/7421/files/brand1.jpg?3582410778414914730",
+    "about_brand_slider10": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/brand1.jpg?3582410778414914730",
     "about_brand_slider10_url": "#",
-    "about_content_image": "//cdn.shopify.com/s/files/1/2205/7421/files/banner24.jpg?16775973811137863711",
+    "about_content_image": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner24.jpg?16775973811137863711",
     "about_title_block": "SOME WORKS ABOUT US",
     "about_content_detail": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
     "about_content_detail_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
@@ -355,23 +355,23 @@
     "about_team_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
     "about_team_name1": "Michael Jordan's",
     "about_team_desc1": "Director",
-    "about_team_photo1": "//cdn.shopify.com/s/files/1/2205/7421/files/avata1.jpg?16775973811137863711",
+    "about_team_photo1": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata1.jpg?16775973811137863711",
     "use_member_1": true,
     "about_team_name2": "Susan Mcsain",
     "about_team_desc2": "Manager",
-    "about_team_photo2": "//cdn.shopify.com/s/files/1/2205/7421/files/avata2.jpg?17157095864961728421",
+    "about_team_photo2": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata2.jpg?17157095864961728421",
     "use_member_2": true,
     "about_team_name3": "Join Smith",
     "about_team_desc3": "Ceo Founder",
-    "about_team_photo3": "//cdn.shopify.com/s/files/1/2205/7421/files/avata3.jpg?8994979638735563279",
+    "about_team_photo3": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata3.jpg?8994979638735563279",
     "use_member_3": true,
     "about_team_name4": "Ms. Clinton",
     "about_team_desc4": "Delivery Driver",
-    "about_team_photo4": "//cdn.shopify.com/s/files/1/2205/7421/files/avata4.jpg?17866946063447923058",
+    "about_team_photo4": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata4.jpg?17866946063447923058",
     "use_member_4": true,
     "about_team_name5": "Ms. Clinton",
     "about_team_desc5": "Delivery Driver",
-    "about_team_photo5": "//cdn.shopify.com/s/files/1/2205/7421/files/avata5.jpg?11036065312311386555",
+    "about_team_photo5": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/avata5.jpg?11036065312311386555",
     "use_member_5": false,
     "about_infor_title_1": "What we really do?",
     "about_infor_desc_1": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.",
@@ -382,7 +382,7 @@
     "about_infor_title_4": "Cooperate with Us!",
     "about_infor_desc_4": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,",
     "about_service_block_title": "WHAT WE CAN DO FOR YOU",
-    "about_service_title_1": "Support 24/7",
+    "about_service_title_1": "Support 24\/7",
     "about_service_content_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
     "about_service_title_2": "Best Quanlity",
     "about_service_content_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
@@ -413,11 +413,11 @@
     "desc1_item3_title_contact": "Sed ut perspiciatis unde omnis Street Name, Los Angeles",
     "right_title_block": "Get in touch",
     "use_contact_map": true,
-    "map_iframe": "<iframe width=\"2000\" height=\"400\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/search?q=1200+Beverly+Street,+Mountain+View,+CA,+United+States&key=AIzaSyCeVrTUW_JTL2UKUT0-85wiwusOJZ48yMM\" allowfullscreen=\"\"></iframe>",
+    "map_iframe": "<iframe width=\"2000\" height=\"400\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/search?q=1200+Beverly+Street,+Mountain+View,+CA,+United+States&key=AIzaSyCeVrTUW_JTL2UKUT0-85wiwusOJZ48yMM\" allowfullscreen=\"\"><\/iframe>",
     "bg_color_404": true,
     "color_404": "#e1e1e1",
     "select_home_page": "1",
-    "background_banner_collection": "//cdn.shopify.com/s/files/1/2205/7421/files/banner22.jpg",
+    "background_banner_collection": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner22.jpg",
     "collection_page_sale_title": "Hot",
     "collection_page_sale_desc": "Bestseller",
     "collection_page_new_title": "New",
@@ -443,10 +443,10 @@
     "product_page_title_second_featured_box": "MONEY BACK GUARANTEE",
     "product_page_desc_second_featured_box": "100% money back guarantee",
     "product_page_link_second_featured_box": "#",
-    "product_page_title_third_featured_box": "ONLINE SUPPORT 24/7",
-    "product_page_desc_third_featured_box": "Online support 24/7",
+    "product_page_title_third_featured_box": "ONLINE SUPPORT 24\/7",
+    "product_page_desc_third_featured_box": "Online support 24\/7",
     "product_page_link_third_featured_box": "#",
-    "product_page_banner_image": "//cdn.shopify.com/s/files/1/2205/7421/files/banner23.jpg?921035063584660721",
+    "product_page_banner_image": "\/\/cdn.shopify.com\/s\/files\/1\/2205\/7421\/files\/banner23.jpg?921035063584660721",
     "product_page_banner_image_link": "#",
     "product_page_title_best_selling": "BESTSELLER",
     "product_page_bestseller_collection": "",
@@ -494,7 +494,7 @@
     "error_title": "404 PAGE NOT FOUND",
     "error_description": "This page couldn't be found! Back to home page if you like. Please use search for help!",
     "bg_image_404": true,
-    "background_img_404": "//cdn.shopify.com/s/files/1/2087/4637/files/404.jpg?2494754347742990656",
+    "background_img_404": "\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/404.jpg?2494754347742990656",
     "type_header_base_size": "26px",
     "type_base_family": "Google_Open+Sans_400_sans",
     "type_base_size": "14px",
@@ -519,7 +519,7 @@
     "product_page_placeholder_email_to_friend": "Enter Address Here",
     "filter_tag_title": "Popular Tags",
     "enable_use_filter_tag": true,
-    "background_banner_blog": "//cdn.shopify.com/s/files/1/2087/4637/files/heading-banner.jpg?17663267177497323306",
+    "background_banner_blog": "\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/heading-banner.jpg?17663267177497323306",
     "left_address_infor": "1200 Beverly Hill. Moutain View CA 90768, United States.",
     "autoplay_team_shortcode": true,
     "use_heading_shortcode": true,
@@ -527,8 +527,8 @@
     "use_skill_shortcode": true,
     "about_skill_title": "OUR AWESOME SKILLS",
     "about_skill_desc": "Some facts about us!",
-    "about_skill_shortcode": "[skill title=\"Adobe/Photoshop\" percent=\"85%\"]\n[skill title=\"Layout/Frame\" percent=\"70%\"]\n[skill title=\"UI Design\" percent=\"90%\"]\n[skill title=\"Font/Typography\" percent=\"75%\"]",
-    "about_team_shortcode": "[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/10.jpg?13298334219951642726\" link_avatar=\"#\" name=\"John Doe\" job=\"CEO/Founder Mazano\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/3.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Christiana Q\" job=\"Art Director/Founder Mazano\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/2.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Jonathan Doe\" job=\"Senior Designer\"]\n\n[team avatar=\"https://cdn.shopify.com/s/files/1/2087/4637/files/4.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Andy Dao\" job=\"Team leader\"]",
+    "about_skill_shortcode": "[skill title=\"Adobe\/Photoshop\" percent=\"85%\"]\n[skill title=\"Layout\/Frame\" percent=\"70%\"]\n[skill title=\"UI Design\" percent=\"90%\"]\n[skill title=\"Font\/Typography\" percent=\"75%\"]",
+    "about_team_shortcode": "[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/10.jpg?13298334219951642726\" link_avatar=\"#\" name=\"John Doe\" job=\"CEO\/Founder Mazano\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/3.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Christiana Q\" job=\"Art Director\/Founder Mazano\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/2.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Jonathan Doe\" job=\"Senior Designer\"]\n\n[team avatar=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2087\/4637\/files\/4.jpg?13298334219951642726\" link_avatar=\"#\" name=\"Andy Dao\" job=\"Team leader\"]",
     "type_bold_product_titles": false,
     "color_small_button": "#ffffff",
     "color_small_button_text": "#3d4246",
@@ -549,7 +549,7 @@
             "type": "mega",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -578,7 +578,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "shopify://collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -620,7 +620,7 @@
           "b1319552-01e5-4272-a870-3892c592ae86": {
             "type": "cat",
             "settings": {
-              "image": "shopify://shop_images/img_1.png",
+              "image": "shopify:\/\/shop_images\/img_1.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "sale",
@@ -631,7 +631,7 @@
           "c490410c-525d-4806-ae6e-a35641364691": {
             "type": "cat",
             "settings": {
-              "image": "shopify://shop_images/img_2.png",
+              "image": "shopify:\/\/shop_images\/img_2.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "new",
@@ -657,7 +657,7 @@
             "type": "dropdown",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -671,7 +671,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/fashion",
+              "url": "shopify:\/\/blogs\/fashion",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -685,7 +685,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact-1",
+              "url": "shopify:\/\/pages\/contact-1",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -757,13 +757,6 @@
       "payment-options": {
         "type": "payment-options",
         "settings": {
-          "hidden": false,
-          "layout": "container",
-          "cl_bg": "#ffffff",
-          "mg": "",
-          "pd": "100px,0,100px,0",
-          "mg_mb": "",
-          "pd_mb": "50px,0,50px,0"
         }
       },
       "cart_widget": {
@@ -771,31 +764,38 @@
         "blocks": {
           "cart_widget-0": {
             "type": "price",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-1": {
             "type": "tax",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-2": {
             "type": "agree",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-3": {
             "type": "btnc",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-4": {
             "type": "btnck",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-5": {
             "type": "btnmr",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-6": {
             "type": "img",
-            "settings": {}
+            "settings": {
+            }
           },
           "cart_widget-7": {
             "type": "btn",
@@ -925,7 +925,7 @@
             "settings": {
               "title": "Search blog",
               "place_holder_search_sidebar": "Search blog",
-              "icon_search": "<i class=\"icon-search\"></i>"
+              "icon_search": "<i class=\"icon-search\"><\/i>"
             }
           },
           "431a5a5d-8c97-4c27-9b33-050b9307dcee": {
@@ -1142,7 +1142,7 @@
             "type": "item",
             "settings": {
               "shortcode_show_item": true,
-              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"/search/?section_id=1602387027386\"><div class=\"lds_bginfinity pr\"></div></div>",
+              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"\/search\/?section_id=1602387027386\"><div class=\"lds_bginfinity pr\"><\/div><\/div>",
               "shortcode_show_title": true,
               "mg": "0px,0px,0px,0px",
               "pd": "0px,0px,0px,0px"
@@ -1152,7 +1152,7 @@
             "type": "item",
             "settings": {
               "shortcode_show_item": false,
-              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"/search/?section_id=16039489369a370a93\"><div class=\"lds_bginfinity pr\"></div></div>",
+              "shortcode": "<div class=\"inc_lz inc_ins_laz\" data-include=\"\/search\/?section_id=16039489369a370a93\"><div class=\"lds_bginfinity pr\"><\/div><\/div>",
               "shortcode_show_title": true,
               "mg": "30px,0px,0px,0px",
               "pd": "0px,0px,0px,0px"
@@ -1163,7 +1163,8 @@
           "4dc77721-6150-4a24-b8c6-cae90f7f6eb9",
           "04e733b0-0ea7-4559-beab-4145208f2683"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "collection": {
         "type": "collection",
@@ -1218,12 +1219,12 @@
       "footer_5": {
         "type": "footer_5",
         "settings": {
-          "footer_logo": "shopify://shop_images/logo_5.png",
+          "footer_logo": "shopify:\/\/shop_images\/logo_5.png",
           "logo_width": 205,
           "footer_description": "Evening under, midst years third their without darkness shall creature. Of likeness, called and there spirit let two winged whose above beginning creeping air behold for firmament given make very life female. Set Saying blessed given. Own Divide fly multiply midst to beast. Have he fish you’re good signs whose. Days, moving, sixth. Us a air meat stars upon Give.",
           "footer_use_social_link": true,
           "bg": "#ffffff",
-          "image": "shopify://shop_images/background_footer.png"
+          "image": "shopify:\/\/shop_images\/background_footer.png"
         }
       },
       "service-section-home1": {
@@ -1273,7 +1274,7 @@
           "mg_left": 0,
           "title": "",
           "sub_title": "",
-          "url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
           "enable_number": false
         }
       },
@@ -1283,8 +1284,8 @@
           "6ab48ed0-1e14-4d98-bbaa-7efa16fa6c5a": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1293,8 +1294,8 @@
           "a84b6de0-c116-495f-b188-745da174cca0": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1303,8 +1304,8 @@
           "56a9acb1-eef5-42ce-97b3-a427bd580c3b": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1313,8 +1314,8 @@
           "60667878-3e15-4363-837c-f43455609ec9": {
             "type": "quote",
             "settings": {
-              "image": "shopify://shop_images/testimonial.jpg",
-              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum </p><p>lobortis nulla nec hendrerit convallis suspendisse...”</p>",
+              "image": "shopify:\/\/shop_images\/testimonial.jpg",
+              "content": "<p>“ Congue condimentum et non eu arcu sociis aenean vivamus quisque. Porta purus urna. <br\/>Massa id blandit enim cursus ante. Nec consectetuer imperdiet ipsum. Magnis rutrum tristique rutrum <\/p><p>lobortis nulla nec hendrerit convallis suspendisse...”<\/p>",
               "title": "algistino",
               "address": "Chief Operating Officer",
               "rating": 5
@@ -1337,14 +1338,14 @@
           "arrows": true,
           "dots": false,
           "infinite": false,
-          "bg_image": "shopify://shop_images/bg_testimonials2.jpg",
+          "bg_image": "shopify:\/\/shop_images\/bg_testimonials2.jpg",
           "cl_bg": "#f6f7f9"
         }
       },
       "content-404": {
         "type": "content-404",
         "settings": {
-          "bg_img_404": "shopify://shop_images/404.jpg",
+          "bg_img_404": "shopify:\/\/shop_images\/404.jpg",
           "title": "Opps! Page not found.",
           "content": "Sorry for the inconvenience. Go to our homepage or check out our latest collections."
         }
@@ -1359,7 +1360,9 @@
             }
           }
         },
-        "block_order": ["480a1ba9-2a83-40fc-9eda-0ea314a35691"],
+        "block_order": [
+          "480a1ba9-2a83-40fc-9eda-0ea314a35691"
+        ],
         "settings": {
           "hoverz": true,
           "display_type": "all",
@@ -1374,7 +1377,7 @@
             "settings": {
               "title": "Search blog",
               "place_holder_search_sidebar": "Search blog",
-              "icon_search": "<i class=\"icon-search\"></i>"
+              "icon_search": "<i class=\"icon-search\"><\/i>"
             }
           },
           "8a89b01e-d234-45b8-a6a1-7682031c230a": {
@@ -1546,7 +1549,7 @@
             "settings": {
               "icon": "fa fa-truck",
               "title": "Help Center",
-              "text": "Dedicated 24/7 Support"
+              "text": "Dedicated 24\/7 Support"
             }
           },
           "ed98dbcb-49fd-4b52-a21b-22a9910e5466": {
@@ -1572,7 +1575,7 @@
           "col_pr_tb": "6",
           "col_pr_mb": "6",
           "layout": "container",
-          "bg_image": "shopify://shop_images/bg_footer_b4a6812c-889e-4487-80a8-e5e71f31d752.png",
+          "bg_image": "shopify:\/\/shop_images\/bg_footer_b4a6812c-889e-4487-80a8-e5e71f31d752.png",
           "cl_bg": "#2d2a6e",
           "mg": "",
           "pd": "50px,0,45px",
@@ -1587,10 +1590,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_1.jpg",
+              "image": "shopify:\/\/shop_images\/about_1.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1599,10 +1602,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_2.jpg",
+              "image": "shopify:\/\/shop_images\/about_2.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1611,10 +1614,10 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/about_3.jpg",
+              "image": "shopify:\/\/shop_images\/about_3.jpg",
               "title": "Professional liability",
-              "text": "<p>There are many variations of passages lorem <br/>ipsum available, but the majority have suffer<br/>alteration in some believable.</p>",
-              "btn_title": "More info <i class=\"icon-chevrons-right\"></i>",
+              "text": "<p>There are many variations of passages lorem <br\/>ipsum available, but the majority have suffer<br\/>alteration in some believable.<\/p>",
+              "btn_title": "More info <i class=\"icon-chevrons-right\"><\/i>",
               "btn_link": "#",
               "open_link": "_blank"
             }
@@ -1712,7 +1715,7 @@
           "faq_title_page": "FAQS",
           "show_content": true,
           "faq_title": "How can we help you?",
-          "faq_desc": "<p>Returns are free for orders shipped within the U.S. We include a UPS return label in every package which is at no cost to use.</p>\n\n<p>Follow the steps below for a seamless returns process:</p>\n<ul>\n\t<li>-   Please indicate a reason for return using one of the Return Codes listed on the order form included in your package. </li>\n\t<li>-   Attach your UPS return label to the outside of the package. There is no cost to use this label.</li>\n\t<li>-   Please make note of your tracking number so that you are able to track it on its way back to us.</li>\n</ul>\n\n<p style=\"color:#c6452c;\">You will receive an email once your return has been processed. Please allow 06 - 12 business days from the time your package arrives back to us for a refund to be issued.</p>",
+          "faq_desc": "<p>Returns are free for orders shipped within the U.S. We include a UPS return label in every package which is at no cost to use.<\/p>\n\n<p>Follow the steps below for a seamless returns process:<\/p>\n<ul>\n\t<li>-   Please indicate a reason for return using one of the Return Codes listed on the order form included in your package. <\/li>\n\t<li>-   Attach your UPS return label to the outside of the package. There is no cost to use this label.<\/li>\n\t<li>-   Please make note of your tracking number so that you are able to track it on its way back to us.<\/li>\n<\/ul>\n\n<p style=\"color:#c6452c;\">You will receive an email once your return has been processed. Please allow 06 - 12 business days from the time your package arrives back to us for a refund to be issued.<\/p>",
           "show_menu": true,
           "menu_page": "menu-page"
         }
@@ -1730,7 +1733,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1744,7 +1747,7 @@
             "type": "mega",
             "settings": {
               "title": "Products",
-              "url": "shopify://collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1761,7 +1764,7 @@
             "type": "link",
             "settings": {
               "tt_hd": "Category",
-              "url": "shopify://collections/for-her",
+              "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "menu": "category-menu",
               "col": "15"
@@ -1770,7 +1773,7 @@
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
             "settings": {
-              "url": "shopify://collections/for-her",
+              "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Her",
@@ -1780,7 +1783,7 @@
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
             "settings": {
-              "url": "shopify://collections/for-him",
+              "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Him",
@@ -1806,7 +1809,7 @@
             "disabled": true,
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1820,7 +1823,7 @@
             "type": "simple",
             "settings": {
               "title": "About Us",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1833,7 +1836,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact Us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1942,7 +1945,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "",
               "icon": "",
@@ -1956,7 +1959,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "shopify://collections/all",
+              "url": "shopify:\/\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1967,7 +1970,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "a618dad2-d519-49b8-9351-ea33a6aa4deb": {
@@ -2028,7 +2031,7 @@
             "type": "dropdown",
             "settings": {
               "title": "blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2042,7 +2045,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2055,7 +2058,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2099,7 +2102,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "home-page",
               "icon": "",
@@ -2113,7 +2116,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "/collections/all",
+              "url": "\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2124,7 +2127,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "8bc3161a-ae7f-4e9d-aacc-b10140216f51": {
@@ -2151,7 +2154,7 @@
             "type": "link",
             "settings": {
               "tt_hd": "Other shop page",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "other-shop-page",
               "col": "4"
@@ -2185,7 +2188,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/uncategorized",
+              "url": "shopify:\/\/blogs\/uncategorized",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2199,7 +2202,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2212,7 +2215,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2255,7 +2258,7 @@
             "type": "mega",
             "settings": {
               "title": "Top Deals",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2305,7 +2308,7 @@
             "type": "mega",
             "settings": {
               "title": "Top Selling Products",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2341,7 +2344,7 @@
             "type": "simple",
             "settings": {
               "title": "Top Featured Products",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2354,7 +2357,7 @@
             "type": "simple",
             "settings": {
               "title": "Fruits & Vegetables",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2367,7 +2370,7 @@
             "type": "simple",
             "settings": {
               "title": "Health & Beauty",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2380,7 +2383,7 @@
             "type": "simple",
             "settings": {
               "title": "Fresh Vegetables",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2393,7 +2396,7 @@
             "type": "simple",
             "settings": {
               "title": "Fresh Meat",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2406,7 +2409,7 @@
             "type": "simple",
             "settings": {
               "title": "Package Foods",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2419,7 +2422,7 @@
             "type": "simple",
             "settings": {
               "title": "Baby & Infants",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2432,7 +2435,7 @@
             "type": "simple",
             "settings": {
               "title": "Dairy Bread & Eggs",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2476,7 +2479,7 @@
               "title": "WHAT ARE YOU LOOKING FOR?",
               "search": "Search",
               "show_icon": true,
-              "icon": "<i class=\"icon-search\"></i>"
+              "icon": "<i class=\"icon-search\"><\/i>"
             }
           },
           "mobile_menu-0": {
@@ -2487,7 +2490,7 @@
               "open_link": "_self",
               "menu": "",
               "show_icon": false,
-              "icon": "<i class=\"las la-campground\"></i>",
+              "icon": "<i class=\"las la-campground\"><\/i>",
               "lb": "",
               "lb_cl": "#fafafa"
             }
@@ -2500,7 +2503,7 @@
               "open_link": "_self",
               "menu": "category-menu",
               "show_icon": false,
-              "icon": "<i class=\"lnr lnr-store\"></i>",
+              "icon": "<i class=\"lnr lnr-store\"><\/i>",
               "lb": "",
               "lb_cl": "#d93939"
             }
@@ -2522,7 +2525,7 @@
             "type": "menu_mb",
             "settings": {
               "title": "About Us",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "menu": "",
               "show_icon": true,
@@ -2535,7 +2538,7 @@
             "type": "menu_mb",
             "settings": {
               "title": "Contact Us",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "menu": "",
               "show_icon": false,
@@ -2548,10 +2551,10 @@
             "type": "account",
             "disabled": true,
             "settings": {
-              "title": "Login / Register",
+              "title": "Login \/ Register",
               "show_icon": true,
-              "icon": "<i class=\"icon-users\"></i>",
-              "icon2": "<i class=\"icon-user-x\"></i>"
+              "icon": "<i class=\"icon-users\"><\/i>",
+              "icon2": "<i class=\"icon-user-x\"><\/i>"
             }
           }
         },
@@ -2588,7 +2591,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "4daa8953-4f85-430d-b1fe-06fbdb826464": {
@@ -2601,7 +2604,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "c82d20f7-b89b-4bf9-b24c-7c0cea68532b": {
@@ -2614,7 +2617,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "3ba529df-17fc-4b02-acb8-fc6532317d9c": {
@@ -2627,7 +2630,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "6bcb12ec-cd3e-4a65-b80b-37b6c53fc5e2": {
@@ -2640,7 +2643,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "0e09efd7-cb43-42d0-8d32-aaf6d9842e7c": {
@@ -2653,7 +2656,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "73752c23-c406-488c-944c-0c3c5ea79c50": {
@@ -2666,7 +2669,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "1d2aa826-bfd9-4a2c-939a-adab5109c160": {
@@ -2679,7 +2682,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "8d2d3bc3-6460-4741-841a-c51b4d58b080": {
@@ -2692,7 +2695,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "3ca0b8db-40c4-4aa6-8184-f1780a5b7318": {
@@ -2705,7 +2708,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "76c7fbb4-c9d5-4662-b3fb-8d46f0d7ea79": {
@@ -2769,7 +2772,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Home",
-              "url": "/",
+              "url": "\/",
               "open_link": "_self",
               "menu": "home-page",
               "icon": "",
@@ -2783,7 +2786,7 @@
             "type": "mega",
             "settings": {
               "title": "Shop",
-              "url": "/collections/all",
+              "url": "\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2794,7 +2797,7 @@
               "wid": "cus",
               "cus_wid": 800,
               "bg": "#ffffff",
-              "image": "shopify://shop_images/bg_menu.png"
+              "image": "shopify:\/\/shop_images\/bg_menu.png"
             }
           },
           "836f4dfd-342b-43ef-ad78-387fb17729d0": {
@@ -2841,7 +2844,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Pages",
-              "url": "shopify://pages/page",
+              "url": "shopify:\/\/pages\/page",
               "open_link": "_self",
               "menu": "page",
               "icon": "",
@@ -2855,7 +2858,7 @@
             "type": "dropdown",
             "settings": {
               "title": "Blog",
-              "url": "shopify://blogs/shopping",
+              "url": "shopify:\/\/blogs\/shopping",
               "open_link": "_self",
               "menu": "blog",
               "icon": "",
@@ -2869,7 +2872,7 @@
             "type": "simple",
             "settings": {
               "title": "About",
-              "url": "shopify://pages/about-us",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2882,7 +2885,7 @@
             "type": "simple",
             "settings": {
               "title": "Contact",
-              "url": "shopify://pages/contact",
+              "url": "shopify:\/\/pages\/contact",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -2922,7 +2925,7 @@
         "type": "promotion-newsletter-popup",
         "settings": {
           "use_newsletter_popup": false,
-          "bg_newsletter": "shopify://shop_images/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
+          "bg_newsletter": "shopify:\/\/shop_images\/Gift_of_Bliss_-_Website_Home_Page_Icon_Pastel_Green_C9D4C9_f9107ee9-17f3-4fcf-89b5-c04490624ea7.png",
           "bg_color": "#cad5ca",
           "title_newslette": "Our Newsletter",
           "description": "Subscribe to the Gift of Bliss Store and get notified about exclusive offers!",
@@ -2941,7 +2944,7 @@
           "0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2": {
             "type": "message",
             "settings": {
-              "message_text": "Due to the <span>COVID-19 </span>epidemic, orders may be processed with a slight delay.",
+              "message_text": "Due to the <span>COVID-19 <\/span>epidemic, orders may be processed with a slight delay.",
               "text_link": "Shop Now",
               "btn_link": "",
               "open_link": "_blank",
@@ -2954,7 +2957,9 @@
             }
           }
         },
-        "block_order": ["0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2"],
+        "block_order": [
+          "0acdf3d5-9c21-481a-b5c1-f04f5d89c1a2"
+        ],
         "settings": {
           "header_use_top_header": false,
           "hide_top_header_mobile": true,
@@ -2972,7 +2977,7 @@
           "c6b80bd9-0d84-4cc3-b51f-36b6f5ce00c9": {
             "type": "banner_img",
             "settings": {
-              "image_sl": "shopify://shop_images/img_about.jpg",
+              "image_sl": "shopify:\/\/shop_images\/img_about.jpg",
               "col": "12",
               "ipad_col": "12",
               "link_img": "#",
@@ -3123,7 +3128,7 @@
           "578691c6-031a-4b5b-b99d-789e9c996f59": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_1.png",
+              "image": "shopify:\/\/shop_images\/brand_1.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3131,7 +3136,7 @@
           "1fba3b0a-f03f-4191-94a5-1be0f851f0e0": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_2.png",
+              "image": "shopify:\/\/shop_images\/brand_2.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3139,7 +3144,7 @@
           "93eb0a23-07ba-41dd-8da9-752f13687d98": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_3.png",
+              "image": "shopify:\/\/shop_images\/brand_3.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3147,7 +3152,7 @@
           "573ed64e-8c05-4586-bd2a-cc5f85e8e0b2": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_4.png",
+              "image": "shopify:\/\/shop_images\/brand_4.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3155,7 +3160,7 @@
           "7d6f6d7e-fe48-4e49-8f8f-536bef309d98": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_5.png",
+              "image": "shopify:\/\/shop_images\/brand_5.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3163,7 +3168,7 @@
           "58f8a5be-3dbe-4cdb-8ad4-fc08b66d3596": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_6.png",
+              "image": "shopify:\/\/shop_images\/brand_6.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3171,7 +3176,7 @@
           "22d33cff-b917-407a-bc39-75da79068c5c": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_7.png",
+              "image": "shopify:\/\/shop_images\/brand_7.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3179,7 +3184,7 @@
           "1f3d52bd-5db3-4cc0-a4dc-01f1b38f19b0": {
             "type": "brand",
             "settings": {
-              "image": "shopify://shop_images/brand_8.png",
+              "image": "shopify:\/\/shop_images\/brand_8.png",
               "url": "",
               "open_link": "_blank"
             }
@@ -3198,7 +3203,7 @@
         "settings": {
           "hidden": false,
           "layout": "container",
-          "bg_brand": "shopify://shop_images/bg_brand.jpg",
+          "bg_brand": "shopify:\/\/shop_images\/bg_brand.jpg",
           "cl_bg": "#f6f7f9",
           "mg_top": 0,
           "mg_bottom": 0,
@@ -3224,7 +3229,7 @@
           "4af7bc62-46e3-4c16-9bca-2bb667ed07a3": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/our-team10.jpg",
+              "image": "shopify:\/\/shop_images\/our-team10.jpg",
               "cl": "6",
               "cl_tb": "6",
               "cl_mb": "12"
@@ -3235,7 +3240,7 @@
             "settings": {
               "title": "we create trends",
               "sub_title": "endless passion",
-              "text": "<p>It is accompanied by a case that can contain up to three different <br/>diffusers and can be used for dry storage of loose tea.</p><p>The perfect way to enjoy brewing tea on low hanging fruit to identify. <br/>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <br/>molestie consequat, vel illum dolore eu feugiat nulla facilisis. </p>",
+              "text": "<p>It is accompanied by a case that can contain up to three different <br\/>diffusers and can be used for dry storage of loose tea.<\/p><p>The perfect way to enjoy brewing tea on low hanging fruit to identify. <br\/>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <br\/>molestie consequat, vel illum dolore eu feugiat nulla facilisis. <\/p>",
               "btn_text": "Discover now",
               "link_btn": "",
               "open_link": "_blank",
@@ -3265,7 +3270,7 @@
             "type": "html",
             "settings": {
               "title": "Let Us Help You",
-              "content": "<p>If you have any question, please<br>\ncontact us at: <a href=\"mailto:%20support@example.com\">support@example.com</a></p>",
+              "content": "<p>If you have any question, please<br>\ncontact us at: <a href=\"mailto:%20support@example.com\">support@example.com<\/a><\/p>",
               "content2": "",
               "use_social": true,
               "title_social": "Social Media:",
@@ -3281,8 +3286,8 @@
             "type": "html",
             "settings": {
               "title": "Looking for Orfarm?",
-              "content": "<p>68 St. Vicent Place, Glasgow, Greater </p>\n<p>Newyork NH2012, UK.</p>",
-              "content2": "<p>Monday – Friday: <span>8:10 AM – 6:10 PM</span></p>\n<p>Saturday: <span>10:10 AM – 06:10 PM</span></p>\n<p>Sunday: <span>Close</span> </p>",
+              "content": "<p>68 St. Vicent Place, Glasgow, Greater <\/p>\n<p>Newyork NH2012, UK.<\/p>",
+              "content2": "<p>Monday – Friday: <span>8:10 AM – 6:10 PM<\/span><\/p>\n<p>Saturday: <span>10:10 AM – 06:10 PM<\/span><\/p>\n<p>Sunday: <span>Close<\/span> <\/p>",
               "use_social": false,
               "title_social": "Social Media:",
               "type_social": "2",
@@ -3335,8 +3340,8 @@
           "cl_text2": "#ffffff",
           "cl_menu_footer": "#b0afcc",
           "cl_menu_hover_footer": "#ffffff",
-          "footer_payment": "shopify://shop_images/payment_e6fefb98-71bb-44c8-85b3-0b1031f2fc2b.png",
-          "copyright_text": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM</a> all rights reserved. Powered by <a href=\"#\" title=\"#\">Alothemes.</a></p>",
+          "footer_payment": "shopify:\/\/shop_images\/payment_e6fefb98-71bb-44c8-85b3-0b1031f2fc2b.png",
+          "copyright_text": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM<\/a> all rights reserved. Powered by <a href=\"#\" title=\"#\">Alothemes.<\/a><\/p>",
           "cl_copyright_text": "#b0afcc",
           "cl_copyright_a": "#96ae00",
           "bg_line": "#484492",
@@ -3358,7 +3363,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "06df68fc-a66a-4343-b6ca-2a4c2569601a": {
@@ -3371,7 +3376,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "c3cbfb07-318b-45e1-bc89-bb13c089838a": {
@@ -3384,7 +3389,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "a2806a48-eeaa-45c3-abde-659de1da5a72": {
@@ -3397,7 +3402,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "da3a48ac-b80a-4357-851d-8d8af263756e": {
@@ -3410,7 +3415,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "715b6906-1b6a-4416-aaad-d7d9ce9943c6": {
@@ -3423,7 +3428,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "37a8e5d3-2f48-4527-a997-3fe877fa8efc": {
@@ -3436,7 +3441,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "ca2148a5-b639-4663-81b0-3ad5e5f38d5d": {
@@ -3449,7 +3454,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "8e31828a-c9b6-416a-8150-9823b38dfab7": {
@@ -3462,7 +3467,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "db794c85-5ac1-433e-b30e-e06a80f9023f": {
@@ -3475,7 +3480,7 @@
               "lb": "",
               "lb_cl": "#222222",
               "show_icon": false,
-              "icon": "<i class=\"las la-female\"></i>"
+              "icon": "<i class=\"las la-female\"><\/i>"
             }
           },
           "54d44c66-ff7a-4714-b9e9-e4606373baf3": {
@@ -3522,8 +3527,8 @@
           "165018826364c02d6a-0": {
             "type": "img",
             "settings": {
-              "image_sl": "shopify://shop_images/IMG_6420-2.jpg",
-              "image_sl_mobile": "shopify://shop_images/HIM6Small_1.jpg",
+              "image_sl": "shopify:\/\/shop_images\/IMG_6420-2.jpg",
+              "image_sl_mobile": "shopify:\/\/shop_images\/HIM6Small_1.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "1",
@@ -4063,15 +4068,15 @@
               "source": "3",
               "show_benefit_1": true,
               "icon": "icon-codesandbox",
-              "text_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M12 21.61V12.54\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M9.9306 2.48L4.59061 5.45003C3.38061 6.12003 2.39062 7.80001 2.39062 9.18001V14.83C2.39062 16.21 3.38061 17.89 4.59061 18.56L9.9306 21.53C11.0706 22.16 12.9406 22.16 14.0806 21.53L19.4206 18.56C20.6306 17.89 21.6206 16.21 21.6206 14.83V9.18001C21.6206 7.80001 20.6306 6.12003 19.4206 5.45003L14.0806 2.48C12.9306 1.84 11.0706 1.84 9.9306 2.48Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M16.9998 13.2401V9.58014L7.50977 4.1001\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M3.16992 7.43994L11.9999 12.5499L20.7699 7.46991\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M12 21.61V12.54\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M9.9306 2.48L4.59061 5.45003C3.38061 6.12003 2.39062 7.80001 2.39062 9.18001V14.83C2.39062 16.21 3.38061 17.89 4.59061 18.56L9.9306 21.53C11.0706 22.16 12.9406 22.16 14.0806 21.53L19.4206 18.56C20.6306 17.89 21.6206 16.21 21.6206 14.83V9.18001C21.6206 7.80001 20.6306 6.12003 19.4206 5.45003L14.0806 2.48C12.9306 1.84 11.0706 1.84 9.9306 2.48Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M16.9998 13.2401V9.58014L7.50977 4.1001\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title": "Free shipping apply to all <br>orders over $90",
               "show_benefit_2": true,
               "icon2": "icon-shield",
-              "text_svg2": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.4902 2.23006L5.50016 4.11006C4.35016 4.54006 3.41016 5.90006 3.41016 7.12006V14.5501C3.41016 15.7301 4.19016 17.2801 5.14016 17.9901L9.44016 21.2001C10.8502 22.2601 13.1702 22.2601 14.5802 21.2001L18.8802 17.9901C19.8302 17.2801 20.6102 15.7301 20.6102 14.5501V7.12006C20.6102 5.89006 19.6702 4.53006 18.5202 4.10006L13.5302 2.23006C12.6802 1.92006 11.3202 1.92006 10.4902 2.23006Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M9.05078 11.8702L10.6608 13.4802L14.9608 9.18018\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg2": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M10.4902 2.23006L5.50016 4.11006C4.35016 4.54006 3.41016 5.90006 3.41016 7.12006V14.5501C3.41016 15.7301 4.19016 17.2801 5.14016 17.9901L9.44016 21.2001C10.8502 22.2601 13.1702 22.2601 14.5802 21.2001L18.8802 17.9901C19.8302 17.2801 20.6102 15.7301 20.6102 14.5501V7.12006C20.6102 5.89006 19.6702 4.53006 18.5202 4.10006L13.5302 2.23006C12.6802 1.92006 11.3202 1.92006 10.4902 2.23006Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M9.05078 11.8702L10.6608 13.4802L14.9608 9.18018\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title2": "Guaranteed 100% Organic <br>from nature farms",
               "show_benefit_3": true,
               "icon3": "icon-check-circle",
-              "text_svg3": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.38086 12.0001L10.7909 14.4201L15.6209 9.58008\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M10.7509 2.44982C11.4409 1.85982 12.5709 1.85982 13.2709 2.44982L14.8509 3.80982C15.1509 4.06982 15.7109 4.27982 16.1109 4.27982H17.8109C18.8709 4.27982 19.7409 5.14982 19.7409 6.20982V7.90982C19.7409 8.29982 19.9509 8.86982 20.2109 9.16982L21.5709 10.7498C22.1609 11.4398 22.1609 12.5698 21.5709 13.2698L20.2109 14.8498C19.9509 15.1498 19.7409 15.7098 19.7409 16.1098V17.8098C19.7409 18.8698 18.8709 19.7398 17.8109 19.7398H16.1109C15.7209 19.7398 15.1509 19.9498 14.8509 20.2098L13.2709 21.5698C12.5809 22.1598 11.4509 22.1598 10.7509 21.5698L9.17086 20.2098C8.87086 19.9498 8.31086 19.7398 7.91086 19.7398H6.18086C5.12086 19.7398 4.25086 18.8698 4.25086 17.8098V16.0998C4.25086 15.7098 4.04086 15.1498 3.79086 14.8498L2.44086 13.2598C1.86086 12.5698 1.86086 11.4498 2.44086 10.7598L3.79086 9.16982C4.04086 8.86982 4.25086 8.30982 4.25086 7.91982V6.19982C4.25086 5.13982 5.12086 4.26982 6.18086 4.26982H7.91086C8.30086 4.26982 8.87086 4.05982 9.17086 3.79982L10.7509 2.44982Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+              "text_svg3": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M8.38086 12.0001L10.7909 14.4201L15.6209 9.58008\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10.7509 2.44982C11.4409 1.85982 12.5709 1.85982 13.2709 2.44982L14.8509 3.80982C15.1509 4.06982 15.7109 4.27982 16.1109 4.27982H17.8109C18.8709 4.27982 19.7409 5.14982 19.7409 6.20982V7.90982C19.7409 8.29982 19.9509 8.86982 20.2109 9.16982L21.5709 10.7498C22.1609 11.4398 22.1609 12.5698 21.5709 13.2698L20.2109 14.8498C19.9509 15.1498 19.7409 15.7098 19.7409 16.1098V17.8098C19.7409 18.8698 18.8709 19.7398 17.8109 19.7398H16.1109C15.7209 19.7398 15.1509 19.9498 14.8509 20.2098L13.2709 21.5698C12.5809 22.1598 11.4509 22.1598 10.7509 21.5698L9.17086 20.2098C8.87086 19.9498 8.31086 19.7398 7.91086 19.7398H6.18086C5.12086 19.7398 4.25086 18.8698 4.25086 17.8098V16.0998C4.25086 15.7098 4.04086 15.1498 3.79086 14.8498L2.44086 13.2598C1.86086 12.5698 1.86086 11.4498 2.44086 10.7598L3.79086 9.16982C4.04086 8.86982 4.25086 8.30982 4.25086 7.91982V6.19982C4.25086 5.13982 5.12086 4.26982 6.18086 4.26982H7.91086C8.30086 4.26982 8.87086 4.05982 9.17086 3.79982L10.7509 2.44982Z\" stroke=\"#B45353\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
               "title3": "60 days returns if you change <br>your mind"
             }
           },
@@ -4079,7 +4084,7 @@
             "type": "promobox",
             "settings": {
               "title": "Hot deals",
-              "sub_title": "Nuts & dried <span>weekend Promo</span>",
+              "sub_title": "Nuts & dried <span>weekend Promo<\/span>",
               "content": "Everything You Need",
               "url": "#"
             }
@@ -4144,7 +4149,7 @@
           "newsletter_button_text": "Notify me",
           "signup_form_success": "We will send you an email right before we open!",
           "social": "1",
-          "copyright": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM</a> all rights reserved. Powered by <a href=\"#\" title=\"#\">alotheme</a>.</p>",
+          "copyright": "<p>Copyright © <a href=\"#\" title=\"#\">ORFARM<\/a> all rights reserved. Powered by <a href=\"#\" title=\"#\">alotheme<\/a>.<\/p>",
           "show_image": false,
           "location": "right",
           "layout": "container",
@@ -4162,7 +4167,7 @@
           "165511688031d3eb34-0": {
             "type": "menu",
             "settings": {
-              "image": "shopify://shop_images/HIM1.1Medium_1.jpg",
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
               "title": "Gift For Him",
               "collection": "for-him",
               "open_link": "_self"
@@ -4171,7 +4176,7 @@
           "165511688031d3eb34-1": {
             "type": "menu",
             "settings": {
-              "image": "shopify://shop_images/HER1.1Medium.jpg",
+              "image": "shopify:\/\/shop_images\/HER1.1Medium.jpg",
               "title": "Gift for Her",
               "collection": "for-her",
               "open_link": "_self"
@@ -4180,7 +4185,7 @@
           "165511688031d3eb34-3": {
             "type": "menu",
             "settings": {
-              "image": "shopify://shop_images/TWO1.1Medium_1.jpg",
+              "image": "shopify:\/\/shop_images\/TWO1.1Medium_1.jpg",
               "title": "Gift for Two",
               "collection": "gift-for-two",
               "open_link": "_self"
@@ -4189,7 +4194,7 @@
           "165511688031d3eb34-2": {
             "type": "menu",
             "settings": {
-              "image": "shopify://shop_images/IMG_6406.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6406.jpg",
               "title": "Seasonal Gifts",
               "collection": "seasonal",
               "open_link": "_self"
@@ -4325,12 +4330,18 @@
             "type": "html",
             "settings": {
               "title": "HTML",
-              "content": "<div class=\"footer__column footer__column--info\"><div class=\"footer__payment\">\n            <span class=\"visually-hidden\">Payment methods</span>\n            <ul class=\"list list-payment\" role=\"list\">\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"pi-american_express\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\"><title id=\"pi-american_express\">American Express</title>\n<path fill=\"#000\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z\" opacity=\".07\"></path><path fill=\"#006FCF\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z\"></path><path fill=\"#FFF\" d=\"M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z\"></path><path fill=\"#006FCF\" d=\"M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z\"></path><path fill=\"#006FCF\" d=\"m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z\"></path><path fill=\"#FFF\" d=\"M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z\"></path><path fill=\"#006FCF\" d=\"m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z\"></path><path fill=\"#006FCF\" d=\"M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z\"></path></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewbox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\"><title id=\"pi-apple_pay\">Apple Pay</title>\n<path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"></path><path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"></path><g><g><path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"></path><path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"></path></g><g><path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"></path><path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"></path><path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"></path></g></g></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-diners_club\"><title id=\"pi-diners_club\">Diners Club</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path d=\"M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z\" fill=\"#3086C8\"></path></svg>\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-discover\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><title id=\"pi-discover\">Discover</title>\n<path fill=\"#000\" opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z\" fill=\"#fff\"></path><path d=\"M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z\" fill=\"#231F20\"></path><path d=\"M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z\" fill=\"url(#pi-paint0_linear)\"></path><path opacity=\".65\" d=\"M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z\" fill=\"url(#pi-paint1_linear)\"></path><path d=\"M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z\" fill=\"#231F20\"></path><path d=\"M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z\" fill=\"#231F20\"></path><path d=\"M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z\" fill=\"#F48120\"></path><defs><lineargradient id=\"pi-paint0_linear\" x1=\"21.657\" y1=\"12.275\" x2=\"19.632\" y2=\"9.104\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#F89F20\"></stop><stop offset=\".25\" stop-color=\"#F79A20\"></stop><stop offset=\".533\" stop-color=\"#F68D20\"></stop><stop offset=\".62\" stop-color=\"#F58720\"></stop><stop offset=\".723\" stop-color=\"#F48120\"></stop><stop offset=\"1\" stop-color=\"#F37521\"></stop></lineargradient><lineargradient id=\"pi-paint1_linear\" x1=\"21.338\" y1=\"12.232\" x2=\"18.378\" y2=\"6.446\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#F58720\"></stop><stop offset=\".359\" stop-color=\"#E16F27\"></stop><stop offset=\".703\" stop-color=\"#D4602C\"></stop><stop offset=\".982\" stop-color=\"#D05B2E\"></stop></lineargradient></defs></svg>\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-metapay\" viewbox=\"0 0 38 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><title id=\"pi-metapay\">Meta Pay</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\"></path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z\" fill=\"#fff\"></path><path d=\"M4.983 12.986c0 .348.076.614.176.776a.6.6 0 00.524.3c.257 0 .491-.063.943-.688.362-.5.788-1.204 1.076-1.645l.486-.747c.337-.518.728-1.095 1.176-1.486.366-.319.76-.496 1.158-.496.667 0 1.302.386 1.788 1.111.532.794.79 1.793.79 2.825 0 .613-.12 1.064-.326 1.42-.2.345-.587.688-1.238.688v-.981c.558 0 .697-.513.697-1.1 0-.836-.195-1.764-.624-2.427-.305-.47-.7-.757-1.134-.757-.47 0-.848.354-1.274.986-.226.336-.457.745-.718 1.207l-.287.508c-.576 1.02-.722 1.254-1.01 1.637-.504.672-.935.927-1.502.927-.674 0-1.1-.291-1.363-.73C4.106 13.956 4 13.486 4 12.95l.983.035z\" fill=\"#0081FB\"></path><path d=\"M4.775 10.18C5.225 9.486 5.875 9 6.622 9c.432 0 .861.128 1.31.494.49.4 1.013 1.06 1.665 2.146l.234.39c.565.94.886 1.424 1.074 1.652.242.293.411.38.631.38.558 0 .697-.512.697-1.099l.867-.027c0 .613-.12 1.064-.326 1.42-.2.345-.587.688-1.238.688-.405 0-.764-.088-1.16-.462-.306-.287-.663-.798-.937-1.257l-.816-1.363c-.41-.684-.785-1.194-1.003-1.425-.234-.249-.534-.549-1.014-.549-.388 0-.718.273-.994.69l-.837-.498z\" fill=\"url(#pi-paint0_linear_1164_3)\"></path><path d=\"M6.606 9.988c-.388 0-.718.273-.994.69-.39.588-.629 1.466-.629 2.308 0 .348.076.614.176.776l-.838.552C4.106 13.956 4 13.486 4 12.95c0-.973.267-1.987.775-2.77C5.225 9.485 5.875 9 6.622 9l-.016.988z\" fill=\"url(#pi-paint1_linear_1164_3)\"></path><path d=\"M15.01 9.191h1.138l1.933 3.498 1.934-3.498h1.112v5.747h-.928v-4.405l-1.695 3.05h-.87l-1.696-3.05v4.405h-.927V9.191zm9.023 2.143c-.665 0-1.066.5-1.162 1.12h2.258c-.046-.638-.415-1.12-1.096-1.12zm-2.081 1.474c0-1.305.843-2.254 2.097-2.254 1.234 0 1.971.937 1.971 2.323v.255h-3.148c.111.674.559 1.129 1.28 1.129.576 0 .936-.176 1.277-.497l.493.603c-.465.427-1.055.674-1.803.674-1.358 0-2.167-.99-2.167-2.233zm5.193-1.392h-.854v-.76h.854V9.402h.895v1.256h1.297v.76H28.04v1.924c0 .657.21.89.726.89.236 0 .371-.02.57-.053v.752c-.248.07-.485.102-.742.102-.966 0-1.45-.528-1.45-1.584v-2.032zm5.96.739a1.207 1.207 0 00-1.17-.788c-.766 0-1.256.543-1.256 1.428 0 .863.451 1.433 1.22 1.433.603 0 1.034-.351 1.206-.788v-1.285zM34 14.938h-.878v-.6c-.246.353-.693.703-1.417.703-1.164 0-1.941-.975-1.941-2.246 0-1.283.796-2.241 1.99-2.241.591 0 1.055.236 1.368.653v-.55H34v4.281z\" fill=\"#000000\"></path><defs><lineargradient id=\"pi-paint0_linear_1164_3\" x1=\"5.93\" y1=\"12.703\" x2=\"12.196\" y2=\"13.019\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#0064E1\"></stop><stop offset=\".4\" stop-color=\"#0064E1\"></stop><stop offset=\".83\" stop-color=\"#0073EE\"></stop><stop offset=\"1\" stop-color=\"#0082FB\"></stop></lineargradient><lineargradient id=\"pi-paint1_linear_1164_3\" x1=\"5.424\" y1=\"13.399\" x2=\"5.424\" y2=\"11.089\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#0082FB\"></stop><stop offset=\"1\" stop-color=\"#0064E0\"></stop></lineargradient></defs></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-google_pay\"><title id=\"pi-google_pay\">Google Pay</title>\n<path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\" opacity=\".07\"></path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\" fill=\"#FFF\"></path><path d=\"M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z\" fill=\"#5F6368\"></path><path d=\"M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z\" fill=\"#4285F4\"></path><path d=\"M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z\" fill=\"#34A853\"></path><path d=\"M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z\" fill=\"#FBBC04\"></path><path d=\"M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z\" fill=\"#EA4335\"></path></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-master\"><title id=\"pi-master\">Mastercard</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"></circle><circle fill=\"#F79E1B\" cx=\"23\" cy=\"12\" r=\"7\"></circle><path fill=\"#FF5F00\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path></svg>\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\"><title id=\"pi-paypal\">PayPal</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"></path><path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"></path><path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"></path></svg>\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-shopify_pay\"><title id=\"pi-shopify_pay\">Shop Pay</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\"></path><path d=\"M35.889 0C37.05 0 38 .982 38 2.182v19.636c0 1.2-.95 2.182-2.111 2.182H2.11C.95 24 0 23.018 0 21.818V2.182C0 .982.95 0 2.111 0H35.89z\" fill=\"#5A31F4\"></path><path d=\"M9.35 11.368c-1.017-.223-1.47-.31-1.47-.705 0-.372.306-.558.92-.558.54 0 .934.238 1.225.704a.079.079 0 00.104.03l1.146-.584a.082.082 0 00.032-.114c-.475-.831-1.353-1.286-2.51-1.286-1.52 0-2.464.755-2.464 1.956 0 1.275 1.15 1.597 2.17 1.82 1.02.222 1.474.31 1.474.705 0 .396-.332.582-.993.582-.612 0-1.065-.282-1.34-.83a.08.08 0 00-.107-.035l-1.143.57a.083.083 0 00-.036.111c.454.92 1.384 1.437 2.627 1.437 1.583 0 2.539-.742 2.539-1.98s-1.155-1.598-2.173-1.82v-.003zM15.49 8.855c-.65 0-1.224.232-1.636.646a.04.04 0 01-.069-.03v-2.64a.08.08 0 00-.08-.081H12.27a.08.08 0 00-.08.082v8.194a.08.08 0 00.08.082h1.433a.08.08 0 00.081-.082v-3.594c0-.695.528-1.227 1.239-1.227.71 0 1.226.521 1.226 1.227v3.594a.08.08 0 00.081.082h1.433a.08.08 0 00.081-.082v-3.594c0-1.51-.981-2.577-2.355-2.577zM20.753 8.62c-.778 0-1.507.24-2.03.588a.082.082 0 00-.027.109l.632 1.088a.08.08 0 00.11.03 2.5 2.5 0 011.318-.366c1.25 0 2.17.891 2.17 2.068 0 1.003-.736 1.745-1.669 1.745-.76 0-1.288-.446-1.288-1.077 0-.361.152-.657.548-.866a.08.08 0 00.032-.113l-.596-1.018a.08.08 0 00-.098-.035c-.799.299-1.359 1.018-1.359 1.984 0 1.46 1.152 2.55 2.76 2.55 1.877 0 3.227-1.313 3.227-3.195 0-2.018-1.57-3.492-3.73-3.492zM28.675 8.843c-.724 0-1.373.27-1.845.746-.026.027-.069.007-.069-.029v-.572a.08.08 0 00-.08-.082h-1.397a.08.08 0 00-.08.082v8.182a.08.08 0 00.08.081h1.433a.08.08 0 00.081-.081v-2.683c0-.036.043-.054.069-.03a2.6 2.6 0 001.808.7c1.682 0 2.993-1.373 2.993-3.157s-1.313-3.157-2.993-3.157zm-.271 4.929c-.956 0-1.681-.768-1.681-1.783s.723-1.783 1.681-1.783c.958 0 1.68.755 1.68 1.783 0 1.027-.713 1.783-1.681 1.783h.001z\" fill=\"#fff\"></path></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"pi-venmo\"><title id=\"pi-venmo\">Venmo</title>\n<g fill=\"none\" fill-rule=\"evenodd\"><rect fill-opacity=\".07\" fill=\"#000\" width=\"38\" height=\"24\" rx=\"3\"></rect><path fill=\"#3D95CE\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path d=\"M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z\" fill=\"#FFF\" fill-rule=\"nonzero\"></path></g></svg>\n\n                </li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-visa\"><title id=\"pi-visa\">Visa</title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path d=\"M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z\" fill=\"#142688\"></path></svg>\n                </li>\n</ul>\n          </div></div>",
+              "content": "<div class=\"footer__column footer__column--info\"><div class=\"footer__payment\">\n            <span class=\"visually-hidden\">Payment methods<\/span>\n            <ul class=\"list list-payment\" role=\"list\">\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" aria-labelledby=\"pi-american_express\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\"><title id=\"pi-american_express\">American Express<\/title>\n<path fill=\"#000\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z\" opacity=\".07\"><\/path><path fill=\"#006FCF\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z\"><\/path><path fill=\"#FFF\" d=\"M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z\"><\/path><path fill=\"#006FCF\" d=\"M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z\"><\/path><path fill=\"#006FCF\" d=\"m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z\"><\/path><path fill=\"#FFF\" d=\"M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z\"><\/path><path fill=\"#006FCF\" d=\"m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z\"><\/path><path fill=\"#006FCF\" d=\"M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z\"><\/path><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewbox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\"><title id=\"pi-apple_pay\">Apple Pay<\/title>\n<path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"><\/path><path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"><\/path><g><g><path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"><\/path><path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"><\/path><\/g><g><path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"><\/path><path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"><\/path><path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"><\/path><\/g><\/g><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-diners_club\"><title id=\"pi-diners_club\">Diners Club<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"><\/path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"><\/path><path d=\"M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z\" fill=\"#3086C8\"><\/path><\/svg>\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-discover\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><title id=\"pi-discover\">Discover<\/title>\n<path fill=\"#000\" opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"><\/path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z\" fill=\"#fff\"><\/path><path d=\"M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z\" fill=\"#231F20\"><\/path><path d=\"M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z\" fill=\"url(#pi-paint0_linear)\"><\/path><path opacity=\".65\" d=\"M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z\" fill=\"url(#pi-paint1_linear)\"><\/path><path d=\"M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z\" fill=\"#231F20\"><\/path><path d=\"M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z\" fill=\"#231F20\"><\/path><path d=\"M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z\" fill=\"#F48120\"><\/path><defs><lineargradient id=\"pi-paint0_linear\" x1=\"21.657\" y1=\"12.275\" x2=\"19.632\" y2=\"9.104\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#F89F20\"><\/stop><stop offset=\".25\" stop-color=\"#F79A20\"><\/stop><stop offset=\".533\" stop-color=\"#F68D20\"><\/stop><stop offset=\".62\" stop-color=\"#F58720\"><\/stop><stop offset=\".723\" stop-color=\"#F48120\"><\/stop><stop offset=\"1\" stop-color=\"#F37521\"><\/stop><\/lineargradient><lineargradient id=\"pi-paint1_linear\" x1=\"21.338\" y1=\"12.232\" x2=\"18.378\" y2=\"6.446\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#F58720\"><\/stop><stop offset=\".359\" stop-color=\"#E16F27\"><\/stop><stop offset=\".703\" stop-color=\"#D4602C\"><\/stop><stop offset=\".982\" stop-color=\"#D05B2E\"><\/stop><\/lineargradient><\/defs><\/svg>\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-metapay\" viewbox=\"0 0 38 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><title id=\"pi-metapay\">Meta Pay<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\"><\/path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z\" fill=\"#fff\"><\/path><path d=\"M4.983 12.986c0 .348.076.614.176.776a.6.6 0 00.524.3c.257 0 .491-.063.943-.688.362-.5.788-1.204 1.076-1.645l.486-.747c.337-.518.728-1.095 1.176-1.486.366-.319.76-.496 1.158-.496.667 0 1.302.386 1.788 1.111.532.794.79 1.793.79 2.825 0 .613-.12 1.064-.326 1.42-.2.345-.587.688-1.238.688v-.981c.558 0 .697-.513.697-1.1 0-.836-.195-1.764-.624-2.427-.305-.47-.7-.757-1.134-.757-.47 0-.848.354-1.274.986-.226.336-.457.745-.718 1.207l-.287.508c-.576 1.02-.722 1.254-1.01 1.637-.504.672-.935.927-1.502.927-.674 0-1.1-.291-1.363-.73C4.106 13.956 4 13.486 4 12.95l.983.035z\" fill=\"#0081FB\"><\/path><path d=\"M4.775 10.18C5.225 9.486 5.875 9 6.622 9c.432 0 .861.128 1.31.494.49.4 1.013 1.06 1.665 2.146l.234.39c.565.94.886 1.424 1.074 1.652.242.293.411.38.631.38.558 0 .697-.512.697-1.099l.867-.027c0 .613-.12 1.064-.326 1.42-.2.345-.587.688-1.238.688-.405 0-.764-.088-1.16-.462-.306-.287-.663-.798-.937-1.257l-.816-1.363c-.41-.684-.785-1.194-1.003-1.425-.234-.249-.534-.549-1.014-.549-.388 0-.718.273-.994.69l-.837-.498z\" fill=\"url(#pi-paint0_linear_1164_3)\"><\/path><path d=\"M6.606 9.988c-.388 0-.718.273-.994.69-.39.588-.629 1.466-.629 2.308 0 .348.076.614.176.776l-.838.552C4.106 13.956 4 13.486 4 12.95c0-.973.267-1.987.775-2.77C5.225 9.485 5.875 9 6.622 9l-.016.988z\" fill=\"url(#pi-paint1_linear_1164_3)\"><\/path><path d=\"M15.01 9.191h1.138l1.933 3.498 1.934-3.498h1.112v5.747h-.928v-4.405l-1.695 3.05h-.87l-1.696-3.05v4.405h-.927V9.191zm9.023 2.143c-.665 0-1.066.5-1.162 1.12h2.258c-.046-.638-.415-1.12-1.096-1.12zm-2.081 1.474c0-1.305.843-2.254 2.097-2.254 1.234 0 1.971.937 1.971 2.323v.255h-3.148c.111.674.559 1.129 1.28 1.129.576 0 .936-.176 1.277-.497l.493.603c-.465.427-1.055.674-1.803.674-1.358 0-2.167-.99-2.167-2.233zm5.193-1.392h-.854v-.76h.854V9.402h.895v1.256h1.297v.76H28.04v1.924c0 .657.21.89.726.89.236 0 .371-.02.57-.053v.752c-.248.07-.485.102-.742.102-.966 0-1.45-.528-1.45-1.584v-2.032zm5.96.739a1.207 1.207 0 00-1.17-.788c-.766 0-1.256.543-1.256 1.428 0 .863.451 1.433 1.22 1.433.603 0 1.034-.351 1.206-.788v-1.285zM34 14.938h-.878v-.6c-.246.353-.693.703-1.417.703-1.164 0-1.941-.975-1.941-2.246 0-1.283.796-2.241 1.99-2.241.591 0 1.055.236 1.368.653v-.55H34v4.281z\" fill=\"#000000\"><\/path><defs><lineargradient id=\"pi-paint0_linear_1164_3\" x1=\"5.93\" y1=\"12.703\" x2=\"12.196\" y2=\"13.019\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#0064E1\"><\/stop><stop offset=\".4\" stop-color=\"#0064E1\"><\/stop><stop offset=\".83\" stop-color=\"#0073EE\"><\/stop><stop offset=\"1\" stop-color=\"#0082FB\"><\/stop><\/lineargradient><lineargradient id=\"pi-paint1_linear_1164_3\" x1=\"5.424\" y1=\"13.399\" x2=\"5.424\" y2=\"11.089\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#0082FB\"><\/stop><stop offset=\"1\" stop-color=\"#0064E0\"><\/stop><\/lineargradient><\/defs><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-google_pay\"><title id=\"pi-google_pay\">Google Pay<\/title>\n<path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\" opacity=\".07\"><\/path><path d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\" fill=\"#FFF\"><\/path><path d=\"M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z\" fill=\"#5F6368\"><\/path><path d=\"M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z\" fill=\"#4285F4\"><\/path><path d=\"M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z\" fill=\"#34A853\"><\/path><path d=\"M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z\" fill=\"#FBBC04\"><\/path><path d=\"M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z\" fill=\"#EA4335\"><\/path><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-master\"><title id=\"pi-master\">Mastercard<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"><\/path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"><\/path><circle fill=\"#EB001B\" cx=\"15\" cy=\"12\" r=\"7\"><\/circle><circle fill=\"#F79E1B\" cx=\"23\" cy=\"12\" r=\"7\"><\/circle><path fill=\"#FF5F00\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"><\/path><\/svg>\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\"><title id=\"pi-paypal\">PayPal<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"><\/path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"><\/path><path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"><\/path><path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"><\/path><path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"><\/path><\/svg>\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" aria-labelledby=\"pi-shopify_pay\"><title id=\"pi-shopify_pay\">Shop Pay<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" fill=\"#000\"><\/path><path d=\"M35.889 0C37.05 0 38 .982 38 2.182v19.636c0 1.2-.95 2.182-2.111 2.182H2.11C.95 24 0 23.018 0 21.818V2.182C0 .982.95 0 2.111 0H35.89z\" fill=\"#5A31F4\"><\/path><path d=\"M9.35 11.368c-1.017-.223-1.47-.31-1.47-.705 0-.372.306-.558.92-.558.54 0 .934.238 1.225.704a.079.079 0 00.104.03l1.146-.584a.082.082 0 00.032-.114c-.475-.831-1.353-1.286-2.51-1.286-1.52 0-2.464.755-2.464 1.956 0 1.275 1.15 1.597 2.17 1.82 1.02.222 1.474.31 1.474.705 0 .396-.332.582-.993.582-.612 0-1.065-.282-1.34-.83a.08.08 0 00-.107-.035l-1.143.57a.083.083 0 00-.036.111c.454.92 1.384 1.437 2.627 1.437 1.583 0 2.539-.742 2.539-1.98s-1.155-1.598-2.173-1.82v-.003zM15.49 8.855c-.65 0-1.224.232-1.636.646a.04.04 0 01-.069-.03v-2.64a.08.08 0 00-.08-.081H12.27a.08.08 0 00-.08.082v8.194a.08.08 0 00.08.082h1.433a.08.08 0 00.081-.082v-3.594c0-.695.528-1.227 1.239-1.227.71 0 1.226.521 1.226 1.227v3.594a.08.08 0 00.081.082h1.433a.08.08 0 00.081-.082v-3.594c0-1.51-.981-2.577-2.355-2.577zM20.753 8.62c-.778 0-1.507.24-2.03.588a.082.082 0 00-.027.109l.632 1.088a.08.08 0 00.11.03 2.5 2.5 0 011.318-.366c1.25 0 2.17.891 2.17 2.068 0 1.003-.736 1.745-1.669 1.745-.76 0-1.288-.446-1.288-1.077 0-.361.152-.657.548-.866a.08.08 0 00.032-.113l-.596-1.018a.08.08 0 00-.098-.035c-.799.299-1.359 1.018-1.359 1.984 0 1.46 1.152 2.55 2.76 2.55 1.877 0 3.227-1.313 3.227-3.195 0-2.018-1.57-3.492-3.73-3.492zM28.675 8.843c-.724 0-1.373.27-1.845.746-.026.027-.069.007-.069-.029v-.572a.08.08 0 00-.08-.082h-1.397a.08.08 0 00-.08.082v8.182a.08.08 0 00.08.081h1.433a.08.08 0 00.081-.081v-2.683c0-.036.043-.054.069-.03a2.6 2.6 0 001.808.7c1.682 0 2.993-1.373 2.993-3.157s-1.313-3.157-2.993-3.157zm-.271 4.929c-.956 0-1.681-.768-1.681-1.783s.723-1.783 1.681-1.783c.958 0 1.68.755 1.68 1.783 0 1.027-.713 1.783-1.681 1.783h.001z\" fill=\"#fff\"><\/path><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" width=\"38\" height=\"24\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" aria-labelledby=\"pi-venmo\"><title id=\"pi-venmo\">Venmo<\/title>\n<g fill=\"none\" fill-rule=\"evenodd\"><rect fill-opacity=\".07\" fill=\"#000\" width=\"38\" height=\"24\" rx=\"3\"><\/rect><path fill=\"#3D95CE\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"><\/path><path d=\"M24.675 8.36c0 3.064-2.557 7.045-4.633 9.84h-4.74L13.4 6.57l4.151-.402 1.005 8.275c.94-1.566 2.099-4.025 2.099-5.702 0-.918-.154-1.543-.394-2.058l3.78-.783c.437.738.634 1.499.634 2.46z\" fill=\"#FFF\" fill-rule=\"nonzero\"><\/path><\/g><\/svg>\n\n                <\/li>\n<li class=\"list-payment__item\">\n                  <svg class=\"icon icon--full-color\" viewbox=\"0 0 38 24\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" role=\"img\" width=\"38\" height=\"24\" aria-labelledby=\"pi-visa\"><title id=\"pi-visa\">Visa<\/title>\n<path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"><\/path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"><\/path><path d=\"M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z\" fill=\"#142688\"><\/path><\/svg>\n                <\/li>\n<\/ul>\n          <\/div><\/div>",
               "h_position": "left",
               "txt_align": "left",
               "cl": "3",
               "cl_tb": "6",
               "cl_mb": "12"
+            }
+          },
+          "payment_method_7d4DHm": {
+            "type": "payment-method",
+            "settings": {
+              "use_logo_footer": false
             }
           }
         },
@@ -4341,7 +4352,8 @@
           "text_J4fBYD",
           "menu_yNTxyB",
           "logo_footer_wgJF86",
-          "html_CTzN3W"
+          "html_CTzN3W",
+          "payment_method_7d4DHm"
         ],
         "settings": {
           "cl_bg": "#ffffff",
@@ -4384,7 +4396,7 @@
           "1658307745143d6710-0": {
             "type": "banner_img",
             "settings": {
-              "image_sl": "shopify://shop_images/young-woman-spreading-her-arms-in-autumn-breeze.jpg",
+              "image_sl": "shopify:\/\/shop_images\/young-woman-spreading-her-arms-in-autumn-breeze.jpg",
               "link_img": "",
               "open_link": "_blank",
               "h_position": "center",
@@ -4428,7 +4440,7 @@
             "type": "btn",
             "settings": {
               "title": "Shop Gifts for Her",
-              "btn_link": "shopify://collections/for-her",
+              "btn_link": "shopify:\/\/collections\/for-her",
               "open_link": "_blank",
               "cl_txt": "#ffffff",
               "cl_txt_hover": "#1a1a1a",
@@ -4476,7 +4488,7 @@
           "16583088371ba79d2b-0": {
             "type": "banner",
             "settings": {
-              "image": "shopify://shop_images/IMG_5885-Enhanced-NR.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_5885-Enhanced-NR.jpg",
               "link_img": "#",
               "hidden_content": false,
               "c_style": "1",
@@ -4496,7 +4508,7 @@
           "f4775f7e-188b-49fb-8804-460572fafd5e": {
             "type": "banner",
             "settings": {
-              "image": "shopify://shop_images/HIM1.1Medium_1.jpg",
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
               "link_img": "#",
               "hidden_content": false,
               "c_style": "1",
@@ -4675,30 +4687,35 @@
         "blocks": {
           "a7cf5703-f58d-4304-9260-a31926b7759d": {
             "type": "home",
-            "settings": {}
+            "settings": {
+            }
           },
           "746102d6-51b9-4e1a-bf0a-e7a380a34b6f": {
             "type": "collections",
             "settings": {
               "collection": "",
-              "btn_link": "shopify://collections"
+              "btn_link": "shopify:\/\/collections"
             }
           },
           "b8c292b1-c78e-4394-bedd-9e1fa69e8a2c": {
             "type": "cart",
-            "settings": {}
+            "settings": {
+            }
           },
           "f0f66887-2b9f-480f-ad4c-623933307c76": {
             "type": "search",
-            "settings": {}
+            "settings": {
+            }
           },
           "c77b59fb-85b6-4b30-9f5c-bb13dc2ce1fc": {
             "type": "account",
-            "settings": {}
+            "settings": {
+            }
           },
           "728b9c92-f684-4755-b78d-0376c5f14f66": {
             "type": "wishlist",
-            "settings": {}
+            "settings": {
+            }
           }
         },
         "block_order": [
@@ -4751,10 +4768,13 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         }
       },
-      "content_for_index": []
+      "content_for_index": [
+
+      ]
     },
     "Light": {
       "color_text": "#162950",
@@ -4805,10 +4825,13 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         }
       },
-      "content_for_index": []
+      "content_for_index": [
+
+      ]
     }
   }
 }
