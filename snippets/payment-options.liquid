@@ -164,22 +164,11 @@
     </ul>
   </div>
 </div>
-{%- liquid
-  assign pm_padding = block.settings.pm_padding
--%}
-{%- liquid
-  assign pm_padding = block.settings.pm_padding
--%}
-{%- capture style -%}
+{%- assign pm_padding = section.settings.pm_padding | default: '20px' -%}
+
+<style>
   .payment-methods-section {
     padding: {{ pm_padding }};
-  }
-
-{%- endcapture -%}
-{%- style -%}{{ style | strip_newlines | remove:"  "}}{%- endstyle -%}
-
-{%- style -%}
-  .payment-methods-section {
     width: 100%;
   }
   .payment-methods_container {
@@ -198,4 +187,4 @@
   .payment-method-item {
     padding: 10px;
   }
-{%- endstyle -%}
+</style>
