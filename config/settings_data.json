@@ -754,6 +754,18 @@
           "txt2": "Verified"
         }
       },
+      "payment-options": {
+        "type": "payment-options",
+        "settings": {
+          "hidden": false,
+          "layout": "container",
+          "cl_bg": "#ffffff",
+          "mg": "",
+          "pd": "100px,0,100px,0",
+          "mg_mb": "",
+          "pd_mb": "50px,0,50px,0"
+        }
+      },
       "cart_widget": {
         "type": "cart_widget",
         "blocks": {
@@ -3238,18 +3250,6 @@
           "d78cd737-a9ad-41bb-a948-e354ccb6bcfd"
         ],
         "settings": {
-          "layout": "container",
-          "cl_bg": "#ffffff",
-          "mg": "",
-          "pd": "100px,0,100px,0",
-          "mg_mb": "",
-          "pd_mb": "50px,0,50px,0"
-        }
-      },
-      "payment-options": {
-        "type": "payment-options",
-        "settings": {
-          "hidden": false,
           "layout": "container",
           "cl_bg": "#ffffff",
           "mg": "",
