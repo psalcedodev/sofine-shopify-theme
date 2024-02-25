@@ -139,7 +139,9 @@
             </div>
 
           {%- when 'payment-method' -%}
-            {% render 'payment-options' %}
+            <div style="padding: {{ block.settings.pm_padding }}">
+              {% render 'payment-options' %}
+            </div>
           {%- when 'logo-footer' -%}
             <div
               class="footer-iteam col-lg-{{block.settings.cl}} col-md-{{block.settings.cl_tb}} col-{{block.settings.cl_mb}} flex h_{{block.settings.h_position}} text_{{block.settings.txt_align}}"
