@@ -4162,48 +4162,36 @@
           "165511688031d3eb34-0": {
             "type": "menu",
             "settings": {
-              "title": "Accessories",
-              "collection": "accessories",
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
+              "title": "Gift For Him",
+              "collection": "for-him",
               "open_link": "_self"
             }
           },
           "165511688031d3eb34-1": {
             "type": "menu",
             "settings": {
-              "title": "Backpacks",
-              "collection": "backpacks",
-              "open_link": "_self"
-            }
-          },
-          "165511688031d3eb34-2": {
-            "type": "menu",
-            "settings": {
-              "title": "Men’s",
-              "collection": "men-s",
+              "image": "shopify:\/\/shop_images\/HER1.1Medium.jpg",
+              "title": "Gift for Her",
+              "collection": "for-her",
               "open_link": "_self"
             }
           },
           "165511688031d3eb34-3": {
             "type": "menu",
             "settings": {
-              "title": "Shirts",
-              "collection": "shirts",
+              "image": "shopify:\/\/shop_images\/TWO1.1Medium_1.jpg",
+              "title": "Gift for Two",
+              "collection": "gift-for-two",
               "open_link": "_self"
             }
           },
-          "165511688031d3eb34-4": {
+          "165511688031d3eb34-2": {
             "type": "menu",
             "settings": {
-              "title": "Shoes",
-              "collection": "shoes",
-              "open_link": "_self"
-            }
-          },
-          "165511688031d3eb34-5": {
-            "type": "menu",
-            "settings": {
-              "title": "Sunglass",
-              "collection": "sunglass",
+              "image": "shopify:\/\/shop_images\/IMG_6406.jpg",
+              "title": "Seasonal Gifts",
+              "collection": "seasonal",
               "open_link": "_self"
             }
           }
@@ -4211,10 +4199,8 @@
         "block_order": [
           "165511688031d3eb34-0",
           "165511688031d3eb34-1",
-          "165511688031d3eb34-2",
           "165511688031d3eb34-3",
-          "165511688031d3eb34-4",
-          "165511688031d3eb34-5"
+          "165511688031d3eb34-2"
         ],
         "settings": {
           "title": "",
