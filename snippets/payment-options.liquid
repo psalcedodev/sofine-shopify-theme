@@ -164,9 +164,9 @@
     </ul>
   </div>
 </div>
-{%- assign pm_padding = section.settings.pm_padding | default: '20px' -%}
+{%- assign pm_padding = block.settings.pm_padding | default: '20px' -%}
 
-{%- capture style -%}
+<style>
   .payment-methods-section {
     width: 100%;
     padding: {{ pm_padding }};
@@ -187,6 +187,4 @@
   .payment-method-item {
     padding: 10px;
   }
-{%- endcapture -%}
-
-{{ style | strip_newlines }}
+</style>
