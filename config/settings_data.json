@@ -758,9 +758,6 @@
         "type": "payment-options",
         "settings": {}
       },
-      "copyright-section": {
-        "type": "copyright-section"
-      },
       "cart_widget": {
         "type": "cart_widget",
         "blocks": {
