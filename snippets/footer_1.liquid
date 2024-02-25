@@ -139,7 +139,7 @@
             </div>
 
           {%- when 'payment-method' -%}
-            Hello my name is payment-method
+            {% render 'payment-options' %}
           {%- when 'logo-footer' -%}
             <div
               class="footer-iteam col-lg-{{block.settings.cl}} col-md-{{block.settings.cl_tb}} col-{{block.settings.cl_mb}} flex h_{{block.settings.h_position}} text_{{block.settings.txt_align}}"
