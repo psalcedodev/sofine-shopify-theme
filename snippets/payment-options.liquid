@@ -1,8 +1,4 @@
-{%- liquid
-  assign sid = section.id
-%}
-
-<div id="payment-methods_{{sid}}" class="payment-methods-section">
+<div id="payment-methods" class="payment-methods-section">
   <div class="container">
     <ul class="payment-methods-list">
       <li class="payment-method-item">
@@ -187,35 +183,3 @@
     padding: 10px;
   }
 {%- endstyle -%}
-
-{% schema %}
-{
-  "name": "Payment Methods",
-  "class": "payment-methods-section",
-  "max_blocks": 10,
-  "blocks": [
-    {
-      "type": "payment_method",
-      "name": "Payment Method",
-      "settings": [
-        {
-          "id": "icon",
-          "type": "image_picker",
-          "label": "Payment Method Icon"
-        },
-        {
-          "id": "alt_text",
-          "type": "text",
-          "label": "Alternative Text"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Payment Methods",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
