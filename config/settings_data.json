@@ -4341,7 +4341,7 @@
           "payment_method_7d4DHm": {
             "type": "payment-method",
             "settings": {
-              "use_logo_footer": false
+              "pm_padding": "222px"
             }
           }
         },
