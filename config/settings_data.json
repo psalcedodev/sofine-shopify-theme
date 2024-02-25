@@ -4395,7 +4395,7 @@
           "cedc27be-aad9-4abd-9353-707a34373391": {
             "type": "hd",
             "settings": {
-              "title": "Flash Sale off 70%",
+              "title": "International Women's Day - 15% OFF",
               "color": "#1a1a1a",
               "fw_text": 700,
               "fs_text": 64,
@@ -4411,7 +4411,7 @@
           "81fe59ac-0813-4dbf-a01d-e268c0079d69": {
             "type": "txt",
             "settings": {
-              "title": "Intelligentsia migas next level 90s woke ramps",
+              "title": "On Gift for Her Boxes!",
               "color": "#444444",
               "fw_text": 400,
               "fs_text": 20,
@@ -4426,34 +4426,8 @@
           "6e801c18-5a32-43e0-98cb-3547e91598f1": {
             "type": "btn",
             "settings": {
-              "title": "Shop Men’s",
-              "btn_link": "shopify:\/\/collections\/men-s",
-              "open_link": "_blank",
-              "cl_txt": "#ffffff",
-              "cl_txt_hover": "#1a1a1a",
-              "cl_bg": "#1a1a1a",
-              "cl_bg_hover": "#ffffff",
-              "cl_border": "#1a1a1a",
-              "cl_border_hover": "#ffffff",
-              "fs_text": 16,
-              "fw_text": 700,
-              "button_transform": "none",
-              "br_button": "3px 3px",
-              "mg": "0px 5px 0px 5px",
-              "pd": "15px 40px 15px 40px",
-              "icon_button": "",
-              "ls_text": 0,
-              "mobile_font_text": 12,
-              "mobile_mg_bottom": 0,
-              "mobile_mg": "0px 5px 0px 5px",
-              "mobile_pd": "10px 20px 10px 20px"
-            }
-          },
-          "f112a17d-b4ea-4b41-8ca3-11329f7d85fa": {
-            "type": "btn",
-            "settings": {
-              "title": "Shop Women’s",
-              "btn_link": "",
+              "title": "Shop Gifts for Her",
+              "btn_link": "shopify:\/\/collections\/for-her",
               "open_link": "_blank",
               "cl_txt": "#ffffff",
               "cl_txt_hover": "#1a1a1a",
@@ -4480,8 +4454,7 @@
           "1658307745143d6710-0",
           "cedc27be-aad9-4abd-9353-707a34373391",
           "81fe59ac-0813-4dbf-a01d-e268c0079d69",
-          "6e801c18-5a32-43e0-98cb-3547e91598f1",
-          "f112a17d-b4ea-4b41-8ca3-11329f7d85fa"
+          "6e801c18-5a32-43e0-98cb-3547e91598f1"
         ],
         "settings": {
           "use_custom_h": "1",
@@ -4502,14 +4475,15 @@
           "16583088371ba79d2b-0": {
             "type": "banner",
             "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_5885-Enhanced-NR.jpg",
               "link_img": "#",
               "hidden_content": false,
               "c_style": "1",
-              "title": "New in hand-picked daily",
+              "title": "Amazing curated Gift Boxes!",
               "cl_title": "#1a1a1a",
-              "content": "From the world’s best brands and boutiques.",
+              "content": "Blissful, Elegant Custom Gift Boxes for Every Occasion",
               "cl_content": "#666666",
-              "btn": "Discover",
+              "btn": "Shop Now",
               "cl_btn": "#1a1a1a",
               "bg_btn": "#ffffff",
               "cl_btn_hover": "#ffffff",
@@ -4598,6 +4572,7 @@
       },
       "1660148094b62994c9": {
         "type": "collection-carousel-product",
+        "disabled": true,
         "settings": {
           "title": "Trending Now",
           "sub_title": "",
@@ -4622,50 +4597,6 @@
           "speed": "300",
           "autoplay-Speed": "3000",
           "arrows": false,
-          "fade": false,
-          "center-Mode": false,
-          "adaptive-Height": false,
-          "dots": false,
-          "infinite": false,
-          "padding": 15,
-          "vertical": false,
-          "show_view_all": true,
-          "layout_des": false,
-          "use_eq_height": true,
-          "image_ratio": "ratio_custom_1",
-          "cl_bg": "#ffffff",
-          "mg": ",,100px,",
-          "pd": "",
-          "mg_mb": ",,50px,",
-          "pd_mb": ""
-        }
-      },
-      "16602697793eef0f0e": {
-        "type": "collection-carousel-product",
-        "settings": {
-          "title": "Best Selling",
-          "sub_title": "",
-          "content": "Shop the world’s best destinations from home",
-          "text_size": "medium",
-          "style_title": "style_1",
-          "collection": "accessories",
-          "max_count": 10,
-          "use-slider": true,
-          "slides-To-Scroll": 1,
-          "visible": 5,
-          "widescreen": 5,
-          "desktop": 4,
-          "laptop": 4,
-          "notebook": 3,
-          "tablet": 3,
-          "landscape": 2,
-          "portrait": 2,
-          "mobile": 1,
-          "rows": 2,
-          "autoplay": false,
-          "speed": "300",
-          "autoplay-Speed": "3000",
-          "arrows": true,
           "fade": false,
           "center-Mode": false,
           "adaptive-Height": false,
@@ -4790,7 +4721,6 @@
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "1658307745143d6710",
-      "16602697793eef0f0e",
       "166055287935a5052c",
       "1655716718d6eae745"
     ]
