@@ -1,7 +1,8 @@
 {%- liquid
-  assign pd_mb = block.settings.pm_padding
+  assign pm_padding = block.settings.pm_padding
 -%}
-<div id="payment-methods" class="payment-methods-section" style="padding: {{ pd_mb }};">
+<div id="payment-methods" class="payment-methods-section" style="padding: {{ pm_padding }};">
+  {{ pm_padding }}
   <div class="container">
     <ul class="payment-methods-list">
       <li class="payment-method-item">
