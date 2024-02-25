@@ -1,4 +1,3 @@
-
 <div id="payment-methods" class="payment-methods-section">
   <div class="payment-methods_container">
     <ul class="payment-methods-list">
@@ -168,93 +167,16 @@
 {%- liquid
   assign pm_padding = block.settings.pm_padding
 -%}
+{%- liquid
+  assign pm_padding = block.settings.pm_padding
+-%}
 {%- capture style -%}
   .payment-methods-section {
     padding: {{ pm_padding }};
   }
 
 {%- endcapture -%}
-{%- style -%}
-  .payment-methods-section {
-    width: 100%;
-  }
-  .payment-methods_container {
-    text-align: center;
-  }
-
-  .payment-methods-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .payment-method-item {
-    padding: 10px;
-  }
-{%- endstyle -%}
-{%- endcapture -%}
-{%- style -%}
-  .payment-methods-section {
-    width: 100%;
-  }
-  .payment-methods_container {
-    text-align: center;
-  }
-
-  .payment-methods-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .payment-method-item {
-    padding: 10px;
-  }
-{%- endstyle -%}
-{%- endcapture -%}
-{%- style -%}
-  .payment-methods-section {
-    width: 100%;
-  }
-  .payment-methods_container {
-    text-align: center;
-  }
-
-  .payment-methods-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .payment-method-item {
-    padding: 10px;
-  }
-{%- endstyle -%}
-{%- endcapture -%}
-{%- style -%}
-  .payment-methods-section {
-    width: 100%;
-  }
-  .payment-methods_container {
-    text-align: center;
-  }
-
-  .payment-methods-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-
-{%- endcapture -%}
+{%- style -%}{{ style | strip_newlines | remove:"  "}}{%- endstyle -%}
 
 {%- style -%}
   .payment-methods-section {
@@ -277,5 +199,3 @@
     padding: 10px;
   }
 {%- endstyle -%}
-
-
