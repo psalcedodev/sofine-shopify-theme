@@ -141,7 +141,7 @@
     "collection_info_show_label_in_stock": false,
     "collection_info_show_label_out_stock": false,
     "collection_info_show_label_sale": true,
-    "collection_info_show_label_new": true,
+    "collection_info_show_label_new": false,
     "collection_page_new_product": "9999",
     "collection_info_show_label_hot": true,
     "collection_info_show_collections": true,
