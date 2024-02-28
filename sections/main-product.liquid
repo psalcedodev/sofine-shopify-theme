@@ -407,16 +407,27 @@
                                       </div>
                                   </div>
             				</div>
-                    {% assign greeting_card_options = product.metafields.custom.greeting_card_options | split: ',' %}
-                    {% if greeting_card_options.size > 0 %}
+                    {{ product.metafields.custom.greeting_card }}
+
+                    {% assign greeting_card_set = product.metafields.your_namespace.greeting_card %}
                       <label for="greeting-card-options">Choose a Greeting Card:</label>
                       <select id="greeting-card-options" name="properties[Greeting Card]">
-                        {% for option in greeting_card_options %}
-                          <option value="{{ option }}">{{ option }}</option>
+                        {% case greeting_card_set %}
+                          {% when 'default' %}
+                            {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
+                          {% when 'valentines' %}
+                            {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
+                          {% else %}
+                            {% assign greeting_options = "Custom Option 1,Custom Option 2" | split: "," %}
+                        {% endcase %}
+
+                        {% for option in greeting_options %}
+                        <option value="{{ option }}">{{ option }}</option>
                         {% endfor %}
                       </select>
-                    {% endif %}
-                    {{ product.metafields.custom.greeting_card }}
+
+                      <label for="custom-message">Custom Message:</label>
+                      <textarea id="custom-message" name="properties[Custom Message]"></textarea>
                           {%- when 'text' -%}
                               <p class="product__text">
                                 {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
