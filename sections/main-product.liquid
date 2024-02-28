@@ -407,39 +407,36 @@
                                       </div>
                                   </div>
             				</div>
-                    {% comment %} {{ product.metafields.custom.greeting_card }} {% endcomment %}
-                    {% comment %} product.metafields.custom.greeting_card  = ["valentines","default"]  {% endcomment %}
-                    {% comment %} Print the first item of product.metafields.custom.greeting_card {% endcomment %}
-                    {% comment %}Strip square brackets and split by comma{% endcomment %}
+                    {{ product.metafields.custom.greeting_card }}
+
+                    {% comment %}Initialize an empty array to hold all greeting options{% endcomment %}
+                    {% assign all_greeting_options = "" | split: "," %}
                     {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
                     {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
-                    {{greeting_card_sets }}
-
-                    {% assign all_greeting_options = "" | split: "," %}
-
-                    {{ product.metafields.custom.greeting_card[0] }}
-                    {% assign greeting_card_sets = product.metafields.custom.greeting_card %}
-                    {% comment %} Loop through the greeting card sets and add them to the all_greeting_options array {% endcomment %}
-                    {% assign all_greeting_options = "" | split: "" %}
-                    {% for greeting_card_set in greeting_card_sets %}
-                      {{ greeting_card_set }}
-                      {% assign greeting_card_set = greeting_card_set | split: "," %}
-                      {% assign greeting_card_set = greeting_card_set | join: " " %}
-                      {% assign all_greeting_options = all_greeting_options | concat: greeting_card_set %}
+                    {% comment %}Iterate through each greeting card set specified in the metafield{% endcomment %}
+                    {% for set in greeting_card_sets %}
+                      {% case set %}
+                        {% when 'default' %}
+                          {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
+                        {% when 'valentines' %}
+                          {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
+                        {% else %}
+                          {% assign greeting_options = "Custom Option 1,Custom Option 2" | split: "," %}
+                      {% endcase %}
+                      
+                      {% comment %}Merge current set options with all options{% endcomment %}
+                      {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
                     {% endfor %}
-                    {% comment %} Remove any duplicates from the all_greeting_options array
-                  
-                  {% endcomment %}
-                  {{all_greeting_options }}  
+
+                    {% comment %}Remove duplicate options{% endcomment %}
                     {% assign all_greeting_options = all_greeting_options | uniq %}
-                    
+                    {{all_greeting_options }}
                     <label for="greeting-card-options">Choose a Greeting Card:</label>
                     <select id="greeting-card-options" name="properties[Greeting Card]">
                       {% for option in all_greeting_options %}
                         <option value="{{ option }}">{{ option }}</option>
                       {% endfor %}
                     </select>
-                    
                     <label for="custom-message">Custom Message:</label>
                     <textarea id="custom-message" name="properties[Custom Message]"></textarea>
                           {%- when 'text' -%}
