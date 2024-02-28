@@ -413,7 +413,7 @@
                     {% assign all_greeting_options = "" | split: "," %}
 
                     {% comment %}Iterate through each greeting card set specified in the metafield{% endcomment %}
-                    {% for set in product.metafields.your_namespace.greeting_card %}
+                    {% for set in product.metafields.custom.greeting_card %}
                       {% case set %}
                         {% when 'default' %}
                           {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
@@ -436,8 +436,8 @@
                         <option value="{{ option }}">{{ option }}</option>
                       {% endfor %}
                     </select>
-                      <label for="custom-message">Custom Message:</label>
-                      <textarea id="custom-message" name="properties[Custom Message]"></textarea>
+                    <label for="custom-message">Custom Message:</label>
+                    <textarea id="custom-message" name="properties[Custom Message]"></textarea>
                           {%- when 'text' -%}
                               <p class="product__text">
                                 {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
