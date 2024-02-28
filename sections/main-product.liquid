@@ -408,25 +408,19 @@
                                   </div>
             				</div>
                     {{ product.metafields.custom.greeting_card }}
-
-                    {% assign greeting_card_sets = product.metafields.custom.greeting_card | split: ' ' %}
-                    {{greeting_card_sets[0] }}
-                    {% assign all_greeting_options = "" | split: "," %}
-                    
-                    {% for set in greeting_card_sets %}
-                      <span> {{set}}</span>
-                      {% comment %} {% case set %}
-                        {% when 'default' %}
-                          {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
-                        {% when 'valentines' %}
-                          {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
-                        {% else %}
-                          {% assign greeting_options = "" %}
-                      {% endcase %}
-                       {% endcomment %}
-                      {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
+                      {% comment %} product.metafields.custom.greeting_card  = ["valentines","default"]  {% endcomment %}
+                    {% assign greeting_card_sets = product.metafields.custom.greeting_card %}
+                    {% comment %} Loop through the greeting card sets and add them to the all_greeting_options array {% endcomment %}
+                    {% assign all_greeting_options = "" | split: "" %}
+                    {% for greeting_card_set in greeting_card_sets %}
+                      {% assign greeting_card_set = greeting_card_set | split: "," %}
+                      {% assign greeting_card_set = greeting_card_set | join: " " %}
+                      {% assign all_greeting_options = all_greeting_options | concat: greeting_card_set %}
                     {% endfor %}
-                    
+                    {% comment %} Remove any duplicates from the all_greeting_options array
+                  
+                  {% endcomment %}
+                  {{all_greeting_options }}  
                     {% assign all_greeting_options = all_greeting_options | uniq %}
                     
                     <label for="greeting-card-options">Choose a Greeting Card:</label>
