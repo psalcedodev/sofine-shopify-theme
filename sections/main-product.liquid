@@ -355,7 +355,7 @@
             					{%endif%}
 
 
-                      {%- when product.metafields.custom.greeting_card -%}
+                      {%- when 'greeting_cards' -%}
                       {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
                       {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                       {% assign all_greeting_options = "" | split: "," %}
@@ -1018,6 +1018,10 @@
 				"info": "Separator is '|' or ','"
 			 }
 		 ]
+        },
+        {
+        "type": "greeting_cards",
+        "name": "Greeting Cards",
         },
 		{
           "type": "inventory_qty",
