@@ -415,14 +415,14 @@
                     
                     {% for set in greeting_card_sets %}
                       {{ set }}
-                      {% case set %}
+                      {% comment %} {% case set %}
                         {% when 'default' %}
                           {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
                         {% when 'valentines' %}
                           {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
                         {% else %}
                           {% assign greeting_options = "" %}
-                      {% endcase %}
+                      {% endcase %} {% endcomment %}
                       
                       {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
                     {% endfor %}
