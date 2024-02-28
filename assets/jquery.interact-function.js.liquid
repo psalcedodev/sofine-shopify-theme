@@ -2347,7 +2347,6 @@ $(function ($) {
             total = Shopify.formatMoney(data.total_price, theme.moneyFormat);
         cartTotal.find('.subtotal').html(subtotal).find('.money').css('opacity', '0').delay(500).fadeTo(50, 1);
         cartTotal.find('.total').html(total).find('.money').css('opacity', '0').delay(500).fadeTo(50, 1);
-        updateFreeShipping(data);
         $.each(items, function (key, item) {
             var id = item.id;
             var price = Shopify.formatMoney(item.final_line_price, theme.moneyFormat);
