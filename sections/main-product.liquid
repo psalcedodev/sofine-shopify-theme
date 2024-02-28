@@ -434,7 +434,7 @@
                     {% assign all_greeting_options = all_greeting_options | uniq %}
 
                       <label for="greeting-card-options">Choose a Greeting Card:</label>
-                      <select id="greeting-card-options" name="properties[Greeting Card]" form="product-form-{{sid}}">
+                      <select id="greeting-card-options" name="properties[Greeting Card]" form="add-to-cart-form">
                         {% for option in all_greeting_options %}
                           <option value="{{ option }}">{{ option | strip_newlines }}</option>
                         {% endfor %}
