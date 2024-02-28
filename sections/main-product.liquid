@@ -414,6 +414,7 @@
                     {% assign all_greeting_options = "" | split: "," %}
                     
                     {% for set in greeting_card_sets %}
+                      {{ set }}
                       {% case set %}
                         {% when 'default' %}
                           {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
