@@ -407,7 +407,7 @@
                                       </div>
                                   </div>
             				</div>
-                    {{ product.metafields }}
+                    {{ product.metafields.custom }}
                           {%- when 'text' -%}
                               <p class="product__text">
                                 {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
