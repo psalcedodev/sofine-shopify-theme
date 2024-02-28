@@ -413,6 +413,7 @@
                     {% comment %} Loop through the greeting card sets and add them to the all_greeting_options array {% endcomment %}
                     {% assign all_greeting_options = "" | split: "" %}
                     {% for greeting_card_set in greeting_card_sets %}
+                      {{ greeting_card_set }}
                       {% assign greeting_card_set = greeting_card_set | split: "," %}
                       {% assign greeting_card_set = greeting_card_set | join: " " %}
                       {% assign all_greeting_options = all_greeting_options | concat: greeting_card_set %}
