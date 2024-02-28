@@ -115,14 +115,14 @@
             				{%- assign des_pad_left = block.settings.des_pad_left -%}
             				{%- assign des_size = block.settings.des_size -%}
             				{%- assign des_bg = block.settings.des_bg -%}
-            				<div class="product_description clearfix" style="font-size:{{des_size}}px; margin-top:{{des_mg_top}}px; margin-bottom:{{des_mg_bottom}}px;padding-top:{{des_pad_top}}px; padding-bottom:{{des_pad_bottom}}px; padding-right:{{des_pad_right}}px; padding-left:{{des_pad_left}}px; background-color:{{des_bg}}; ">
+            				<div class="clearfix product_description" style="font-size:{{des_size}}px; margin-top:{{des_mg_top}}px; margin-bottom:{{des_mg_bottom}}px;padding-top:{{des_pad_top}}px; padding-bottom:{{des_pad_bottom}}px; padding-right:{{des_pad_right}}px; padding-left:{{des_pad_left}}px; background-color:{{des_bg}}; ">
                                   {% if block.settings.title != blank %}<h3>{{ block.settings.title }}{% endif %}</h3>
                              	 {{ product.description | strip_html | truncatewords: tr_words }}{%- if view_more -%}<a data-animated="fadeIn" data-toggle="pill" href="#tab_des">{{view_more}}</a>{%- endif -%}
             				</div>
             			{%- when 'text_countdown_html' -%}
             				<div class="text_countdown_html">
                               {% capture text_countdown_html %}             
-                              <div class="product-page-info__text-countdown clearfix">
+                              <div class="clearfix product-page-info__text-countdown">
                                 <div class="text-countdown js-text-countdown" data-reset-time="7" data-delivery-time="3" data-delivery-format="Day DD/MM/YYYY" data-delivery-excludes="Saturday, Sunday">
                                   {% capture text_countdown_counter_html %}<span class="text-countdown__counter" data-js-text-countdown-counter></span>{% endcapture %}
                                   {% capture text_countdown_delivery_html %}<span class="text-underline" data-js-text-countdown-delivery></span>{% endcapture %}
@@ -131,14 +131,14 @@
                               </div>             
                               {% endcapture %}
                               {% capture visitors_html %}               
-                              <div class="product-page-info__visitors clearfix">
+                              <div class="clearfix product-page-info__visitors">
                                 <div class="visitors js-visitors" data-min="10" data-max="25" data-interval-min="2" data-interval-max="6" data-stroke="4">
                                   {%- assign visitors_random_diff = settings.product_visitors_max | minus: settings.product_visitors_min -%}
                                   
                                   {%- assign visitors_random = "now" | date: "%N" | modulo: visitors_random_diff | plus: settings.product_visitors_min -%}
                                   
                                   {% capture visitors_counter_html %}
-                                  	<span class="visitors__counter d-inline-block px-8" data-js-counter>{{ visitors_random }}</span>
+                                  	<span class="px-8 visitors__counter d-inline-block" data-js-counter>{{ visitors_random }}</span>
                                   {% endcapture %}
                                   {{ 'products.product.visitors_html' | t: counter: visitors_counter_html }}
                                 </div>
@@ -152,7 +152,7 @@
             			{%- when 'product_infor' -%}
                 			<div class="product_infor">
                 			  {%- if block.settings.show_availability -%}
-                              <div class="pr-availability clearfix">
+                              <div class="clearfix pr-availability">
                                 <p><label class="label">{{'products.product.availability' | t}}:</label>             
                                   <span style="color:{{block.settings.color_in_stock}}" class="available {% if product.available %}  {% else %} d-none {% endif %}" id="js-pr-available" >{{'products.product.available' | t}}</span>             
                                   <span style="color:{{block.settings.color_out_stock}}" class="unavailable {% if product.available %}d-none{% endif %}" id="js-pr-unavailable"  > {{'products.product.unavailable' | t}}</span>                
@@ -188,7 +188,7 @@
             				<div class="product_page_social">
                               {% assign type_social = block.settings.type_social | plus: 0 %}
                               {%- if type_social == 1 -%}
-                              <div class="group-social clearfix">
+                              <div class="clearfix group-social">
                                 {% include 'social_link' %}
                               </div>
                               {%- else -%}
@@ -217,7 +217,7 @@
                                 {%- assign icon_button_cart = block.settings.icon_button_cart -%}
                                 {%- assign show_custom_color_btn = block.settings.show_custom_color_btn -%}
                 
-                					<div data-product-meta class="cms-product-meta clearfix">  
+                					<div data-product-meta class="clearfix cms-product-meta">  
                 					{% if qt_show_quantity %}
                 					<div data-product-quantity class="js-quantity quantity {% if product.available %}{% else %} d-none {% endif %}" >
                                       <label>{{'products.product.quantity' | t}}</label>
@@ -329,7 +329,7 @@
                               </div> 
             				{%- when 'tags' -%}
             					{% if product.tags%}
-            					<div class="tags_product clearfix">
+            					<div class="clearfix tags_product">
                                   <div class="tags" data-js-product-tags >
                                     <label class="label">{{ 'products.product.tags' | t }}:</label>
                                   	{%- assign tags_id = block.settings.tags -%}
@@ -375,7 +375,7 @@
                                   </style>
                                   {%- endif -%}
                                   {% if block.settings.html_custom !=blank %}
-                                  <div class="content-text clearfix">
+                                  <div class="clearfix content-text">
                                       {{block.settings.html_custom}}
                                   </div>
                                   {%endif%}
@@ -407,6 +407,7 @@
                                       </div>
                                   </div>
             				</div>
+                    {{ product.metafields }}
                           {%- when 'text' -%}
                               <p class="product__text">
                                 {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
