@@ -27,6 +27,12 @@
             "size_guide_page": ""
           }
         },
+        "greeting_cards_Ex89Kd": {
+          "type": "greeting_cards",
+          "settings": {
+            "greeting_card_sets": "default"
+          }
+        },
         "7dd79963-0728-4ccb-85ae-a4ef29c6e44c": {
           "type": "inventory_qty",
           "settings": {
@@ -101,6 +107,7 @@
         "ed5dec54-d995-4f88-87d3-102460e07067",
         "f1e09af0-0154-41e2-996f-755cdde44ea4",
         "5c909704-7273-41b5-b5b9-38085bf8c176",
+        "greeting_cards_Ex89Kd",
         "7dd79963-0728-4ccb-85ae-a4ef29c6e44c",
         "countdown_ytjagG",
         "8681d35e-2735-4d23-98a5-4f3b5271e474",
