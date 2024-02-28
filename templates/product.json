@@ -16,7 +16,8 @@
         },
         "f1e09af0-0154-41e2-996f-755cdde44ea4": {
           "type": "show_price",
-          "settings": {}
+          "settings": {
+          }
         },
         "5c909704-7273-41b5-b5b9-38085bf8c176": {
           "type": "product_variants",
@@ -24,6 +25,12 @@
             "show_title": true,
             "show_size_guide": true,
             "size_guide_page": ""
+          }
+        },
+        "greeting_cards_ep4rzX": {
+          "type": "greeting_cards",
+          "settings": {
+            "greeting_card_sets": "default"
           }
         },
         "7dd79963-0728-4ccb-85ae-a4ef29c6e44c": {
@@ -92,23 +99,21 @@
         },
         "free_shipping_MQc4nC": {
           "type": "free_shipping",
-          "settings": {}
-        },
-        "greeting_cards_eGGKj7": {
-          "type": "greeting_cards"
+          "settings": {
+          }
         }
       },
       "block_order": [
         "ed5dec54-d995-4f88-87d3-102460e07067",
         "f1e09af0-0154-41e2-996f-755cdde44ea4",
         "5c909704-7273-41b5-b5b9-38085bf8c176",
+        "greeting_cards_ep4rzX",
         "7dd79963-0728-4ccb-85ae-a4ef29c6e44c",
         "countdown_ytjagG",
         "8681d35e-2735-4d23-98a5-4f3b5271e474",
         "f8fe536c-4b12-4948-ace9-b042650b8e36",
         "c78dd46d-d065-4e43-aaa7-13423da0532f",
-        "free_shipping_MQc4nC",
-        "greeting_cards_eGGKj7"
+        "free_shipping_MQc4nC"
       ],
       "settings": {
         "cl_bg": "#ffffff",
@@ -145,7 +150,8 @@
         "22f75249-e4ab-453e-84d5-0006118d5803": {
           "type": "tab_metafields",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "0e2c2c01-948c-43f1-ae77-e8dbabaf8f55": {
           "type": "tab_reviews",
@@ -172,5 +178,8 @@
       }
     }
   },
-  "order": ["main", "product-page-tab"]
+  "order": [
+    "main",
+    "product-page-tab"
+  ]
 }
