@@ -417,9 +417,9 @@
                     {% for set in greeting_card_sets %}
                       {% assign trimmed_set = set | strip %}
                       {% case trimmed_set %}
-                        {% when 'valentines' %}
+                        {% when '"valentines"' %}
                           {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
-                        {% when 'default' %}
+                        {% when '"default"' %}
                           {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
                         {% else %}
                           {% assign greeting_options = "" %}
