@@ -355,7 +355,7 @@
             					{%endif%}
 
 
-                      
+                      {%- when product.metafields.custom.greeting_card -%}
                       {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
                       {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                       {% assign all_greeting_options = "" | split: "," %}
