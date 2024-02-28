@@ -407,8 +407,10 @@
                                       </div>
                                   </div>
             				</div>
-                    {{ product.metafields.custom.greeting_card.valentines }}
-                      {% comment %} product.metafields.custom.greeting_card  = ["valentines","default"]  {% endcomment %}
+                    {{ product.metafields.custom.greeting_card }}
+                    {% comment %} product.metafields.custom.greeting_card  = ["valentines","default"]  {% endcomment %}
+                    {% comment %} Print the first item of product.metafields.custom.greeting_card {% endcomment %}
+                    {{ product.metafields.custom.greeting_card[0] }}
                     {% assign greeting_card_sets = product.metafields.custom.greeting_card %}
                     {% comment %} Loop through the greeting card sets and add them to the all_greeting_options array {% endcomment %}
                     {% assign all_greeting_options = "" | split: "" %}
