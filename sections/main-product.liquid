@@ -410,6 +410,13 @@
                     {% comment %} {{ product.metafields.custom.greeting_card }} {% endcomment %}
                     {% comment %} product.metafields.custom.greeting_card  = ["valentines","default"]  {% endcomment %}
                     {% comment %} Print the first item of product.metafields.custom.greeting_card {% endcomment %}
+                    {% comment %}Strip square brackets and split by comma{% endcomment %}
+                    {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
+                    {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
+                    {{greeting_card_sets }}
+
+                    {% assign all_greeting_options = "" | split: "," %}
+
                     {{ product.metafields.custom.greeting_card[0] }}
                     {% assign greeting_card_sets = product.metafields.custom.greeting_card %}
                     {% comment %} Loop through the greeting card sets and add them to the all_greeting_options array {% endcomment %}
