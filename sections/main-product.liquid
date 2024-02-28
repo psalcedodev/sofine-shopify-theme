@@ -415,28 +415,27 @@
                     {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                     {% comment %}Iterate through each greeting card set specified in the metafield{% endcomment %}
                     {% for set in greeting_card_sets %}
-                      {% case set %}
-                        {% when 'default' %}
-                          {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
-                        {% when 'valentines' %}
+                      {% assign trimmed_set = set | strip %}
+                      {% case trimmed_set %}
+                        {% when '"valentines"' %}
                           {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
+                        {% when '"default"' %}
+                          {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
                         {% else %}
-                          {% assign greeting_options = "Custom Option 1,Custom Option 2" | split: "," %}
+                          {% assign greeting_options = "" %}
                       {% endcase %}
                       
-                      {% comment %}Merge current set options with all options{% endcomment %}
                       {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
                     {% endfor %}
 
-                    {% comment %}Remove duplicate options{% endcomment %}
                     {% assign all_greeting_options = all_greeting_options | uniq %}
-                    {{all_greeting_options }}
-                    <label for="greeting-card-options">Choose a Greeting Card:</label>
-                    <select id="greeting-card-options" name="properties[Greeting Card]">
-                      {% for option in all_greeting_options %}
-                        <option value="{{ option }}">{{ option }}</option>
-                      {% endfor %}
-                    </select>
+
+                      <label for="greeting-card-options">Choose a Greeting Card:</label>
+                      <select id="greeting-card-options" name="properties[Greeting Card]">
+                        {% for option in all_greeting_options %}
+                          <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                        {% endfor %}
+                      </select>
                     <label for="custom-message">Custom Message:</label>
                     <textarea id="custom-message" name="properties[Custom Message]"></textarea>
                           {%- when 'text' -%}
