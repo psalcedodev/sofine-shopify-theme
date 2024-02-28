@@ -410,6 +410,7 @@
                     {{ product.metafields.custom.greeting_card }}
 
                     {% assign greeting_card_sets = product.metafields.custom.greeting_card | json_parse %}
+                    {{greeting_card_sets }}
                     {% assign all_greeting_options = "" | split: "," %}
                     
                     {% for set in greeting_card_sets %}
