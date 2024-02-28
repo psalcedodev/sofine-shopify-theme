@@ -16,8 +16,7 @@
         },
         "f1e09af0-0154-41e2-996f-755cdde44ea4": {
           "type": "show_price",
-          "settings": {
-          }
+          "settings": {}
         },
         "5c909704-7273-41b5-b5b9-38085bf8c176": {
           "type": "product_variants",
@@ -93,14 +92,10 @@
         },
         "free_shipping_MQc4nC": {
           "type": "free_shipping",
-          "settings": {
-          }
+          "settings": {}
         },
         "greeting_cards_eGGKj7": {
-          "type": "greeting_cards",
-          "settings": {
-            "greeting_card_sets": "default2"
-          }
+          "type": "greeting_cards"
         }
       },
       "block_order": [
@@ -150,8 +145,7 @@
         "22f75249-e4ab-453e-84d5-0006118d5803": {
           "type": "tab_metafields",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "0e2c2c01-948c-43f1-ae77-e8dbabaf8f55": {
           "type": "tab_reviews",
@@ -178,8 +172,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "product-page-tab"
-  ]
+  "order": ["main", "product-page-tab"]
 }
