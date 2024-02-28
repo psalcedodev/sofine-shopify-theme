@@ -407,6 +407,15 @@
                                       </div>
                                   </div>
             				</div>
+                    {% assign greeting_card_options = product.metafields.custom.greeting_card_options | split: ',' %}
+                    {% if greeting_card_options.size > 0 %}
+                      <label for="greeting-card-options">Choose a Greeting Card:</label>
+                      <select id="greeting-card-options" name="properties[Greeting Card]">
+                        {% for option in greeting_card_options %}
+                          <option value="{{ option }}">{{ option }}</option>
+                        {% endfor %}
+                      </select>
+                    {% endif %}
                     {{ product.metafields.custom.greeting_card }}
                           {%- when 'text' -%}
                               <p class="product__text">
