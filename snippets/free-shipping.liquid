@@ -25,7 +25,6 @@
     <div class="free-shipping__text ">
       {% capture free_shipping_spend_html %}{{ free_shipping_spend | money }}{% endcapture %}
       {% capture free_shipping_spend_html %}{{ 'cart.general.free_shipping_html' | t: value: free_shipping_spend_html }}{% endcapture %}
-      {{ free_shipping_spend }}
       {% capture free_shipping_html %}{{ 'cart.general.free_shipping_complete_html' | t: value: free_shipping_html }}{% endcapture %}
       <div class="text">
         <span data-js-text>
