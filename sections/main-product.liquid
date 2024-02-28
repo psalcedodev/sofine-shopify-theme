@@ -409,23 +409,33 @@
             				</div>
                     {{ product.metafields.custom.greeting_card }}
 
-                    {% assign greeting_card_set = product.metafields.your_namespace.greeting_card %}
-                      <label for="greeting-card-options">Choose a Greeting Card:</label>
-                      <select id="greeting-card-options" name="properties[Greeting Card]">
-                        {% case greeting_card_set %}
-                          {% when 'default' %}
-                            {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
-                          {% when 'valentines' %}
-                            {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
-                          {% else %}
-                            {% assign greeting_options = "Custom Option 1,Custom Option 2" | split: "," %}
-                        {% endcase %}
+                    {% comment %}Initialize an empty array to hold all greeting options{% endcomment %}
+                    {% assign all_greeting_options = "" | split: "," %}
 
-                        {% for option in greeting_options %}
+                    {% comment %}Iterate through each greeting card set specified in the metafield{% endcomment %}
+                    {% for set in product.metafields.your_namespace.greeting_card %}
+                      {% case set %}
+                        {% when 'default' %}
+                          {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
+                        {% when 'valentines' %}
+                          {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
+                        {% else %}
+                          {% assign greeting_options = "Custom Option 1,Custom Option 2" | split: "," %}
+                      {% endcase %}
+                      
+                      {% comment %}Merge current set options with all options{% endcomment %}
+                      {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
+                    {% endfor %}
+
+                    {% comment %}Remove duplicate options{% endcomment %}
+                    {% assign all_greeting_options = all_greeting_options | uniq %}
+
+                    <label for="greeting-card-options">Choose a Greeting Card:</label>
+                    <select id="greeting-card-options" name="properties[Greeting Card]">
+                      {% for option in all_greeting_options %}
                         <option value="{{ option }}">{{ option }}</option>
-                        {% endfor %}
-                      </select>
-
+                      {% endfor %}
+                    </select>
                       <label for="custom-message">Custom Message:</label>
                       <textarea id="custom-message" name="properties[Custom Message]"></textarea>
                           {%- when 'text' -%}
