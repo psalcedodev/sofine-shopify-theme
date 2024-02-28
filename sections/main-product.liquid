@@ -414,6 +414,7 @@
                     {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
                     {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                     {% comment %}Iterate through each greeting card set specified in the metafield{% endcomment %}
+                    {{greeting_card_sets }}
                     {% for set in greeting_card_sets %}
                       {% assign trimmed_set = set | strip %}
                       {% case trimmed_set %}
