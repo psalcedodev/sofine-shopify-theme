@@ -409,12 +409,12 @@
             				</div>
                     {{ product.metafields.custom.greeting_card }}
 
-                    {% assign greeting_card_sets = product.metafields.custom.greeting_card | json_parse %}
+                    {% assign greeting_card_sets = product.metafields.custom.greeting_card | split: ' ' %}
                     {{greeting_card_sets }}
                     {% assign all_greeting_options = "" | split: "," %}
                     
                     {% for set in greeting_card_sets %}
-                      {{ set }}
+                      <span> {{set}}</span>
                       {% comment %} {% case set %}
                         {% when 'default' %}
                           {% assign greeting_options = "Happy Birthday,Thank You,Congratulations" | split: "," %}
@@ -422,8 +422,8 @@
                           {% assign greeting_options = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
                         {% else %}
                           {% assign greeting_options = "" %}
-                      {% endcase %} {% endcomment %}
-                      
+                      {% endcase %}
+                       {% endcomment %}
                       {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
                     {% endfor %}
                     
