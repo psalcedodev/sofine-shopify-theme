@@ -378,14 +378,49 @@
                       {% endfor %}
   
                       {% assign all_greeting_options = all_greeting_options | uniq %}
-                        <label for="greeting-card-options">Choose a Greeting Card:</label>
-                        <select id="greeting-card-options" name="properties[Greeting Card]">
+                        <label for="greeting-card-options">Greeting Card</label>
+                        <select id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
                         </select>
-                        <label for="custom-message">Custom m2</label>
-                        <textarea id="custom-message" name="properties[Custom Message]"></textarea>
+                        <div class="product-form__input product-form__input--textarea">
+                          <label
+                            class="form__label"
+                            for="custom-message"
+                            style="cursor: pointer;"
+                            onclick="toggleAccordion('accordion-content', 'chevron-icon')"
+                            >Add your personalization (optional)
+                            <svg
+                              id="chevron-icon"
+                              class="icon-chevron-down"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                            >
+                              <path d="M1,4.5 L7,10.5 L13,4.5" stroke="#666" stroke-width="2" fill="none" />
+                            </svg>
+                          </label>
+                          <div
+                            id="accordion-content"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;"
+                          >
+                            <div class="form_field_caption">Enter your personalized card message here ✉</div>
+                            <div class="form_field_caption">Don't forget to include your signature at the end!</div>
+                            <div class="textarea-container">
+                              <textarea
+                                id="custom-message"
+                                class="textarea__textarea"
+                                placeholder=""
+                                name="properties[Message]"
+                                rows="4"
+                                maxlength="250"
+                              ></textarea>
+                              <div id="char-count" class="char-count">256/256</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
             				{%- when 'custom_html' -%}
                 				<div class="product_custom_html">
