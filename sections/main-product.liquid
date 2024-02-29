@@ -355,7 +355,7 @@
             					{%endif%}
 
 
-                      {%- when 'greeting_cards_custom_message' -%}
+                      {%- when 'greeting_and_message' -%}
                       <div class="cms-option-item">
                         hello
                       {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
@@ -1022,7 +1022,7 @@
 		 ]
     },
     {
-        "type": "greeting_cards_custom_message",
+        "type": "greeting_and_message",
         "name": "Greeting Cards Custom Message",
         "limit": 1,
         "settings": []
