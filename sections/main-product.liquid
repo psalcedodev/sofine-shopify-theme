@@ -356,6 +356,7 @@
 
 
                       {%- when 'greeting_cards' -%}
+                      <div class="cms-option-item">
                       {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
                       {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                       {% assign all_greeting_options = "" | split: "," %}
@@ -377,7 +378,6 @@
                       {% endfor %}
   
                       {% assign all_greeting_options = all_greeting_options | uniq %}
-                      <div class="cms-option-item">
                         <label for="greeting-card-options">Choose a Greeting Card:</label>
                         <select id="greeting-card-options" name="properties[Greeting Card]">
                           {% for option in all_greeting_options %}
