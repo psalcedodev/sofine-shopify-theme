@@ -377,15 +377,16 @@
                       {% endfor %}
   
                       {% assign all_greeting_options = all_greeting_options | uniq %}
-  
+                      <div class="cms-option-item">
                         <label for="greeting-card-options">Choose a Greeting Card:</label>
                         <select id="greeting-card-options" name="properties[Greeting Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
                         </select>
-                      <label for="custom-message">Custom Message:</label>
-                      <textarea id="custom-message" name="properties[Custom Message]"></textarea>
+                        <label for="custom-message">Custom Message:</label>
+                        <textarea id="custom-message" name="properties[Custom Message]"></textarea>
+                      </div>
             				{%- when 'custom_html' -%}
                 				<div class="product_custom_html">
                 				<div class="content">
