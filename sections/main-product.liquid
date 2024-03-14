@@ -377,7 +377,7 @@
 
                       {% assign all_greeting_options = all_greeting_options | uniq %}
                         <label class="label" for="greeting-card-options">Greeting Card</label>
-                        <select class="currency-picker" id="greeting-card-options" name="properties[Card]">
+                        <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
