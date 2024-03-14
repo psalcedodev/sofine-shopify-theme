@@ -377,8 +377,8 @@
 
                       {% assign all_greeting_options = all_greeting_options | uniq %}
                       <style>
-                        .select-wrapper {
-                          position: relative; /* Contain the dropdown and chevron */
+                        .chevron-select-wrapper { /* Added class for specificity */
+                          position: relative;
                         }
                         
                         .select__select {
@@ -394,33 +394,33 @@
                           min-height: calc(var(--inputs-border-width) * 2);
                           min-width: calc(7rem + (var(--inputs-border-width) * 2));
                           border: 1px solid #ccc; /* Adjust color as needed */
-                          padding: 10px 30px 10px 10px; /* Adjust padding to fit chevron */
+                          padding: 10px 35px 10px 10px; /* Adjusted padding-right */
                         }
                         
-                        .select-wrapper::after {
+                        .chevron-select-wrapper::after {
                           content: '';
                           position: absolute;
                           top: 50%;
                           right: 10px;
                           transform: translateY(-50%);
-                          width: 0; 
-                          height: 0; 
+                          width: 0;
+                          height: 0;
                           border-left: 5px solid transparent;
                           border-right: 5px solid transparent;
                           border-top: 6px solid #666; /* Adjust color as needed */
                           transition: transform var(--duration-short) ease;
                         }
                         
-                        .select__select:focus + .select-wrapper::after,
-                        .select__select:hover + .select-wrapper::after {
+                        .select__select:focus + .chevron-select-wrapper::after,
+                        .select__select:hover + .chevron-select-wrapper::after {
                           border-top-color: var(--color-main); /* Optional: change on hover */
                         }
                         
-                        .select__select[aria-expanded="true"] + .select-wrapper::after {
+                        .select__select[aria-expanded="true"] + .chevron-select-wrapper::after {
                           transform: translateY(-50%) rotate(180deg);
                         }
                       </style>
-                      <div class="select-wrapper"> 
+                      <div class="chevron-select-wrapper"> 
                         <label class="label" for="greeting-card-options">Greeting Card</label>
                         <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
