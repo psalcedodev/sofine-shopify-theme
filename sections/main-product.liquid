@@ -427,24 +427,26 @@
                         </select>
                       </div>
                       <style>
-                        .product-form__input--textarea .label {
-                          cursor: pointer;
-                        }
-                      
-                        .accordion-content {
+                        #accordion-content {
                           max-height: 0;
                           overflow: hidden;
-                          transition: max-height 0.5s ease-out;
+                          transition: max-height 0.2s ease-out;
                         }
-                      
-                        .textarea-container textarea {
-                          width: 100%;
-                          box-sizing: border-box; /* So padding does not affect width */
+                        
+                        .rotate {
+                          transform: rotate(180deg);
+                          transition: transform 0.2s ease-out;
                         }
-                      
+                        
+                        .textarea-container {
+                          position: relative;
+                        }
+                        
                         .char-count {
-                          text-align: right;
-                          margin-top: 5px;
+                          position: absolute;
+                          font-size: 1.4rem;
+                          bottom: 8px;
+                          right: 4px;
                         }
                       </style>
                    
