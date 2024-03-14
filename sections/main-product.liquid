@@ -377,7 +377,7 @@
 
                       {% assign all_greeting_options = all_greeting_options | uniq %}
                       <style>
-                        .chevron-select-wrapper { /* Added class for specificity */
+                        .chevron-select-wrapper {
                           position: relative;
                         }
                         
@@ -400,7 +400,7 @@
                         .chevron-select-wrapper::after {
                           content: '';
                           position: absolute;
-                          top: 50%;
+                          top: 74%;
                           right: 10px;
                           transform: translateY(-50%);
                           width: 0;
@@ -421,13 +421,35 @@
                         }
                       </style>
                       <div class="chevron-select-wrapper"> 
-                        <label class="label" for="greeting-card-options">Greeting Card</label>
-                        <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                      <label class="label" for="greeting-card-options">Greeting Card</label>
+                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
                         </select>
                       </div>
+                      <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                          var select = document.getElementById('greeting-card-options');
+                          var chevron = document.querySelector('.chevron-select-wrapper::after');
+                      
+                          // Rotate chevron up when the select is focused
+                          select.addEventListener('focus', function() {
+                            document.querySelector('.chevron-select-wrapper').style.setProperty('--chevron-transform', 'rotate(180deg)');
+                          });
+                      
+                          // Rotate chevron down when the select loses focus
+                          select.addEventListener('blur', function() {
+                            document.querySelector('.chevron-select-wrapper').style.setProperty('--chevron-transform', 'rotate(0deg)');
+                          });
+                        });
+                      </script>
+                      <style>
+                        .chevron-select-wrapper::after {
+                          /* Other styles remain unchanged */
+                          transform: translateY(-50%) var(--chevron-transform, rotate(0deg));
+                        }
+                      </style>
                       {% comment %} <label class="label" for="greeting-card-options">Greeting Card</label>
                         <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
