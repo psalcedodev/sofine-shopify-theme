@@ -447,34 +447,41 @@
                           margin-top: 5px;
                         }
                       </style>
-                      <script>
-                        function toggleAccordion(accordionId, iconId) {
-                          var accordion = document.getElementById(accordionId);
-                          var icon = document.getElementById(iconId);
-                      
-                          // Estimate the height needed (you might need to adjust this)
-                          var maxHeight = "500px"; // This should be more than enough for the content
-                      
-                          if (accordion.style.maxHeight === "0px" || !accordion.style.maxHeight) {
-                            accordion.style.maxHeight = maxHeight; // Open accordion
-                            icon.style.transform = "rotate(180deg)"; // Rotate chevron icon
-                          } else {
-                            accordion.style.maxHeight = "0"; // Close accordion
-                            icon.style.transform = "rotate(0deg)"; // Rotate chevron icon back
-                          }
-                        }
-                      </script>
+                   
                       <div class="product-form__input product-form__input--textarea">
-                        <label class="label" for="custom-message" onclick="toggleAccordion('accordion-content', 'chevron-icon')">Add your personalization (optional)
-                          <svg id="chevron-icon" class="icon-chevron-down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <label
+                          class="form__label"
+                          for="custom-message"
+                          style="cursor: pointer;"
+                          onclick="toggleAccordion('accordion-content', 'chevron-icon')"
+                          >Add your personalization (optional)
+                          <svg
+                            id="chevron-icon"
+                            class="icon-chevron-down"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                          >
                             <path d="M1,4.5 L7,10.5 L13,4.5" stroke="#666" stroke-width="2" fill="none" />
                           </svg>
                         </label>
-                        <div id="accordion-content" class="accordion-content">
+                        <div
+                          id="accordion-content"
+                          style="max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;"
+                        >
                           <div class="form_field_caption">Enter your personalized card message here ✉</div>
                           <div class="form_field_caption">Don't forget to include your signature at the end!</div>
                           <div class="textarea-container">
-                            <textarea id="custom-message" class="textarea__textarea" placeholder="" name="properties[Message]" rows="4" maxlength="250"></textarea>
+                            <textarea
+                              id="custom-message"
+                              class="textarea__textarea"
+                              placeholder=""
+                              name="properties[Your Message]"
+                              form="product-form-{{section.id}}"
+                              rows="4"
+                              maxlength="250"
+                            ></textarea>
                             <div id="char-count" class="char-count">256/256</div>
                           </div>
                         </div>
@@ -596,6 +603,29 @@
 </div>    
   </div>
 </section>
+<script>
+  function toggleAccordion(contentId, iconId) {
+    var content = document.getElementById(contentId);
+    var icon = document.getElementById(iconId);
+    var textarea = document.getElementById('custom-message');
+    var charCount = document.getElementById('char-count');
+
+    textarea.addEventListener('input', function () {
+      var remaining = 250 - this.value.length;
+      charCount.textContent = remaining + '/250';
+    });
+
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      // Collapse the accordion
+      content.style.maxHeight = '0';
+      icon.classList.remove('rotate'); // Reset the chevron to its original state
+    } else {
+      // Expand the accordion
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.classList.add('rotate'); // Rotate the chevron up
+    }
+  }
+</script>
 {%- render 'section_style' -%}
 {%- render 'product-script' -%}
 {% schema %}
