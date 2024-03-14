@@ -377,6 +377,25 @@
 
                       {% assign all_greeting_options = all_greeting_options | uniq %}
                         <label class="label" for="greeting-card-options">Greeting Card</label>
+                        <style>
+                          .select__select,
+                          .customer .field input,
+                          .customer select {
+                              -webkit-appearance: none;
+                              appearance: none;
+                              color: var(--color-main);
+                              font-size: 14px;
+                              width: 100%;
+                              box-sizing: border-box;
+                              transition: box-shadow var(--duration-short) ease;
+                              border-radius: 3px;
+                              height: 40px;
+                              min-height: calc(var(--inputs-border-width) * 2);
+                              min-width: calc(7rem + (var(--inputs-border-width) * 2));
+                              position: relative;
+                              border: 1px solid #f2f2f6;
+                          }
+                          </style>
                         <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
