@@ -605,29 +605,7 @@
 </div>    
   </div>
 </section>
-<script>
-  function toggleAccordion(contentId, iconId) {
-    var content = document.getElementById(contentId);
-    var icon = document.getElementById(iconId);
-    var textarea = document.getElementById('custom-message');
-    var charCount = document.getElementById('char-count');
 
-    textarea.addEventListener('input', function () {
-      var remaining = 250 - this.value.length;
-      charCount.textContent = remaining + '/250';
-    });
-
-    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
-      // Collapse the accordion
-      content.style.maxHeight = '0';
-      icon.classList.remove('rotate'); // Reset the chevron to its original state
-    } else {
-      // Expand the accordion
-      content.style.maxHeight = content.scrollHeight + 'px';
-      icon.classList.add('rotate'); // Rotate the chevron up
-    }
-  }
-</script>
 {%- render 'section_style' -%}
 {%- render 'product-script' -%}
 {% schema %}
@@ -1367,4 +1345,25 @@
 {% endstylesheet %}
 
 {% javascript %}
+  function toggleAccordion(contentId, iconId) {
+    var content = document.getElementById(contentId);
+    var icon = document.getElementById(iconId);
+    var textarea = document.getElementById('custom-message');
+    var charCount = document.getElementById('char-count');
+
+    textarea.addEventListener('input', function () {
+      var remaining = 250 - this.value.length;
+      charCount.textContent = remaining + '/250';
+    });
+
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      // Collapse the accordion
+      content.style.maxHeight = '0';
+      icon.classList.remove('rotate'); // Reset the chevron to its original state
+    } else {
+      // Expand the accordion
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.classList.add('rotate'); // Rotate the chevron up
+    }
+  }
 {% endjavascript %}
