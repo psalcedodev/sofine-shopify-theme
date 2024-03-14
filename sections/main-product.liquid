@@ -426,66 +426,60 @@
                           {% endfor %}
                         </select>
                       </div>
+                      <style>
+                        .product-form__input--textarea .label {
+                          cursor: pointer;
+                        }
+                      
+                        .accordion-content {
+                          max-height: 0;
+                          overflow: hidden;
+                          transition: max-height 0.5s ease-out;
+                        }
+                      
+                        .textarea-container textarea {
+                          width: 100%;
+                          box-sizing: border-box; /* So padding does not affect width */
+                        }
+                      
+                        .char-count {
+                          text-align: right;
+                          margin-top: 5px;
+                        }
+                      </style>
                       <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                          var select = document.getElementById('greeting-card-options');
-                          var chevron = document.querySelector('.chevron-select-wrapper::after');
+                        function toggleAccordion(accordionId, iconId) {
+                          var accordion = document.getElementById(accordionId);
+                          var icon = document.getElementById(iconId);
                       
-                          // Rotate chevron up when the select is focused
-                          select.addEventListener('focus', function() {
-                            document.querySelector('.chevron-select-wrapper').style.setProperty('--chevron-transform', 'rotate(180deg)');
-                          });
+                          // Estimate the height needed (you might need to adjust this)
+                          var maxHeight = "500px"; // This should be more than enough for the content
                       
-                          // Rotate chevron down when the select loses focus
-                          select.addEventListener('blur', function() {
-                            document.querySelector('.chevron-select-wrapper').style.setProperty('--chevron-transform', 'rotate(0deg)');
-                          });
-                        });
+                          if (accordion.style.maxHeight === "0px" || !accordion.style.maxHeight) {
+                            accordion.style.maxHeight = maxHeight; // Open accordion
+                            icon.style.transform = "rotate(180deg)"; // Rotate chevron icon
+                          } else {
+                            accordion.style.maxHeight = "0"; // Close accordion
+                            icon.style.transform = "rotate(0deg)"; // Rotate chevron icon back
+                          }
+                        }
                       </script>
-                    
-                      {% comment %} <label class="label" for="greeting-card-options">Greeting Card</label>
-                        <select class="select__select" id="greeting-card-options" name="properties[Card]">
-                          {% for option in all_greeting_options %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select> {% endcomment %}
-                        <div class="product-form__input product-form__input--textarea">
-                          <label
-                            class="label"
-                            for="custom-message"
-                            style="cursor: pointer;"
-                            onclick="toggleAccordion('accordion-content', 'chevron-icon')"
-                            >Add your personalization (optional)
-                            <svg
-                              id="chevron-icon"
-                              class="icon-chevron-down"
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="14"
-                              height="14"
-                              viewBox="0 0 14 14"
-                            >
-                              <path d="M1,4.5 L7,10.5 L13,4.5" stroke="#666" stroke-width="2" fill="none" />
-                            </svg>
-                          </label>
-                          <div
-                            id="accordion-content"
-                            style="max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;"
-                          >
-                            <div class="form_field_caption">Enter your personalized card message here ✉</div>
-                            <div class="form_field_caption">Don't forget to include your signature at the end!</div>
-                            <div class="textarea-container">
-                              <textarea
-                                id="custom-message"
-                                class="textarea__textarea"
-                                placeholder=""
-                                name="properties[Message]"
-                                rows="4"
-                                maxlength="250"
-                              ></textarea>
-                              <div id="char-count" class="char-count">256/256</div>
-                            </div>
+                      <div class="product-form__input product-form__input--textarea">
+                        <label class="label" for="custom-message" onclick="toggleAccordion('accordion-content', 'chevron-icon')">Add your personalization (optional)
+                          <svg id="chevron-icon" class="icon-chevron-down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                            <path d="M1,4.5 L7,10.5 L13,4.5" stroke="#666" stroke-width="2" fill="none" />
+                          </svg>
+                        </label>
+                        <div id="accordion-content" class="accordion-content">
+                          <div class="form_field_caption">Enter your personalized card message here ✉</div>
+                          <div class="form_field_caption">Don't forget to include your signature at the end!</div>
+                          <div class="textarea-container">
+                            <textarea id="custom-message" class="textarea__textarea" placeholder="" name="properties[Message]" rows="4" maxlength="250"></textarea>
+                            <div id="char-count" class="char-count">256/256</div>
                           </div>
                         </div>
+                      </div>
+                      
                       </div>
             				{%- when 'custom_html' -%}
                 				<div class="product_custom_html">
