@@ -379,8 +379,10 @@
                       <style>
                         .chevron-select-wrapper {
                           position: relative;
+                          /* Define a custom property with default rotation for the chevron */
+                          --chevron-transform: rotate(0deg);
                         }
-                        
+                      
                         .select__select {
                           -webkit-appearance: none;
                           appearance: none;
@@ -393,31 +395,27 @@
                           height: 40px;
                           min-height: calc(var(--inputs-border-width) * 2);
                           min-width: calc(7rem + (var(--inputs-border-width) * 2));
-                          border: 1px solid #ccc; /* Adjust color as needed */
-                          padding: 10px 35px 10px 10px; /* Adjusted padding-right */
+                          border: 1px solid #ccc;
+                          padding: 10px 35px 10px 10px;
                         }
-                        
+                      
                         .chevron-select-wrapper::after {
                           content: '';
                           position: absolute;
                           top: 74%;
                           right: 10px;
-                          transform: translateY(-50%);
+                          transform: translateY(-50%) var(--chevron-transform);
                           width: 0;
                           height: 0;
                           border-left: 5px solid transparent;
                           border-right: 5px solid transparent;
-                          border-top: 6px solid #666; /* Adjust color as needed */
+                          border-top: 6px solid #666;
                           transition: transform var(--duration-short) ease;
                         }
-                        
+                      
                         .select__select:focus + .chevron-select-wrapper::after,
                         .select__select:hover + .chevron-select-wrapper::after {
-                          border-top-color: var(--color-main); /* Optional: change on hover */
-                        }
-                        
-                        .select__select::active + .chevron-select-wrapper::after {
-                          transform: translateY(-50%) rotate(180deg);
+                          border-top-color: var(--color-main);
                         }
                       </style>
                       <div class="chevron-select-wrapper"> 
