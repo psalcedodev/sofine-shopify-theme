@@ -427,17 +427,6 @@
                         </select>
                       </div>
                       <style>
-                        #accordion-content {
-                          max-height: 0;
-                          overflow: hidden;
-                          transition: max-height 0.2s ease-out;
-                        }
-                        
-                        .rotate {
-                          transform: rotate(180deg);
-                          transition: transform 0.2s ease-out;
-                        }
-                        
                         .textarea-container {
                           position: relative;
                         }
@@ -467,7 +456,6 @@
                               class="textarea__textarea"
                               placeholder=""
                               name="properties[Your Message]"
-                              form="product-form-{{section.id}}"
                               rows="4"
                               maxlength="250"
                             ></textarea>
