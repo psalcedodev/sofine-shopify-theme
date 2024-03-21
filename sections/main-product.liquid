@@ -376,7 +376,7 @@
                       {% endfor %}
 
                       {% assign all_greeting_options = all_greeting_options | uniq %}
-                      <style>
+                      {% comment %} <style>
                         .chevron-select-wrapper {
                           position: relative;
                           /* Define a custom property with default rotation for the chevron */
@@ -417,7 +417,7 @@
                         .select__select:hover + .chevron-select-wrapper::after {
                           border-top-color: var(--color-main);
                         }
-                      </style>
+                      </style> {% endcomment %}
                       <div class="chevron-select-wrapper"> 
                       <label class="label" for="greeting-card-options">Greeting Card</label>
                       <select class="select__select" id="greeting-card-options" name="properties[Card]">
