@@ -419,7 +419,7 @@
                         }
                       </style>
                       <div class="chevron-select-wrapper"> 
-                      <label class="label" for="greeting-card-options">Greeting Card</label>
+                      <label class="label" for="greeting-card-options">Greeting Card:</label>
                       <select class="select__select" id="greeting-card-options" name="properties[Card]">
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
@@ -456,7 +456,7 @@
                         <label
                           class="form__label"
                           for="custom-message"
-                          >Add your personalization (optional)
+                          >Add your personalization (optional):
                         </label>
                         <div id="accordion-content">
                           <div class="form_field_caption">Enter your personalized card message here ✉</div>
