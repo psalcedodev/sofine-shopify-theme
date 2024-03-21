@@ -437,6 +437,15 @@
                           bottom: 8px;
                           right: 4px;
                         }
+                        .textarea_textarea{
+                          width: 100%;
+                          height: 100px;
+                          padding: 10px;
+                          border: 1px solid #ccc;
+                          border-radius: 3px;
+                          box-sizing: border-box;
+                          transition: box-shadow var(--duration-short) ease;
+                        }
                       </style>
                    
                       <div class="product-form__input product-form__input--textarea" style="padding-top: 20px">
@@ -453,7 +462,7 @@
                           <div class="textarea-container">
                             <textarea
                               id="custom-message"
-                              class="textarea__textarea"
+                              class="textarea_textarea"
                               placeholder=""
                               name="properties[Your Message]"
                               rows="4"
