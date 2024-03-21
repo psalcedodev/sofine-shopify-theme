@@ -6,7 +6,12 @@
         <div class="wrap-main-slider">
           <div data-slide-main data-width-zoom="{{width_zoom}}" data-height-zoom="{{height_zoom}}" class="slider-fors">
             {% for image in product.images %}
-              <div id="main_img_{{image.id }}" data-image-id="{{ image.id }}" class="full-item">
+              <div
+                id="main_img_{{image.id }}"
+                data-image-id="{{ image.id }}"
+                class="full-item"
+                style="align-self:start;"
+              >
                 {%- assign image = image.src -%}
                 {%- if image -%}
                   <img
@@ -15,7 +20,7 @@
                       data-zoom-image="{{ image | img_url: '1920x' }}"
                     {% endif %}
                     src="{{ image | img_url: 'grande' }}"
-                    style="width:100%; height:auto; align-self:start;"
+                    style="width:100%; height:auto;"
                     alt=""
                   >
                 {%- endif -%}
