@@ -136,7 +136,7 @@
     "pagination_limit": 20,
     "show_ajax_scroll": true,
     "style_scroll": 1,
-    "use_eq_height": true,
+    "use_eq_height": false,
     "image_ratio": "ratio3_4",
     "collection_info_show_label_in_stock": false,
     "collection_info_show_label_out_stock": false,
