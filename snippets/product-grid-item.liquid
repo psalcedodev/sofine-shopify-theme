@@ -115,7 +115,7 @@
         </div>
       {% endif %}
       {%- if show_button_add_to_cart or show_button_add_to_wishlist or show_button_add_to_compare -%}
-        <div class="product-image__overlay-bottom">
+        <div class="product-image__overlay-bottom" style="left:0;">
           <div class="group-button">
             <div class="inner" style="gap:10px;">
               {% if show_button_add_to_cart %}
@@ -135,6 +135,7 @@
                 {% else %}
                   <a
                     class="add-to-cart js-btn-sold-out"
+                    style="border-radius: 50%;"
                     onclick="location.href='{{ product.url | within: collection }}'"
                   >
                     <span class="icon">
