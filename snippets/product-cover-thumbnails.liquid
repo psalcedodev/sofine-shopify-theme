@@ -10,7 +10,7 @@
                 id="main_img_{{image.id }}"
                 data-image-id="{{ image.id }}"
                 class="full-item"
-                style="align-self:start;"
+                style="align-self:start; height: 500px;"
               >
                 {%- assign image = image.src -%}
                 {%- if image -%}
@@ -20,7 +20,7 @@
                       data-zoom-image="{{ image | img_url: '1920x' }}"
                     {% endif %}
                     src="{{ image | img_url: 'grande' }}"
-                    style="width:100%; height:auto;"
+                    style="width:100%; height:auto; object-fit: contain;"
                     alt=""
                   >
                 {%- endif -%}
