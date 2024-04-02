@@ -4572,7 +4572,7 @@
           "text_size": "medium",
           "style_title": "style_1",
           "collection": "featured",
-          "max_count": 4,
+          "max_count": 5,
           "use-slider": false,
           "slides-To-Scroll": 3,
           "visible": 5,
