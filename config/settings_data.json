@@ -4356,23 +4356,6 @@
           "pm_padding": ""
         }
       },
-      "1655716718d6eae745": {
-        "type": "newsletter",
-        "settings": {
-          "width_c": 60,
-          "title": "Join Our Newsletter",
-          "content": "Keep up to date with our latest news and special offers.",
-          "text_size": "medium",
-          "position": "center",
-          "layout": "container",
-          "design": "design-1",
-          "cl_bg": "rgba(0,0,0,0)",
-          "mg": ",,100px,",
-          "pd": "",
-          "mg_mb": ",,50px,",
-          "pd_mb": ""
-        }
-      },
       "footer2": {
         "type": "footer2",
         "settings": {
@@ -4731,8 +4714,7 @@
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "1658307745143d6710",
-      "166055287935a5052c",
-      "1655716718d6eae745"
+      "166055287935a5052c"
     ]
   },
   "presets": {
