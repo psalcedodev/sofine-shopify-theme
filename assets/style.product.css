@@ -535,6 +535,8 @@
   display: flex;
   padding-top: 23px;
   position: relative;
+  align-items: center;
+  text-align: center;
 }
 .product-collection__more-info {
   margin-bottom: 10px;
