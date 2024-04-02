@@ -50,8 +50,6 @@
 {% endif %}
 <div class="product-item ajax-pr col-ts-12 col-xs-6 col-sm-4 col-md-4 col-lg-4 " data-col="{{div_num}}">
   <div class="product-collection" {% include 'product-get-attributes' %}>
-    {{ 'Helo 3' }}
-
     <div class="product-collection__image product-image js-product-images-navigation js-product-images-hovered-end {% if enable_hover_image %} cms-hover-image {% endif %}">
       <a
         href="{{ product.url | within: collection }}"

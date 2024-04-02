@@ -33,6 +33,7 @@
 
 <div class="product-item laber-product-item-{{design_product}}">
   <div class="product-collection" {% include 'product-get-attributes' %}>
+    {{ 'Helo' }}
     <div class="product-collection__image product-image js-product-images-navigation js-product-images-hovered-end {% if enable_hover_image %} cms-hover-image {% endif %}">
       <a
         href="{{ product.url | within: collection }}"

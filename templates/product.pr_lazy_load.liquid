@@ -53,8 +53,6 @@
   <div class="product-collection" {% include 'product-get-attributes' %}>
     {% form 'product', product, id: null, class: 'frm_product_collection', data-js-product-form: '' %}
       <input type="hidden" name="id" value="{{ current_variant.id }}" data-js-product-variant-input>
-      {{ 'Helo 4' }}
-
       <div class="product-collection__image product-image js-product-images-navigation js-product-images-hovered-end {% if enable_hover_image %} cms-hover-image {% endif %}">
         <a
           href="{{ product.url | within: collection }}"
