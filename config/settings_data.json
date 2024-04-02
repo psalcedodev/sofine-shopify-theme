@@ -4294,30 +4294,6 @@
               "txt_align": "left"
             }
           },
-          "menu_yNTxyB": {
-            "type": "menu",
-            "settings": {
-              "title": "Help",
-              "menu": "help",
-              "cl": "15",
-              "cl_tb": "3",
-              "cl_mb": "12",
-              "h_position": "left",
-              "txt_align": "left"
-            }
-          },
-          "text_J4fBYD": {
-            "type": "text",
-            "settings": {
-              "title": "_",
-              "content": "",
-              "cl": "12",
-              "cl_tb": "6",
-              "cl_mb": "12",
-              "h_position": "left",
-              "txt_align": "left"
-            }
-          },
           "logo_footer_wgJF86": {
             "type": "logo-footer",
             "settings": {
@@ -4344,8 +4320,6 @@
           "menu_GnCAYh",
           "menu_eJyf8Y",
           "menu_gBznMc",
-          "menu_yNTxyB",
-          "text_J4fBYD",
           "logo_footer_wgJF86",
           "payment_method_7d4DHm"
         ],
