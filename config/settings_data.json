@@ -4212,10 +4212,10 @@
         "settings": {
           "title": "",
           "sub_title": "",
-          "content": "Commodo sociosqu venenatis cras dolor sagittis integer luctus maecenas.",
-          "text_size": "medium",
+          "content": "",
+          "text_size": "large",
           "style_title": "1",
-          "show_n_p": true,
+          "show_n_p": false,
           "show_link": false,
           "use-slider": true,
           "slides-To-Scroll": 1,
