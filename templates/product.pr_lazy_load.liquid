@@ -64,7 +64,7 @@
             {% unless current_img_url contains 'no-image' %}
               <div
                 data-image-effect
-                class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_1 {{settings.product_hover_animation_type}}"
+                class="pr_lazy_img main-img lazyload  laber_img_1 {{settings.product_hover_animation_type}}"
                 data-id="{{image.id}}"
                 data-bgset="{{ image | img_url: '1x1' }}"
                 data-parent-fit="width"
@@ -77,14 +77,14 @@
             {% if current_img_url contains 'no-image' %}
               <div
                 data-image-effect
-                class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_1"
+                class="pr_lazy_img main-img lazyload  laber_img_1"
                 style="padding-top:127%; background-image:url('https://via.placeholder.com/540x690.png/F2F3F5/fff?text=No Image'); height:100%; object-fit:cover;"
               ></div>
             {% endif %}
           {% else %}
             <div
               data-image-effect
-              class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_1"
+              class="pr_lazy_img main-img lazyload  laber_img_1"
               style="padding-top:127%; background-image:url('https://via.placeholder.com/540x690.png/F2F3F5/fff?text=No Image'); height:100%; object-fit:cover;"
             ></div>
           {% endif %}
@@ -93,7 +93,7 @@
             {% unless img_hover_url contains 'no-image' %}
               <div
                 data-image-hover
-                class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_2 {{settings.product_hover_animation_type}}"
+                class="pr_lazy_img main-img lazyload  laber_img_2 {{settings.product_hover_animation_type}}"
                 data-id="{{image.id}}"
                 data-bgset="{{ hover_image | img_url: '1x1' }}"
                 data-parent-fit="width"
@@ -106,14 +106,14 @@
             {% if img_hover_url contains 'no-image' %}
               <div
                 data-image-hover
-                class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_2"
+                class="pr_lazy_img main-img lazyload  laber_img_2"
                 style="padding-top:127%; background-image:url('{{ current_img_url }}'); height:100%; object-fit:cover;"
               ></div>
             {% endif %}
           {% else %}
             <div
               data-image-hover
-              class="pr_lazy_img main-img lazyload laber_bg_lz laber_img_2"
+              class="pr_lazy_img main-img lazyload  laber_img_2"
               style="padding-top:127%; background-image:url('https://via.placeholder.com/540x690.png/F2F3F5/fff?text=No Image'); height:100%; object-fit:cover;"
             ></div>
           {% endif %}
