@@ -4222,7 +4222,7 @@
           "style_title": "1",
           "show_n_p": false,
           "show_link": false,
-          "use-slider": false,
+          "use-slider": true,
           "slides-To-Scroll": 1,
           "visible": 4,
           "widescreen": 4,
@@ -4741,7 +4741,7 @@
         ],
         "settings": {
           "layout": "container",
-          "cl_bg": "#fff",
+          "cl_bg": "#ffffff",
           "mg": "30px,,,",
           "pd": "",
           "mg_mb": "",
