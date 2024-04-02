@@ -4222,7 +4222,7 @@
           "style_title": "1",
           "show_n_p": false,
           "show_link": false,
-          "use-slider": true,
+          "use-slider": false,
           "slides-To-Scroll": 1,
           "visible": 4,
           "widescreen": 4,
@@ -4706,6 +4706,47 @@
         "settings": {
           "hidden": false
         }
+      },
+      "custom_section_mRLk6i": {
+        "type": "custom-section",
+        "blocks": {
+          "image_D47eyk": {
+            "type": "image",
+            "settings": {
+              "url": "",
+              "open_link": "_blank",
+              "cl": "6",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "text_UXjLpx": {
+            "type": "text",
+            "settings": {
+              "title": "Custom title",
+              "sub_title": "wellcome to shopify theme",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "btn_text": "Discover now",
+              "link_btn": "",
+              "open_link": "_blank",
+              "cl": "6",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          }
+        },
+        "block_order": [
+          "image_D47eyk",
+          "text_UXjLpx"
+        ],
+        "settings": {
+          "layout": "container",
+          "cl_bg": "#fff",
+          "mg": "30px,,,",
+          "pd": "",
+          "mg_mb": "",
+          "pd_mb": ""
+        }
       }
     },
     "content_for_index": [
@@ -4714,7 +4755,8 @@
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "1658307745143d6710",
-      "166055287935a5052c"
+      "166055287935a5052c",
+      "custom_section_mRLk6i"
     ]
   },
   "presets": {
