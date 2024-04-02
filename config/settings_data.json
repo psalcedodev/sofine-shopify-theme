@@ -4586,7 +4586,7 @@
           "content": "Shop the world’s best destinations from home",
           "text_size": "medium",
           "style_title": "style_1",
-          "collection": "t-shirt",
+          "collection": "featured",
           "max_count": 8,
           "use-slider": true,
           "slides-To-Scroll": 1,
