@@ -4209,6 +4209,9 @@
           "165511688031d3eb34-3",
           "165511688031d3eb34-2"
         ],
+        "custom_css": [
+          ".menu-item {text-align: center;}"
+        ],
         "settings": {
           "title": "",
           "sub_title": "",
@@ -4244,7 +4247,7 @@
           "image_ratio": "ratio3_4",
           "layout": "container",
           "cl_bg": "#ffffff",
-          "mg": "0,0,100px,0",
+          "mg": "00,100px,0",
           "pd": "",
           "mg_mb": "0,0,50px,0",
           "pd_mb": ""
