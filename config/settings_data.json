@@ -1767,8 +1767,8 @@
           "link_rzB9Ax": {
             "type": "link",
             "settings": {
-              "tt_hd": "Category",
-              "url": "shopify:\/\/collections\/for-her",
+              "tt_hd": "Collections",
+              "url": "",
               "open_link": "_self",
               "menu": "category-menu",
               "col": "15"
