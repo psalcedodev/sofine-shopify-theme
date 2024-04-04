@@ -137,56 +137,11 @@
         "mg_mb": "",
         "pd_mb": "30px,0,50px,0"
       }
-    },
-    "9c8d5148-af29-47c5-b1e5-df8cdd31ae08": {
-      "type": "collection-carousel-product",
-      "settings": {
-        "title": "New arrivals",
-        "sub_title": "",
-        "content": "Commodo sociosqu venenatis cras dolor sagittis integer luctus maecenas.",
-        "text_size": "medium",
-        "style_title": "style_1",
-        "collection": "backpacks",
-        "max_count": 8,
-        "use-slider": true,
-        "slides-To-Scroll": 1,
-        "visible": 5,
-        "widescreen": 5,
-        "desktop": 4,
-        "laptop": 4,
-        "notebook": 3,
-        "tablet": 3,
-        "landscape": 2,
-        "portrait": 2,
-        "mobile": 1,
-        "rows": 1,
-        "autoplay": false,
-        "speed": "300",
-        "autoplay-Speed": "3000",
-        "arrows": true,
-        "fade": false,
-        "center-Mode": false,
-        "adaptive-Height": false,
-        "dots": false,
-        "infinite": false,
-        "padding": 10,
-        "vertical": false,
-        "show_view_all": false,
-        "layout_des": false,
-        "use_eq_height": true,
-        "image_ratio": "ratio_nt",
-        "cl_bg": "#ffffff",
-        "mg": "",
-        "pd": "100px,,80px,",
-        "mg_mb": "",
-        "pd_mb": "50px,,30px,"
-      }
     }
   },
   "order": [
     "breadcrumb",
     "main",
-    "1652931770532e3556",
-    "9c8d5148-af29-47c5-b1e5-df8cdd31ae08"
+    "1652931770532e3556"
   ]
 }
