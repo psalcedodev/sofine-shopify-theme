@@ -200,7 +200,7 @@
     "footer_social_snapchat_enable": false,
     "social_snapchat_link": "",
     "footer_social_snapchat_text": "Snapchat",
-    "footer_social_youtube_enable": true,
+    "footer_social_youtube_enable": false,
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCuDOmJzfwWQtqlXre2P6XrA",
     "footer_social_youtube_text": "Youtube",
     "footer_social_vimeo_enable": false,
@@ -4263,8 +4263,8 @@
             "settings": {
               "title": "Help",
               "menu": "help",
-              "cl": "15",
-              "cl_tb": "3",
+              "cl": "3",
+              "cl_tb": "4",
               "cl_mb": "12",
               "h_position": "left",
               "txt_align": "left"
@@ -4275,7 +4275,7 @@
             "settings": {
               "title": "Company",
               "menu": "company",
-              "cl": "15",
+              "cl": "3",
               "cl_tb": "3",
               "cl_mb": "12",
               "h_position": "left",
@@ -4287,7 +4287,7 @@
             "settings": {
               "title": "Connect",
               "menu": "connect",
-              "cl": "15",
+              "cl": "3",
               "cl_tb": "3",
               "cl_mb": "12",
               "h_position": "left",
