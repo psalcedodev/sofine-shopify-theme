@@ -3546,7 +3546,7 @@
           "6ca105d4-c60d-4770-9dc2-3097283a894b": {
             "type": "subhd",
             "settings": {
-              "title": "Summer Collection 2022",
+              "title": "Mother's Day Sale",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
@@ -3577,7 +3577,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Extra 15% off the up",
+              "title": "20% OFF",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3599,7 +3599,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "to 70% off sale!",
+              "title": "on ALL products!",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3628,7 +3628,7 @@
           "f65e767f-b7b5-40e5-9596-d068a03e2894": {
             "type": "txt",
             "settings": {
-              "title": "Casual pieces for chilling at home.",
+              "title": "Mom's Moments of Bliss — Curated Gifts for Her Day.",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#444444",
@@ -3654,7 +3654,7 @@
           "a3937595-0962-4042-8971-7fd2a100461b": {
             "type": "btn",
             "settings": {
-              "title": "Explorer Now",
+              "title": "SHOP NOW!",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "#",
