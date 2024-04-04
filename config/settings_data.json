@@ -3691,7 +3691,7 @@
           "379f2442-5885-4f25-945f-6db364fb9c1a": {
             "type": "subhd",
             "settings": {
-              "title": "Summer Collection 2022",
+              "title": "Indulge in Serenity",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#444444",
@@ -3722,7 +3722,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Extra 15% off the up",
+              "title": "Spa Gift Sets",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3744,7 +3744,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "to 70% off sale!",
+              "title": "Luxurious Comfort",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3773,7 +3773,7 @@
           "b54e535a-e061-43b5-9faf-01c49dbe929f": {
             "type": "txt",
             "settings": {
-              "title": "Casual pieces for chilling at home.",
+              "title": "Pamper your senses with a luxury spa experience at home.",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
@@ -3799,7 +3799,7 @@
           "a18e2035-2fbd-4496-bb14-bbc57a981498": {
             "type": "btn",
             "settings": {
-              "title": "Explorer Now",
+              "title": "Unwind in Luxury",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "",
@@ -3836,7 +3836,7 @@
           "e43e933c-0347-4208-a67a-679030797cae": {
             "type": "subhd",
             "settings": {
-              "title": "Summer Collection 2022",
+              "title": "Exclusive Finds",
               "text_animate": "fadeInDown",
               "text_time": 1.5,
               "color": "#444444",
@@ -3867,7 +3867,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Extra 15% off the up",
+              "title": "Treasures for Her",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3889,7 +3889,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "to 70% off sale!",
+              "title": "Graceful and Chic",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
