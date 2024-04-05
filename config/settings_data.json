@@ -1751,7 +1751,7 @@
             "type": "mega",
             "settings": {
               "title": "Products",
-              "url": "shopify:\/\/collections",
+              "url": "",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -3974,7 +3974,7 @@
               "h_position": "left",
               "v_position": "middle",
               "txt_align": "left",
-              "cl_overlay": "#111",
+              "cl_overlay": "#111111",
               "cl_opacity": 100
             }
           },
