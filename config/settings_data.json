@@ -1790,7 +1790,7 @@
               "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
               "enable_content_banner": true,
-              "coll_name": "Gift for Two",
+              "coll_name": "Gift for Him",
               "col": "2"
             }
           },
@@ -1820,7 +1820,7 @@
               "title": "Seasonal",
               "url": "",
               "open_link": "_self",
-              "menu": "seasonal",
+              "menu": "",
               "icon": "",
               "cus_cl": false,
               "cl": "#ec0101",
