@@ -63,7 +63,6 @@
                         {% assign ratio = image.aspect_ratio %}
                         {% assign collection = collections[block.settings.collection] %}
                         <div class="image-col">
-                          {{ 'Hello' }}
                           <a
                             title="{{sblock.title}}"
                             href="{{ collection.url | default:'/admin/collections' }}"
@@ -87,6 +86,7 @@
                                 data-bgset="https://placehold.jp/26/{% cycle 'a8dacc', '56cfe1', 'f99077','c8b09b','efe1ba','a5d0d9','a1a19f' %}/fff/390x536.png?text=390x536"
                                 data-parent-fit="width"
                                 data-sizes="auto"
+                                style="padding-top:137.5%;"
                               ></div>
                             {%- endif -%}
                           </a>
