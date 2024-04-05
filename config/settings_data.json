@@ -4338,7 +4338,7 @@
           "165511688031d3eb34-0": {
             "type": "menu",
             "settings": {
-              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
+              "image": "shopify:\/\/shop_images\/HIM2.1Medium_1.jpg",
               "title": "Gift For Him",
               "collection": "for-him",
               "open_link": "_self"
@@ -4347,7 +4347,7 @@
           "165511688031d3eb34-1": {
             "type": "menu",
             "settings": {
-              "image": "shopify:\/\/shop_images\/HER1.1Medium.jpg",
+              "image": "shopify:\/\/shop_images\/HER6.1Small.jpg",
               "title": "Gift for Her",
               "collection": "for-her",
               "open_link": "_self"
@@ -4356,7 +4356,7 @@
           "165511688031d3eb34-3": {
             "type": "menu",
             "settings": {
-              "image": "shopify:\/\/shop_images\/TWO1.1Medium_1.jpg",
+              "image": "shopify:\/\/shop_images\/TWO3.4Medium.jpg",
               "title": "Gift for Two",
               "collection": "gift-for-two",
               "open_link": "_self"
@@ -4365,8 +4365,8 @@
           "165511688031d3eb34-2": {
             "type": "menu",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_6406.jpg",
-              "title": "Seasonal Gifts",
+              "image": "shopify:\/\/shop_images\/TWO4.4M-SharedSerenity-BathSalt_4.jpg",
+              "title": "Spa Gift Sets",
               "collection": "seasonal",
               "open_link": "_self"
             }
