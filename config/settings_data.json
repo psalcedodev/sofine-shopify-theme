@@ -1784,13 +1784,33 @@
               "col": "2"
             }
           },
+          "banner_gFhJrm": {
+            "type": "banner",
+            "settings": {
+              "url": "shopify:\/\/collections\/gift-for-two",
+              "open_link": "_self",
+              "enable_content_banner": true,
+              "coll_name": "Gift for Two",
+              "col": "2"
+            }
+          },
+          "banner_fiAj9w": {
+            "type": "banner",
+            "settings": {
+              "url": "shopify:\/\/collections\/gift-for-two",
+              "open_link": "_self",
+              "enable_content_banner": true,
+              "coll_name": "Gift for Two",
+              "col": "2"
+            }
+          },
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
             "settings": {
-              "url": "shopify:\/\/collections\/for-him",
+              "url": "shopify:\/\/collections\/spa-gift-sets",
               "open_link": "_self",
               "enable_content_banner": true,
-              "coll_name": "Gift for Him",
+              "coll_name": "Spa Gift Sets",
               "col": "2"
             }
           },
@@ -1856,6 +1876,8 @@
           "2edb69f1-946f-44fb-9516-b508ad1dbadc",
           "link_rzB9Ax",
           "c82034d8-9761-4095-be7b-cbc7c165b914",
+          "banner_gFhJrm",
+          "banner_fiAj9w",
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
           "dropdown_bHE3Cy",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
