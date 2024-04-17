@@ -3768,7 +3768,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Luxurious Comfort",
+              "title": "Relax & Indulge",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3797,7 +3797,7 @@
           "b54e535a-e061-43b5-9faf-01c49dbe929f": {
             "type": "txt",
             "settings": {
-              "title": "Pamper your senses with a luxury spa experience at home.",
+              "title": "The perfect gift for unwinding and self-care",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
