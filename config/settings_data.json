@@ -3568,7 +3568,7 @@
           "6ca105d4-c60d-4770-9dc2-3097283a894b": {
             "type": "subhd",
             "settings": {
-              "title": "Mother's Day Sale",
+              "title": "<b> Mother's Day Sale <\/b>",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
@@ -3650,7 +3650,7 @@
           "f65e767f-b7b5-40e5-9596-d068a03e2894": {
             "type": "txt",
             "settings": {
-              "title": "Celebrate the cherished woman in your life with our Cherished Mom Collection",
+              "title": "Celebrate the cherished woman in your life <br> with our <b> Cherished Mom <\/b> Collection",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#444444",
