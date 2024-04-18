@@ -3825,8 +3825,8 @@
           "b68a79f6-452b-4be4-9485-ab2e5ec818bd": {
             "type": "img",
             "settings": {
-              "image_sl": "shopify:\/\/shop_images\/HER5.4Medium.jpg",
-              "image_sl_mobile": "shopify:\/\/shop_images\/HER6.4Medium.jpg",
+              "image_sl": "shopify:\/\/shop_images\/HER6.1Small.jpg",
+              "image_sl_mobile": "shopify:\/\/shop_images\/HER6.1Small.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "2",
@@ -3868,7 +3868,7 @@
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
-              "fs_text": 64,
+              "fs_text": 45,
               "lh_text": 64,
               "ls_text": "-0.03em",
               "font_style": "normal",
@@ -3942,6 +3942,8 @@
           "img_Y67zm6": {
             "type": "img",
             "settings": {
+              "image_sl": "shopify:\/\/shop_images\/HIM2.1Small_2.jpg",
+              "image_sl_mobile": "shopify:\/\/shop_images\/HIM2.1Small_2.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "2",
@@ -3952,33 +3954,11 @@
               "cl_opacity": 100
             }
           },
-          "subhd_AUEBBF": {
-            "type": "subhd",
-            "settings": {
-              "title": "Sophisticated Selections",
-              "text_animate": "fadeInDown",
-              "text_time": 1.5,
-              "color": "#444444",
-              "fw_text": 500,
-              "fs_text": 20,
-              "lh_text": 0,
-              "ls_text": "0",
-              "font_style": "italic",
-              "text_transform": "none",
-              "hide": false,
-              "first_mark": false,
-              "last_mark": false,
-              "custom_mark": "",
-              "mobile_fw_text": 500,
-              "mobile_lh_text": 0,
-              "mobile_font_text": 14
-            }
-          },
           "hd_Bwkp94": {
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Crafted for Him",
+              "title": "Gift for Him",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -4000,12 +3980,12 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Distinctive and Durable",
+              "title": "Distinctive and Timeless",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
-              "fs_text": 64,
+              "fs_text": 45,
               "lh_text": 64,
               "ls_text": "-0.03em",
               "font_style": "normal",
@@ -4029,7 +4009,7 @@
           "txt_4yHGPY": {
             "type": "txt",
             "settings": {
-              "title": "Elevate his daily ritual with our finest selection.",
+              "title": "Elevate his daily ritual, whether at home or on the go",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#444444",
@@ -4055,7 +4035,7 @@
           "btn_CpMa3b": {
             "type": "btn",
             "settings": {
-              "title": "Explore for Him",
+              "title": "<b>EXPLORE NOW!<\/b>",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "#",
@@ -4103,7 +4083,6 @@
           "2191a709-e18f-4848-9a5f-2e3153242d25",
           "e9b1486a-5343-4257-a9ce-11829970464f",
           "img_Y67zm6",
-          "subhd_AUEBBF",
           "hd_Bwkp94",
           "hd_eixtwK",
           "space_WqdFpi",
