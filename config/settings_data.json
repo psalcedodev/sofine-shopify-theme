@@ -3959,7 +3959,7 @@
             "settings": {
               "hide": false,
               "title": "Gift for Him",
-              "text_animate": "slideInLeft",
+              "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
@@ -3981,7 +3981,7 @@
             "settings": {
               "hide": false,
               "title": "Distinctive and Timeless",
-              "text_animate": "slideInRight",
+              "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
