@@ -3842,7 +3842,7 @@
             "settings": {
               "hide": false,
               "title": "Gift for Her",
-              "text_animate": "slideInLeft",
+              "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
@@ -3864,7 +3864,7 @@
             "settings": {
               "hide": false,
               "title": "Graceful and Chic",
-              "text_animate": "slideInRight",
+              "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#1a1a1a",
               "fw_text": 700,
