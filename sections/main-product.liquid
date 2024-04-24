@@ -22,7 +22,7 @@
 <div class="main-content shop-page main-content-detail" 
      style="background-color:{{bg_product_page}};
             padding-top:{{pad_top_product_page}}px;
-            padding-bottom:{{pad_bottom_product_page}}px;">
+            padding-bottom:{{pad_bottom_product_page}}px;"> 
  
     <div id="laber_{{sid}}">
       <div class="content-offset {{ product_page_design }}">
@@ -374,18 +374,16 @@
                           {% else %}
                             {% assign greeting_options = "" %}
                         {% endcase %}
-
                         {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
                       {% endfor %}
 
-                      {% assign all_greeting_options = all_greeting_options | uniq %}
+                      {% assign all_greeting_options = all_greeting_options | uniq | sort %}
                       <style>
                         .chevron-select-wrapper {
                           position: relative;
                           /* Define a custom property with default rotation for the chevron */
                           --chevron-transform: rotate(0deg);
                         }
-                      
                         .select__select {
                           -webkit-appearance: none;
                           appearance: none;
