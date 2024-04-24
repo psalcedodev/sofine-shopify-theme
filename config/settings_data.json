@@ -4381,7 +4381,7 @@
             "type": "menu",
             "settings": {
               "title": "Blogs",
-              "menu": "connect",
+              "menu": "blogs",
               "cl": "3",
               "cl_tb": "3",
               "cl_mb": "12",
