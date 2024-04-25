@@ -81,7 +81,11 @@
             {% if block.settings.enable_content_banner %}
               <div class="laber_content_html" style="display:flex; justify-content:center; align-items:center;">
                 <h3>
-                  <a href="{{ block.settings.url | default:'#' }}" target="{{block.settings.open_link}}">
+                  <a
+                    href="{{ block.settings.url | default:'#' }}"
+                    target="{{block.settings.open_link}}"
+                    style="color: black; background-color:white;"
+                  >
                     {{ block.settings.coll_name }}
                   </a>
                 </h3>
