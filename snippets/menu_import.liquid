@@ -57,7 +57,7 @@
         {%- assign c_bid = block.id -%}
         {%- assign image = block.settings.image -%}
         <div id="bk_{{c_bid}}" class="type_mn_banner menu-item col-lg-{{block.settings.col}} col-md-12 col-sm-12">
-          <div class="banner_menu zoom_img">
+          <div class="banner_menu zoom_img" style="width: 100%; height: 260px;">
             <a
               href="{{ block.settings.url | default:'#' }}"
               target="{{block.settings.open_link}}"
@@ -78,7 +78,7 @@
               {%- endif -%}
             </a>
             {% if block.settings.enable_content_banner %}
-              <div class="laber_content_html">
+              <div class="laber_content_html" style="display:flex; justify-content:center; align-items:center;">
                 <h3>
                   <a href="{{ block.settings.url | default:'#' }}" target="{{block.settings.open_link}}">
                     {{ block.settings.coll_name }}
