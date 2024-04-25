@@ -1777,6 +1777,7 @@
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
             "settings": {
+              "image": "shopify:\/\/shop_images\/HER6.1Small.jpg",
               "url": "shopify:\/\/collections\/for-her",
               "open_link": "_self",
               "enable_content_banner": true,
@@ -1787,6 +1788,7 @@
           "banner_gFhJrm": {
             "type": "banner",
             "settings": {
+              "image": "shopify:\/\/shop_images\/HIM2.1M_-_Gentleman_s_Refuge_-_Rustic_Noir_1.jpg",
               "url": "shopify:\/\/collections\/for-him",
               "open_link": "_self",
               "enable_content_banner": true,
