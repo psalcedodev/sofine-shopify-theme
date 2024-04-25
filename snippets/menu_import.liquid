@@ -53,12 +53,11 @@
   {%- for block in se_blocks offset: arr_id_size -%}
     {%- if arrType contains block.type %}{% break %}{% endif -%}
     {%- case block.type -%}
-        {{ 'Your text or variable v2' }}
-
       {%- when 'banner' -%}
         {%- assign c_bid = block.id -%}
         {%- assign image = block.settings.image -%}
         <div id="bk_{{c_bid}}" class="type_mn_banner menu-item col-lg-{{block.settings.col}} col-md-12 col-sm-12">
+          {{ 'Your text or variable v2' }}
           <div class="banner_menu zoom_img">
             <a
               href="{{ block.settings.url | default:'#' }}"
