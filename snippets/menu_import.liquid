@@ -53,8 +53,6 @@
   {%- for block in se_blocks offset: arr_id_size -%}
     {%- if arrType contains block.type %}{% break %}{% endif -%}
     {%- case block.type -%}
-        {% comment %} Print hello {% endcomment %}
-        {%- echo 'Hello' -%}
       {%- when 'banner' -%}
         {%- assign c_bid = block.id -%}
         {%- assign image = block.settings.image -%}
