@@ -1848,7 +1848,7 @@
           "dropdown_CPz7h3": {
             "type": "dropdown",
             "settings": {
-              "title": "News",
+              "title": "Blog",
               "url": "shopify:\/\/blogs\/news",
               "open_link": "_self",
               "menu": "",
@@ -4072,6 +4072,19 @@
               "mobile_mg": "0px 0px 0px 0px",
               "mobile_pd": "10px 40px 10px 40px"
             }
+          },
+          "img_eP9LCp": {
+            "type": "img",
+            "settings": {
+              "link_img": "",
+              "open_link": "_blank",
+              "caption_w": "2",
+              "h_position": "center",
+              "v_position": "middle",
+              "txt_align": "center",
+              "cl_overlay": "#111",
+              "cl_opacity": 100
+            }
           }
         },
         "block_order": [
@@ -4105,7 +4118,8 @@
           "space_WqdFpi",
           "txt_4yHGPY",
           "space_Wz3LyH",
-          "btn_CpMa3b"
+          "btn_CpMa3b",
+          "img_eP9LCp"
         ],
         "settings": {
           "hidden": false,
@@ -4452,98 +4466,6 @@
         "type": "footer3",
         "settings": {
           "bg": "#fff"
-        }
-      },
-      "1658307745143d6710": {
-        "type": "banner-full-width",
-        "blocks": {
-          "1658307745143d6710-0": {
-            "type": "banner_img",
-            "settings": {
-              "image_sl": "shopify:\/\/shop_images\/young-woman-spreading-her-arms-in-autumn-breeze.jpg",
-              "link_img": "",
-              "open_link": "_blank",
-              "h_position": "center",
-              "v_position": "middle",
-              "txt_align": "center",
-              "mg_bottom": 0
-            }
-          },
-          "cedc27be-aad9-4abd-9353-707a34373391": {
-            "type": "hd",
-            "settings": {
-              "title": "International Women's Day - 15% OFF",
-              "color": "#1a1a1a",
-              "fw_text": 700,
-              "fs_text": 64,
-              "lh_text": 64,
-              "ls_text": 0,
-              "text_transform": "none",
-              "mg_bottom": 15,
-              "hide": false,
-              "mobile_font_text": 30,
-              "mobile_mg_bottom": 10
-            }
-          },
-          "81fe59ac-0813-4dbf-a01d-e268c0079d69": {
-            "type": "txt",
-            "settings": {
-              "title": "On Gift for Her Boxes!",
-              "color": "#444444",
-              "fw_text": 400,
-              "fs_text": 20,
-              "lh_text": 20,
-              "ls_text": 0,
-              "mg_bottom": 25,
-              "hide": false,
-              "mobile_font_text": 14,
-              "mobile_mg_bottom": 10
-            }
-          },
-          "6e801c18-5a32-43e0-98cb-3547e91598f1": {
-            "type": "btn",
-            "settings": {
-              "title": "Shop Gifts for Her",
-              "btn_link": "shopify:\/\/collections\/for-her",
-              "open_link": "_blank",
-              "cl_txt": "#ffffff",
-              "cl_txt_hover": "#1a1a1a",
-              "cl_bg": "#1a1a1a",
-              "cl_bg_hover": "#ffffff",
-              "cl_border": "#1a1a1a",
-              "cl_border_hover": "#ffffff",
-              "fs_text": 16,
-              "fw_text": 700,
-              "button_transform": "none",
-              "br_button": "3px 3px",
-              "mg": "0px 5px 0px 5px",
-              "pd": "15px 40px 15px 40px",
-              "icon_button": "",
-              "ls_text": 0,
-              "mobile_font_text": 12,
-              "mobile_mg_bottom": 0,
-              "mobile_mg": "0px 5px 0px 5px",
-              "mobile_pd": "10px 20px 10px 20px"
-            }
-          }
-        },
-        "block_order": [
-          "1658307745143d6710-0",
-          "cedc27be-aad9-4abd-9353-707a34373391",
-          "81fe59ac-0813-4dbf-a01d-e268c0079d69",
-          "6e801c18-5a32-43e0-98cb-3547e91598f1"
-        ],
-        "settings": {
-          "use_custom_h": "1",
-          "h_des": "670px",
-          "h_tb": "500px",
-          "h_mb": "450px",
-          "full_width": false,
-          "cl_bg": "#ffffff",
-          "mg": ",,100px,",
-          "pd": "",
-          "mg_mb": ",,50px,",
-          "pd_mb": ""
         }
       },
       "16583088371ba79d2b": {
@@ -4898,7 +4820,6 @@
       "165511688031d3eb34",
       "1660148094b62994c9",
       "16583088371ba79d2b",
-      "1658307745143d6710",
       "166055287935a5052c",
       "testimonials_section_home1_m3V3pG"
     ],
