@@ -1845,6 +1845,20 @@
               "lb_cl": ""
             }
           },
+          "dropdown_CPz7h3": {
+            "type": "dropdown",
+            "settings": {
+              "title": "News",
+              "url": "shopify:\/\/blogs\/news",
+              "open_link": "_self",
+              "menu": "",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879": {
             "type": "simple",
             "settings": {
@@ -1883,6 +1897,7 @@
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
           "dropdown_bHE3Cy",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
+          "dropdown_CPz7h3",
           "d39c2c9b-4b7a-4a93-bc6b-af498ca89879",
           "407f6f92-2819-4cb0-a735-a3caec3c4cd2"
         ],
