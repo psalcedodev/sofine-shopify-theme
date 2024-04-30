@@ -4778,42 +4778,99 @@
           "hidden": false
         }
       },
-      "custom_section_mRLk6i": {
-        "type": "custom-section",
+      "testimonials_section_home1_m3V3pG": {
+        "type": "testimonials-section-home1",
         "blocks": {
-          "image_D47eyk": {
-            "type": "image",
+          "quote_zUmLMX": {
+            "type": "quote",
             "settings": {
-              "url": "",
-              "open_link": "_blank",
-              "cl": "6",
-              "cl_tb": "6",
-              "cl_mb": "12"
+              "image": "shopify:\/\/shop_images\/TWO3.2Medium.jpg",
+              "content": "<p>Really great item - I order these for employees and they are all very satisfied!<\/p>",
+              "title": "Jessica",
+              "address": "Etsy - Valentine's Day Gift for Two",
+              "rating": 5
             }
           },
-          "text_UXjLpx": {
-            "type": "text",
+          "quote_iK4wj9": {
+            "type": "quote",
             "settings": {
-              "title": "Custom title",
-              "sub_title": "wellcome to shopify theme",
-              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-              "btn_text": "Discover now",
-              "link_btn": "",
-              "open_link": "_blank",
-              "cl": "6",
-              "cl_tb": "6",
-              "cl_mb": "12"
+              "image": "shopify:\/\/shop_images\/HIM1.1Small_1.jpg",
+              "content": "<p>Super cute I would buy it again<\/p>",
+              "title": "Edith",
+              "address": "Etsy - Urban Classic Gift for Men",
+              "rating": 5
+            }
+          },
+          "quote_NR9enh": {
+            "type": "quote",
+            "settings": {
+              "content": "<p>Beautiful package - a great gift for everyone<\/p>",
+              "title": "Jessica",
+              "address": "Etsy - Rustic Retreat Gift for Women",
+              "rating": 5
+            }
+          },
+          "quote_3fJKxC": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TWO3.1Medium_1.jpg",
+              "content": "<p>This is so much better than I thought it would be! I may just end up snagging my partners candle too because it smells so good. This is perfect for documenting our adventures… especially next summer when the sailboat is in the water!<\/p>",
+              "title": "karolynhenick1",
+              "address": "Etsy - Shared Journey Gift for Two",
+              "rating": 5
+            }
+          },
+          "quote_YawWNr": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HER8.2M-CherishedMomCollection-LavenderBox_9.jpg",
+              "content": "<p>Amazing Mother's day gift for my 2 mothers in my life. Thank you for packing this gift box so carefully  and beautifully!.<\/p>",
+              "title": "Alexander Soza",
+              "address": "Texas - Cherished Mom Box",
+              "rating": 5
             }
           }
         },
         "block_order": [
-          "image_D47eyk",
-          "text_UXjLpx"
+          "quote_zUmLMX",
+          "quote_iK4wj9",
+          "quote_NR9enh",
+          "quote_3fJKxC",
+          "quote_YawWNr"
         ],
         "settings": {
+          "hidden": false,
           "layout": "container",
-          "cl_bg": "#ffffff",
-          "mg": "30px,,,",
+          "width_c": 100,
+          "style": "style2",
+          "title": "What people say?",
+          "sub_title": "",
+          "content": "",
+          "use-slider": true,
+          "slides-To-Scroll": 1,
+          "visible": 5,
+          "widescreen": 4,
+          "desktop": 4,
+          "laptop": 4,
+          "notebook": 3,
+          "tablet": 3,
+          "landscape": 1,
+          "portrait": 1,
+          "mobile": 1,
+          "rows": 1,
+          "autoplay": true,
+          "speed": "300",
+          "autoplay-Speed": "3000",
+          "arrows": true,
+          "fade": false,
+          "center-Mode": false,
+          "adaptive-Height": false,
+          "dots": false,
+          "infinite": true,
+          "padding": 10,
+          "vertical": false,
+          "cl_bg": "#fff",
+          "mg": "",
           "pd": "",
           "mg_mb": "",
           "pd_mb": ""
@@ -4827,7 +4884,7 @@
       "16583088371ba79d2b",
       "1658307745143d6710",
       "166055287935a5052c",
-      "custom_section_mRLk6i"
+      "testimonials_section_home1_m3V3pG"
     ],
     "blocks": {
       "15683396631634586217": {
