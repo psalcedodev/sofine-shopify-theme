@@ -3572,9 +3572,8 @@
         "blocks": {
           "165018826364c02d6a-0": {
             "type": "img",
-            "disabled": true,
             "settings": {
-              "image_sl": "shopify:\/\/shop_images\/IMG_6987.jpg",
+              "image_sl": "shopify:\/\/shop_images\/TWO4.1M_-_Shared_Serenity_-_SS_Lavender_Eucalyptus_1.jpg",
               "image_sl_mobile": "shopify:\/\/shop_images\/IMG_6987.jpg",
               "link_img": "",
               "open_link": "_blank",
@@ -3588,7 +3587,6 @@
           },
           "6ca105d4-c60d-4770-9dc2-3097283a894b": {
             "type": "subhd",
-            "disabled": true,
             "settings": {
               "title": "<b> Mother's Day Sale <\/b>",
               "text_animate": "slideInRight",
@@ -3611,7 +3609,6 @@
           },
           "3b4b9a6c-deb6-4dfb-abdd-35da77d85b1a": {
             "type": "space",
-            "disabled": true,
             "settings": {
               "hide_mobile": false,
               "sp": 20,
@@ -3620,10 +3617,9 @@
           },
           "416867ec-0732-4261-a3f2-30e689d3518d": {
             "type": "hd",
-            "disabled": true,
             "settings": {
               "hide": false,
-              "title": "20% OFF",
+              "title": "Beautifully Curated Gift Boxes",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3643,10 +3639,9 @@
           },
           "b7c972a8-63f1-447a-85e1-5943ea43ad04": {
             "type": "hd",
-            "disabled": true,
             "settings": {
               "hide": false,
-              "title": "STOREWIDE",
+              "title": "for Every Occasion",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3666,7 +3661,6 @@
           },
           "00872d90-3664-49b6-82aa-f74965557de5": {
             "type": "space",
-            "disabled": true,
             "settings": {
               "hide_mobile": false,
               "sp": 15,
@@ -3675,7 +3669,6 @@
           },
           "f65e767f-b7b5-40e5-9596-d068a03e2894": {
             "type": "txt",
-            "disabled": true,
             "settings": {
               "title": "Celebrate the cherished woman in your life <br> with our <b> Cherished Mom <\/b> Collection",
               "text_animate": "slideInLeft",
@@ -3694,7 +3687,6 @@
           },
           "5dad6501-4ec3-4b57-8305-3e7052e07c26": {
             "type": "space",
-            "disabled": true,
             "settings": {
               "hide_mobile": false,
               "sp": 10,
@@ -3703,7 +3695,6 @@
           },
           "a3937595-0962-4042-8971-7fd2a100461b": {
             "type": "btn",
-            "disabled": true,
             "settings": {
               "title": "<b>SHOP NOW!<\/b>",
               "text_animate": "fadeInUp",
