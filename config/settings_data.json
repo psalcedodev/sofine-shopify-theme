@@ -3588,7 +3588,7 @@
           "6ca105d4-c60d-4770-9dc2-3097283a894b": {
             "type": "subhd",
             "settings": {
-              "title": "<b> Mother's Day Sale <\/b>",
+              "title": "Sub Heading",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
@@ -3619,7 +3619,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Beautifully Curated Gift Boxes",
+              "title": "Heading 1",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3641,7 +3641,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "for Every Occasion",
+              "title": "Heading 2",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3670,7 +3670,7 @@
           "f65e767f-b7b5-40e5-9596-d068a03e2894": {
             "type": "txt",
             "settings": {
-              "title": "Celebrate the cherished woman in your life <br> with our <b> Cherished Mom <\/b> Collection",
+              "title": "Content",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#444444",
@@ -3696,7 +3696,7 @@
           "a3937595-0962-4042-8971-7fd2a100461b": {
             "type": "btn",
             "settings": {
-              "title": "<b>SHOP NOW!<\/b>",
+              "title": "Button Text",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "#",
