@@ -4487,7 +4487,7 @@
           "image_ratio": "ratio4_3",
           "layout": "container",
           "cl_bg": "#ffffff",
-          "mg": "0,0,100px,0",
+          "mg": "0,0,50px,0",
           "pd": "",
           "mg_mb": "0,0,50px,0",
           "pd_mb": ""
@@ -4738,7 +4738,7 @@
           "use_eq_height": true,
           "image_ratio": "ratio_custom_1",
           "cl_bg": "#ffffff",
-          "mg": ",,100px,",
+          "mg": "0,0,50px,0",
           "pd": "",
           "mg_mb": ",,50px,",
           "pd_mb": ""
@@ -4937,7 +4937,7 @@
           "padding": 10,
           "vertical": false,
           "cl_bg": "#ffffff",
-          "mg": "",
+          "mg": "0,0,50px,0",
           "pd": "",
           "mg_mb": "",
           "pd_mb": ""
@@ -4954,7 +4954,7 @@
           "code": "<div class=\"steps-section\">\n  <h2>How It Works<\/h2>\n  <div class=\"steps-container\">\n    <div class=\"step\">\n      <div class=\"step-number\">1<\/div>\n      <div class=\"step-content\">\n        <h3>Find Your Perfect Gift<\/h3>\n        <p>Browse our carefully curated collection of gift boxes, perfect for any occasion. From birthdays to anniversaries, find the gift that suits your needs.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">2<\/div>\n      <div class=\"step-content\">\n        <h3>Choose a Greeting Card<\/h3>\n        <p>Select a free, foldable greeting card from our wide range of designs. Whether it's a heartfelt 'Thank You' or a cheerful 'Happy Birthday,' we have the perfect card for your message.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">3<\/div>\n      <div class=\"step-content\">\n        <h3>Add a Personalized Message<\/h3>\n        <p>Make your gift extra special by adding a personalized message. Write your own heartfelt note to make the recipient feel truly appreciated.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">4<\/div>\n      <div class=\"step-content\">\n        <h3>We Handle the Rest<\/h3>\n        <p>Relax while we meticulously package your gift with care. Our attention to detail ensures that each gift arrives beautifully presented and in perfect condition, making it a memorable experience for your recipient.<\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
           "layout": "container",
           "cl_bg": "#ffffff",
-          "mg": "30px,,,",
+          "mg": "0,0,50px,0",
           "pd": "",
           "mg_mb": "",
           "pd_mb": ""
