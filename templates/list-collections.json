@@ -18,10 +18,10 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
-        "collection_jg9KUh": {
+        "ed0dab0d-765c-4c18-85fe-12d385e297c1": {
           "type": "collection",
           "settings": {
-            "collection": "gift-for-two"
+            "collection": "for-him"
           }
         },
         "e17f4f3e-627e-4cca-9f27-c9b29bf35bca": {
@@ -30,17 +30,24 @@
             "collection": "for-her"
           }
         },
-        "ed0dab0d-765c-4c18-85fe-12d385e297c1": {
+        "collection_jg9KUh": {
           "type": "collection",
           "settings": {
-            "collection": "for-him"
+            "collection": "gift-for-two"
+          }
+        },
+        "collection_XUMw3F": {
+          "type": "collection",
+          "settings": {
+            "collection": "spa-gift-sets"
           }
         }
       },
       "block_order": [
-        "collection_jg9KUh",
+        "ed0dab0d-765c-4c18-85fe-12d385e297c1",
         "e17f4f3e-627e-4cca-9f27-c9b29bf35bca",
-        "ed0dab0d-765c-4c18-85fe-12d385e297c1"
+        "collection_jg9KUh",
+        "collection_XUMw3F"
       ],
       "settings": {
         "hoverz": true,
