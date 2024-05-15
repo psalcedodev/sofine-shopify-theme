@@ -4925,6 +4925,19 @@
           "mg_mb": "",
           "pd_mb": ""
         }
+      },
+      "custom_html_tgNxpd": {
+        "type": "custom-html",
+        "settings": {
+          "title": "",
+          "code": "<div class=\"steps-container\">\n  <div class=\"step\">\n    <div class=\"step-number\">1<\/div>\n    <div class=\"step-content\">\n      <h3>Find Your Perfect Gift<\/h3>\n      <p>Browse our carefully curated collection of gift boxes, perfect for any occasion. From birthdays to anniversaries, find the gift that suits your needs.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">2<\/div>\n    <div class=\"step-content\">\n      <h3>Choose a Greeting Card<\/h3>\n      <p>Select a free, foldable greeting card from our wide range of designs. Whether it's a heartfelt 'Thank You' or a cheerful 'Happy Birthday,' we have the perfect card for your message.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">3<\/div>\n    <div class=\"step-content\">\n      <h3>Add a Personalized Message<\/h3>\n      <p>Make your gift extra special by adding a personalized message. Write your own heartfelt note to make the recipient feel truly appreciated.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">4<\/div>\n    <div class=\"step-content\">\n      <h3>We Handle the Rest<\/h3>\n      <p>Relax while we meticulously package your gift with care. Our attention to detail ensures that each gift arrives beautifully presented and in perfect condition, making it a memorable experience for your recipient.<\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+          "layout": "container",
+          "cl_bg": "#fff",
+          "mg": "30px,,,",
+          "pd": "",
+          "mg_mb": "",
+          "pd_mb": ""
+        }
       }
     },
     "content_for_index": [
@@ -4933,7 +4946,8 @@
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "166055287935a5052c",
-      "testimonials_section_home1_m3V3pG"
+      "testimonials_section_home1_m3V3pG",
+      "custom_html_tgNxpd"
     ],
     "blocks": {
       "15683396631634586217": {
@@ -5048,8 +5062,8 @@
   "platform_customizations": {
     "custom_css": [
       ".steps-container {display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 800px; margin: auto;}",
-      ".step {display: flex; align-items: flex-start; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}",
-      ".step-number {font-size: 2rem; font-weight: bold; color: #fff; background: #FF6F61; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;}",
+      ".step {display: flex; align-items: flex-start; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}",
+      ".step-number {font-size: 2rem; font-weight: bold; color: #fff; background: #ff6f61; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;}",
       ".step-content h3 {margin: 0 0 10px; font-size: 1.5rem; color: #333;}",
       ".step-content p {margin: 0; font-size: 1rem; color: #666;}"
     ]
