@@ -4945,9 +4945,13 @@
       },
       "custom_html_tgNxpd": {
         "type": "custom-html",
+        "custom_css": [
+          ".steps-section {text-align: center; padding: 0 20px;}",
+          ".steps-section h2 {font-size: 2rem; color: #333; margin-bottom: 30px;}"
+        ],
         "settings": {
           "title": "",
-          "code": "<div class=\"steps-container\">\n  <div class=\"step\">\n    <div class=\"step-number\">1<\/div>\n    <div class=\"step-content\">\n      <h3>Find Your Perfect Gift<\/h3>\n      <p>Browse our carefully curated collection of gift boxes, perfect for any occasion. From birthdays to anniversaries, find the gift that suits your needs.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">2<\/div>\n    <div class=\"step-content\">\n      <h3>Choose a Greeting Card<\/h3>\n      <p>Select a free, foldable greeting card from our wide range of designs. Whether it's a heartfelt 'Thank You' or a cheerful 'Happy Birthday,' we have the perfect card for your message.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">3<\/div>\n    <div class=\"step-content\">\n      <h3>Add a Personalized Message<\/h3>\n      <p>Make your gift extra special by adding a personalized message. Write your own heartfelt note to make the recipient feel truly appreciated.<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"step\">\n    <div class=\"step-number\">4<\/div>\n    <div class=\"step-content\">\n      <h3>We Handle the Rest<\/h3>\n      <p>Relax while we meticulously package your gift with care. Our attention to detail ensures that each gift arrives beautifully presented and in perfect condition, making it a memorable experience for your recipient.<\/p>\n    <\/div>\n  <\/div>\n<\/div>",
+          "code": "<div class=\"steps-section\">\n  <h2>How It Works<\/h2>\n  <div class=\"steps-container\">\n    <div class=\"step\">\n      <div class=\"step-number\">1<\/div>\n      <div class=\"step-content\">\n        <h3>Find Your Perfect Gift<\/h3>\n        <p>Browse our carefully curated collection of gift boxes, perfect for any occasion. From birthdays to anniversaries, find the gift that suits your needs.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">2<\/div>\n      <div class=\"step-content\">\n        <h3>Choose a Greeting Card<\/h3>\n        <p>Select a free, foldable greeting card from our wide range of designs. Whether it's a heartfelt 'Thank You' or a cheerful 'Happy Birthday,' we have the perfect card for your message.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">3<\/div>\n      <div class=\"step-content\">\n        <h3>Add a Personalized Message<\/h3>\n        <p>Make your gift extra special by adding a personalized message. Write your own heartfelt note to make the recipient feel truly appreciated.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"step\">\n      <div class=\"step-number\">4<\/div>\n      <div class=\"step-content\">\n        <h3>We Handle the Rest<\/h3>\n        <p>Relax while we meticulously package your gift with care. Our attention to detail ensures that each gift arrives beautifully presented and in perfect condition, making it a memorable experience for your recipient.<\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
           "layout": "container",
           "cl_bg": "#ffffff",
           "mg": "30px,,,",
@@ -4960,11 +4964,11 @@
     "content_for_index": [
       "165018826364c02d6a",
       "165511688031d3eb34",
+      "custom_html_tgNxpd",
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "166055287935a5052c",
-      "testimonials_section_home1_m3V3pG",
-      "custom_html_tgNxpd"
+      "testimonials_section_home1_m3V3pG"
     ],
     "blocks": {
       "15683396631634586217": {
