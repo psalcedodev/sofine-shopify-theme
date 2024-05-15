@@ -1205,6 +1205,7 @@
           },
           "7b5dae7d-cfa6-4238-b0fe-20687faef6c0": {
             "type": "promobox",
+            "disabled": true,
             "settings": {
               "url": "#"
             }
