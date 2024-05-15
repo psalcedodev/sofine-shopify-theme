@@ -4893,7 +4893,7 @@
           "layout": "container",
           "width_c": 100,
           "style": "style2",
-          "title": "What people say?",
+          "title": "<h3 class=\"section-title\">What Our Customers Say<\/h3>",
           "sub_title": "",
           "content": "",
           "use-slider": true,
@@ -5064,7 +5064,7 @@
       ".steps-container {display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 1200px; margin: auto;}",
       "@media (min-width: 768px) {.steps-container {flex-direction: row; flex-wrap: wrap; }}",
       ".step {display: flex; align-items: flex-start; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); flex: 1; min-width: 250px;}",
-      ".step-number {font-size: 2rem; font-weight: bold; color: #fff; background: #FF6F61; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;}",
+      ".step-number {font-size: 2rem; font-weight: bold; color: #fff; background: #ff6f61; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;}",
       ".step-content h3 {margin: 0 0 10px; font-size: 1.5rem; color: #333;}",
       ".step-content p {margin: 0; font-size: 1rem; color: #666;}"
     ]
