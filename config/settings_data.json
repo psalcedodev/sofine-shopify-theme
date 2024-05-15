@@ -1799,6 +1799,7 @@
           "banner_fiAj9w": {
             "type": "banner",
             "settings": {
+              "image": "shopify:\/\/shop_images\/TWO3.4Medium.jpg",
               "url": "shopify:\/\/collections\/gift-for-two",
               "open_link": "_self",
               "enable_content_banner": true,
@@ -1809,6 +1810,7 @@
           "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
             "type": "banner",
             "settings": {
+              "image": "shopify:\/\/shop_images\/TWO4.4M-SharedSerenity-BathSalt_4.jpg",
               "url": "shopify:\/\/collections\/spa-gift-sets",
               "open_link": "_self",
               "enable_content_banner": true,
@@ -4082,7 +4084,7 @@
               "h_position": "center",
               "v_position": "middle",
               "txt_align": "center",
-              "cl_overlay": "#111",
+              "cl_overlay": "#111111",
               "cl_opacity": 100
             }
           }
@@ -4807,7 +4809,7 @@
           "infinite": true,
           "padding": 10,
           "vertical": false,
-          "cl_bg": "#fff",
+          "cl_bg": "#ffffff",
           "mg": "",
           "pd": "",
           "mg_mb": "",
