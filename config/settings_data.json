@@ -3588,7 +3588,7 @@
           "6ca105d4-c60d-4770-9dc2-3097283a894b": {
             "type": "subhd",
             "settings": {
-              "title": "Sub Heading",
+              "title": "Welcome to Gift of Bliss",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#444444",
@@ -3619,7 +3619,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Heading 1",
+              "title": "Curated Gift Boxes",
               "text_animate": "slideInRight",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3641,7 +3641,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Heading 2",
+              "title": "For Every Occasion",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#1a1a1a",
@@ -3670,7 +3670,7 @@
           "f65e767f-b7b5-40e5-9596-d068a03e2894": {
             "type": "txt",
             "settings": {
-              "title": "Content",
+              "title": "Discover the perfect gift box today.",
               "text_animate": "slideInLeft",
               "text_time": 2.5,
               "color": "#444444",
@@ -3696,10 +3696,10 @@
           "a3937595-0962-4042-8971-7fd2a100461b": {
             "type": "btn",
             "settings": {
-              "title": "Button Text",
+              "title": "Shop Now",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
-              "btn_link": "#",
+              "btn_link": "shopify:\/\/collections",
               "cl_txt": "#ffffff",
               "cl_txt_hover": "#ffffff",
               "cl_bg": "#1a1a1a",
