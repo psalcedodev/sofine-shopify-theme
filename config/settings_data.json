@@ -4893,7 +4893,7 @@
           "layout": "container",
           "width_c": 100,
           "style": "style2",
-          "title": "<h3 class=\"section-title\">What Our Customers Say<\/h3>",
+          "title": "What Our Customers Say",
           "sub_title": "",
           "content": "",
           "use-slider": true,
