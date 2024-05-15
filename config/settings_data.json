@@ -4946,8 +4946,8 @@
       "custom_html_tgNxpd": {
         "type": "custom-html",
         "custom_css": [
-          ".steps-section {text-align: center; padding: 0 20px;}",
-          ".steps-section h2 {font-size: 2rem; color: #333; margin-bottom: 30px;}"
+          ".steps-section {text-align: center;}",
+          ".steps-section h2 {font-size: 2rem; color: #333; margin-bottom: 10px;}"
         ],
         "settings": {
           "title": "",
