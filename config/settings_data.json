@@ -4552,6 +4552,22 @@
             "settings": {
               "pm_padding": "40px 0 0 0"
             }
+          },
+          "mail_cfzDbq": {
+            "type": "mail",
+            "settings": {
+              "title": "Stay Updated",
+              "sub_title": "Join our newsletter to receive exclusive offers, updates on new arrivals, and more. Be the first to know about our latest collections.",
+              "cl_text": "#080808",
+              "cl_sub": "#080808",
+              "cl_sub_hover": "#403c3c",
+              "h_position": "left",
+              "v_position": "top",
+              "txt_align": "left",
+              "cl": "12",
+              "cl_tb": "12",
+              "cl_mb": "12"
+            }
           }
         },
         "block_order": [
@@ -4559,7 +4575,8 @@
           "menu_eJyf8Y",
           "menu_gBznMc",
           "logo_footer_wgJF86",
-          "payment_method_7d4DHm"
+          "payment_method_7d4DHm",
+          "mail_cfzDbq"
         ],
         "settings": {
           "cl_bg": "#ffffff",
