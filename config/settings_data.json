@@ -5044,5 +5044,14 @@
 
       ]
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".steps-container {display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 800px; margin: auto;}",
+      ".step {display: flex; align-items: flex-start; gap: 20px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}",
+      ".step-number {font-size: 2rem; font-weight: bold; color: #fff; background: #FF6F61; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;}",
+      ".step-content h3 {margin: 0 0 10px; font-size: 1.5rem; color: #333;}",
+      ".step-content p {margin: 0; font-size: 1rem; color: #666;}"
+    ]
   }
 }
