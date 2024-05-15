@@ -3947,7 +3947,7 @@
           "e9b1486a-5343-4257-a9ce-11829970464f": {
             "type": "btn",
             "settings": {
-              "title": "DISCOVER NOW!",
+              "title": "Explore Now!",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "#",
@@ -4064,7 +4064,7 @@
           "btn_CpMa3b": {
             "type": "btn",
             "settings": {
-              "title": "<b>EXPLORE NOW!<\/b>",
+              "title": "Explore Now",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "btn_link": "#",
