@@ -366,7 +366,7 @@
                         {% assign trimmed_set = set | strip %}
                         {% case trimmed_set %}
                           {% when '"default"' %}
-                            {% assign greeting_options = default_greetings | sort %}
+                            {% assign greeting_options = default_greetings %}
                           {% when '"valentines"' %}
                             {% assign greeting_options = valentine_greetings | sort %}
                           {% when '"mothers_day"' %}
