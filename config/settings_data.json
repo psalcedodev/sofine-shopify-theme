@@ -1507,7 +1507,7 @@
           "top_header_4_yDqGzt"
         ],
         "custom_css": [
-          "wrapper-bar-message p{font-weight:700}"
+          ".wrapper-bar-message p {font-weight: 700;}"
         ],
         "settings": {
           "header_use_top_header": true,
