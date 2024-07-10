@@ -1506,6 +1506,9 @@
           "de36584c-fcc1-4588-a155-f3b7b209a423",
           "top_header_4_yDqGzt"
         ],
+        "custom_css": [
+          "wrapper-bar-message p{font-weight:700}"
+        ],
         "settings": {
           "header_use_top_header": true,
           "hide_top_header_mobile": true,
