@@ -7,8 +7,8 @@
       var $charCount = $('#char-count');
 
       $textarea.on('input', function () {
-        var remaining = 250 - $(this).val().length;
-        $charCount.text(remaining + '/250');
+        var remaining = 500 - $(this).val().length;
+        $charCount.text(remaining + '/500');
       });
 
       if ($content.css('maxHeight') !== '0px') {
