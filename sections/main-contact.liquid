@@ -75,17 +75,19 @@
                     name="contact[email]"
                     class="input-info"
                     id="email"
-                    type="text"
+                    type="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid email address."
                   >
 
                   <input
-                    required
                     type="tel"
                     id="ContactForm-phone"
                     class="input-info"
                     autocomplete="tel"
                     name="contact[{{ 'contact.form.phone' | t }}]"
-                    pattern="[0-9\-]*"
+                    pattern="\d{10,}"
+                    title="Please enter a valid phone number with at least 10 digits."
                     value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
                     placeholder="{{ 'contact.form.phone' | t }}"
                   >
@@ -148,13 +150,13 @@
           "type": "text",
           "id": "phone",
           "label": "Phone number",
-          "default": "(+100) 666-456-7890"
+          "default": ""
         },
         {
           "type": "text",
           "id": "email",
           "label": "Email",
-          "default": "aloshopify@alothemes.com"
+          "default": ""
         }
       ]
     }
