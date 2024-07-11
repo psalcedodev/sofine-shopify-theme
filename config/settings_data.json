@@ -4427,7 +4427,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/TWO4.4M-SharedSerenity-BathSalt_4.jpg",
               "title": "Spa Gift Sets",
-              "collection": "seasonal",
+              "collection": "spa-gift-sets",
               "open_link": "_self"
             }
           }
