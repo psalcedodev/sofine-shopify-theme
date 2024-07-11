@@ -5075,7 +5075,7 @@
       "@media (min-width: 768px) {.steps-container {flex-direction: row; flex-wrap: wrap; }}",
       ".step {display: flex; flex-direction: column; align-items: center; text-align: center; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); flex: 1; min-width: 250px; transition: transform 0.3s ease-in-out;}",
       ".step:hover {transform: translateY(-10px);}",
-      ".step-number {font-size: 2rem; font-weight: bold; color: #000; background: #fff; border: 2px solid #000; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-bottom: 20px;}",
+      ".step-number {font-size: 2rem; font-weight: bold; color: #c9d4c9; background: #fff; border: 2px solid #c9d4c9; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-bottom: 20px;}",
       ".step-content h3 {margin: 0 0 10px; font-size: 1.5rem; color: #333;}",
       ".step-content p {margin: 0; font-size: 1rem; color: #666;}"
     ]
