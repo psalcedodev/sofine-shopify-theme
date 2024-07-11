@@ -3711,7 +3711,7 @@
               "title": "Shop Now",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
-              "btn_link": "shopify:\/\/collections",
+              "btn_link": "shopify:\/\/collections\/all",
               "cl_txt": "#ffffff",
               "cl_txt_hover": "#ffffff",
               "cl_bg": "#1a1a1a",
