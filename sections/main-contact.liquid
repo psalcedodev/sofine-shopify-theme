@@ -89,6 +89,7 @@
                     pattern="\d{10,}"
                     title="Please enter a valid phone number with at least 10 digits."
                     value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                    placeholde="MAMA"
                   >
                   <div class="field"></div>
                   <textarea
