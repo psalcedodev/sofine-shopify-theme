@@ -87,7 +87,7 @@
                     name="contact[{{ 'contact.form.phone' | t }}]"
                     pattern="[0-9\-]*"
                     value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-                    placeholder="{{ 'contact.form.phone' | t }} *"
+                    placeholder="{{ 'contact.form.phone' | t }}"
                   >
                   <div class="field"></div>
                   <textarea
