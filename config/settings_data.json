@@ -4882,7 +4882,67 @@
               "image": "shopify:\/\/shop_images\/HER8.2M-CherishedMomCollection-LavenderBox_9.jpg",
               "content": "<p>Amazing Mother's day gift for my 2 mothers in my life. Thank you for packing this gift box so carefully  and beautifully!.<\/p>",
               "title": "Alexander Soza",
-              "address": "Texas - Cherished Mom Box",
+              "address": "Etsy - Cherished Mom Box",
+              "rating": 5
+            }
+          },
+          "quote_cHyVW3": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM2.1M_-_Gentleman_s_Refuge_-_Rustic_Noir_1.jpg",
+              "content": "<p>Such a wonderful gift! My friend LOVED it.<\/p>",
+              "title": "Danielle",
+              "address": "Etsy - Gentleman's Refuge Gift for Men",
+              "rating": 5
+            }
+          },
+          "quote_m7ibny": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
+              "content": "<p>Purchased for an employee, got awesome feedback and they appreciated the care in shipping and packaging. Thanks so much!<\/p>",
+              "title": "Meghan",
+              "address": "Etsy - Urban Classic Gift for Men",
+              "rating": 5
+            }
+          },
+          "quote_yCAcqr": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
+              "content": "<p>The box came very quickly and it was tied up with a beautiful ribbon. The card was high-quality. The whole package was exactly as it was described, and my husband loved it.<\/p>",
+              "title": "Jennifer ",
+              "address": "Etsy - Urban Classic Gift for Men",
+              "rating": 5
+            }
+          },
+          "quote_Gaxmw6": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HER5.2Medium_1.jpg",
+              "content": "<p>Well where should I start. The shipping is amazingly fast. I ordered on Tuesday and Friday the package arrived! 5 star for fast shipping! Despite the shipping journey, the box still looks amazing! It looks just like the pictures on the listing when you open it! Everything is so cute and carefully put together. You can tell the owner really puts their heart into this box. 5 star for attention to detail. It’s such a lovely gift that the receiver keeps on talking about how beautiful everything is. I don’t know I might have to order one just for my self!<\/p>",
+              "title": "Michael ",
+              "address": "Etsy - Spa Gift for Her with Bath Bomb",
+              "rating": 5
+            }
+          },
+          "quote_hdktTJ": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM1.1Medium_1.jpg",
+              "content": "<p>I am so happy I got this, my dad is going to love it for Fathers' Day!<\/p>",
+              "title": "Reagan",
+              "address": "Etsy - Urban Classic Gift for Men",
+              "rating": 5
+            }
+          },
+          "quote_R4eCzb": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM1.2Small_1.jpg",
+              "content": "<p>Absolutely love this gift box! It looks even better in person and arrived super fast. The packaging was very well done. I also appreciate that the personalized greeting card was an actual folded card and not just a flat card. The bows were a bit flattened from the packaging, but that was expected and easily fixed. Totally recommend if you’re looking for a quality gift, will definitely order from this seller again.<\/p>",
+              "title": "Olivia ",
+              "address": "Etsy - Urban Classic Gift for Men",
               "rating": 5
             }
           }
@@ -4892,7 +4952,13 @@
           "quote_iK4wj9",
           "quote_NR9enh",
           "quote_3fJKxC",
-          "quote_YawWNr"
+          "quote_YawWNr",
+          "quote_cHyVW3",
+          "quote_m7ibny",
+          "quote_yCAcqr",
+          "quote_Gaxmw6",
+          "quote_hdktTJ",
+          "quote_R4eCzb"
         ],
         "settings": {
           "hidden": false,
