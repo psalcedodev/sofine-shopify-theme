@@ -4836,6 +4836,16 @@
       "testimonials_section_home1_m3V3pG": {
         "type": "testimonials-section-home1",
         "blocks": {
+          "quote_Gaxmw6": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HER5.2Medium_1.jpg",
+              "content": "<p>Well where should I start. The shipping is amazingly fast. I ordered on Tuesday and Friday the package arrived! 5 star for fast shipping! Despite the shipping journey, the box still looks amazing! It looks just like the pictures on the listing when you open it! Everything is so cute and carefully put together. You can tell the owner really puts their heart into this box. 5 star for attention to detail. It’s such a lovely gift that the receiver keeps on talking about how beautiful everything is. I don’t know I might have to order one just for my self!<\/p>",
+              "title": "Michael ",
+              "address": "Etsy - Spa Gift for Her with Bath Bomb",
+              "rating": 5
+            }
+          },
           "quote_zUmLMX": {
             "type": "quote",
             "settings": {
@@ -4916,16 +4926,6 @@
               "rating": 5
             }
           },
-          "quote_Gaxmw6": {
-            "type": "quote",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/HER5.2Medium_1.jpg",
-              "content": "<p>Well where should I start. The shipping is amazingly fast. I ordered on Tuesday and Friday the package arrived! 5 star for fast shipping! Despite the shipping journey, the box still looks amazing! It looks just like the pictures on the listing when you open it! Everything is so cute and carefully put together. You can tell the owner really puts their heart into this box. 5 star for attention to detail. It’s such a lovely gift that the receiver keeps on talking about how beautiful everything is. I don’t know I might have to order one just for my self!<\/p>",
-              "title": "Michael ",
-              "address": "Etsy - Spa Gift for Her with Bath Bomb",
-              "rating": 5
-            }
-          },
           "quote_hdktTJ": {
             "type": "quote",
             "settings": {
@@ -4948,6 +4948,7 @@
           }
         },
         "block_order": [
+          "quote_Gaxmw6",
           "quote_zUmLMX",
           "quote_iK4wj9",
           "quote_NR9enh",
@@ -4956,7 +4957,6 @@
           "quote_cHyVW3",
           "quote_m7ibny",
           "quote_yCAcqr",
-          "quote_Gaxmw6",
           "quote_hdktTJ",
           "quote_R4eCzb"
         ],
@@ -4971,7 +4971,7 @@
           "use-slider": true,
           "slides-To-Scroll": 1,
           "visible": 5,
-          "widescreen": 4,
+          "widescreen": 3,
           "desktop": 4,
           "laptop": 4,
           "notebook": 3,
