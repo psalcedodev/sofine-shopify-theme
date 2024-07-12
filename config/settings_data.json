@@ -4945,6 +4945,16 @@
               "address": "Etsy - Urban Classic Gift for Men",
               "rating": 5
             }
+          },
+          "quote_B9e3rC": {
+            "type": "quote",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HIM2.1M_-_Gentleman_s_Refuge_-_Rustic_Noir_1.jpg",
+              "content": "<p>I can't even begin to mention how awesome the packaging was & contents. Beautifully done! I'm taking this gift to someone special & cannot wait to see the look on his face! Absolutely will order from this seller again! Everything is high quality & shipping super fast!! Thank you!<\/p>",
+              "title": "Ilona ",
+              "address": "Etsy - Gentleman's Refuge Gift for Men",
+              "rating": 5
+            }
           }
         },
         "block_order": [
@@ -4958,7 +4968,8 @@
           "quote_m7ibny",
           "quote_yCAcqr",
           "quote_hdktTJ",
-          "quote_R4eCzb"
+          "quote_R4eCzb",
+          "quote_B9e3rC"
         ],
         "settings": {
           "hidden": false,
