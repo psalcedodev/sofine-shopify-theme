@@ -420,6 +420,7 @@
                       <div class="chevron-select-wrapper"> 
                       <label class="label" for="greeting-card-options">Greeting Card:</label>
                       <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                        <option value="" selected disabled>Select a greeting card</option>
                           {% for option in all_greeting_options %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
