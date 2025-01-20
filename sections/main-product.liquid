@@ -356,7 +356,6 @@
                       {%- when 'greeting_and_message' -%}
                       <div class="cms-option-item">
                       {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
-                      {% comment %} {% assign testMessage = product.metafields.custom.test %} {% endcomment %}
                       {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
                       {% assign all_greeting_options = "" | split: "," %}
                       {% assign default_greetings = "None, Congrats 1, Congrats 2, Congrats 3 / Graduation, Dad 1, Dad 2, Dad 3, Dad 4 / Father's Day, Get Well 1, Get Well 2, Get Well 3, Happy Birthday 1, Happy Birthday 2, Happy Birthday 3, Happy Birthday 4, Holidays 1, Holidays 2, Holidays 3, Holidays 4, Just Because 1, Just Because 2, Just For You 1, Just For You 2, Love 1 / Valentines Day, Love 2, Love 3, Love 4, Love 5, Mom 1, Mom 2, Mom 3 / Mother's Day, Mom 4 / Mother's Day, Sympathy 1, Sympathy 2, Sympathy 3, Thank You 1, Thank You 2, Thank You 3, Thank You 4, Thank You 5, Thank You 6" | split: "," %}
@@ -461,23 +460,14 @@
                           >Add your personalization (optional):
                         </label>
                         <div id="accordion-content">
-                          {% if product.metafields.custom.test %}
-                            {% assign testMessage = product.metafields.custom.test %}
-                            {% for paragraph in testMessage.children %}
-                              {% if paragraph.type == 'paragraph' %}
-                                <div class="form_field_caption">
-                                  {% for child in paragraph.children %}
-                                    {% if child.type == 'text' %}
-                                      {% if child.bold %}
-                                        <strong>{{ child.value }}</strong>
-                                      {% else %}
-                                        {{ child.value }}
-                                      {% endif %}
-                                    {% endif %}
-                                  {% endfor %}
-                                </div>
-                              {% endif %}
-                            {% endfor %}
+                          {% if product.metafields.custom.personalization_message %}
+                            <div class="form_field_caption">Please include the following details:</div>
+                            <div class="form_field_caption">1. Name or text on tumbler (max 10 characters, no special characters)</div>
+                            <div class="form_field_caption">2. Personalized card message (don't forget to include your signature at the end!)</div>
+                            <br/>
+                            <div class="form_field_caption">E.g.: If the text for the tumbler is "Dahlia" and the personalized card message is "Enjoy your gift! Love, Alex," enter:</div>
+                            <div class="form_field_caption">1. Dahlia</div>
+                            <div class="form_field_caption">2. Enjoy your gift! Love, Alex</div>
                           {% else %}
                             <div class="form_field_caption">Enter your personalized card message here ✉</div>
                             <div class="form_field_caption">Don't forget to include your signature at the end!</div>
