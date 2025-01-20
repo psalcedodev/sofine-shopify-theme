@@ -33,8 +33,8 @@
                 {%- if item.product.has_only_default_variant == false -%}
                   {%- for option in item.options_with_values -%}
                     <div style="display: flex; flex-direction: column;">
-                      <dt>{{ option.name }}:</dt>
-                      <dd>{{ option.value }}</dd>
+                      <strong>{{ option.name }}:</strong>
+                      <p>{{ option.value }}</p>
                     </div>
                   {%- endfor -%}
                 {%- endif -%}
@@ -43,8 +43,8 @@
                   {%- assign property_first_char = property.first | slice: 0 -%}
                   {%- if property.last != blank and property_first_char != '_' -%}
                     <div style="display: flex; flex-direction: column;">
-                      <dt>{{ property.first }}:</dt>
-                      <dd>
+                      <strong>{{ property.first }}:</strong>
+                      <p>
                         {%- if property.last contains '/uploads/' -%}
                           <a href="{{ property.last }}" class="link" target="_blank">
                             {{ property.last | split: '/' | last }}
@@ -52,7 +52,7 @@
                         {%- else -%}
                           {{ property.last }}
                         {%- endif -%}
-                      </dd>
+                      </p>
                     </div>
                   {%- endif -%}
                 {%- endfor -%}
