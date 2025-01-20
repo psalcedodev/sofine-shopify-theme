@@ -420,15 +420,54 @@
                           border-top-color: var(--color-main);
                         }
                       </style>
-                      <div class="chevron-select-wrapper"> 
-                      <label class="label" for="greeting-card-options">Greeting Card:</label>
+                      {% assign tumbler_finish_design_color = "CLEAR - Black Design, CLEAR - White Design, FROSTED - Black Design, FROSTED - White Design" | split: "," %}
+                      {% if product.metafields.custom.tumbler_finish_design_color %}
+                      <div class="chevron-select-wrapper">
+                      <label class="label" for="greeting-card-options">Tumbler Finish and Design Color:</label>
                       <select class="select__select" id="greeting-card-options" name="properties[Card]">
-                        <option value="" selected disabled>Select a greeting card</option>
-                          {% for option in all_greeting_options %}
+                        <option value="" selected disabled>Select a tumbler & design color</option>
+                          {% for option in tumbler_finish_design_color %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
                           {% endfor %}
                         </select>
                       </div>
+                      {% endif %}
+
+                      {% assign tumbler_font_choice = "Font #1, Font #2, Font #3, Font #4, Font #5, Font #6, Font #7, Font #8" | split: "," %}
+                      {% if product.metafields.custom.tumbler_font_choice %}
+                      <div class="chevron-select-wrapper">
+                      <label class="label" for="greeting-card-options">Font:</label>
+                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                        <option value="" selected disabled>Select a font</option>
+                          {% for option in tumbler_font_choice %}
+                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      {% endif %}
+
+                      {% assign tumbler_design_choice = "Love, Be Mine, Be My Valentine, #1 Wifey, You Are My Favorite Person" | split: "," %}
+                      {% if product.metafields.custom.tumbler_design_choice %}
+                      <div class="chevron-select-wrapper">
+                      <label class="label" for="greeting-card-options">Tumbler Design:</label>
+                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                        <option value="" selected disabled>Select a tumbler design</option>
+                          {% for option in tumbler_design_choice %}
+                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      {% endif %}
+
+                      <div class="chevron-select-wrapper"> 
+                        <label class="label" for="greeting-card-options">Greeting Card:</label>
+                        <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                          <option value="" selected disabled>Select a greeting card</option>
+                            {% for option in all_greeting_options %}
+                              <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                            {% endfor %}
+                          </select>
+                        </div>
                       <style>
                         .textarea-container {
                           position: relative;
