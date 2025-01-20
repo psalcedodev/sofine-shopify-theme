@@ -424,7 +424,7 @@
                       {% if product.metafields.custom.tumbler_finish_design_color %}
                       <div class="chevron-select-wrapper">
                       <label class="label" for="greeting-card-options">Tumbler Finish and Design Color:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Finish and Design Color]">
                         <option value="" selected disabled>Select a tumbler & design color</option>
                           {% for option in tumbler_finish_design_color %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
@@ -437,7 +437,7 @@
                       {% if product.metafields.custom.tumbler_font_choice %}
                       <div class="chevron-select-wrapper">
                       <label class="label" for="greeting-card-options">Font:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                      <select class="select__select" id="greeting-card-options" name="properties[Font]">
                         <option value="" selected disabled>Select a font</option>
                           {% for option in tumbler_font_choice %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
@@ -450,7 +450,7 @@
                       {% if product.metafields.custom.tumbler_design_choice %}
                       <div class="chevron-select-wrapper">
                       <label class="label" for="greeting-card-options">Tumbler Design:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Card]">
+                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Design]">
                         <option value="" selected disabled>Select a tumbler design</option>
                           {% for option in tumbler_design_choice %}
                             <option value="{{ option }}">{{ option | strip_newlines }}</option>
