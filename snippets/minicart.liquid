@@ -34,7 +34,7 @@
                   {%- for option in item.options_with_values -%}
                     <div style="display: flex; flex-direction: column;">
                       <strong>{{ option.name }}:</strong>
-                      <p>{{ option.value }}</p>
+                      <span>{{ option.value }}</span>
                     </div>
                   {%- endfor -%}
                 {%- endif -%}
@@ -44,7 +44,7 @@
                   {%- if property.last != blank and property_first_char != '_' -%}
                     <div style="display: flex; flex-direction: column;">
                       <strong>{{ property.first }}:</strong>
-                      <p>
+                      <span>
                         {%- if property.last contains '/uploads/' -%}
                           <a href="{{ property.last }}" class="link" target="_blank">
                             {{ property.last | split: '/' | last }}
@@ -52,7 +52,7 @@
                         {%- else -%}
                           {{ property.last }}
                         {%- endif -%}
-                      </p>
+                      </span>
                     </div>
                   {%- endif -%}
                 {%- endfor -%}
