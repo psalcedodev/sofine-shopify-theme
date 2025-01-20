@@ -457,7 +457,8 @@
                         <label
                           class="form__label"
                           for="custom-message"
-                          >Add your personalization (optional):
+                          >
+                          Add your personalization {% if product.metafields.custom.personalization_message %}(required){% else %}(optional){% endif %}:
                         </label>
                         <div id="accordion-content">
                           {% if product.metafields.custom.personalization_message %}
