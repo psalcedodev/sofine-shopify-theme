@@ -1,6 +1,5 @@
 <script type="text/javascript">
   $(document).ready(function () {
-    console.log('Product script loaded successfully.');
     window.toggleAccordion = function (contentId, iconId) {
       var $content = $('#' + contentId);
       var $icon = $('#' + iconId);
@@ -22,8 +21,7 @@
         $icon.addClass('rotate'); // Rotate the chevron up
       }
     };
-
-    // Initialize Fotorama
+    /* Init fotoraman */
     $script([jQuery('#cms_js').data('fotorama')], function () {
       var slideMain = $('div[data-slide-main]'),
         fotoramaElement = $('div[data-fotorama]'),
@@ -60,8 +58,7 @@
         }
       });
     });
-
-    // Click on tab of product detail page
+    /* click on tab of product detail page */
     $(document).on('click', '.cms-tab a[data-toggle="pill"]', function (e) {
       e.preventDefault();
       var tab_id = $(this).attr('href');
@@ -72,51 +69,11 @@
       $(tab_id).addClass('active');
     });
 
-    // Click slick arrow button
+    /* CLick slick arrow button */
     $(document).on('click', 'div[data-slide-nav] .slick-arrow', function () {
       if ($('div[data-slide-nav] .thumb_img.slick-active').length > 0) {
         $('div[data-slide-nav] .thumb_img.slick-current').trigger('click');
       }
     });
-
-    console.log({{ product | json }});
-    // Form validation for required fields
-    const $form = $('form[data-type="add-to-cart-form"]'); // Target the form
-    const $requiredFields = $form.find('.select__select[required], #custom-message[required]'); // Select required fields
-
-    console.log($form);
-    console.log($requiredFields);
-    // Form submission event
-    $form.on('submit', function (e) {
-      let isValid = true;
-
-      // Loop through required fields and validate
-      $requiredFields.each(function () {
-        const $field = $(this);
-
-        if (!$field.val() || $field.val().trim() === '') {
-          isValid = false;
-          $field.css('border-color', 'red'); // Highlight invalid field
-          $field.addClass('is-invalid'); // Add an invalid class for styling if needed
-        } else {
-          $field.css('border-color', ''); // Reset border color if valid
-          $field.removeClass('is-invalid'); // Remove invalid class
-        }
-      });
-
-      if (!isValid) {
-        e.preventDefault(); // Prevent form submission
-        alert('Please fill out all required fields.'); // Notify the user
-      }
-    });
-
-    // Reset red border on input or change
-    $requiredFields.on('input change', function () {
-      $(this).css('border-color', ''); // Reset border color
-      $(this).removeClass('is-invalid'); // Remove invalid class
-    });
-
-    // Debugging
-    console.log('Validation script loaded successfully.');
   });
 </script>
