@@ -471,6 +471,14 @@
                       </div>
                       {% endif %}
 
+                      <select class="select__select" required onchange="console.log('Dropdown changed:', this.value)">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                      </select>
+                      
+                      <textarea id="custom-message" required oninput="console.log('Textarea input:', this.value)"></textarea>
+
                       <div class="chevron-select-wrapper"> 
                         <label class="label" for="greeting-card-options">Greeting Card:</label>
                         <select class="select__select" id="greeting-card-options" name="properties[Card]" required>
