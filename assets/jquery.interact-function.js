@@ -3387,15 +3387,14 @@ $(function ($) {
           e.preventDefault();
           var $this = $(this),
             $form = $this.closest("form"),
+            $product = $this.closest(".product-item"),
+            drawerQuery = "";
 
           if (!validateForm($form)) {
             alert("Please fill out all required fields.");
-            return; 
+            return; // Stop the AJAX request
           }
-          $product = $this.closest(".product-item"),
-          drawerQuery = "";
           $this.addClass("ajax_loading");
-          
           if (!$form.length) {
             $form = $product.find("form");
             if (!$form.length) {
