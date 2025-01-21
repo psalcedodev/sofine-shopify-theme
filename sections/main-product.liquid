@@ -432,6 +432,19 @@
                         </select>
                       </div>
                       {% endif %}
+                      {% comment %} For Moms {% endcomment %}
+                      {% assign tumbler_mom_finish_design = "CLEAR - Mama - Black, CLEAR - Mama - White, CLEAR - Best Mom Ever - Black, CLEAR - Best Mom Ever - White, FROSTED - Mama - Black, FROSTED - Mama - White, FROSTED - Best Mom Ever - Black, FROSTED - BestMom Ever - White" | split: "," %}
+                      {% if product.metafields.custom.tumbler_mom_finish_design %}
+                      <div class="chevron-select-wrapper">
+                      <label class="label" for="greeting-card-options">Tumbler Finish and Design Color:</label>
+                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Finish - Design - Design Color]">
+                        <option value="" selected disabled>Select a tumbler, design & design color</option>
+                          {% for option in tumbler_mom_finish_design %}
+                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      {% endif %}
 
                       {% assign tumbler_font_choice = "Font #1, Font #2, Font #3, Font #4, Font #5, Font #6, Font #7, Font #8" | split: "," %}
                       {% if product.metafields.custom.tumbler_font_choice %}
@@ -497,7 +510,7 @@
                           class="form__label"
                           for="custom-message"
                           >
-                          Add your personalization {% if product.metafields.custom.personalization_message %}(required){% else %}(optional){% endif %}:
+                          Add your personalization {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message %}(required){% else %}(optional){% endif %}:
                         </label>
                         <div id="accordion-content">
                           {% if product.metafields.custom.personalization_message %}
@@ -508,6 +521,14 @@
                             <div class="form_field_caption">E.g.: If the text for the tumbler is "Dahlia" and the personalized card message is "Enjoy your gift! Love, Alex," enter:</div>
                             <div class="form_field_caption">1. Dahlia</div>
                             <div class="form_field_caption">2. Enjoy your gift! Love, Alex</div>
+                          {% elsif product.metafields.custom.mom_personalization_message %}
+                            <div class="form_field_caption">Please include the following details:</div>
+                            <div class="form_field_caption">1. Greeting card choice</div>
+                            <div class="form_field_caption">2. Personalized card message (Don't forget to include your signature at the end!)</div>
+                            <br/>
+                            <div class="form_field_caption">E.g.: If you choose the Mom 1 card, and the message "Enjoy your gift, mom! Love, Alex," enter:</div>
+                            <div class="form_field_caption">1. Mom 1</div>
+                            <div class="form_field_caption">2. Enjoy your gift, mom! Love, Alex"</div>
                           {% else %}
                             <div class="form_field_caption">Enter your personalized card message here ✉</div>
                             <div class="form_field_caption">Don't forget to include your signature at the end!</div>
