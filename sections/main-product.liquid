@@ -196,16 +196,16 @@
                               {%- endif -%}
             				</div>
             				{%- when 'product_variants' -%}
-                				{% assign show_size_guide = block.settings.show_size_guide %}
-                				{% assign size_guide_page = block.settings.size_guide_page %}
+                			{% assign show_size_guide = block.settings.show_size_guide %}
+                			{% assign size_guide_page = block.settings.size_guide_page %}
             					{% assign show_title_variant = block.settings.show_title %}
             					{% assign variants_type = block.settings.variants_type | plus: 0  %}
             					{% assign variantCount = product.variants | size %}
             					{% if variantCount > 1 %} 
                                   <div class="product-collection__options">
                                   	{% include 'product-get-options' show_title_variant:show_title_variant show_size_guide:show_size_guide size_guide_page:size_guide_page %}
-                              	  </div> 
-            					{% endif %} 
+                              	  </div>
+            					{% endif %}
             				{%- when 'quantity_button' -%}
                                 {%- assign qt_show_wishlist = block.settings.qt_show_wishlist -%}
                                 {%- assign qt_show_compare = block.settings.qt_show_compare -%}
@@ -216,7 +216,6 @@
                                 {%- assign qt_show_quantity = block.settings.qt_show_quantity -%}
                                 {%- assign icon_button_cart = block.settings.icon_button_cart -%}
                                 {%- assign show_custom_color_btn = block.settings.show_custom_color_btn -%}
-                
                 					<div data-product-meta class="clearfix cms-product-meta">  
                 					{% if qt_show_quantity %}
                 					<div data-product-quantity class="js-quantity quantity {% if product.available %}{% else %} d-none {% endif %}" >
@@ -233,12 +232,12 @@
                 					</div>
                 					{% endif %}
                 					<div class="group-button">
-                					  <div class="inner">                    
+                					  <div class="inner">
                 						{% if qt_show_cart%}
                 						  <button type="submit" class="add-to-cart js_add_to_cart_button" {% if product.available %} {% else %} style="display:none!important;" {% endif %} data-js-product-button-add-to-cart  data-pid="{{ product.variants.first.id }}">
-                                            	<i aria-hidden="true" class="laber-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                                            	<span class="text">{{'products.product.add_to_cart' | t }}</span>{% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}
-                                          </button>
+                                  <i aria-hidden="true" class="laber-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                                  <span class="text">{{'products.product.add_to_cart' | t }}</span>{% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}
+                              </button>
                 						  <a class="add-to-cart js-btn-sold-out  {% if product.available %} d-none{% endif %}" data-js-product-button-sold-out  onclick="location.href='{{ product.url | within: collection }}'"><span class="text">{{'products.product.sold_out' | t }}</span> {% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}</a>
                 						{% endif %}
                 					  </div>

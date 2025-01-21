@@ -21,7 +21,8 @@
         $icon.addClass('rotate'); // Rotate the chevron up
       }
     };
-    /* Init fotoraman */
+
+    // Initialize Fotorama
     $script([jQuery('#cms_js').data('fotorama')], function () {
       var slideMain = $('div[data-slide-main]'),
         fotoramaElement = $('div[data-fotorama]'),
@@ -58,7 +59,8 @@
         }
       });
     });
-    /* click on tab of product detail page */
+
+    // Click on tab of product detail page
     $(document).on('click', '.cms-tab a[data-toggle="pill"]', function (e) {
       e.preventDefault();
       var tab_id = $(this).attr('href');
@@ -69,11 +71,39 @@
       $(tab_id).addClass('active');
     });
 
-    /* CLick slick arrow button */
+    // Click slick arrow button
     $(document).on('click', 'div[data-slide-nav] .slick-arrow', function () {
       if ($('div[data-slide-nav] .thumb_img.slick-active').length > 0) {
         $('div[data-slide-nav] .thumb_img.slick-current').trigger('click');
       }
+    });
+
+    // Form validation for required fields
+    var $form = $('.form'); // Replace with your form's class or ID
+    var $requiredFields = $('.select__select[required], #custom-message[required]');
+
+    $form.on('submit', function (e) {
+      var isValid = true;
+
+      $requiredFields.each(function () {
+        var $field = $(this);
+        if (!$field.val().trim()) {
+          isValid = false;
+          $field.css('border-color', 'red');
+        } else {
+          $field.css('border-color', ''); // Reset border color if valid
+        }
+      });
+
+      if (!isValid) {
+        e.preventDefault();
+        alert('Please fill out all required fields.');
+      }
+    });
+
+    // Remove red border when user starts typing or selecting
+    $requiredFields.on('input change', function () {
+      $(this).css('border-color', '');
     });
   });
 </script>
