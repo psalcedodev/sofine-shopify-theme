@@ -8,31 +8,6 @@ var Shopify = window.Shopify || {},
   cms_js = $html.find("#cms_js"),
   mobileScreen = 768;
 
-function validateForm($form) {
-  let isValid = true;
-
-  // Check required select fields
-  $form.find("select[required]").each(function () {
-    if (!$(this).val()) {
-      isValid = false;
-      $(this).addClass("is-invalid"); // Highlight invalid field
-    } else {
-      $(this).removeClass("is-invalid");
-    }
-  });
-
-  // Check required textareas
-  $form.find("textarea[required]").each(function () {
-    if (!$(this).val().trim()) {
-      isValid = false;
-      $(this).addClass("is-invalid"); // Highlight invalid field
-    } else {
-      $(this).removeClass("is-invalid");
-    }
-  });
-
-  return isValid;
-}
 Alothemes.apply = function () {};
 $(window).on("load resize", function () {
   if ($(window).width() < mobileScreen) {
@@ -3389,12 +3364,6 @@ $(function ($) {
             $form = $this.closest("form"),
             $product = $this.closest(".product-item"),
             drawerQuery = "";
-
-          console.log(validateForm($form));
-          if (!validateForm($form)) {
-            alert("Please fill out all required fields.");
-            return; // Stop the AJAX request
-          }
           $this.addClass("ajax_loading");
           if (!$form.length) {
             $form = $product.find("form");
