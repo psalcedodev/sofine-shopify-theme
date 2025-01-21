@@ -167,9 +167,7 @@
                                   <div class="clearfix product-page-info__visitors">
                                     <div class="visitors js-visitors" data-min="10" data-max="25" data-interval-min="2" data-interval-max="6" data-stroke="4">
                                       {%- assign visitors_random_diff = settings.product_visitors_max | minus: settings.product_visitors_min -%}
-                                      
                                       {%- assign visitors_random = "now" | date: "%N" | modulo: visitors_random_diff | plus: settings.product_visitors_min -%}
-                                      
                                       {% capture visitors_counter_html %}
                                         <span class="px-8 visitors__counter d-inline-block" data-js-counter>{{ visitors_random }}</span>
                                       {% endcapture %}
@@ -636,7 +634,7 @@
                                   bottom: 8px;
                                   right: 4px;
                                 }
-                                .textarea_textarea{
+                                .textarea_textarea {
                                   width: 100%;
                                   height: 100px;
                                   padding: 10px;
@@ -867,736 +865,735 @@
 {%- render 'section_style' -%}
 {%- render 'product-script' -%}
 {% schema %}
- {
-   "name": "Product information",
-"class":"laber-product-information",
-	"settings": [
-		 {
-           "type": "header",
-           "content": "== Setting"
-           },
-           {
-           "type": "color",
-           "id": "cl_bg",
-           "label": "Background color",
-           "default": "#fff"
-           },
+{
+  "name": "Product information",
+  "class": "laber-product-information",
+  "settings": [
+    {
+      "type": "header",
+      "content": "== Setting"
+    },
+    {
+      "type": "color",
+      "id": "cl_bg",
+      "label": "Background color",
+      "default": "#fff"
+    },
 
-           {
-           "type": "header",
-           "content": "== Setting PC",
-           "info":"Margin"
-           },
-           {
-           "type": "text",
-           "id": "mg",
-           "label": "Margin",
-           "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank"
-           },
-           {
-           "type": "text",
-           "id": "pd",
-           "label": "Padding",
-           "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank"
-           },
-           {
-           "type": "text",
-           "id": "bd",
-           "label": "Border",
-           "info":"border top  border right border bottom  border left. If you not use to blank"
-           },
-           {
-           "type": "header",
-           "content": "== Design Mobile Options"
-           },
-           {
-           "type": "text",
-           "id": "mg_mb",
-           "label": "Margin"
-           },
-           {
-           "type": "text",
-           "id": "pd_mb",
-           "label": "Padding"
-           }
-	],
-     "blocks": [
-       {
-         "type": "name_category",
-         "name": "Category name",
-         "limit": 1
-       },
- 		{
-         "type": "name_product",
-         "name": "Product name",
-         "limit": 1,
-         "settings": [
-		{
-             "type": "select",
-             "id": "np_text_transform",
-             "default": "none",
-             "options": [
-              {
-                 "value": "none",
-                 "label": "None"
-              },
-              {
-                 "value": "capitalize",
-                 "label": "Capitalize"
-              },
-              {
-                 "value": "lowercase",
-                 "label": "Lowercase"
-              },
-              {
-                 "value": "uppercase",
-                 "label": "Uppercase"
-               }
-             ],
-             "label": "Text transform:"
-           },
-             {
-               "type": "range",
-               "id": "np_size",
-               "min": 14,
-               "max": 60,
-               "step": 1,
-               "label": "Font size",
-               "unit": "px",
-               "default": 24
-             },
-		 {
-             "type": "range",
-             "id": "np_weight",
-             "min": 400,
-             "max": 900,
-             "step": 100,
-             "label": "Font weight",
-             "default": 600
-             },
-			{
-               "type": "range",
-               "id": "np_size_mobile",
-               "min": 14,
-               "max": 60,
-               "step": 1,
-               "label": "Font size (mobile)",
-               "unit": "px",
-               "default": 24
-             },
-			{
-               "type": "range",
-               "id": "np_mg_top",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Margin top",
-               "unit": "px",
-               "default": 0
-             },
-			{
-               "type": "range",
-               "id": "np_mg_bottom",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "margin bottom",
-               "unit": "px",
-               "default": 30
-             }
-         ]
-       },
-	{
-         "type": "show_reviews",
-         "name": "show reviewst",
-         "limit": 1
-       },
-	{
-         "type": "show_price",
-         "name": "Price",
-         "limit": 1
-       },
-	{
-         "type": "show_description",
-         "name": "Product Description",
-         "limit": 1,
-         "settings": [
-             {
-               "type": "text",
-               "id": "title",
-               "label": "Title",
-               "default": "Description"
-             },
-	   	  {
-               "type": "text",
-               "id": "tr_words",
-               "label": "Truncatewords",
-               "default": "65",
-			"info": "The number of words you want to display"
-             },
-			{
-               "type": "range",
-               "id": "des_size",
-               "min": 14,
-               "max": 40,
-               "step": 1,
-               "label": "Font size",
-               "unit": "px",
-               "default": 16
-             },
-		  {
-               "type": "text",
-               "id": "view_more",
-               "label": "View more",
-               "default": "View more",
-			"info": "If you don't want to show it, leave this section blank"
-             },
-             {
-               "type": "range",
-               "id": "des_mg_top",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Margin top",
-               "unit": "px",
-               "default": 0
-             },
-			{
-               "type": "range",
-               "id": "des_mg_bottom",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "margin bottom",
-               "unit": "px",
-               "default": 30
-             },
-			{
-               "type": "range",
-               "id": "des_pad_top",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Padding top",
-               "unit": "px",
-               "default": 0
-             },
-			{
-               "type": "range",
-               "id": "des_pad_right",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Padding Right",
-               "unit": "px",
-               "default": 0
-             },
-			{
-               "type": "range",
-               "id": "des_pad_bottom",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Padding bottom",
-               "unit": "px",
-               "default": 0
-             },
-			{
-               "type": "range",
-               "id": "des_pad_left",
-               "min": 0,
-               "max": 60,
-               "step": 1,
-               "label": "Padding left",
-               "unit": "px",
-               "default": 0
-             },
-             {
-             "type": "color",
-             "id": "des_bg",
-             "label": "Background color",
-             "default": "#fff"
-              }
-         ]
-       },
-	{
-         "type": "text_countdown_html",
-         "name": "Text Countdown Html",
-         "limit": 1,
-	  "settings": [
-           {
-           "type": "checkbox",
-           "id": "show_text_countdown",
-           "label": "Show Text Countdown",
-           "default": true
-           },
-		{
-           "type": "checkbox",
-           "id": "show_visitors_html",
-           "label": "Show visitors html",
-           "default": true
-           }
-         ]
-       },
+    {
+      "type": "header",
+      "content": "== Setting PC",
+      "info": "Margin"
+    },
+    {
+      "type": "text",
+      "id": "mg",
+      "label": "Margin",
+      "info": "Margin top, margin right, margin bottom, margin left. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "pd",
+      "label": "Padding",
+      "info": "Padding top, padding right, padding bottom, padding left. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "bd",
+      "label": "Border",
+      "info": "border top  border right border bottom  border left. If you not use to blank"
+    },
+    {
+      "type": "header",
+      "content": "== Design Mobile Options"
+    },
+    {
+      "type": "text",
+      "id": "mg_mb",
+      "label": "Margin"
+    },
+    {
+      "type": "text",
+      "id": "pd_mb",
+      "label": "Padding"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "name_category",
+      "name": "Category name",
+      "limit": 1
+    },
+    {
+      "type": "name_product",
+      "name": "Product name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "np_text_transform",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "capitalize",
+              "label": "Capitalize"
+            },
+            {
+              "value": "lowercase",
+              "label": "Lowercase"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            }
+          ],
+          "label": "Text transform:"
+        },
+        {
+          "type": "range",
+          "id": "np_size",
+          "min": 14,
+          "max": 60,
+          "step": 1,
+          "label": "Font size",
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "np_weight",
+          "min": 400,
+          "max": 900,
+          "step": 100,
+          "label": "Font weight",
+          "default": 600
+        },
+        {
+          "type": "range",
+          "id": "np_size_mobile",
+          "min": 14,
+          "max": 60,
+          "step": 1,
+          "label": "Font size (mobile)",
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "np_mg_top",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Margin top",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "np_mg_bottom",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "margin bottom",
+          "unit": "px",
+          "default": 30
+        }
+      ]
+    },
+    {
+      "type": "show_reviews",
+      "name": "show reviewst",
+      "limit": 1
+    },
+    {
+      "type": "show_price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "show_description",
+      "name": "Product Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Description"
+        },
+        {
+          "type": "text",
+          "id": "tr_words",
+          "label": "Truncatewords",
+          "default": "65",
+          "info": "The number of words you want to display"
+        },
+        {
+          "type": "range",
+          "id": "des_size",
+          "min": 14,
+          "max": 40,
+          "step": 1,
+          "label": "Font size",
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "text",
+          "id": "view_more",
+          "label": "View more",
+          "default": "View more",
+          "info": "If you don't want to show it, leave this section blank"
+        },
+        {
+          "type": "range",
+          "id": "des_mg_top",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Margin top",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "des_mg_bottom",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "margin bottom",
+          "unit": "px",
+          "default": 30
+        },
+        {
+          "type": "range",
+          "id": "des_pad_top",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Padding top",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "des_pad_right",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Padding Right",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "des_pad_bottom",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Padding bottom",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "des_pad_left",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "label": "Padding left",
+          "unit": "px",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "des_bg",
+          "label": "Background color",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "text_countdown_html",
+      "name": "Text Countdown Html",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_text_countdown",
+          "label": "Show Text Countdown",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_visitors_html",
+          "label": "Show visitors html",
+          "default": true
+        }
+      ]
+    },
 
-	{
-         "type": "product_infor",
-         "name": "Product Infor",
-         "limit": 1,
-	  "settings": [
-             {
-             "type": "checkbox",
-             "id": "show_sku",
-             "label": "Show SKU",
-             "default": true
-             },
-		  {
-             "type": "checkbox",
-             "id": "show_barcode",
-             "label": "Show Barcode",
-             "default": true
-             },
-		  {
-             "type": "checkbox",
-             "id": "show_vendor",
-             "label": "Show Vendor",
-             "default": true
-             },
-		  {
-             "type": "checkbox",
-             "id": "show_type",
-             "label": "Show Type",
-             "default": true
-             },
-		  {
-             "type": "checkbox",
-             "id": "show_availability",
-             "label": "Show Availability",
-             "default": true
-             },
-		  {
-             "type": "color",
-             "id": "color_in_stock",
-             "label": "Color in stock",
-             "default": "#042cd6"
-             },
-             {
-             "type": "color",
-             "id": "color_out_stock",
-             "label": "Color out stock",
-             "default": "#c6452c"
-             }
-	  ]
-       },
-	{
-         "type": "show_social",
-         "name": "Share Social",
-         "limit": 1,
-	  "settings": [
-		 {
-			"type": "paragraph",
-			"content":"Setting your social network go to Theme settings => Social media."
-		 },
-           {
-              "type": "select",
-              "id": "type_social",
-              "label": "Show sharing Or link:",
-              "options": [
-                {
-                  "value": "1",
-                  "label": "Social link"
-                },
-                {
-                  "value": "2",
-                  "label": "Social sharing"
-                }
-              ],
-              "default": "2"
-           }
-	  ]
-       },
-	{
-         "type": "product_variants",
-         "name": "Product Variants",
-         "limit": 1,
-	  "settings": [
-		 {
-			"type": "paragraph",
-			"content":"Show pictures instead of colors."
-		 },
-             {
-             "type": "checkbox",
-             "id": "show_title",
-             "label": "Show title",
-             "default": true
-             },
-             {
-             "type": "checkbox",
-             "id": "show_size_guide",
-             "label": "Show button 'Size guide'",
-             "default": false
-             },
-             {
-             "type": "page",
-             "id": "size_guide_page",
-             "label": "Content for 'Size guide'",
-             "info": "Default page: 'Include Popup Size Guide'"
-             }
-	  ]
-       },
-	{
-         "type": "quantity_button",
-         "name": "Quantity and Button",
-         "limit": 1,
-	  "settings": [
-		 {
-             "type": "text",
-             "id": "icon_button_cart",
-             "default": "lnr lnr-arrow-right",
-             "label": "Icon Buttom cart",
-		  "info": "You can use font awesome and font Linearicons"
-             },
-		  {
-               "type": "checkbox",
-               "id": "qt_show_quantity",
-               "label": "Show quantity",
-               "default": true
-             },
-		  {
-               "type": "checkbox",
-               "id": "qt_show_cart",
-               "label": "Show Add to cart",
-               "default": true
-             },
-		  {
-               "type": "checkbox",
-               "id": "show_popup",
-               "label": "Show terms and conditions",
-               "default": true
-             },
-             {
-             "type": "page",
-             "id": "product_terms_conditions_page_content",
-             "label": "Content for 'terms and conditions'",
-             "info": "Default page: 'terms and conditions'"
-             },
-		  {
-               "type": "checkbox",
-               "id": "qt_buy_it_now",
-               "label": "Show Buy it now",
-               "default": true,
-			"info":"Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
-             },
-             {
-               "type": "checkbox",
-               "id": "qt_show_compare",
-               "label": "Show compare",
-               "default": true
-             },
-		  {
-               "type": "checkbox",
-               "id": "qt_show_wishlist",
-               "label": "Show wishlist",
-               "default": true
-             },
-             {
-             "type": "header",
-             "content": "== Custom color"
-             },
-		  {
-               "type": "checkbox",
-               "id": "show_custom_color_btn",
-               "label": "Show Custom color",
-               "default": false
-             },
-		  {
-               "type": "color",
-               "id": "color_text_cart",
-               "label": "Color text cart",
-               "default": "#fff"
-             },
-             {
-               "type": "color",
-               "id": "bg_add_to_cart",
-               "label": "background Add To Cart",
-               "default": "#1a73e8"
-             },
-		  {
-               "type": "color",
-               "id": "color_text_cart_hover",
-               "label": "Color text cart (hover)",
-               "default": "#fff"
-             },
-		  {
-               "type": "color",
-               "id": "bg_add_to_cart_hv",
-               "label": "background Add To Cart (Hover)",
-               "default": "#343e45"
-             },
-		  {
-             "type": "header",
-             "content": "== == == == == == "
-             },
-		  {
-               "type": "color",
-               "id": "color_text_buy_now",
-               "label": "Color text Buy it now",
-               "default": "#fff"
-             },
-             {
-             "type": "color",
-             "id": "bg_buy_it_now",
-             "label": "background Buy it now",
-             "default": "#4ad295"
-             },
-		  {
-               "type": "color",
-               "id": "color_text_buy_now_hover",
-               "label": "Color text Buy it now (hover)",
-               "default": "#fff"
-             },
-             {
-             "type": "color",
-             "id": "bg_buy_it_now_hv",
-             "label": "background Buy it now (Hover)",
-             "default": "#1a73e8"
-             }
-
-		]
-       },
-	{
-         "type": "tags",
-         "name": "Tags",
-         "limit": 1,
-	  "settings": [
-             {
-             "type": "paragraph",
-             "content":"You should put all your tags in there it will automatically compare with your current product to give the tags already in the product"
-             },
-		  {
-		   "type": "textarea",
-		   "id": "tags",
-		   "label":"Tags",
-		   "default":"Accessories,Clothes,Women,Dress",
-			"info": "Separator is '|' or ','"
-		 }
-	 ]
-   },
-   {
-       "type": "greeting_and_message",
-       "name": "Greeting and Message",
-       "limit": 1,
-       "settings": []
-   },
-	{
-         "type": "inventory_qty",
-         "name": "Inventory Quantity",
-         "limit": 1,
-	  "settings": [
-             {
-               "type": "range",
-               "id": "total_items",
-               "min": 1,
-               "max": 100,
-               "step": 1,
-               "label": "Total items",
-               "unit": "Qty",
-               "default": 50
-             },
-             {
-               "type": "color",
-               "id": "bg_1",
-               "label": "Background 1",
-               "default": "#fed700"
-             },
-		  {
-               "type": "color",
-               "id": "bg_2",
-               "label": "Background 2",
-               "default": "#efefef"
-             },
-		  {
-               "type": "range",
-               "id": "h_stock",
-               "min": 1,
-               "max": 20,
-               "step": 1,
-               "label": "Height stock",
-               "unit": "px",
-               "default": 15
-             }
-	 ]
-       },
-	{
-         "type": "free_shipping",
-         "name": "Countdown Free shipping",
-         "limit": 1
-       },
-       {
-           "type": "shipping",
-           "name": "Shipping information",
-           "limit": 1,
-           "settings": [
-               {
-                   "type": "checkbox",
-                   "id": "show_delivery_times",
-                   "label": "Show delivery estimation",
-                   "info": "How delivery times are generated?",
-                   "default": true
-               },
-               {
-                   "type": "text",
-                   "id": "deliver_text",
-                   "label": "Delivery text",
-                   "default": "Estimated Delivery:"
-               },
-               {
-                   "type": "text",
-                   "id": "deliver_days",
-                   "label": "Deliver in:",
-                   "info": "days (+/- 2 days)",
-                   "default": "7"
-               },
-               {
-                 "type": "text",
-                 "id": "date_format",
-                 "label": "Date format",
-                 "default": "%b %d",
-                 "info": "Example: %m/%d [Learn more about date format here.](http://strftime.net/)"
-               },
-               {
-                   "type": "checkbox",
-                   "id": "show_shipping_text",
-                   "label": "Show Shipping text",
-                   "default": true
-               },
-               {
-                   "type": "richtext",
-                   "id": "shipping_text",
-                   "label": "Shipping text",
-                   "default": "<p><strong>Free Shipping & Returns: </strong>On all orders over $75</p>"
-               }
-           ]
-       },
-	{
-         "type": "custom_html",
-         "name": "Custom html and image",
-	  "settings": [
-		  {
-                "type": "html",
-                "id": "html_custom",
-                "label": "Custom HTML",
-                "default": "<p>Some HTML content</p>"
-             },
-             {
-               "type": "image_picker",
-               "id": "image",
-               "label": "image"
-             },
-             {
-             "type": "checkbox",
-             "id": "show_svg_custom",
-             "label": "Show SVG custom",
-             "default": false
-             },
-		 {
-                "type": "html",
-                "id": "svg_custom",
-                "label": "Payment type (SVG)",
-                "default":"amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
-			 "info": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
-             },
-             {
-               "type": "range",
-               "id": "svg_height",
-               "min": 1,
-               "max": 50,
-               "step": 1,
-               "label": "Height",
-               "unit": "px",
-               "default": 35
-             }
-	 ]
-       },
-       {
-       "type": "text",
-       "name": "Text - metafiled",
-       "settings": [
-         {
-         "type": "text",
-         "id": "text",
-         "default": "Text block",
-         "label": "Text"
-         },
-         {
-         "type": "checkbox",
-         "id": "show_color",
-         "label": "Show color",
-         "default": false
-         },
-         {
-         "type": "color",
-         "id": "color",
-         "label": "Color",
-         "default": "#fff"
-         }
-	]
-       },
-       {
-         "type": "custom_liquid",
-         "name": "t:sections.main-product.blocks.custom_liquid.name",
-         "settings": [
-           {
-             "type": "liquid",
-             "id": "custom_liquid",
-             "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
-             "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
-           }
-         ]
-       },
-       {
-         "type": "countdown",
-         "name": "Countdown product",
-         "settings": [
-           {
-           "type": "text",
-           "id": "text",
-           "default": "Hurry up! Sale ends in:",
-           "label": "Title"
-           },
-           {
-             "type": "liquid",
-             "id": "custom_liquid",
-             "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
-             "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info",
-             "default":"{{product.metafields.custom.time_countdown}}"
-           },
-           {
-             "type": "header",
-             "content": "-----------------"
-             },
-           {
-               "type": "color",
-               "id": "bg",
-               "label": "Background",
-               "default": "#fdefee"
-             },
-           {
-               "type": "color",
-               "id": "bd",
-               "label": "border color",
-               "default": "#f8cccc"
-             },
-             {
-               "type": "color",
-               "id": "cl_text",
-               "label": "Color text",
-               "default": "#ff706b"
-             }
-         ]
-       }
-     ]
- }
+    {
+      "type": "product_infor",
+      "name": "Product Infor",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_sku",
+          "label": "Show SKU",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_barcode",
+          "label": "Show Barcode",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_vendor",
+          "label": "Show Vendor",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_type",
+          "label": "Show Type",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_availability",
+          "label": "Show Availability",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "color_in_stock",
+          "label": "Color in stock",
+          "default": "#042cd6"
+        },
+        {
+          "type": "color",
+          "id": "color_out_stock",
+          "label": "Color out stock",
+          "default": "#c6452c"
+        }
+      ]
+    },
+    {
+      "type": "show_social",
+      "name": "Share Social",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Setting your social network go to Theme settings => Social media."
+        },
+        {
+          "type": "select",
+          "id": "type_social",
+          "label": "Show sharing Or link:",
+          "options": [
+            {
+              "value": "1",
+              "label": "Social link"
+            },
+            {
+              "value": "2",
+              "label": "Social sharing"
+            }
+          ],
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "type": "product_variants",
+      "name": "Product Variants",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Show pictures instead of colors."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "label": "Show title",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_size_guide",
+          "label": "Show button 'Size guide'",
+          "default": false
+        },
+        {
+          "type": "page",
+          "id": "size_guide_page",
+          "label": "Content for 'Size guide'",
+          "info": "Default page: 'Include Popup Size Guide'"
+        }
+      ]
+    },
+    {
+      "type": "quantity_button",
+      "name": "Quantity and Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon_button_cart",
+          "default": "lnr lnr-arrow-right",
+          "label": "Icon Buttom cart",
+          "info": "You can use font awesome and font Linearicons"
+        },
+        {
+          "type": "checkbox",
+          "id": "qt_show_quantity",
+          "label": "Show quantity",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "qt_show_cart",
+          "label": "Show Add to cart",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_popup",
+          "label": "Show terms and conditions",
+          "default": true
+        },
+        {
+          "type": "page",
+          "id": "product_terms_conditions_page_content",
+          "label": "Content for 'terms and conditions'",
+          "info": "Default page: 'terms and conditions'"
+        },
+        {
+          "type": "checkbox",
+          "id": "qt_buy_it_now",
+          "label": "Show Buy it now",
+          "default": true,
+          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+        },
+        {
+          "type": "checkbox",
+          "id": "qt_show_compare",
+          "label": "Show compare",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "qt_show_wishlist",
+          "label": "Show wishlist",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "== Custom color"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_custom_color_btn",
+          "label": "Show Custom color",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "color_text_cart",
+          "label": "Color text cart",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_add_to_cart",
+          "label": "background Add To Cart",
+          "default": "#1a73e8"
+        },
+        {
+          "type": "color",
+          "id": "color_text_cart_hover",
+          "label": "Color text cart (hover)",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_add_to_cart_hv",
+          "label": "background Add To Cart (Hover)",
+          "default": "#343e45"
+        },
+        {
+          "type": "header",
+          "content": "== == == == == == "
+        },
+        {
+          "type": "color",
+          "id": "color_text_buy_now",
+          "label": "Color text Buy it now",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_buy_it_now",
+          "label": "background Buy it now",
+          "default": "#4ad295"
+        },
+        {
+          "type": "color",
+          "id": "color_text_buy_now_hover",
+          "label": "Color text Buy it now (hover)",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bg_buy_it_now_hv",
+          "label": "background Buy it now (Hover)",
+          "default": "#1a73e8"
+        }
+      ]
+    },
+    {
+      "type": "tags",
+      "name": "Tags",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "You should put all your tags in there it will automatically compare with your current product to give the tags already in the product"
+        },
+        {
+          "type": "textarea",
+          "id": "tags",
+          "label": "Tags",
+          "default": "Accessories,Clothes,Women,Dress",
+          "info": "Separator is '|' or ','"
+        }
+      ]
+    },
+    {
+      "type": "greeting_and_message",
+      "name": "Greeting and Message",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "inventory_qty",
+      "name": "Inventory Quantity",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "total_items",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "label": "Total items",
+          "unit": "Qty",
+          "default": 50
+        },
+        {
+          "type": "color",
+          "id": "bg_1",
+          "label": "Background 1",
+          "default": "#fed700"
+        },
+        {
+          "type": "color",
+          "id": "bg_2",
+          "label": "Background 2",
+          "default": "#efefef"
+        },
+        {
+          "type": "range",
+          "id": "h_stock",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "label": "Height stock",
+          "unit": "px",
+          "default": 15
+        }
+      ]
+    },
+    {
+      "type": "free_shipping",
+      "name": "Countdown Free shipping",
+      "limit": 1
+    },
+    {
+      "type": "shipping",
+      "name": "Shipping information",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_delivery_times",
+          "label": "Show delivery estimation",
+          "info": "How delivery times are generated?",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "deliver_text",
+          "label": "Delivery text",
+          "default": "Estimated Delivery:"
+        },
+        {
+          "type": "text",
+          "id": "deliver_days",
+          "label": "Deliver in:",
+          "info": "days (+/- 2 days)",
+          "default": "7"
+        },
+        {
+          "type": "text",
+          "id": "date_format",
+          "label": "Date format",
+          "default": "%b %d",
+          "info": "Example: %m/%d [Learn more about date format here.](http://strftime.net/)"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_shipping_text",
+          "label": "Show Shipping text",
+          "default": true
+        },
+        {
+          "type": "richtext",
+          "id": "shipping_text",
+          "label": "Shipping text",
+          "default": "<p><strong>Free Shipping & Returns: </strong>On all orders over $75</p>"
+        }
+      ]
+    },
+    {
+      "type": "custom_html",
+      "name": "Custom html and image",
+      "settings": [
+        {
+          "type": "html",
+          "id": "html_custom",
+          "label": "Custom HTML",
+          "default": "<p>Some HTML content</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_svg_custom",
+          "label": "Show SVG custom",
+          "default": false
+        },
+        {
+          "type": "html",
+          "id": "svg_custom",
+          "label": "Payment type (SVG)",
+          "default": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+          "info": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
+        },
+        {
+          "type": "range",
+          "id": "svg_height",
+          "min": 1,
+          "max": 50,
+          "step": 1,
+          "label": "Height",
+          "unit": "px",
+          "default": 35
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text - metafiled",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_color",
+          "label": "Show color",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.main-product.blocks.custom_liquid.name",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "countdown",
+      "name": "Countdown product",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Hurry up! Sale ends in:",
+          "label": "Title"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info",
+          "default": "{{product.metafields.custom.time_countdown}}"
+        },
+        {
+          "type": "header",
+          "content": "-----------------"
+        },
+        {
+          "type": "color",
+          "id": "bg",
+          "label": "Background",
+          "default": "#fdefee"
+        },
+        {
+          "type": "color",
+          "id": "bd",
+          "label": "border color",
+          "default": "#f8cccc"
+        },
+        {
+          "type": "color",
+          "id": "cl_text",
+          "label": "Color text",
+          "default": "#ff706b"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
