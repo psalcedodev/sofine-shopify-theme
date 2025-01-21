@@ -79,38 +79,40 @@
     });
 
     // Form validation for required fields
-    const $form = $('form[data-type="add-to-cart-form"]'); // Adjust to your form's actual selector
-    const $requiredFields = $('.select__select[required], #custom-message[required]'); // Adjust selectors if needed
+    const $form = $('form[data-type="add-to-cart-form"]'); // Target the form
+    const $requiredFields = $form.find('.select__select[required], #custom-message[required]'); // Select required fields
 
-    // Listen for the form submission event
+    // Form submission event
     $form.on('submit', function (e) {
-      let isValid = true; // Assume the form is valid initially
+      let isValid = true;
 
-      // Loop through each required field
+      // Loop through required fields and validate
       $requiredFields.each(function () {
         const $field = $(this);
-        if (!$field.val().trim()) {
-          isValid = false; // Mark the form as invalid
-          $field.css('border-color', 'red'); // Highlight invalid fields
+
+        if (!$field.val() || $field.val().trim() === '') {
+          isValid = false;
+          $field.css('border-color', 'red'); // Highlight invalid field
+          $field.addClass('is-invalid'); // Add an invalid class for styling if needed
         } else {
           $field.css('border-color', ''); // Reset border color if valid
+          $field.removeClass('is-invalid'); // Remove invalid class
         }
       });
 
       if (!isValid) {
-        e.preventDefault(); // Prevent the form from submitting
-        alert('Please fill out all required fields.'); // Show an alert to the user
+        e.preventDefault(); // Prevent form submission
+        alert('Please fill out all required fields.'); // Notify the user
       }
     });
 
-    // Remove red border on input or change
+    // Reset red border on input or change
     $requiredFields.on('input change', function () {
-      $(this).css('border-color', ''); // Reset the border color when the user interacts with the field
+      $(this).css('border-color', ''); // Reset border color
+      $(this).removeClass('is-invalid'); // Remove invalid class
     });
 
-    // Debugging: Log when the script runs
-    console.log('Validation script loaded');
-    console.log('Form selector:', $form);
-    console.log('Required fields:', $requiredFields);
+    // Debugging
+    console.log('Validation script loaded successfully.');
   });
 </script>
