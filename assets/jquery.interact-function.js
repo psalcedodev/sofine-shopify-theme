@@ -3390,6 +3390,7 @@ $(function ($) {
             $product = $this.closest(".product-item"),
             drawerQuery = "";
 
+          console.log(validateForm($form));
           if (!validateForm($form)) {
             alert("Please fill out all required fields.");
             return; // Stop the AJAX request
