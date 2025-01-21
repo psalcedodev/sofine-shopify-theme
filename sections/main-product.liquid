@@ -572,6 +572,7 @@
                                     class="select__select"
                                     id="tumbler_mom_finish_design"
                                     name="properties[Tumbler Finish - Design - Design Color]"
+                                    required="required"
                                   >
                                     <option value="" selected disabled>Select a tumbler, design & design color</option>
                                     {% for option in tumbler_mom_finish_design %}
@@ -587,7 +588,12 @@
                               {% if product.metafields.custom.tumbler_font_choice %}
                                 <div class="chevron-select-wrapper">
                                   <label class="label" for="tumbler_font_choice">Font:</label>
-                                  <select class="select__select" id="tumbler_font_choice" name="properties[Font]">
+                                  <select
+                                    class="select__select"
+                                    id="tumbler_font_choice"
+                                    name="properties[Font]"
+                                    required="required"
+                                  >
                                     <option value="" selected disabled>Select a font</option>
                                     {% for option in tumbler_font_choice %}
                                       <option value="{{ option }}">{{ option | strip_newlines }}</option>
