@@ -13,13 +13,11 @@
       });
 
       if ($content.css('maxHeight') !== '0px') {
-        // Collapse the accordion
         $content.css('maxHeight', '0');
-        $icon.removeClass('rotate'); // Reset the chevron to its original state
+        $icon.removeClass('rotate');
       } else {
-        // Expand the accordion
         $content.css('maxHeight', $content.prop('scrollHeight') + 'px');
-        $icon.addClass('rotate'); // Rotate the chevron up
+        $icon.addClass('rotate');
       }
     };
     /* Init fotoraman */
