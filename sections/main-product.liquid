@@ -286,6 +286,10 @@
                                   {%- assign color_text_buy_now_hover = block.settings.color_text_buy_now_hover -%}
             
                                   <style>
+                                    .is-invalid {
+                                      border: 2px solid red;
+                                      background-color: #ffe6e6; /* Optional for better visibility */
+                                    }
                                       .details-info .group-button .add-to-cart{
                                           background-color: {{bg_add_to_cart}};
                                           border-color: {{bg_add_to_cart}};

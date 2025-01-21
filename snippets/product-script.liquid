@@ -78,10 +78,13 @@
       }
     });
 
+    console.log({{ product | json }});
     // Form validation for required fields
     const $form = $('form[data-type="add-to-cart-form"]'); // Target the form
     const $requiredFields = $form.find('.select__select[required], #custom-message[required]'); // Select required fields
 
+    console.log($form);
+    console.log($requiredFields);
     // Form submission event
     $form.on('submit', function (e) {
       let isValid = true;
