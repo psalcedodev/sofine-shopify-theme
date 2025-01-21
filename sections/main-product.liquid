@@ -501,6 +501,7 @@
                                   position: relative;
                                   /* Define a custom property with default rotation for the chevron */
                                   --chevron-transform: rotate(0deg);
+                                  margin-bottom: 20px;
                                 }
                                 .select__select {
                                   -webkit-appearance: none;
@@ -619,6 +620,7 @@
                                   name="properties[Card]"
                                   required="required"
                                 >
+                                  <option value="" selected disabled>Select a greeting card</option>
                                   {% for option in all_greeting_options %}
                                     <option value="{{ option }}">{{ option | strip_newlines }}</option>
                                   {% endfor %}
@@ -707,7 +709,7 @@
                                       rows="4"
                                       maxlength="500"
                                       style="resize: none;"
-                                      required="required"
+                                      required
                                     ></textarea>
                                     <div class="char-count">500</div>
                                   </div>
