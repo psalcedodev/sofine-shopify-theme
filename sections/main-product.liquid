@@ -535,6 +535,9 @@
                                 .select__select:hover + .chevron-select-wrapper::after {
                                   border-top-color: var(--color-main);
                                 }
+                                select:invalid {
+                                  color: gray;
+                                }
                               </style>
                               {% assign tumbler_finish_design_color = 'CLEAR - Black Design, CLEAR - White Design, FROSTED - Black Design, FROSTED - White Design'
                                 | split: ','
@@ -650,7 +653,7 @@
                                   margin-bottom: 5px;
                                 }
                               </style>
-                              <div class="product-form__input product-form__input--textarea" >
+                              <div class="product-form__input product-form__input--textarea">
                                 <label
                                   class="form__label"
                                   for="custom-message"
