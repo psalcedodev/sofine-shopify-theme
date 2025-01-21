@@ -235,10 +235,10 @@
                 					<div class="group-button">
                 					  <div class="inner">                    
                 						{% if qt_show_cart%}
-                						  {% comment %} <button type="submit" class="add-to-cart js_add_to_cart_button" {% if product.available %} {% else %} style="display:none!important;" {% endif %} data-js-product-button-add-to-cart  data-pid="{{ product.variants.first.id }}">
+                						  <button type="submit" class="add-to-cart js_add_to_cart_button" {% if product.available %} {% else %} style="display:none!important;" {% endif %} data-js-product-button-add-to-cart  data-pid="{{ product.variants.first.id }}">
                                             	<i aria-hidden="true" class="laber-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
                                             	<span class="text">{{'products.product.add_to_cart' | t }}</span>{% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}
-                                          </button> {% endcomment %}
+                                          </button>
                 						  <a class="add-to-cart js-btn-sold-out  {% if product.available %} d-none{% endif %}" data-js-product-button-sold-out  onclick="location.href='{{ product.url | within: collection }}'"><span class="text">{{'products.product.sold_out' | t }}</span> {% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}</a>
                 						{% endif %}
                 					  </div>
