@@ -20,653 +20,641 @@
   <meta itemprop="name" content="{{ product.title }}">
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
-<div class="main-content shop-page main-content-detail" 
-     style="background-color:{{bg_product_page}};
-            padding-top:{{pad_top_product_page}}px;
-            padding-bottom:{{pad_bottom_product_page}}px;"> 
- 
-    <div id="laber_{{sid}}">
-      <div class="content-offset {{ product_page_design }}">
-        <div class="js_product_single" id="product-single" data-js-product >
-          <script class="data-json-product" type="application/json">{% render 'product-get-attributes', product:product, build_variant: 'json' %}</script>
-          <div class="row details-info">
-          {% include 'product-cover-thumbnails' %}
-          <div id="js-stickySidebar" class="col-xs-12 col-sm-12 {% if product_page_design =='grid_2_column' %} col-md-5 col-lg-5{% else %} col-md-6 col-lg-6{% endif %}">
-              <div class="js-sticky-sidebar" >
-              <!-- sections/product-information.liquid -->
-              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <meta itemprop="url" content="{{ url }}">
-                <meta itemprop="sku" content="{{ sku }}">
-                <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-                <meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
-                <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-            {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                <input type="hidden" name="id" value="{{ current_variant.id }}" data-js-product-variant-input>    
-                {{ form | payment_terms }}     
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                        {%- when 'name_product' -%}				
-                          <h1 class="product-name">
-                            <a href="{{ product.url }}"  >{{ product.title }}</a>  
-            
-                          </h1>
-                          {% style%}
-                            .details-info .product-name{
-                              text-transform:{{block.settings.np_text_transform}};
-                              margin-top:{{block.settings.np_mg_top}}px;
-                              margin-bottom:{{block.settings.np_mg_bottom}}px;
-                              font-size: {{block.settings.np_size}}px;
-                              font-weight:{{block.settings.np_weight}};
-                            }
-                            @media (max-width: 767px) {
-                              .details-info .product-name{
-                              font-size: {{block.settings.np_size_mobile}}px
-                              }
-                            }
-                          {% endstyle%}
-            			  {%- when 'show_reviews' -%}
-                          <div class="star-rating">
-                            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-                            <a href="#tab_product" class="write-review">{{'products.product.create_review' | t}}</a>
-                          </div>
-            			{%- when 'name_category' -%}
-            				<div class="name_category">
-                              <div class="name_collection" data-js-product-collection>
-                              <label class="label">{{ 'products.product.Categories' | t }}:</label>
-                              <p>
-                              {%- if product.collections.size > 0 -%}
-                                  {%- for collection in product.collections limit: 1 -%}
-                                  <a class="collection_item" href="{{ collection.url }}">
-                                    {{ collection.title }}{% if forloop.last != true %},{% endif %}
-                                  </a>{% if forloop.last != true %} {% endif %}
-                                  {%- endfor -%}
-                              {%- endif -%} 
-                              </p> 
-                              </div>  
-            				</div>
-            			{%- when 'show_price' -%}
-                          <div class="product-price">              
-                            {%comment%}<span id="js-product-price">{{ product.variants[0].price | money }}</span>{%endcomment%}
-                            
-                            {%- if product.compare_at_price > price -%}
-                            
-                              <span class="price price--sale" data-js-product-price><span id="js-product-price" class="current">{{ price | money }}</span> <span class="compare">{{ product.compare_at_price | money }}</span></span>
-                            {%- else -%}
-                              <span id="js-product-price" class="price" data-js-product-price>{{ price | money }}</span>
-                            {%- endif -%}
-                            {%- if product.compare_at_price > price -%}
-                              <p class="price-sale-details" data-js-product-price-sale-details>
-                                {%- assign price_save = product.compare_at_price | minus: price -%}
-                                {%- assign price_save_money = price_save | money | strip_html -%}
-                                {%- assign price_save_procent = price | times: 100 | divided_by:product. compare_at_price | minus: 100 | times: -1 -%}
-                                {{ 'products.product.price_sale_details' | t: price: price_save_money, procent: price_save_procent }}
-                              </p>	
-                            {%- endif -%}
-                          </div>
-            			
-            			{%- when 'show_description' -%}
+  <div class="main-content shop-page main-content-detail" 
+      style="background-color:{{bg_product_page}}; padding-top:{{pad_top_product_page}}px; padding-bottom:{{pad_bottom_product_page}}px;"> 
+      <div id="laber_{{sid}}">
+        <div class="content-offset {{ product_page_design }}">
+          <div class="js_product_single" id="product-single" data-js-product >
+            <script class="data-json-product" type="application/json">{% render 'product-get-attributes', product:product, build_variant: 'json' %}</script>
+            <div class="row details-info">
+              {% include 'product-cover-thumbnails' %}
+              <div id="js-stickySidebar" class="col-xs-12 col-sm-12 {% if product_page_design =='grid_2_column' %} col-md-5 col-lg-5{% else %} col-md-6 col-lg-6{% endif %}">
+                  <div class="js-sticky-sidebar" >
+                  <!-- sections/product-information.liquid -->
+                  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="url" content="{{ url }}">
+                    <meta itemprop="sku" content="{{ sku }}">
+                    <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+                    <meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+                    <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    <input type="hidden" name="id" value="{{ current_variant.id }}" data-js-product-variant-input>    
+                    {{ form | payment_terms }}     
+                  {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                            {%- when 'name_product' -%}				
+                              <h1 class="product-name">
+                                <a href="{{ product.url }}"  >{{ product.title }}</a>  
                 
-            				{%- assign tr_words = block.settings.tr_words -%}
-            				{%- assign view_more = block.settings.view_more -%}
-            				{%- assign des_mg_top = block.settings.des_mg_top -%}
-            				{%- assign des_mg_bottom = block.settings.des_mg_bottom -%}
-            				{%- assign des_pad_top = block.settings.des_pad_top -%}
-            				{%- assign des_pad_right = block.settings.des_pad_right -%}
-            				{%- assign des_pad_bottom = block.settings.des_pad_bottom -%}
-            				{%- assign des_pad_left = block.settings.des_pad_left -%}
-            				{%- assign des_size = block.settings.des_size -%}
-            				{%- assign des_bg = block.settings.des_bg -%}
-            				<div class="clearfix product_description" style="font-size:{{des_size}}px; margin-top:{{des_mg_top}}px; margin-bottom:{{des_mg_bottom}}px;padding-top:{{des_pad_top}}px; padding-bottom:{{des_pad_bottom}}px; padding-right:{{des_pad_right}}px; padding-left:{{des_pad_left}}px; background-color:{{des_bg}}; ">
-                                  {% if block.settings.title != blank %}<h3>{{ block.settings.title }}{% endif %}</h3>
-                             	 {{ product.description | strip_html | truncatewords: tr_words }}{%- if view_more -%}<a data-animated="fadeIn" data-toggle="pill" href="#tab_des">{{view_more}}</a>{%- endif -%}
-            				</div>
-            			{%- when 'text_countdown_html' -%}
-            				<div class="text_countdown_html">
-                              {% capture text_countdown_html %}             
-                              <div class="clearfix product-page-info__text-countdown">
-                                <div class="text-countdown js-text-countdown" data-reset-time="7" data-delivery-time="3" data-delivery-format="Day DD/MM/YYYY" data-delivery-excludes="Saturday, Sunday">
-                                  {% capture text_countdown_counter_html %}<span class="text-countdown__counter" data-js-text-countdown-counter></span>{% endcapture %}
-                                  {% capture text_countdown_delivery_html %}<span class="text-underline" data-js-text-countdown-delivery></span>{% endcapture %}
-                                  {{ 'products.product.text_countdown_html' | t: counter: text_countdown_counter_html, delivery: text_countdown_delivery_html }}
-                                </div>
-                              </div>             
-                              {% endcapture %}
-                              {% capture visitors_html %}               
-                              <div class="clearfix product-page-info__visitors">
-                                <div class="visitors js-visitors" data-min="10" data-max="25" data-interval-min="2" data-interval-max="6" data-stroke="4">
-                                  {%- assign visitors_random_diff = settings.product_visitors_max | minus: settings.product_visitors_min -%}
-                                  
-                                  {%- assign visitors_random = "now" | date: "%N" | modulo: visitors_random_diff | plus: settings.product_visitors_min -%}
-                                  
-                                  {% capture visitors_counter_html %}
-                                  	<span class="px-8 visitors__counter d-inline-block" data-js-counter>{{ visitors_random }}</span>
-                                  {% endcapture %}
-                                  {{ 'products.product.visitors_html' | t: counter: visitors_counter_html }}
-                                </div>
-                              </div>                
-                              {% endcapture %}  
-                              {% assign show_text_countdown = block.settings.show_text_countdown  %}
-                              {% assign show_visitors_html = block.settings.show_visitors_html %}
-                              {%if show_text_countdown%}{{text_countdown_html}}{%endif%}
-                              {%if show_visitors_html%}{{ visitors_html }}{%endif%}
-            				</div> 
-            			{%- when 'product_infor' -%}
-                			<div class="product_infor">
-                			  {%- if block.settings.show_availability -%}
-                              <div class="clearfix pr-availability">
-                                <p><label class="label">{{'products.product.availability' | t}}:</label>             
-                                  <span style="color:{{block.settings.color_in_stock}}" class="available {% if product.available %}  {% else %} d-none {% endif %}" id="js-pr-available" >{{'products.product.available' | t}}</span>             
-                                  <span style="color:{{block.settings.color_out_stock}}" class="unavailable {% if product.available %}d-none{% endif %}" id="js-pr-unavailable"  > {{'products.product.unavailable' | t}}</span>                
-                                </p>  
+                              </h1>
+                              {% style%}
+                                .details-info .product-name{
+                                  text-transform:{{block.settings.np_text_transform}};
+                                  margin-top:{{block.settings.np_mg_top}}px;
+                                  margin-bottom:{{block.settings.np_mg_bottom}}px;
+                                  font-size: {{block.settings.np_size}}px;
+                                  font-weight:{{block.settings.np_weight}};
+                                }
+                                @media (max-width: 767px) {
+                                  .details-info .product-name{
+                                  font-size: {{block.settings.np_size_mobile}}px
+                                  }
+                                }
+                              {% endstyle%}
+                        {%- when 'show_reviews' -%}
+                              <div class="star-rating">
+                                <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                                <a href="#tab_product" class="write-review">{{'products.product.create_review' | t}}</a>
                               </div>
-                              {%endif%}  	
-                
-                              {%- if block.settings.show_sku  -%}
-                                {% if sku != blank %}
-                                  <div class="product-collection__sku">
-                                    <p data-js-product-sku><label class="label">{{ 'products.product.sku' | t }}:</label> <span>{{ sku }}</span></p>
-                                  </div>
-                                  {% endif %}
-                              {%endif%}
-                			  
-                              {%- if block.settings.show_barcode -%}
-                              <div class="product-collection__barcode{% if barcode == blank %} d-none{% endif %}">
-                                <p data-js-product-barcode><label class="label">{{ 'products.product.barcode' | t }}:</label> <span>{{ barcode }}</span></p>
+                      {%- when 'name_category' -%}
+                        <div class="name_category">
+                                  <div class="name_collection" data-js-product-collection>
+                                  <label class="label">{{ 'products.product.Categories' | t }}:</label>
+                                  <p>
+                                  {%- if product.collections.size > 0 -%}
+                                      {%- for collection in product.collections limit: 1 -%}
+                                      <a class="collection_item" href="{{ collection.url }}">
+                                        {{ collection.title }}{% if forloop.last != true %},{% endif %}
+                                      </a>{% if forloop.last != true %} {% endif %}
+                                      {%- endfor -%}
+                                  {%- endif -%} 
+                                  </p> 
+                                  </div>  
+                        </div>
+                      {%- when 'show_price' -%}
+                              <div class="product-price">              
+                                {%comment%}<span id="js-product-price">{{ product.variants[0].price | money }}</span>{%endcomment%}
+                                
+                                {%- if product.compare_at_price > price -%}
+                                
+                                  <span class="price price--sale" data-js-product-price><span id="js-product-price" class="current">{{ price | money }}</span> <span class="compare">{{ product.compare_at_price | money }}</span></span>
+                                {%- else -%}
+                                  <span id="js-product-price" class="price" data-js-product-price>{{ price | money }}</span>
+                                {%- endif -%}
+                                {%- if product.compare_at_price > price -%}
+                                  <p class="price-sale-details" data-js-product-price-sale-details>
+                                    {%- assign price_save = product.compare_at_price | minus: price -%}
+                                    {%- assign price_save_money = price_save | money | strip_html -%}
+                                    {%- assign price_save_procent = price | times: 100 | divided_by:product. compare_at_price | minus: 100 | times: -1 -%}
+                                    {{ 'products.product.price_sale_details' | t: price: price_save_money, procent: price_save_procent }}
+                                  </p>	
+                                {%- endif -%}
                               </div>
-                              {%endif%}
-                              {%- if block.settings.show_type -%}
-                              <div class="product-collection__type{% if type == blank %} d-none{% endif %}">
-                                <p data-js-product-type><label class="label">{{ 'products.product.type' | t }}:</label> <span>{{ type }}</span></p>
-                              </div>
-                              {%endif%}
-                              {%- if block.settings.show_vendor -%}
-                              <div class="product-collection__vendor{% if vendor == blank %} d-none{% endif %}">
-                                <p data-js-product-vendor><label class="label">{{ 'products.product.vendor' | t }}:</label> <span>{{ vendor }}</span></p>
-                              </div>
-                              {%endif%}
-                			</div>
-            			{%- when 'show_social' -%}
-            				<div class="product_page_social">
-                              {% assign type_social = block.settings.type_social | plus: 0 %}
-                              {%- if type_social == 1 -%}
-                              <div class="clearfix group-social">
-                                {% include 'social_link' %}
-                              </div>
-                              {%- else -%}
-                                  {% include 'social-sharing' %}
-                              {%- endif -%}
-            				</div>
-            				{%- when 'product_variants' -%}
-                			{% assign show_size_guide = block.settings.show_size_guide %}
-                			{% assign size_guide_page = block.settings.size_guide_page %}
-            					{% assign show_title_variant = block.settings.show_title %}
-            					{% assign variants_type = block.settings.variants_type | plus: 0  %}
-            					{% assign variantCount = product.variants | size %}
-            					{% if variantCount > 1 %} 
-                                  <div class="product-collection__options">
-                                  	{% include 'product-get-options' show_title_variant:show_title_variant show_size_guide:show_size_guide size_guide_page:size_guide_page %}
-                              	  </div>
-            					{% endif %}
-            				{%- when 'quantity_button' -%}
-                                {%- assign qt_show_wishlist = block.settings.qt_show_wishlist -%}
-                                {%- assign qt_show_compare = block.settings.qt_show_compare -%}
-                                {%- assign qt_show_cart = block.settings.qt_show_cart -%}
-                                {%- assign show_popup = block.settings.show_popup -%}
-                                {%- assign product_terms_conditions_page_content = pages[block.settings.product_terms_conditions_page_content].content -%}
-                                {%- assign qt_buy_it_now = block.settings.qt_buy_it_now -%}
-                                {%- assign qt_show_quantity = block.settings.qt_show_quantity -%}
-                                {%- assign icon_button_cart = block.settings.icon_button_cart -%}
-                                {%- assign show_custom_color_btn = block.settings.show_custom_color_btn -%}
-                					<div data-product-meta class="clearfix cms-product-meta">  
-                					{% if qt_show_quantity %}
-                					<div data-product-quantity class="js-quantity quantity {% if product.available %}{% else %} d-none {% endif %}" >
-                                      <label>{{'products.product.quantity' | t}}</label>
-                					  <div class="group-quantity-button">
-                						<a class="js_minus" href="#">
-                                          <i class=" icon-minus"></i>
-                                        </a>
-                						<input id="Quantity" data-step="1" data-min="1" data-max="{{product.variants.first.inventory_quantity}}" class="input-text js_qty" type="text" size="4" title="Qty" value="1" name="quantity">
-                						<a class="js_plus" href="#">
-                                        	<i class=" icon-plus"></i>
-                                        </a>
-                					  </div>
-                					</div>
-                					{% endif %}
-                					<div class="group-button">
-                					  <div class="inner">
-                						{% if qt_show_cart%}
-                						  <button type="submit" class="add-to-cart js_add_to_cart_button" {% if product.available %} {% else %} style="display:none!important;" {% endif %} data-js-product-button-add-to-cart  data-pid="{{ product.variants.first.id }}">
-                                  <i aria-hidden="true" class="laber-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                                  <span class="text">{{'products.product.add_to_cart' | t }}</span>{% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}
-                              </button>
-                						  <a class="add-to-cart js-btn-sold-out  {% if product.available %} d-none{% endif %}" data-js-product-button-sold-out  onclick="location.href='{{ product.url | within: collection }}'"><span class="text">{{'products.product.sold_out' | t }}</span> {% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}</a>
-                						{% endif %}
-                					  </div>
-                                                      					{% if qt_buy_it_now and product.available%}
-                                      {% assign variantCount = product.variants | size %}		
-                
-                                      {%- capture terms_conditions -%}
-                                          {% if show_popup %}
-                                              <a data-page-open-popup data-effect="mfp-move-horizontal" href="#terms-conditions">{{ 'products.product.terms_conditions' | t}}</a>
-                                          {% else %}
-                                              <a href="#">{{ 'products.product.terms_conditions' | t}}</a>
-                                          {% endif %}	
-                                      {%- endcapture-%}
-                                      {% if show_popup %}
-                                        <div id="terms-conditions" class="mfp-hide mfp-with-anim size-chart-open-popup">
-                                          {{ product_terms_conditions_page_content }}
-                                        </div> 
-                                      {% endif %}		
-                                          <div data-buyitnow-button class="group-button-buyitnow {% if show_popup %}disabled{% endif %}">  
-                                            {% if show_popup %}
-                                            <div class="checkbox-group prpage-term-conditions-checkbox term-conditions-checkbox-js">
-                                              <input type="checkbox" id="prpage-cart-term-conditions-checkbox" value="1">
-                                              <label for="prpage-cart-term-conditions-checkbox">
-                                                <span class="check"></span>
-                                                <span class="box"></span>
-                                                {{ 'products.product.checkbox_buyitnow' | t  }} {{terms_conditions}}
-                                              </label>
-                                            </div>
-                                            {% endif %}
-                                            {{ form | payment_button }}                       
-                                          </div>
-                  					{%endif%}
-            
-                              {% if show_custom_color_btn %}
-                                  
-                                  {%- assign color_text_cart = block.settings.color_text_cart -%}
-                                  {%- assign bg_add_to_cart = block.settings.bg_add_to_cart -%}
-            
-                                  {%- assign color_text_buy_now = block.settings.color_text_buy_now -%}
-                                  {%- assign bg_buy_it_now = block.settings.bg_buy_it_now -%}
-            
-                                  {%- assign bg_add_to_cart_hv = block.settings.bg_add_to_cart_hv -%}
-                                  {%- assign color_text_cart_hover = block.settings.color_text_cart_hover -%}
-            
-                                  {%- assign bg_buy_it_now_hv = block.settings.bg_buy_it_now_hv -%}
-                                  {%- assign color_text_buy_now_hover = block.settings.color_text_buy_now_hover -%}
-            
-                                  <style>
-                                    .is-invalid {
-                                      border: 2px solid red;
-                                      background-color: #ffe6e6; /* Optional for better visibility */
-                                    }
-                                      .details-info .group-button .add-to-cart{
-                                          background-color: {{bg_add_to_cart}};
-                                          border-color: {{bg_add_to_cart}};
-                                          color:{{color_text_cart}}
-                                      }
-                                      .details-info .group-button .add-to-cart:hover {
-                                          background-color: {{bg_add_to_cart_hv}};
-                                          border-color: {{bg_add_to_cart_hv}};
-                                          color:{{color_text_cart_hover}}
-                                      }
-                                      .group-button-buyitnow .shopify-payment-button button{
-                                          background-color: {{bg_buy_it_now}};
-                                          color:{{color_text_buy_now}}
-                                      }
-                                      .group-button-buyitnow .shopify-payment-button__button--unbranded:hover:not([disabled]){
-                                          background-color: {{bg_buy_it_now_hv}};
-                                          color:{{color_text_buy_now_hover}}
-                                      }
-                                  </style>
-                              {% endif %}
-                					</div>
-                                      
-                				  	</div>    				
-
-                              <div class="compare-wishlist">
-                                {% if qt_show_compare %}
-                                {% comment %}
-                                	<a href="javascript:void(0);" class="compare-button js-compare" data-js-tooltip data-tippy-content="{{'general.compare.title' | t}}" {% if product.available %} style="display:inline-block;" {% else %} style="display:none;" {% endif %}  data-pid="{{product.handle}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                {% endcomment %}
-                                {% include 'product-get-button-compare' %}
-                                {% endif %}
-            
-                                {% if qt_show_wishlist %}
-                                {% comment %}
-                                	<a href="javascript:void(0);" class="wishlist-button wishlist" data-js-tooltip data-tippy-content="{{'general.wishlist.title' | t}}"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                {% endcomment %}
-                                {% include 'product-get-button-wishlist' %}
-                                {% endif %}
-                              </div> 
-            				{%- when 'tags' -%}
-            					{% if product.tags%}
-            					<div class="clearfix tags_product">
-                                  <div class="tags" data-js-product-tags >
-                                    <label class="label">{{ 'products.product.tags' | t }}:</label>
-                                  	{%- assign tags_id = block.settings.tags -%}
-                                    <p>
-                                    {%- if tags_id != blank -%}
-                                     {%- assign tags_text = tags_id | replace: ' ,', ',' | replace: ', ', ',' | split: ',' -%}
-                                    {%- endif -%}
-                                    {%- for tags in product.tags  -%}
-                                      {%- for tags_t in tags_text -%}
-                                          {%- if tags == tags_t -%}
-                                            <a href="{{ routes.root_url }}collections/all/{{ tags | replace: " ", "-"}}" title="{{ tags}}">
-                                              <span>
-                                                {{tags}}
-                                              </span>
-                                            </a>
-                                          {%-endif-%}
-                                       {%- endfor -%}
-                                    {%- endfor -%}
-                                    </p>
-                                  </div>
-            					</div>
-            					{%endif%}
-
-
-                      {%- when 'greeting_and_message' -%}
-                      <div class="cms-option-item">
-                      {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
-                      {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
-                      {% assign all_greeting_options = "" | split: "," %}
-                      {% assign default_greetings = "None, Congrats 1, Congrats 2, Congrats 3 / Graduation, Dad 1, Dad 2, Dad 3, Dad 4 / Father's Day, Get Well 1, Get Well 2, Get Well 3, Happy Birthday 1, Happy Birthday 2, Happy Birthday 3, Happy Birthday 4, Holidays 1, Holidays 2, Holidays 3, Holidays 4, Just Because 1, Just Because 2, Just For You 1, Just For You 2, Love 1 / Valentines Day, Love 2, Love 3, Love 4, Love 5, Mom 1, Mom 2, Mom 3 / Mother's Day, Mom 4 / Mother's Day, Sympathy 1, Sympathy 2, Sympathy 3, Thank You 1, Thank You 2, Thank You 3, Thank You 4, Thank You 5, Thank You 6" | split: "," %}
-                      {% assign valentine_greetings = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
-                      {% assign mothers_day_greetings = "Mom 3,Mom 4,Mom 5,Mom 6,Mom 7" | split: "," %}
-                      <script>
-                        const productMetafieldsCustom = {{ product.metafields.custom | json }};
-                        console.log(productMetafieldsCustom);
-                      </script>
-                      {% for set in greeting_card_sets %}
-                        {% assign trimmed_set = set | strip %}
-                        {% case trimmed_set %}
-                          {% when '"default"' %}
-                            {% assign greeting_options = default_greetings %}
-                          {% when '"valentines"' %}
-                            {% assign greeting_options = valentine_greetings | sort %}
-                          {% when '"mothers_day"' %}
-                            {% assign greeting_options = mothers_day_greetings | sort %}
-                          {% else %}
-                            {% assign greeting_options = "" %}
-                        {% endcase %}
-                        {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
-                      {% endfor %}
-
-                      {% assign all_greeting_options = all_greeting_options | uniq | sort %}
-                      <style>
-                        .chevron-select-wrapper {
-                          position: relative;
-                          /* Define a custom property with default rotation for the chevron */
-                          --chevron-transform: rotate(0deg);
-                        }
-                        .select__select {
-                          -webkit-appearance: none;
-                          appearance: none;
-                          color: var(--color-main);
-                          font-size: 14px;
-                          width: 100%;
-                          box-sizing: border-box;
-                          transition: box-shadow var(--duration-short) ease;
-                          border-radius: 3px;
-                          height: 40px;
-                          min-height: calc(var(--inputs-border-width) * 2);
-                          min-width: calc(7rem + (var(--inputs-border-width) * 2));
-                          border: 1px solid #ccc;
-                          padding: 10px 35px 10px 10px;
-                        }
-                        .chevron-select-wrapper::after {
-                          content: '';
-                          position: absolute;
-                          top: 74%;
-                          right: 10px;
-                          transform: translateY(-50%) var(--chevron-transform);
-                          width: 0;
-                          height: 0;
-                          border-left: 5px solid transparent;
-                          border-right: 5px solid transparent;
-                          border-top: 6px solid #666;
-                          transition: transform var(--duration-short) ease;
-                        }
-                        .select__select:focus + .chevron-select-wrapper::after,
-                        .select__select:hover + .chevron-select-wrapper::after {
-                          border-top-color: var(--color-main);
-                        }
-                      </style>
-                      {% assign tumbler_finish_design_color = "CLEAR - Black Design, CLEAR - White Design, FROSTED - Black Design, FROSTED - White Design" | split: "," %}
-                      {% if product.metafields.custom.tumbler_finish_design_color %}
-                      <div class="chevron-select-wrapper">
-                      <label class="label" for="greeting-card-options">Tumbler Finish and Design Color:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Finish - Design Color]">
-                        <option value="" selected disabled>Select a tumbler & design color</option>
-                          {% for option in tumbler_finish_design_color %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
-                      {% endif %}
-                      {% comment %} For Moms {% endcomment %}
-                      {% assign tumbler_mom_finish_design = "CLEAR - Mama - Black, CLEAR - Mama - White, CLEAR - Best Mom Ever - Black, CLEAR - Best Mom Ever - White, FROSTED - Mama - Black, FROSTED - Mama - White, FROSTED - Best Mom Ever - Black, FROSTED - BestMom Ever - White" | split: "," %}
-                      {% if product.metafields.custom.tumbler_mom_finish_design %}
-                      <div class="chevron-select-wrapper">
-                      <label class="label" for="greeting-card-options">Tumbler Finish, Design and Design Color:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Finish - Design - Design Color]">
-                        <option value="" selected disabled>Select a tumbler, design & design color</option>
-                          {% for option in tumbler_mom_finish_design %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
-                      {% endif %}
-
-                      {% assign tumbler_font_choice = "Font #1, Font #2, Font #3, Font #4, Font #5, Font #6, Font #7, Font #8" | split: "," %}
-                      {% if product.metafields.custom.tumbler_font_choice %}
-                      <div class="chevron-select-wrapper">
-                      <label class="label" for="greeting-card-options">Font:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Font]">
-                        <option value="" selected disabled>Select a font</option>
-                          {% for option in tumbler_font_choice %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
-                      {% endif %}
-
-                      {% assign tumbler_design_choice = "Love, Be Mine, Be My Valentine, #1 Wifey, You Are My Favorite Person" | split: "," %}
-                      {% if product.metafields.custom.tumbler_design_choice %}
-                      <div class="chevron-select-wrapper">
-                      <label class="label" for="greeting-card-options">Tumbler Design:</label>
-                      <select class="select__select" id="greeting-card-options" name="properties[Tumbler Design]">
-                        <option value="" selected disabled>Select a tumbler design</option>
-                          {% for option in tumbler_design_choice %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
-                      {% endif %}
-
-                      <select class="select__select" required onchange="console.log('Dropdown changed:', this.value)">
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                      </select>
                       
-                      <textarea id="custom-message" required oninput="console.log('Textarea input:', this.value)"></textarea>
-
-                      <div class="chevron-select-wrapper"> 
-                        <label class="label" for="greeting-card-options">Greeting Card:</label>
-                        <select class="select__select" id="greeting-card-options" name="properties[Card]" required>
-                          <option value="" selected disabled>Select a greeting card</option>
-                          {% for option in all_greeting_options %}
-                            <option value="{{ option }}">{{ option | strip_newlines }}</option>
-                          {% endfor %}
-                        </select>
+                      {%- when 'show_description' -%}
+                    
+                        {%- assign tr_words = block.settings.tr_words -%}
+                        {%- assign view_more = block.settings.view_more -%}
+                        {%- assign des_mg_top = block.settings.des_mg_top -%}
+                        {%- assign des_mg_bottom = block.settings.des_mg_bottom -%}
+                        {%- assign des_pad_top = block.settings.des_pad_top -%}
+                        {%- assign des_pad_right = block.settings.des_pad_right -%}
+                        {%- assign des_pad_bottom = block.settings.des_pad_bottom -%}
+                        {%- assign des_pad_left = block.settings.des_pad_left -%}
+                        {%- assign des_size = block.settings.des_size -%}
+                        {%- assign des_bg = block.settings.des_bg -%}
+                        <div class="clearfix product_description" style="font-size:{{des_size}}px; margin-top:{{des_mg_top}}px; margin-bottom:{{des_mg_bottom}}px;padding-top:{{des_pad_top}}px; padding-bottom:{{des_pad_bottom}}px; padding-right:{{des_pad_right}}px; padding-left:{{des_pad_left}}px; background-color:{{des_bg}}; ">
+                                      {% if block.settings.title != blank %}<h3>{{ block.settings.title }}{% endif %}</h3>
+                                  {{ product.description | strip_html | truncatewords: tr_words }}{%- if view_more -%}<a data-animated="fadeIn" data-toggle="pill" href="#tab_des">{{view_more}}</a>{%- endif -%}
                         </div>
-                      <style>
-                        .textarea-container {
-                          position: relative;
-                        }
-                        .char-count {
-                          position: absolute;
-                          font-size: 1rem;
-                          bottom: 8px;
-                          right: 4px;
-                        }
-                        .textarea_textarea{
-                          width: 100%;
-                          height: 100px;
-                          padding: 10px;
-                          border: 1px solid #ccc;
-                          border-radius: 3px;
-                          box-sizing: border-box;
-                          transition: box-shadow var(--duration-short) ease;
-                        }
-                        .form_field_caption {
-                          font-size: 14px;
-                          margin-bottom: 5px;
-                        }
-                      </style>
-                      <div class="product-form__input product-form__input--textarea" style="padding-top: 20px">
-                        <label
-                          class="form__label"
-                          for="custom-message"
-                          >
-                          Add your personalization {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message %}(required){% else %}(optional){% endif %}:
-                        </label>
-                        <div id="accordion-content">
-                          {% if product.metafields.custom.personalization_message %}
-                            <div class="form_field_caption">Please include the following details:</div>
-                            <div class="form_field_caption">1. Name or text on tumbler (max 10 characters, no special characters)</div>
-                            <div class="form_field_caption">2. Personalized card message (don't forget to include your signature at the end!)</div>
-                            <br/>
-                            <div class="form_field_caption">E.g.: If the text for the tumbler is "Dahlia" and the personalized card message is "Enjoy your gift! Love, Alex," enter:</div>
-                            <div class="form_field_caption">1. Dahlia</div>
-                            <div class="form_field_caption">2. Enjoy your gift! Love, Alex</div>
-                          {% elsif product.metafields.custom.mom_personalization_message %}
-                            <div class="form_field_caption">Please include the following details:</div>
-                            <div class="form_field_caption">1. Greeting card choice</div>
-                            <div class="form_field_caption">2. Personalized card message (Don't forget to include your signature at the end!)</div>
-                            <br/>
-                            <div class="form_field_caption">E.g.: If you choose the Mom 1 card, and the message "Enjoy your gift, mom! Love, Alex," enter:</div>
-                            <div class="form_field_caption">1. Mom 1</div>
-                            <div class="form_field_caption">2. Enjoy your gift, mom! Love, Alex"</div>
-                          {% else %}
-                            <div class="form_field_caption">Enter your personalized card message here ✉</div>
-                            <div class="form_field_caption">Don't forget to include your signature at the end!</div>
-                          {% endif %}
-                          <div class="textarea-container">
-                            <textarea
-                              id="custom-message"
-                              class="textarea_textarea"
-                              placeholder=""
-                              name="properties[Message]"
-                              rows="4"
-                              maxlength="500"
-                              style="resize: none;"
-                              required
-                            ></textarea>
-                            <div class="char-count">500</div>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
-            				{%- when 'custom_html' -%}
-                				<div class="product_custom_html">
-                				<div class="content">
-                                  {%- assign image = block.settings.image -%}
-                                  {% if image !=blank %}
-                                    <div class="custom_image">
-                                        {{ image | image_url: width: 290 | image_tag: width: 290 }}
+                      {%- when 'text_countdown_html' -%}
+                        <div class="text_countdown_html">
+                                  {% capture text_countdown_html %}             
+                                  <div class="clearfix product-page-info__text-countdown">
+                                    <div class="text-countdown js-text-countdown" data-reset-time="7" data-delivery-time="3" data-delivery-format="Day DD/MM/YYYY" data-delivery-excludes="Saturday, Sunday">
+                                      {% capture text_countdown_counter_html %}<span class="text-countdown__counter" data-js-text-countdown-counter></span>{% endcapture %}
+                                      {% capture text_countdown_delivery_html %}<span class="text-underline" data-js-text-countdown-delivery></span>{% endcapture %}
+                                      {{ 'products.product.text_countdown_html' | t: counter: text_countdown_counter_html, delivery: text_countdown_delivery_html }}
                                     </div>
-                                  {%endif%}
-                                  {% if block.settings.svg_custom and block.settings.show_svg_custom%}
-                                    <div class="payment_type_img">
-                                    {%- assign svg_custom = block.settings.svg_custom | remove: ' ' | split:"," -%}
-                                    {%- for img in svg_custom -%}
-                                          <img class="lazyload img_tr_svg" src="{{ img | payment_type_img_url }}" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />
-                                    {%- endfor -%}
+                                  </div>             
+                                  {% endcapture %}
+                                  {% capture visitors_html %}               
+                                  <div class="clearfix product-page-info__visitors">
+                                    <div class="visitors js-visitors" data-min="10" data-max="25" data-interval-min="2" data-interval-max="6" data-stroke="4">
+                                      {%- assign visitors_random_diff = settings.product_visitors_max | minus: settings.product_visitors_min -%}
+                                      
+                                      {%- assign visitors_random = "now" | date: "%N" | modulo: visitors_random_diff | plus: settings.product_visitors_min -%}
+                                      
+                                      {% capture visitors_counter_html %}
+                                        <span class="px-8 visitors__counter d-inline-block" data-js-counter>{{ visitors_random }}</span>
+                                      {% endcapture %}
+                                      {{ 'products.product.visitors_html' | t: counter: visitors_counter_html }}
                                     </div>
-                                  <style>
-                                      .payment_type_img img {padding: 2.5px; height: {{block.settings.svg_height}}px;}
-                                  </style>
-                                  {%- endif -%}
-                                  {% if block.settings.html_custom !=blank %}
-                                  <div class="clearfix content-text">
-                                      {{block.settings.html_custom}}
+                                  </div>                
+                                  {% endcapture %}  
+                                  {% assign show_text_countdown = block.settings.show_text_countdown  %}
+                                  {% assign show_visitors_html = block.settings.show_visitors_html %}
+                                  {%if show_text_countdown%}{{text_countdown_html}}{%endif%}
+                                  {%if show_visitors_html%}{{ visitors_html }}{%endif%}
+                        </div> 
+                      {%- when 'product_infor' -%}
+                          <div class="product_infor">
+                            {%- if block.settings.show_availability -%}
+                                  <div class="clearfix pr-availability">
+                                    <p><label class="label">{{'products.product.availability' | t}}:</label>             
+                                      <span style="color:{{block.settings.color_in_stock}}" class="available {% if product.available %}  {% else %} d-none {% endif %}" id="js-pr-available" >{{'products.product.available' | t}}</span>             
+                                      <span style="color:{{block.settings.color_out_stock}}" class="unavailable {% if product.available %}d-none{% endif %}" id="js-pr-unavailable"  > {{'products.product.unavailable' | t}}</span>                
+                                    </p>  
                                   </div>
-                                  {%endif%}
-                				</div>
-               	 				</div>
-            				{%- when 'free_shipping' -%}
-            					{% include 'free-shipping' %}
-            				{%- when 'inventory_qty' -%}
-            				{%- assign total_items = block.settings.total_items -%}
-            				{%- assign bg_1 = block.settings.bg_1 -%}
-            				{%- assign bg_2 = block.settings.bg_2 -%}	
-            				{%- assign h_stock = block.settings.h_stock -%}
-            				{%- assign quantity = product.variants.first.inventory_quantity -%}
-            				<div class="inventory_qty">
-                              		<div class="product_page_info_stock">
-                                      <div class="stock-countdown {% unless quantity > 0 and quantity <= total_items %} d-none-important{% endunless %}" data-js-product-info-stock data-min="{{total_items}}">
-                                          {% capture quantity_html %}<span class="qty">{{ quantity }}</span>{% endcapture %}
-                                          <p class="laber_title" data-js-product-info-stock-title>{{ 'products.product.stock_countdown_html' | t: quantity: quantity_html }}</p>
-                                              <div class="laber_total_items" style="background-color:{{bg_2}};height:{{h_stock}}px;">
-                                                  {%- assign countdown_range_quotient = total_items | times: 1.0 | divided_by: 100 -%}
-                                                  {%- assign countdown_range_procent = quantity | divided_by: countdown_range_quotient -%}
-                                                  <div style="background-color:{{bg_1}};width: {{ countdown_range_procent }}%;" class="laber_progress" data-js-product-info-stock-progress ></div>
-                                              </div>
+                                  {%endif%}  	
+                    
+                                  {%- if block.settings.show_sku  -%}
+                                    {% if sku != blank %}
+                                      <div class="product-collection__sku">
+                                        <p data-js-product-sku><label class="label">{{ 'products.product.sku' | t }}:</label> <span>{{ sku }}</span></p>
                                       </div>
+                                      {% endif %}
+                                  {%endif%}
+                            
+                                  {%- if block.settings.show_barcode -%}
+                                  <div class="product-collection__barcode{% if barcode == blank %} d-none{% endif %}">
+                                    <p data-js-product-barcode><label class="label">{{ 'products.product.barcode' | t }}:</label> <span>{{ barcode }}</span></p>
                                   </div>
-            				</div>
-                          {%- when 'text' -%}
-                              <p class="product__text">
-                                {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
-                              </p>	
-                           {%- when 'custom_liquid' -%}
-                              {{ block.settings.custom_liquid }}
-                            {%- when 'countdown' -%}  
-                              <div class="page_product_countdown">
-                                    {% include 'countdown' block:block %}
-                              </div>    
-                           {%- when 'shipping' -%}
-                              {% if block.settings.show_delivery_times %}
-                                  <div class="prod_delivery-times">
-                                    <span class="block__icon">
-                                    <?xml version="1.0" ?><svg id="Icons" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <style type="text/css">
-                                        	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                                        		.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
-                                        	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-                                        	.st3{fill:none;}
-                                        </style>
-                                        <polyline class="st0" points="2,9 19,9 19,24 10,24 "/><circle class="st0" cx="24" cy="24" r="2"/><circle class="st0" cx="8" cy="24" r="2"/><polyline class="st0" points="19,24 19,13 25,13 29,18 29,24 26,24 "/><line class="st0" x1="4" x2="13" y1="13" y2="13"/><line class="st0" x1="2" x2="11" y1="17" y2="17"/><rect class="st3" height="680" width="536" x="-288" y="-432"/></svg>
-                                    </span>
-                                    {% assign range =  2 | times: 24 | times: 60 | times: 60 %}
-                                    {% assign deliver_in =  block.settings.deliver_days | times: 24 | times: 60 | times: 60 %}
-                                    {% assign now = 'now' | date: "%s" %}
-                                    {% assign date_format = block.settings.date_format | default: "%b %d" %}
-                                    
-                                    {% assign from = now | plus: deliver_in | minus: range | date: date_format %}
-                                    {% assign to = now | plus: deliver_in | plus: range | date: date_format %}
-                                    
-                                    <div class="content">
-                                    <p><label>{{ block.settings.deliver_text | strip_html }}</label><span>{{ from }} - {{ to }}</span></p>
-                                    </div>
+                                  {%endif%}
+                                  {%- if block.settings.show_type -%}
+                                  <div class="product-collection__type{% if type == blank %} d-none{% endif %}">
+                                    <p data-js-product-type><label class="label">{{ 'products.product.type' | t }}:</label> <span>{{ type }}</span></p>
                                   </div>
+                                  {%endif%}
+                                  {%- if block.settings.show_vendor -%}
+                                  <div class="product-collection__vendor{% if vendor == blank %} d-none{% endif %}">
+                                    <p data-js-product-vendor><label class="label">{{ 'products.product.vendor' | t }}:</label> <span>{{ vendor }}</span></p>
+                                  </div>
+                                  {%endif%}
+                          </div>
+                      {%- when 'show_social' -%}
+                        <div class="product_page_social">
+                                  {% assign type_social = block.settings.type_social | plus: 0 %}
+                                  {%- if type_social == 1 -%}
+                                  <div class="clearfix group-social">
+                                    {% include 'social_link' %}
+                                  </div>
+                                  {%- else -%}
+                                      {% include 'social-sharing' %}
+                                  {%- endif -%}
+                        </div>
+                        {%- when 'product_variants' -%}
+                          {% assign show_size_guide = block.settings.show_size_guide %}
+                          {% assign size_guide_page = block.settings.size_guide_page %}
+                          {% assign show_title_variant = block.settings.show_title %}
+                          {% assign variants_type = block.settings.variants_type | plus: 0  %}
+                          {% assign variantCount = product.variants | size %}
+                          {% if variantCount > 1 %} 
+                                      <div class="product-collection__options">
+                                        {% include 'product-get-options' show_title_variant:show_title_variant show_size_guide:show_size_guide size_guide_page:size_guide_page %}
+                                      </div>
+                          {% endif %}
+                        {%- when 'quantity_button' -%}
+                                    {%- assign qt_show_wishlist = block.settings.qt_show_wishlist -%}
+                                    {%- assign qt_show_compare = block.settings.qt_show_compare -%}
+                                    {%- assign qt_show_cart = block.settings.qt_show_cart -%}
+                                    {%- assign show_popup = block.settings.show_popup -%}
+                                    {%- assign product_terms_conditions_page_content = pages[block.settings.product_terms_conditions_page_content].content -%}
+                                    {%- assign qt_buy_it_now = block.settings.qt_buy_it_now -%}
+                                    {%- assign qt_show_quantity = block.settings.qt_show_quantity -%}
+                                    {%- assign icon_button_cart = block.settings.icon_button_cart -%}
+                                    {%- assign show_custom_color_btn = block.settings.show_custom_color_btn -%}
+                              <div data-product-meta class="clearfix cms-product-meta">  
+                              {% if qt_show_quantity %}
+                              <div data-product-quantity class="js-quantity quantity {% if product.available %}{% else %} d-none {% endif %}" >
+                                          <label>{{'products.product.quantity' | t}}</label>
+                                <div class="group-quantity-button">
+                                <a class="js_minus" href="#">
+                                              <i class=" icon-minus"></i>
+                                            </a>
+                                <input id="Quantity" data-step="1" data-min="1" data-max="{{product.variants.first.inventory_quantity}}" class="input-text js_qty" type="text" size="4" title="Qty" value="1" name="quantity">
+                                <a class="js_plus" href="#">
+                                              <i class=" icon-plus"></i>
+                                            </a>
+                                </div>
+                              </div>
+                              {% endif %}
+                              <div class="group-button">
+                                <div class="inner">
+                                {% if qt_show_cart%}
+                                  <button type="submit" class="add-to-cart js_add_to_cart_button" {% if product.available %} {% else %} style="display:none!important;" {% endif %} data-js-product-button-add-to-cart  data-pid="{{ product.variants.first.id }}">
+                                      <i aria-hidden="true" class="laber-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                                      <span class="text">{{'products.product.add_to_cart' | t }}</span>{% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}
+                                  </button>
+                                  <a class="add-to-cart js-btn-sold-out  {% if product.available %} d-none{% endif %}" data-js-product-button-sold-out  onclick="location.href='{{ product.url | within: collection }}'"><span class="text">{{'products.product.sold_out' | t }}</span> {% if icon_button_cart !="" %}<span class="icon"><i class="{{ icon_button_cart }}" aria-hidden="true"></i></span>{% endif %}</a>
                                 {% endif %}
-                                {% if block.settings.show_shipping_text and block.settings.shipping_text != blank %}
-                                  <div class="prod_shipping-text">
-                                      <span class="block__icon">
-                                        <i class="icon-package"></i>
-                                      </span>
-                                    <div class="content">
-                                    {{ block.settings.shipping_text }}
-                                    </div>
-                                  </div>
-                              {% endif %}     
-                {%- endcase -%}
-              {%- endfor -%}
-            {% endform %}
-                </div>
-             </div>  
+                                </div>
+                                                                    {% if qt_buy_it_now and product.available%}
+                                          {% assign variantCount = product.variants | size %}		
+                    
+                                          {%- capture terms_conditions -%}
+                                              {% if show_popup %}
+                                                  <a data-page-open-popup data-effect="mfp-move-horizontal" href="#terms-conditions">{{ 'products.product.terms_conditions' | t}}</a>
+                                              {% else %}
+                                                  <a href="#">{{ 'products.product.terms_conditions' | t}}</a>
+                                              {% endif %}	
+                                          {%- endcapture-%}
+                                          {% if show_popup %}
+                                            <div id="terms-conditions" class="mfp-hide mfp-with-anim size-chart-open-popup">
+                                              {{ product_terms_conditions_page_content }}
+                                            </div> 
+                                          {% endif %}		
+                                              <div data-buyitnow-button class="group-button-buyitnow {% if show_popup %}disabled{% endif %}">  
+                                                {% if show_popup %}
+                                                <div class="checkbox-group prpage-term-conditions-checkbox term-conditions-checkbox-js">
+                                                  <input type="checkbox" id="prpage-cart-term-conditions-checkbox" value="1">
+                                                  <label for="prpage-cart-term-conditions-checkbox">
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    {{ 'products.product.checkbox_buyitnow' | t  }} {{terms_conditions}}
+                                                  </label>
+                                                </div>
+                                                {% endif %}
+                                                {{ form | payment_button }}                       
+                                              </div>
+                                {%endif%}
+                
+                                  {% if show_custom_color_btn %}
+                                      
+                                      {%- assign color_text_cart = block.settings.color_text_cart -%}
+                                      {%- assign bg_add_to_cart = block.settings.bg_add_to_cart -%}
+                
+                                      {%- assign color_text_buy_now = block.settings.color_text_buy_now -%}
+                                      {%- assign bg_buy_it_now = block.settings.bg_buy_it_now -%}
+                
+                                      {%- assign bg_add_to_cart_hv = block.settings.bg_add_to_cart_hv -%}
+                                      {%- assign color_text_cart_hover = block.settings.color_text_cart_hover -%}
+                
+                                      {%- assign bg_buy_it_now_hv = block.settings.bg_buy_it_now_hv -%}
+                                      {%- assign color_text_buy_now_hover = block.settings.color_text_buy_now_hover -%}
+                
+                                      <style>
+                                        .is-invalid {
+                                          border: 2px solid red;
+                                          background-color: #ffe6e6; /* Optional for better visibility */
+                                        }
+                                          .details-info .group-button .add-to-cart{
+                                              background-color: {{bg_add_to_cart}};
+                                              border-color: {{bg_add_to_cart}};
+                                              color:{{color_text_cart}}
+                                          }
+                                          .details-info .group-button .add-to-cart:hover {
+                                              background-color: {{bg_add_to_cart_hv}};
+                                              border-color: {{bg_add_to_cart_hv}};
+                                              color:{{color_text_cart_hover}}
+                                          }
+                                          .group-button-buyitnow .shopify-payment-button button{
+                                              background-color: {{bg_buy_it_now}};
+                                              color:{{color_text_buy_now}}
+                                          }
+                                          .group-button-buyitnow .shopify-payment-button__button--unbranded:hover:not([disabled]){
+                                              background-color: {{bg_buy_it_now_hv}};
+                                              color:{{color_text_buy_now_hover}}
+                                          }
+                                      </style>
+                                  {% endif %}
+                              </div>
+                                          
+                                </div>    				
+
+                                  <div class="compare-wishlist">
+                                    {% if qt_show_compare %}
+                                    {% comment %}
+                                      <a href="javascript:void(0);" class="compare-button js-compare" data-js-tooltip data-tippy-content="{{'general.compare.title' | t}}" {% if product.available %} style="display:inline-block;" {% else %} style="display:none;" {% endif %}  data-pid="{{product.handle}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    {% endcomment %}
+                                    {% include 'product-get-button-compare' %}
+                                    {% endif %}
+                
+                                    {% if qt_show_wishlist %}
+                                    {% comment %}
+                                      <a href="javascript:void(0);" class="wishlist-button wishlist" data-js-tooltip data-tippy-content="{{'general.wishlist.title' | t}}"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                    {% endcomment %}
+                                    {% include 'product-get-button-wishlist' %}
+                                    {% endif %}
+                                  </div> 
+                        {%- when 'tags' -%}
+                          {% if product.tags%}
+                          <div class="clearfix tags_product">
+                                      <div class="tags" data-js-product-tags >
+                                        <label class="label">{{ 'products.product.tags' | t }}:</label>
+                                        {%- assign tags_id = block.settings.tags -%}
+                                        <p>
+                                        {%- if tags_id != blank -%}
+                                        {%- assign tags_text = tags_id | replace: ' ,', ',' | replace: ', ', ',' | split: ',' -%}
+                                        {%- endif -%}
+                                        {%- for tags in product.tags  -%}
+                                          {%- for tags_t in tags_text -%}
+                                              {%- if tags == tags_t -%}
+                                                <a href="{{ routes.root_url }}collections/all/{{ tags | replace: " ", "-"}}" title="{{ tags}}">
+                                                  <span>
+                                                    {{tags}}
+                                                  </span>
+                                                </a>
+                                              {%-endif-%}
+                                          {%- endfor -%}
+                                        {%- endfor -%}
+                                        </p>
+                                      </div>
+                          </div>
+                          {%endif%}
+
+
+                          {%- when 'greeting_and_message' -%}
+                          <div class="cms-option-item">
+                          {% assign greeting_card_sets_string = product.metafields.custom.greeting_card | remove: '[' | remove: ']' %}
+                          {% assign greeting_card_sets = greeting_card_sets_string | split: ',' %}
+                          {% assign all_greeting_options = "" | split: "," %}
+                          {% assign default_greetings = "None, Congrats 1, Congrats 2, Congrats 3 / Graduation, Dad 1, Dad 2, Dad 3, Dad 4 / Father's Day, Get Well 1, Get Well 2, Get Well 3, Happy Birthday 1, Happy Birthday 2, Happy Birthday 3, Happy Birthday 4, Holidays 1, Holidays 2, Holidays 3, Holidays 4, Just Because 1, Just Because 2, Just For You 1, Just For You 2, Love 1 / Valentines Day, Love 2, Love 3, Love 4, Love 5, Mom 1, Mom 2, Mom 3 / Mother's Day, Mom 4 / Mother's Day, Sympathy 1, Sympathy 2, Sympathy 3, Thank You 1, Thank You 2, Thank You 3, Thank You 4, Thank You 5, Thank You 6" | split: "," %}
+                          {% assign valentine_greetings = "Be Mine,Love You,Valentine's Wishes" | split: "," %}
+                          {% assign mothers_day_greetings = "Mom 3,Mom 4,Mom 5,Mom 6,Mom 7" | split: "," %}
+                          <script>
+                            const productMetafieldsCustom = {{ product.metafields.custom | json }};
+                            console.log(productMetafieldsCustom);
+                          </script>
+                          {% for set in greeting_card_sets %}
+                            {% assign trimmed_set = set | strip %}
+                            {% case trimmed_set %}
+                              {% when '"default"' %}
+                                {% assign greeting_options = default_greetings %}
+                              {% when '"valentines"' %}
+                                {% assign greeting_options = valentine_greetings | sort %}
+                              {% when '"mothers_day"' %}
+                                {% assign greeting_options = mothers_day_greetings | sort %}
+                              {% else %}
+                                {% assign greeting_options = "" %}
+                            {% endcase %}
+                            {% assign all_greeting_options = all_greeting_options | concat: greeting_options %}
+                          {% endfor %}
+
+                          {% assign all_greeting_options = all_greeting_options | uniq | sort %}
+                          <style>
+                            .chevron-select-wrapper {
+                              position: relative;
+                              /* Define a custom property with default rotation for the chevron */
+                              --chevron-transform: rotate(0deg);
+                            }
+                            .select__select {
+                              -webkit-appearance: none;
+                              appearance: none;
+                              color: var(--color-main);
+                              font-size: 14px;
+                              width: 100%;
+                              box-sizing: border-box;
+                              transition: box-shadow var(--duration-short) ease;
+                              border-radius: 3px;
+                              height: 40px;
+                              min-height: calc(var(--inputs-border-width) * 2);
+                              min-width: calc(7rem + (var(--inputs-border-width) * 2));
+                              border: 1px solid #ccc;
+                              padding: 10px 35px 10px 10px;
+                            }
+                            .chevron-select-wrapper::after {
+                              content: '';
+                              position: absolute;
+                              top: 74%;
+                              right: 10px;
+                              transform: translateY(-50%) var(--chevron-transform);
+                              width: 0;
+                              height: 0;
+                              border-left: 5px solid transparent;
+                              border-right: 5px solid transparent;
+                              border-top: 6px solid #666;
+                              transition: transform var(--duration-short) ease;
+                            }
+                            .select__select:focus + .chevron-select-wrapper::after,
+                            .select__select:hover + .chevron-select-wrapper::after {
+                              border-top-color: var(--color-main);
+                            }
+                          </style>
+                          {% assign tumbler_finish_design_color = "CLEAR - Black Design, CLEAR - White Design, FROSTED - Black Design, FROSTED - White Design" | split: "," %}
+                          {% if product.metafields.custom.tumbler_finish_design_color %}
+                          <div class="chevron-select-wrapper">
+                          <label class="label" for="tumbler_finish_design_color">Tumbler Finish and Design Color:</label>
+                          <select class="select__select" id="tumbler_finish_design_color" name="properties[Tumbler Finish - Design Color]">
+                            <option value="" selected disabled>Select a tumbler & design color</option>
+                              {% for option in tumbler_finish_design_color %}
+                                <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                          {% endif %}
+                          {% comment %} For Moms {% endcomment %}
+                          {% assign tumbler_mom_finish_design = "CLEAR - Mama - Black, CLEAR - Mama - White, CLEAR - Best Mom Ever - Black, CLEAR - Best Mom Ever - White, FROSTED - Mama - Black, FROSTED - Mama - White, FROSTED - Best Mom Ever - Black, FROSTED - BestMom Ever - White" | split: "," %}
+                          {% if product.metafields.custom.tumbler_mom_finish_design %}
+                          <div class="chevron-select-wrapper">
+                          <label class="label" for="tumbler_mom_finish_design">Tumbler Finish, Design and Design Color:</label>
+                          <select class="select__select" id="tumbler_mom_finish_design" name="properties[Tumbler Finish - Design - Design Color]">
+                            <option value="" selected disabled>Select a tumbler, design & design color</option>
+                              {% for option in tumbler_mom_finish_design %}
+                                <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                          {% endif %}
+
+                          {% assign tumbler_font_choice = "Font #1, Font #2, Font #3, Font #4, Font #5, Font #6, Font #7, Font #8" | split: "," %}
+                          {% if product.metafields.custom.tumbler_font_choice %}
+                          <div class="chevron-select-wrapper">
+                          <label class="label" for="tumbler_font_choice">Font:</label>
+                          <select class="select__select" id="tumbler_font_choice" name="properties[Font]">
+                            <option value="" selected disabled>Select a font</option>
+                              {% for option in tumbler_font_choice %}
+                                <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                          {% endif %}
+
+                          {% assign tumbler_design_choice = "Love, Be Mine, Be My Valentine, #1 Wifey, You Are My Favorite Person" | split: "," %}
+                          {% if product.metafields.custom.tumbler_design_choice %}
+                          <div class="chevron-select-wrapper">
+                          <label class="label" for="tumbler_design_choice">Tumbler Design:</label>
+                          <select class="select__select" id="tumbler_design_choice" name="properties[Tumbler Design]">
+                            <option value="" selected disabled>Select a tumbler design</option>
+                              {% for option in tumbler_design_choice %}
+                                <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                          {% endif %}
+                          <div class="chevron-select-wrapper"> 
+                            <label class="label" for="greeting-card-options">Greeting Card:</label>
+                            <select class="select__select" id="greeting-card-options" name="properties[Card]" required>
+                              <option value="" selected disabled>Select a greeting card</option>
+                              {% for option in all_greeting_options %}
+                                <option value="{{ option }}">{{ option | strip_newlines }}</option>
+                              {% endfor %}
+                            </select>
+                            </div>
+                          <style>
+                            .textarea-container {
+                              position: relative;
+                            }
+                            .char-count {
+                              position: absolute;
+                              font-size: 1rem;
+                              bottom: 8px;
+                              right: 4px;
+                            }
+                            .textarea_textarea{
+                              width: 100%;
+                              height: 100px;
+                              padding: 10px;
+                              border: 1px solid #ccc;
+                              border-radius: 3px;
+                              box-sizing: border-box;
+                              transition: box-shadow var(--duration-short) ease;
+                            }
+                            .form_field_caption {
+                              font-size: 14px;
+                              margin-bottom: 5px;
+                            }
+                          </style>
+                          <div class="product-form__input product-form__input--textarea" style="padding-top: 20px">
+                            <label
+                              class="form__label"
+                              for="custom-message"
+                              >
+                              Add your personalization {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message %}(required){% else %}(optional){% endif %}:
+                            </label>
+                            <div id="accordion-content">
+                              {% if product.metafields.custom.personalization_message %}
+                                <div class="form_field_caption">Please include the following details:</div>
+                                <div class="form_field_caption">1. Name or text on tumbler (max 10 characters, no special characters)</div>
+                                <div class="form_field_caption">2. Personalized card message (don't forget to include your signature at the end!)</div>
+                                <br/>
+                                <div class="form_field_caption">E.g.: If the text for the tumbler is "Dahlia" and the personalized card message is "Enjoy your gift! Love, Alex," enter:</div>
+                                <div class="form_field_caption">1. Dahlia</div>
+                                <div class="form_field_caption">2. Enjoy your gift! Love, Alex</div>
+                              {% elsif product.metafields.custom.mom_personalization_message %}
+                                <div class="form_field_caption">Please include the following details:</div>
+                                <div class="form_field_caption">1. Greeting card choice</div>
+                                <div class="form_field_caption">2. Personalized card message (Don't forget to include your signature at the end!)</div>
+                                <br/>
+                                <div class="form_field_caption">E.g.: If you choose the Mom 1 card, and the message "Enjoy your gift, mom! Love, Alex," enter:</div>
+                                <div class="form_field_caption">1. Mom 1</div>
+                                <div class="form_field_caption">2. Enjoy your gift, mom! Love, Alex"</div>
+                              {% else %}
+                                <div class="form_field_caption">Enter your personalized card message here ✉</div>
+                                <div class="form_field_caption">Don't forget to include your signature at the end!</div>
+                              {% endif %}
+                              <div class="textarea-container">
+                                <textarea
+                                  id="custom-message"
+                                  class="textarea_textarea"
+                                  placeholder=""
+                                  name="properties[Message]"
+                                  rows="4"
+                                  maxlength="500"
+                                  style="resize: none;"
+                                  required
+                                ></textarea>
+                                <div class="char-count">500</div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        {%- when 'custom_html' -%}
+                            <div class="product_custom_html">
+                            <div class="content">
+                                      {%- assign image = block.settings.image -%}
+                                      {% if image !=blank %}
+                                        <div class="custom_image">
+                                            {{ image | image_url: width: 290 | image_tag: width: 290 }}
+                                        </div>
+                                      {%endif%}
+                                      {% if block.settings.svg_custom and block.settings.show_svg_custom%}
+                                        <div class="payment_type_img">
+                                        {%- assign svg_custom = block.settings.svg_custom | remove: ' ' | split:"," -%}
+                                        {%- for img in svg_custom -%}
+                                              <img class="lazyload img_tr_svg" src="{{ img | payment_type_img_url }}" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />
+                                        {%- endfor -%}
+                                        </div>
+                                      <style>
+                                          .payment_type_img img {padding: 2.5px; height: {{block.settings.svg_height}}px;}
+                                      </style>
+                                      {%- endif -%}
+                                      {% if block.settings.html_custom !=blank %}
+                                      <div class="clearfix content-text">
+                                          {{block.settings.html_custom}}
+                                      </div>
+                                      {%endif%}
+                            </div>
+                            </div>
+                        {%- when 'free_shipping' -%}
+                          {% include 'free-shipping' %}
+                        {%- when 'inventory_qty' -%}
+                        {%- assign total_items = block.settings.total_items -%}
+                        {%- assign bg_1 = block.settings.bg_1 -%}
+                        {%- assign bg_2 = block.settings.bg_2 -%}	
+                        {%- assign h_stock = block.settings.h_stock -%}
+                        {%- assign quantity = product.variants.first.inventory_quantity -%}
+                        <div class="inventory_qty">
+                                      <div class="product_page_info_stock">
+                                          <div class="stock-countdown {% unless quantity > 0 and quantity <= total_items %} d-none-important{% endunless %}" data-js-product-info-stock data-min="{{total_items}}">
+                                              {% capture quantity_html %}<span class="qty">{{ quantity }}</span>{% endcapture %}
+                                              <p class="laber_title" data-js-product-info-stock-title>{{ 'products.product.stock_countdown_html' | t: quantity: quantity_html }}</p>
+                                                  <div class="laber_total_items" style="background-color:{{bg_2}};height:{{h_stock}}px;">
+                                                      {%- assign countdown_range_quotient = total_items | times: 1.0 | divided_by: 100 -%}
+                                                      {%- assign countdown_range_procent = quantity | divided_by: countdown_range_quotient -%}
+                                                      <div style="background-color:{{bg_1}};width: {{ countdown_range_procent }}%;" class="laber_progress" data-js-product-info-stock-progress ></div>
+                                                  </div>
+                                          </div>
+                                      </div>
+                        </div>
+                              {%- when 'text' -%}
+                                  <p class="product__text">
+                                    {{- block.settings.text -}} {% if block.settings.show_color %}<span class="product__color" style="background-color:{{block.settings.color}};">{{-block.settings.color-}}</span>{% endif %}
+                                  </p>	
+                              {%- when 'custom_liquid' -%}
+                                  {{ block.settings.custom_liquid }}
+                                {%- when 'countdown' -%}  
+                                  <div class="page_product_countdown">
+                                        {% include 'countdown' block:block %}
+                                  </div>    
+                              {%- when 'shipping' -%}
+                                  {% if block.settings.show_delivery_times %}
+                                      <div class="prod_delivery-times">
+                                        <span class="block__icon">
+                                        <?xml version="1.0" ?><svg id="Icons" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <style type="text/css">
+                                              .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                                .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
+                                              .st2{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+                                              .st3{fill:none;}
+                                            </style>
+                                            <polyline class="st0" points="2,9 19,9 19,24 10,24 "/><circle class="st0" cx="24" cy="24" r="2"/><circle class="st0" cx="8" cy="24" r="2"/><polyline class="st0" points="19,24 19,13 25,13 29,18 29,24 26,24 "/><line class="st0" x1="4" x2="13" y1="13" y2="13"/><line class="st0" x1="2" x2="11" y1="17" y2="17"/><rect class="st3" height="680" width="536" x="-288" y="-432"/></svg>
+                                        </span>
+                                        {% assign range =  2 | times: 24 | times: 60 | times: 60 %}
+                                        {% assign deliver_in =  block.settings.deliver_days | times: 24 | times: 60 | times: 60 %}
+                                        {% assign now = 'now' | date: "%s" %}
+                                        {% assign date_format = block.settings.date_format | default: "%b %d" %}
+                                        
+                                        {% assign from = now | plus: deliver_in | minus: range | date: date_format %}
+                                        {% assign to = now | plus: deliver_in | plus: range | date: date_format %}
+                                        
+                                        <div class="content">
+                                        <p><label>{{ block.settings.deliver_text | strip_html }}</label><span>{{ from }} - {{ to }}</span></p>
+                                        </div>
+                                      </div>
+                                    {% endif %}
+                                    {% if block.settings.show_shipping_text and block.settings.shipping_text != blank %}
+                                      <div class="prod_shipping-text">
+                                          <span class="block__icon">
+                                            <i class="icon-package"></i>
+                                          </span>
+                                        <div class="content">
+                                        {{ block.settings.shipping_text }}
+                                        </div>
+                                      </div>
+                                  {% endif %}     
+                    {%- endcase -%}
+                  {%- endfor -%}
+                {% endform %}
+                    </div>
+                </div>  
+              </div>
+            </div>        
+          </div>        
+        </div>
       </div>
-    </div>        
-     </div>        
-    </div>
-    </div>
-</div>    
-  </div>
+  </div>    
+</div>
 </section>
 
 
