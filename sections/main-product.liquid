@@ -862,6 +862,48 @@
   </div>
 </section>
 
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('form[data-type="add-to-cart-form"]'); 
+    const requiredFields = form.querySelectorAll('.select__select[required], #custom-message[required]'); 
+
+    form.addEventListener("submit", function (e) {
+      let isValid = true;
+
+      requiredFields.forEach(function (field) {
+        if (!field.value || field.value.trim() === "") {
+          isValid = false;
+          field.style.borderColor = "red"; 
+          field.classList.add("is-invalid"); 
+        } else {
+          field.style.borderColor = ""; 
+          field.classList.remove("is-invalid"); 
+        }
+      });
+
+      if (!isValid) {
+        e.preventDefault(); 
+        alert("Please fill out all required fields."); 
+      }
+    });
+
+    
+    requiredFields.forEach(function (field) {
+      field.addEventListener("input", function () {
+        field.style.borderColor = ""; 
+        field.classList.remove("is-invalid"); 
+      });
+
+      field.addEventListener("change", function () {
+        field.style.borderColor = ""; 
+        field.classList.remove("is-invalid"); 
+      });
+    });
+
+    console.log("Validation script initialized.");
+  });
+</script>
+
 {%- render 'section_style' -%}
 {%- render 'product-script' -%}
 {% schema %}

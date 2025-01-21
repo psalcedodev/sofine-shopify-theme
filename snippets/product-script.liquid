@@ -1,38 +1,5 @@
 <script type="text/javascript">
   $(document).ready(function () {
-    const $form = $('form[data-type="add-to-cart-form"]');
-    const $requiredFields = $form.find('.select__select[required], #custom-message[required]');
-
-    $form.on('submit', function (e) {
-      let isValid = true;
-
-      $requiredFields.each(function () {
-        const $field = $(this);
-
-        if (!$field.val() || $field.val().trim() === '') {
-          isValid = false;
-          $field.css('border-color', 'red');
-          $field.addClass('is-invalid');
-        } else {
-          $field.css('border-color', '');
-          $field.removeClass('is-invalid');
-        }
-      });
-      console.log({ isValid });
-
-      if (!isValid) {
-        e.preventDefault();
-        alert('Please fill out all required fields.');
-      }
-    });
-
-    $requiredFields.on('input change', function () {
-      $(this).css('border-color', '');
-      $(this).removeClass('is-invalid');
-    });
-
-    console.log('Validation script loaded successfully.');
-
     console.log('Hello from product-script.liquid');
     window.toggleAccordion = function (contentId, iconId) {
       var $content = $('#' + contentId);
