@@ -619,7 +619,6 @@
                                   name="properties[Card]"
                                   required="required"
                                 >
-                                  <option value="" selected disabled>Select a greeting card</option>
                                   {% for option in all_greeting_options %}
                                     <option value="{{ option }}">{{ option | strip_newlines }}</option>
                                   {% endfor %}
