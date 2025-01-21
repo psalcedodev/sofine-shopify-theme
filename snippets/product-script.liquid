@@ -79,31 +79,38 @@
     });
 
     // Form validation for required fields
-    var $form = $('.form'); // Replace with your form's class or ID
-    var $requiredFields = $('.select__select[required], #custom-message[required]');
+    const $form = $('form[data-type="add-to-cart-form"]'); // Adjust to your form's actual selector
+    const $requiredFields = $('.select__select[required], #custom-message[required]'); // Adjust selectors if needed
 
+    // Listen for the form submission event
     $form.on('submit', function (e) {
-      var isValid = true;
+      let isValid = true; // Assume the form is valid initially
 
+      // Loop through each required field
       $requiredFields.each(function () {
-        var $field = $(this);
+        const $field = $(this);
         if (!$field.val().trim()) {
-          isValid = false;
-          $field.css('border-color', 'red');
+          isValid = false; // Mark the form as invalid
+          $field.css('border-color', 'red'); // Highlight invalid fields
         } else {
           $field.css('border-color', ''); // Reset border color if valid
         }
       });
 
       if (!isValid) {
-        e.preventDefault();
-        alert('Please fill out all required fields.');
+        e.preventDefault(); // Prevent the form from submitting
+        alert('Please fill out all required fields.'); // Show an alert to the user
       }
     });
 
-    // Remove red border when user starts typing or selecting
+    // Remove red border on input or change
     $requiredFields.on('input change', function () {
-      $(this).css('border-color', '');
+      $(this).css('border-color', ''); // Reset the border color when the user interacts with the field
     });
+
+    // Debugging: Log when the script runs
+    console.log('Validation script loaded');
+    console.log('Form selector:', $form);
+    console.log('Required fields:', $requiredFields);
   });
 </script>
