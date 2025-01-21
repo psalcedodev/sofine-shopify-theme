@@ -46,13 +46,7 @@
                       itemprop="availability"
                       href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}"
                     >
-                    {%- form 'product',
-                      product,
-                      id: product_form_id,
-                      class: 'form',
-                      novalidate: 'novalidate',
-                      data-type: 'add-to-cart-form'
-                    -%}
+                    {%- form 'product', product, id: product_form_id, class: 'form', data-type: 'add-to-cart-form' -%}
                       <input type="hidden" name="id" value="{{ current_variant.id }}" data-js-product-variant-input>
                       {{ form | payment_terms }}
                       {%- for block in section.blocks -%}
@@ -863,44 +857,43 @@
 </section>
 
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector('form[data-type="add-to-cart-form"]'); 
-    const requiredFields = form.querySelectorAll('.select__select[required], #custom-message[required]'); 
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form[data-type="add-to-cart-form"]');
+    const requiredFields = form.querySelectorAll('.select__select[required], #custom-message[required]');
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener('submit', function (e) {
       let isValid = true;
 
       requiredFields.forEach(function (field) {
-        if (!field.value || field.value.trim() === "") {
+        if (!field.value || field.value.trim() === '') {
           isValid = false;
-          field.style.borderColor = "red"; 
-          field.classList.add("is-invalid"); 
+          field.style.borderColor = 'red';
+          field.classList.add('is-invalid');
         } else {
-          field.style.borderColor = ""; 
-          field.classList.remove("is-invalid"); 
+          field.style.borderColor = '';
+          field.classList.remove('is-invalid');
         }
       });
 
       if (!isValid) {
-        e.preventDefault(); 
-        alert("Please fill out all required fields."); 
+        e.preventDefault();
+        alert('Please fill out all required fields.');
       }
     });
 
-    
     requiredFields.forEach(function (field) {
-      field.addEventListener("input", function () {
-        field.style.borderColor = ""; 
-        field.classList.remove("is-invalid"); 
+      field.addEventListener('input', function () {
+        field.style.borderColor = '';
+        field.classList.remove('is-invalid');
       });
 
-      field.addEventListener("change", function () {
-        field.style.borderColor = ""; 
-        field.classList.remove("is-invalid"); 
+      field.addEventListener('change', function () {
+        field.style.borderColor = '';
+        field.classList.remove('is-invalid');
       });
     });
 
-    console.log("Validation script initialized.");
+    console.log('Validation script initialized.');
   });
 </script>
 
