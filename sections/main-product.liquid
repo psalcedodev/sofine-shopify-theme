@@ -619,6 +619,7 @@
                                   </select>
                                 </div>
                               {% endif %}
+                              {% unless product.metafields.custom.candle_personalization_message %}
                               <div class="chevron-select-wrapper">
                                 <label class="label" for="greeting-card-options">Greeting Card:</label>
                                 <select
@@ -633,6 +634,24 @@
                                   {% endfor %}
                                 </select>
                               </div>
+                              {% endunless %}
+                              {% if product.metafields.custom.candle_personalization_message %}
+                                {% assign candle_design_options = "Mother (Definition), Best Mom Ever!, The World's Best Mother, World's Best Mom, World's Coolest Mom, World's Best MIL, My Favorite Child, Mom Out of Service, Sorry No Grandkids" | split: ',' %}
+                                <div class="chevron-select-wrapper">
+                                    <label class="label" for="candle-design-options">Candle Design:</label>
+                                    <select
+                                        class="select__select"
+                                        id="candle-design-options"
+                                        name="properties[Candle Design]"
+                                        required="required"
+                                    >
+                                        <option value="" selected disabled>Select a Candle Design</option>
+                                        {% for option in candle_design_options %}
+                                            <option value="{{ option | strip }}">{{ option | strip }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                              {% endif %}
                               <style>
                                 .textarea-container {
                                   position: relative;
@@ -665,7 +684,7 @@
                                   Add your personalization
                                   {% if product.metafields.custom.personalization_message
                                     or product.metafields.custom.mom_personalization_message
-                                  -%}
+                                    or product.metafields.custom.candle_personalization_message -%}
                                     (required)
                                   {%- else -%}
                                     (optional)
@@ -701,6 +720,22 @@
                                     </div>
                                     <div class="form_field_caption">1. Mom 1</div>
                                     <div class="form_field_caption">2. Enjoy your gift, mom! Love, Alex"</div>
+                                  {% elsif product.metafields.custom.candle_personalization_message %}
+                                    <div class="form_field_caption">Please include the following details:</div>
+                                    <div class="form_field_caption">
+                                      1. Ribbon or jute twine (choose ribbon color from photo)*
+                                    </div>
+                                    <div class="form_field_caption">2. Match tip: Black or White</div>
+                                    <div class="form_field_caption">3. Personalized message</div>
+                                    <br>
+                                    <div class="form_field_caption">E.g.:</div>
+                                    <div class="form_field_caption">1. Ivory ribbon</div>
+                                    <div class="form_field_caption">2. White matches</div>
+                                    <div class="form_field_caption">3. Enjoy your gift, Mom! Love, Alex</div>
+                                    <br>
+                                    <div class="form_field_caption">
+                                      *Orders without specified ribbon color will default to jute twine.
+                                    </div>
                                   {% else %}
                                     <div class="form_field_caption">Enter your personalized card message here ✉</div>
                                     <div class="form_field_caption">
@@ -716,7 +751,9 @@
                                       rows="4"
                                       maxlength="500"
                                       style="resize: none;"
-                                      required
+                                      {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message or product.metafields.custom.candle_personalization_message %}
+                                        required
+                                      {% endif %}
                                     ></textarea>
                                     <div class="char-count">500</div>
                                   </div>
