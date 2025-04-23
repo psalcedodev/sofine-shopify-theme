@@ -684,7 +684,8 @@
                                   Add your personalization
                                   {% if product.metafields.custom.personalization_message
                                     or product.metafields.custom.mom_personalization_message
-                                    or product.metafields.custom.candle_personalization -%}
+                                    or product.metafields.custom.candle_personalization
+                                    or product.metafields.custom.candle_personalization_v2 -%}
                                     (required)
                                   {%- else -%}
                                     (optional)
@@ -736,6 +737,18 @@
                                     <div class="form_field_caption">
                                       *Orders without specified ribbon color will default to jute twine.
                                     </div>
+                                  {% elsif product.metafields.custom.candle_personalization_v2 %}
+                                    <div class="form_field_caption">Please specify:</div>
+                                    <div class="form_field_caption">1. Candle design number*</div>
+                                    <div class="form_field_caption">2. Personalized Message: Don't forget to include your signature at the end!</div>
+                                    <br>
+                                    <div class="form_field_caption">Example:</div>
+                                    <div class="form_field_caption">1. Design #1</div>
+                                    <div class="form_field_caption">2. Enjoy your gift, Mom! Love, Alex</div>
+                                    <br>
+                                    <div class="form_field_caption">
+                                      *If no candle design is specified, we'll use the one shown in the product photo for the selected box type and theme.
+                                    </div>
                                   {% else %}
                                     <div class="form_field_caption">Enter your personalized card message here ✉</div>
                                     <div class="form_field_caption">
@@ -751,7 +764,7 @@
                                       rows="4"
                                       maxlength="500"
                                       style="resize: none;"
-                                      {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message or product.metafields.custom.candle_personalization %}
+                                      {% if product.metafields.custom.personalization_message or product.metafields.custom.mom_personalization_message or product.metafields.custom.candle_personalization or product.metafields.custom.candle_personalization_v2 %}
                                         required
                                       {% endif %}
                                     ></textarea>
