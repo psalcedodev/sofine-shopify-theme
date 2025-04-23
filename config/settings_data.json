@@ -1778,6 +1778,17 @@
               "col": "15"
             }
           },
+          "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/IMG_6997.jpg",
+              "url": "shopify://collections/giftformom",
+              "open_link": "_self",
+              "enable_content_banner": true,
+              "coll_name": "Gift for Mom",
+              "col": "15"
+            }
+          },
           "c82034d8-9761-4095-be7b-cbc7c165b914": {
             "type": "banner",
             "settings": {
@@ -1808,17 +1819,6 @@
               "open_link": "_self",
               "enable_content_banner": true,
               "coll_name": "Gift for Two",
-              "col": "15"
-            }
-          },
-          "d549a5e3-6ea0-4959-8cd7-14b46c1fa870": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify://shop_images/TWO4.4M-SharedSerenity-BathSalt_4.jpg",
-              "url": "shopify://collections/spa-gift-sets",
-              "open_link": "_self",
-              "enable_content_banner": true,
-              "coll_name": "Spa Gift Sets",
               "col": "15"
             }
           },
@@ -1897,10 +1897,10 @@
           "d68538b5-22d3-4082-9b4b-6cf2ab00a70b",
           "2edb69f1-946f-44fb-9516-b508ad1dbadc",
           "link_rzB9Ax",
+          "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
           "c82034d8-9761-4095-be7b-cbc7c165b914",
           "banner_gFhJrm",
           "banner_fiAj9w",
-          "d549a5e3-6ea0-4959-8cd7-14b46c1fa870",
           "dropdown_bHE3Cy",
           "bab6430c-5d2b-4e8e-8e42-224c6d149882",
           "dropdown_CPz7h3",
