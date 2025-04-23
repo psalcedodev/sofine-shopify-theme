@@ -4386,6 +4386,15 @@
       "165511688031d3eb34": {
         "type": "collection-featured",
         "blocks": {
+          "165511688031d3eb34-2": {
+            "type": "menu",
+            "settings": {
+              "image": "shopify://shop_images/IMG_6997_9dc5f958-5fa8-4e14-85c3-f5e6a64f8e2c.jpg",
+              "title": "Gift for Mom",
+              "collection": "giftformom",
+              "open_link": "_self"
+            }
+          },
           "165511688031d3eb34-0": {
             "type": "menu",
             "settings": {
@@ -4412,22 +4421,13 @@
               "collection": "gift-for-two",
               "open_link": "_self"
             }
-          },
-          "165511688031d3eb34-2": {
-            "type": "menu",
-            "settings": {
-              "image": "shopify://shop_images/TWO4.4M-SharedSerenity-BathSalt_4.jpg",
-              "title": "Spa Gift Sets",
-              "collection": "spa-gift-sets",
-              "open_link": "_self"
-            }
           }
         },
         "block_order": [
+          "165511688031d3eb34-2",
           "165511688031d3eb34-0",
           "165511688031d3eb34-1",
-          "165511688031d3eb34-3",
-          "165511688031d3eb34-2"
+          "165511688031d3eb34-3"
         ],
         "custom_css": [
           ".menu-item {text-align: center;}"
