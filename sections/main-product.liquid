@@ -276,6 +276,8 @@
                             {%- assign qt_show_quantity = block.settings.qt_show_quantity -%}
                             {%- assign icon_button_cart = block.settings.icon_button_cart -%}
                             {%- assign show_custom_color_btn = block.settings.show_custom_color_btn -%}
+                            <div class="add-to-cart-error" style="color: #c00; margin-bottom: 10px; display: none;"></div>
+
                             <div data-product-meta class="clearfix cms-product-meta">
                               {% if qt_show_quantity %}
                                 <div
@@ -305,7 +307,6 @@
                                   </div>
                                 </div>
                               {% endif %}
-                              <div class="add-to-cart-error" style="color: #c00; margin-bottom: 10px; display: none;"></div>
                               <div class="group-button">
                                 <div class="inner">
                                   {% if qt_show_cart %}

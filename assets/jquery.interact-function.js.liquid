@@ -2815,13 +2815,12 @@ $(function ($) {
                     } else {
                         $form.find('.add-to-cart-error').hide();
                     }
-                    // Remove error highlight on input/change
-                    $form.find('select[required], textarea[required]').off('input change').on('input change', function() {
-                        if ($(this).val() && $(this).val() !== '') {
+                    // Remove error highlight on input/change (delegated)
+                    $form.off('input change', 'select[required], textarea[required]')
+                        .on('input change', 'select[required], textarea[required]', function() {
                             $(this).removeClass('is-invalid');
                             $form.find('.add-to-cart-error').hide();
-                        }
-                    });
+                        });
                     $this.addClass('ajax_loading');
                     if(!$form.length){
                         $form = $product.find('form');
