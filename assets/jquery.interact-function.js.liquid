@@ -2788,6 +2788,32 @@ $(function ($) {
                         $form = $this.closest('form'),
                         $product = $this.closest('.product-item'),
                         drawerQuery = '';
+
+                    // Validation for required fields
+                    var valid = true;
+                    var firstInvalid = null;
+                    $form.find('select[required], textarea[required]').each(function() {
+                        var $field = $(this);
+                        if (!$field.val() || $field.val() === '') {
+                            valid = false;
+                            $field.addClass('is-invalid');
+                            if (!firstInvalid) firstInvalid = $field;
+                        } else {
+                            $field.removeClass('is-invalid');
+                        }
+                    });
+                    if (!valid) {
+                        if (firstInvalid) firstInvalid.focus();
+                        alert('Please fill out all required fields before adding to cart.');
+                        $this.removeClass('ajax_loading');
+                        return;
+                    }
+                    // Remove error highlight on input/change
+                    $form.find('select[required], textarea[required]').off('input change').on('input change', function() {
+                        if ($(this).val() && $(this).val() !== '') {
+                            $(this).removeClass('is-invalid');
+                        }
+                    });
                     $this.addClass('ajax_loading');
                     if(!$form.length){
                         $form = $product.find('form');
