@@ -5011,6 +5011,15 @@
           "mg_mb": "",
           "pd_mb": ""
         }
+      },
+      "corporate_info_PzaKwW": {
+        "type": "corporate-info",
+        "name": "Corporate Info",
+        "settings": {
+          "heading": "Block test",
+          "description": "Block",
+          "image": "shopify://shop_images/Rustic_Retreat_-_Premium_Neutral.jpg"
+        }
       }
     },
     "content_for_index": [
@@ -5020,7 +5029,8 @@
       "1660148094b62994c9",
       "16583088371ba79d2b",
       "166055287935a5052c",
-      "testimonials_section_home1_m3V3pG"
+      "testimonials_section_home1_m3V3pG",
+      "corporate_info_PzaKwW"
     ],
     "blocks": {
       "15683396631634586217": {
