@@ -2804,14 +2804,22 @@ $(function ($) {
                     });
                     if (!valid) {
                         if (firstInvalid) firstInvalid.focus();
-                        alert('Please fill out all required fields before adding to cart.');
+                        var $errorBox = $form.find('.add-to-cart-error');
+                        if (!$errorBox.length) {
+                            $errorBox = $('<div class="add-to-cart-error" style="color: #c00; margin-bottom: 10px;"></div>');
+                            $form.prepend($errorBox);
+                        }
+                        $errorBox.text('Please fill out all required fields before adding to cart.').show();
                         $this.removeClass('ajax_loading');
                         return;
+                    } else {
+                        $form.find('.add-to-cart-error').hide();
                     }
                     // Remove error highlight on input/change
                     $form.find('select[required], textarea[required]').off('input change').on('input change', function() {
                         if ($(this).val() && $(this).val() !== '') {
                             $(this).removeClass('is-invalid');
+                            $form.find('.add-to-cart-error').hide();
                         }
                     });
                     $this.addClass('ajax_loading');
