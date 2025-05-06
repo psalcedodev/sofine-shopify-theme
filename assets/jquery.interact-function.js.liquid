@@ -3648,6 +3648,10 @@ $(function ($) {
         Alothemes.Megamenu.accordion();
         aloShopify.init();
     });
+    $(document).on('input change', 'form[data-type="add-to-cart-form"] select[required], form[data-type="add-to-cart-form"] textarea[required]', function() {
+        $(this).removeClass('is-invalid');
+        $(this).closest('form').find('.add-to-cart-error').hide();
+    });
 });
 {%- endcapture -%}
 {%- if productionMode -%}
