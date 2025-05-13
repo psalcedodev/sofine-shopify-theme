@@ -112,6 +112,14 @@
                               {%- assign discount_info = product.metafields.sale.active_discount -%}
                               {%- comment %} LOGGING: Output the raw metafield value for debugging {% endcomment %}
                               <!-- sale.active_discount: {{ product.metafields.sale.active_discount | json }} -->
+                              <script>
+                                try {
+                                  var saleActiveDiscount = {{ product.metafields.sale.active_discount | json }};
+                                  console.log('sale.active_discount:', saleActiveDiscount);
+                                } catch (e) {
+                                  console.log('sale.active_discount: unable to parse', e);
+                                }
+                              </script>
                               {%- assign now_s = 'now' | date: '%s' | plus: 0 -%}
 
                               {%- assign is_after_start_date = false -%}
