@@ -1110,11 +1110,24 @@
       }
       compareElement.innerHTML = formatShopifyMoney(useCustomDiscount ? compareAtPriceInCents : variant.compare_at_price);
       compareElement.style.display = '';
+      if (useCustomDiscount) {
+        // Force styles typically associated with compare-at prices if it's our custom discount
+        compareElement.style.textDecoration = 'line-through';
+        compareElement.style.opacity = '0.7'; // Example, adjust as needed
+        // Ensure the main price element (current) doesn't have these
+        priceElement.style.textDecoration = 'none'; 
+        priceElement.style.opacity = '1';
+      }
     } else {
       productPriceContainer.classList.remove('price--sale');
       if (compareElement) {
         compareElement.style.display = 'none';
+        compareElement.style.textDecoration = 'none'; // Clear forced style
+        compareElement.style.opacity = '1'; // Clear forced style
       }
+      // Ensure the main price element (current) also has no forced strikethrough
+      priceElement.style.textDecoration = 'none'; 
+      priceElement.style.opacity = '1';
     }
 
     // Update the new custom sale tag element
