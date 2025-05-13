@@ -192,33 +192,14 @@
                                   </p>
                                 {%- endif -%}
                               {%- else -%}
-                                {%- comment %} Fallback to original Shopify sale logic or regular price display {% endcomment %}
-                                {%- if V_current_variant.compare_at_price and V_current_variant.compare_at_price > V_current_variant.price -%}
-                                  <span class="price price--sale" data-js-product-price>
-                                    <span id="js-product-price" class="current" itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">{{ V_current_variant.price | money }}</span>
-                                    <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-                                    <span class="compare">{{ V_current_variant.compare_at_price | money }}</span>
-                                  </span>
-                                  <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-                                  <p class="price-sale-details" data-js-product-price-sale-details>
-                                    {%- assign price_save = V_current_variant.compare_at_price | minus: V_current_variant.price -%}
-                                    {%- assign price_save_money = price_save | money | strip_html -%}
-                                    {%- assign price_save_procent = V_current_variant.price
-                                      | times: 100.0
-                                      | divided_by: V_current_variant.compare_at_price
-                                      | minus: 100.0
-                                      | times: -1.0
-                                      | round: 0
-                                    -%}
-                                    {{ 'products.product.price_sale_details' | t: price: price_save_money, procent: price_save_procent }}
-                                  </p>
-                                {%- else -%}
-                                  <span id="js-product-price" class="price" data-js-product-price itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">
-                                    {{- V_current_variant.price | money -}}
-                                  </span>
+                                {%- comment %} Fallback: JS will handle displaying standard or custom sale if applicable. Liquid provides basic price structure. {% endcomment %}
+                                <span class="price" data-js-product-price> 
+                                  <span id="js-product-price" class="current" itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">{{ V_current_variant.price | money }}</span>
                                   <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-                                  <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-                                {%- endif -%}
+                                  <span class="compare" style="display:none;"></span> 
+                                </span>
+                                <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+                                <p class="price-sale-details" data-js-product-price-sale-details style="display:none;"></p>
                               {%- endif -%}
                             </div>
 
