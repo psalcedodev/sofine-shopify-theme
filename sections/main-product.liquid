@@ -1013,31 +1013,12 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] FuncDef Test - Script START.');
+  console.log('[Custom Price Logic] Single LET Test - Script START.');
 
-  // --- State Management ---
-  let selectedVariant = null;
-  console.log('[Custom Price Logic] FuncDef Test - selectedVariant defined.');
-  let discountDetails = window.productSaleActiveDiscount || null; 
-  console.log('[Custom Price Logic] FuncDef Test - discountDetails defined.');
-  let isUpdatingByObserver = false; 
-  console.log('[Custom Price Logic] FuncDef Test - isUpdatingByObserver defined.');
-
-  function formatShopifyMoney(cents, format) {
-    // Minimal body for syntax check
-    // console.log('[Custom Price Logic] formatShopifyMoney called');
-    if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
-      return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
-    }
-    return "$0.00 (Test)"; 
-  }
-  console.log('[Custom Price Logic] FuncDef Test - formatShopifyMoney defined.');
-
-  // function getDiscountedPriceInCents(variant, discount) { ... }
-  // function updateDiscountUI() { ... }
-  // document.addEventListener('DOMContentLoaded', ...);
-
-  console.log('[Custom Price Logic] FuncDef Test - Script END.');
+  let selectedVariant = null; 
+  // NOTE: There are no other JavaScript lines here except the log below.
+  
+  console.log('[Custom Price Logic] Single LET Test - selectedVariant line has been parsed.');
 </script>
 
 {% schema %}
