@@ -114,7 +114,7 @@
                               <!-- sale.active_discount: {{ product.metafields.sale.active_discount | json }} -->
                               <script>
                                 try {
-                                  var saleActiveDiscount = {{ product.metafields.sale.active_discount | json }};
+                                  var saleActiveDiscount = {{ product.metafields.sale.active_discount.value | json }};
                                   console.log('sale.active_discount:', saleActiveDiscount);
                                 } catch (e) {
                                   console.log('sale.active_discount: unable to parse', e);
