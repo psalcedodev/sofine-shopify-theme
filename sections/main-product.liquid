@@ -1162,18 +1162,27 @@
   // This might need to be adapted based on how your theme handles variant switches.
   // Some themes use custom events, others update a select element.
   document.addEventListener('DOMContentLoaded', function() {
+    console.log('[Custom Price Logic] DOMContentLoaded event fired.');
+
     const productSingleElement = document.getElementById('product-single');
     const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
+    console.log('[Custom Price Logic] productForm element:', productForm);
 
     // Attempt to get initial product JSON (themes often store this for JS use)
     let productJSON = null;
     const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
+    console.log('[Custom Price Logic] productJsonScript element:', productJsonScript);
+
     if (productJsonScript) {
         try {
             productJSON = JSON.parse(productJsonScript.innerHTML);
+            console.log('[Custom Price Logic] Parsed productJSON:', productJSON);
         } catch (e) {
-            console.error("Failed to parse product JSON for variant changes:", e);
+            console.error("[Custom Price Logic] Failed to parse product JSON for variant changes:", e);
+            productJSON = null; // Ensure it's null if parsing failed
         }
+    } else {
+        console.warn('[Custom Price Logic] productJsonScript element NOT FOUND.');
     }
     
     function handleVariantChange(variantId) {
@@ -1202,8 +1211,10 @@
     if (productForm) {
       // Listen to changes on radio buttons or select dropdowns for variants
       const variantSelectors = productForm.querySelectorAll('input[name="id"], select[name="id"], input[type="radio"][name^="options"], select[data-single-option-selector]');
+      console.log('[Custom Price Logic] Found variantSelectors:', variantSelectors);
       
       variantSelectors.forEach(selector => {
+        console.log('[Custom Price Logic] Attaching change listener to selector:', selector);
         selector.addEventListener('change', function(event) {
           let currentVariantId = null;
           if (productForm.elements.id) { // Standard variant ID input/select
@@ -1241,6 +1252,7 @@
     }
 
     // Initial call for the default selected variant if productJSON is available
+    console.log('[Custom Price Logic] Preparing for initial render call. productJSON available?', !!productJSON);
     if (productJSON && productJSON.selected_or_first_available_variant) {
        // Ensure this is called *after* the theme's own JS might have run and set the initial variant.
        // Using a small timeout can sometimes help, but it's a hack.
