@@ -1013,62 +1013,17 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] Reintroducing Structure - Script START.');
+  console.log('[Custom Price Logic] LET Test - Script START.');
 
   // --- State Management ---
   let selectedVariant = null;
   let discountDetails = window.productSaleActiveDiscount || null; 
   let isUpdatingByObserver = false; 
-  console.log('[Custom Price Logic] State variables defined.');
+  console.log('[Custom Price Logic] LET Test - State variables defined.');
 
-  function formatShopifyMoney(cents, format) {
-    // Intentionally empty for now, or minimal for syntax check
-    // console.log('[Custom Price Logic] formatShopifyMoney called with:', cents, format);
-    if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
-      return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
-    }
-    return "$0.00 (Temp)"; // Placeholder
-  }
-  console.log('[Custom Price Logic] formatShopifyMoney function defined.');
+  // All function definitions and DOMContentLoaded are removed for this specific test
 
-  function getDiscountedPriceInCents(variant, discount) {
-    // Intentionally empty for now
-    // console.log('[Custom Price Logic] getDiscountedPriceInCents called.');
-    if (!variant) return 0;
-    return variant.price; // Placeholder
-  }
-  console.log('[Custom Price Logic] getDiscountedPriceInCents function defined.');
-
-  function updateDiscountUI() {
-    // Intentionally empty for now
-    // console.log('[Custom Price Logic] updateDiscountUI called.');
-    return; 
-  }
-  console.log('[Custom Price Logic] updateDiscountUI function defined.');
-
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log('[Custom Price Logic] Reintroducing Structure - DOMContentLoaded FIRED.');
-    
-    // Basic setup for productJSON (from previous successful tests)
-    const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
-    let productJSON = null;
-    const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
-    if (productJsonScript) {
-        try {
-            productJSON = JSON.parse(productJsonScript.innerHTML);
-            console.log('[Custom Price Logic] productJSON parsed in DOMContentLoaded.');
-        } catch (e) {
-            console.error("[Custom Price Logic] Failed to parse productJSON in DOMContentLoaded:", e);
-            productJSON = null;
-        }
-    } else {
-        console.warn('[Custom Price Logic] script.data-json-product not found in DOMContentLoaded.');
-    }
-    // --- All variant handling, observer setup, and calls to updateDiscountUI are still commented out --- 
-    console.log('[Custom Price Logic] Reintroducing Structure - DOMContentLoaded basic setup done.');
-  });
-
-  console.log('[Custom Price Logic] Reintroducing Structure - Script END.');
+  console.log('[Custom Price Logic] LET Test - Script END.');
 </script>
 
 {% schema %}
