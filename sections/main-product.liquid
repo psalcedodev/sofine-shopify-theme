@@ -1013,12 +1013,17 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] Single LET Test - Script START.');
+  console.log('[Custom Price Logic] LET Test 1 - Script START.');
 
-  let selectedVariant = null; 
-  // NOTE: There are no other JavaScript lines here except the log below.
-  
-  console.log('[Custom Price Logic] Single LET Test - selectedVariant line has been parsed.');
+  let selectedVariant = null;
+  console.log('[Custom Price Logic] LET Test 1 - selectedVariant defined.');
+
+  let discountDetails = window.productSaleActiveDiscount || null; 
+  console.log('[Custom Price Logic] LET Test 1 - discountDetails defined.');
+  let isUpdatingByObserver = false; 
+  console.log('[Custom Price Logic] LET Test 1 - isUpdatingByObserver defined.');
+
+  console.log('[Custom Price Logic] LET Test 1 - Script END.');
 </script>
 
 {% schema %}
