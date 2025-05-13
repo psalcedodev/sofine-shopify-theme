@@ -98,34 +98,114 @@
                               </div>
                             </div>
                           {%- when 'show_price' -%}
-                            <div class="product-price">
-                              {% comment %}<span id="js-product-price">{{ product.variants[0].price | money }}</span>{% endcomment %}
+                            {%- comment %} Get the current variant for price information {% endcomment %}
+                            {%- assign V_current_variant = current_variant | default: product.selected_or_first_available_variant -%}
 
-                              {%- if product.compare_at_price > price -%}
-                                <span class="price price--sale" data-js-product-price
-                                  ><span id="js-product-price" class="current">{{ price | money }}</span>
-                                  <span class="compare">{{ product.compare_at_price | money }}</span></span
-                                >
+                            {%- assign active_metafield_discount = false -%}
+                            {%- assign calculated_sale_price = V_current_variant.price -%}
+                            {%- comment %} When custom metafield discount is active, RRP_for_display will be the original variant price {% endcomment %}
+                            {%- assign RRP_for_display = V_current_variant.price %}
+                            {%- assign sale_tag_display = "" -%}
+
+                            {%- comment %} Check for the custom sale metafield {% endcomment %}
+                            {%- if product.metafields.sale.active_discount and product.metafields.sale.active_discount.value != blank -%}
+                              {%- assign discount_info = product.metafields.sale.active_discount -%}
+                              {%- assign now_s = 'now' | date: '%s' | plus: 0 -%}
+
+                              {%- assign is_after_start_date = false -%}
+                              {%- if discount_info.start_date == blank or discount_info.start_date == null -%}
+                                {%- assign is_after_start_date = true -%}
                               {%- else -%}
-                                <span id="js-product-price" class="price" data-js-product-price>
-                                  {{- price | money -}}
-                                </span>
+                                {%- assign start_date_s = discount_info.start_date | date: '%s' | plus: 0 -%}
+                                {%- if now_s >= start_date_s -%}
+                                  {%- assign is_after_start_date = true -%}
+                                {%- endif -%}
                               {%- endif -%}
-                              {%- if product.compare_at_price > price -%}
-                                <p class="price-sale-details" data-js-product-price-sale-details>
-                                  {%- assign price_save = product.compare_at_price | minus: price -%}
-                                  {%- assign price_save_money = price_save | money | strip_html -%}
-                                  {%- assign price_save_procent = price
-                                    | times: 100
-                                    | divided_by: product.compare_at_price
-                                    | minus: 100
-                                    | times: -1
-                                  -%}
-                                  {{
-                                    'products.product.price_sale_details'
-                                    | t: price: price_save_money, procent: price_save_procent
-                                  }}
-                                </p>
+
+                              {%- assign is_before_end_date = false -%}
+                              {%- if discount_info.end_date == blank or discount_info.end_date == null -%}
+                                {%- assign is_before_end_date = true -%}
+                              {%- else -%}
+                                {%- assign end_date_s = discount_info.end_date | date: '%s' | plus: 0 -%}
+                                {%- if now_s <= end_date_s -%}
+                                  {%- assign is_before_end_date = true -%}
+                                {%- endif -%}
+                              {%- endif -%}
+
+                              {%- if is_after_start_date and is_before_end_date -%}
+                                {%- assign sale_tag_display = discount_info.display_value -%}
+
+                                {%- comment %} Base price for metafield discount calculation is ALWAYS the variant's current price {% endcomment %}
+                                {%- assign base_price_for_calc = V_current_variant.price -%}
+                                {%- assign RRP_for_display = base_price_for_calc %} {%- comment %} This is the price that will be struck out {% endcomment %}
+
+                                {%- if discount_info.type == "percentage" -%}
+                                  {%- assign discount_percentage_value = discount_info.value | times: 1.0 -%}
+                                  {%- if discount_percentage_value > 0 and discount_percentage_value < 100 -%}
+                                    {%- assign calculated_sale_price = base_price_for_calc | times: (100.0 | minus: discount_percentage_value) | divided_by: 100.0 -%}
+                                    {%- assign active_metafield_discount = true -%}
+                                  {%- endif -%}
+                                {%- elsif discount_info.type == "fixed" -%}
+                                  {%- assign discount_fixed_amount = discount_info.value | times: 1.0 | default: 0 -%}
+                                  {%- assign discount_fixed_amount_cents = discount_fixed_amount | times: 100 -%}
+                                  {%- if discount_fixed_amount_cents > 0 and discount_fixed_amount_cents < base_price_for_calc -%}
+                                    {%- assign calculated_sale_price = base_price_for_calc | minus: discount_fixed_amount_cents -%}
+                                    {%- assign active_metafield_discount = true -%}
+                                  {%- endif -%}
+                                {%- endif -%}
+
+                                {%- comment %} Ensure calculated price is not negative {% endcomment %}
+                                {%- if calculated_sale_price < 0 -%}{%- assign calculated_sale_price = 0 -%}{%- endif -%}
+                                
+                                {%- comment %} If calculated price is not less than the original price (base_price_for_calc), it's not a valid sale via metafield {% endcomment %}
+                                {%- if calculated_sale_price >= base_price_for_calc -%}
+                                  {%- assign active_metafield_discount = false -%}
+                                {%- endif -%}
+                              {%- endif -%}
+                            {%- endif -%}
+
+                            <div class="product-price">
+                              {%- if active_metafield_discount -%}
+                                <span class="price price--sale" data-js-product-price>
+                                  <span id="js-product-price" class="current" itemprop="price" content="{{ calculated_sale_price | divided_by: 100.00 }}">{{ calculated_sale_price | money }}</span>
+                                  <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+                                  <span class="compare">{{ RRP_for_display | money }}</span>
+                                </span>
+                                <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+                                
+                                {%- if sale_tag_display != blank -%}
+                                  <p class="price-sale-details custom-sale-tag" data-js-product-price-sale-details>
+                                    {{ sale_tag_display }}
+                                  </p>
+                                {%- endif -%}
+                              {%- else -%}
+                                {%- comment %} Fallback to original Shopify sale logic or regular price display {% endcomment %}
+                                {%- if V_current_variant.compare_at_price and V_current_variant.compare_at_price > V_current_variant.price -%}
+                                  <span class="price price--sale" data-js-product-price>
+                                    <span id="js-product-price" class="current" itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">{{ V_current_variant.price | money }}</span>
+                                    <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+                                    <span class="compare">{{ V_current_variant.compare_at_price | money }}</span>
+                                  </span>
+                                  <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+                                  <p class="price-sale-details" data-js-product-price-sale-details>
+                                    {%- assign price_save = V_current_variant.compare_at_price | minus: V_current_variant.price -%}
+                                    {%- assign price_save_money = price_save | money | strip_html -%}
+                                    {%- assign price_save_procent = V_current_variant.price
+                                      | times: 100.0
+                                      | divided_by: V_current_variant.compare_at_price
+                                      | minus: 100.0
+                                      | times: -1.0
+                                      | round: 0
+                                    -%}
+                                    {{ 'products.product.price_sale_details' | t: price: price_save_money, procent: price_save_procent }}
+                                  </p>
+                                {%- else -%}
+                                  <span id="js-product-price" class="price" data-js-product-price itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">
+                                    {{- V_current_variant.price | money -}}
+                                  </span>
+                                  <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+                                  <link itemprop="availability" href="http://schema.org/{% if V_current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+                                {%- endif -%}
                               {%- endif -%}
                             </div>
 
@@ -794,6 +874,8 @@
                                         src="{{ img | payment_type_img_url }}"
                                         data-src="{{ img | payment_type_img_url }}"
                                         alt="{{img | replace:'_',' '}}"
+                                        height="{{ block.settings.svg_height }}"
+                                        width="auto"
                                       >
                                     {%- endfor -%}
                                   </div>
