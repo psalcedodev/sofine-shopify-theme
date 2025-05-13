@@ -1013,85 +1013,13 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] Main script block START.');
-
-  // --- State Management (global to this script block scope) ---
-  let selectedVariant = null;
-  let discountDetails = window.productSaleActiveDiscount || null; // Populated by earlier script tag
-  let isUpdatingByObserver = false; 
-
-  function formatShopifyMoney(cents, format) {
-    console.log('[Custom Price Logic] formatShopifyMoney definition parsed.');
-    // Simplified body for syntax testing
-    if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
-      return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
-    }
-    return "$0.00 (Test)";
-  }
-
-  function getDiscountedPriceInCents(variant, discount) {
-    console.log('[Custom Price Logic] getDiscountedPriceInCents definition parsed.');
-    // Simplified body for syntax testing
-    if (!variant) return 0;
-    return variant.price;
-  }
-
-  function updateDiscountUI() {
-    console.log('[Custom Price Logic] updateDiscountUI definition parsed.');
-    // Simplified body for syntax testing
-    return;
-  }
+  console.log('[Custom Price Logic] Minimal Test Script START.');
 
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('[Custom Price Logic] DOMContentLoaded event FIRED.');
-
-    const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
-    console.log('[Custom Price Logic] productForm element in DOMContentLoaded:', productForm);
-
-    let productJSON = null;
-    const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
-    console.log('[Custom Price Logic] productJsonScript element in DOMContentLoaded:', productJsonScript);
-
-    if (productJsonScript) {
-        try {
-            productJSON = JSON.parse(productJsonScript.innerHTML);
-            console.log('[Custom Price Logic] Parsed productJSON in DOMContentLoaded.');
-        } catch (e) {
-            console.error("[Custom Price Logic] Failed to parse productJSON in DOMContentLoaded:", e);
-            productJSON = null;
-        }
-    }
-
-    if (!productJSON || !productJSON.variants || productJSON.variants.length === 0) {
-        console.warn('[Custom Price Logic] productJSON or variants not available in DOMContentLoaded. Cannot initialize further.');
-        // return; // Allow script to continue to see if other parts run
-    }
-
-    // All event listeners and MutationObserver setup are COMMENTED OUT for this test
-    /*
-    selectedVariant = productJSON.selected_or_first_available_variant || productJSON.variants[0];
-    if (selectedVariant) {
-        console.log('[Custom Price Logic] Initial variant selected ID:', selectedVariant.id);
-        updateDiscountUI(); // Initial UI update
-    } else {
-        console.warn('[Custom Price Logic] No initial variant found to set.');
-    }
-
-    // Event listener for variant changes
-    if (productForm) {
-      // ... event listener logic ...
-    }
-
-    // MutationObserver to watch the product price area
-    const priceWrapperToObserve = document.querySelector('.product-price');
-    if (priceWrapperToObserve) {
-      // ... observer logic ...
-    }
-    */
-    console.log('[Custom Price Logic] DOMContentLoaded basic setup COMPLETE.');
+    console.log('[Custom Price Logic] Minimal Test DOMContentLoaded FIRED.');
   });
 
-  console.log('[Custom Price Logic] Main script block END.');
+  console.log('[Custom Price Logic] Minimal Test Script END.');
 </script>
 
 {% schema %}
