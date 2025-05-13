@@ -152,7 +152,8 @@
                                 {%- if discount_info.type == "percentage" -%}
                                   {%- assign discount_percentage_value = discount_info.value | times: 1.0 -%}
                                   {%- if discount_percentage_value > 0 and discount_percentage_value < 100 -%}
-                                    {%- assign calculated_sale_price = base_price_for_calc | times: (100.0 | minus: discount_percentage_value) | divided_by: 100.0 -%}
+                                    {%- assign discount_multiplier = 100.0 | minus: discount_percentage_value -%}
+                                    {%- assign calculated_sale_price = base_price_for_calc | times: discount_multiplier | divided_by: 100.0 -%}
                                     {%- assign active_metafield_discount = true -%}
                                   {%- endif -%}
                                 {%- elsif discount_info.type == "fixed" -%}
