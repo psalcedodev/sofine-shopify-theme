@@ -1031,6 +1031,10 @@
   }
 
   function renderCustomProductPrice(variant, discountDetails) {
+    console.log('[Custom Price Logic] Entering renderCustomProductPrice');
+    console.log('[Custom Price Logic] Variant received:', JSON.parse(JSON.stringify(variant || {})));
+    console.log('[Custom Price Logic] DiscountDetails received:', JSON.parse(JSON.stringify(discountDetails || null)));
+
     const priceElement = document.getElementById('js-product-price');
     const productPriceContainer = document.querySelector('[data-js-product-price]'); // The main span holding current and compare
     const saleDetailsElement = document.querySelector('[data-js-product-price-sale-details]'); // The p tag for sale text
@@ -1088,6 +1092,7 @@
     }
 
     // Update DOM
+    console.log('[Custom Price Logic] About to update DOM. Display Price Cents:', displayPriceInCents, 'Use Custom Discount:', useCustomDiscount, 'Sale Tag:', saleTagText);
     priceElement.innerHTML = formatShopifyMoney(displayPriceInCents);
     priceElement.setAttribute('content', (displayPriceInCents / 100.0).toFixed(2));
 
@@ -1172,6 +1177,9 @@
     }
     
     function handleVariantChange(variantId) {
+        console.log('[Custom Price Logic] handleVariantChange triggered with variantId:', variantId);
+        console.log('[Custom Price Logic] Current window.productSaleActiveDiscount in handleVariantChange:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
+
         if (!productJSON || !productJSON.variants) {
             console.warn("Product JSON or variants not available for handleVariantChange.");
             // As a fallback, try to get variant from a global object if theme exposes it
@@ -1184,7 +1192,7 @@
         const selectedVariant = productJSON.variants.find(v => v.id == variantId);
         
         if (selectedVariant) {
-            console.log('Variant changed/selected:', selectedVariant);
+            console.log('[Custom Price Logic] Variant changed/selected in productJSON:', selectedVariant);
             renderCustomProductPrice(selectedVariant, window.productSaleActiveDiscount);
         } else {
             console.warn('Selected variant not found in product JSON for ID:', variantId);
@@ -1210,7 +1218,7 @@
             // If options are selected individually, you might need to find the variant
             // from options using Shopify's option selection logic. This is more complex.
             // For now, we rely on an input with name="id" being updated.
-            console.log("Variant ID input not found or not updated, can't trigger price refresh reliably from option change.");
+            console.log("[Custom Price Logic] Variant ID input not found or not updated, can't trigger price refresh reliably from option change.");
           }
         });
       });
@@ -1223,7 +1231,7 @@
           const observer = new MutationObserver(function(mutationsList) {
               for(let mutation of mutationsList) {
                   if (mutation.type === 'attributes' && mutation.attributeName === 'value') {
-                      console.log('Hidden variant ID changed to:', hiddenIdInput.value);
+                      console.log('[Custom Price Logic] Hidden variant ID changed by MutationObserver to:', hiddenIdInput.value);
                       handleVariantChange(hiddenIdInput.value);
                   }
               }
@@ -1238,10 +1246,13 @@
        // Using a small timeout can sometimes help, but it's a hack.
        setTimeout(function() {
          // Check if productSaleActiveDiscount has been populated
+         console.log('[Custom Price Logic] Initial render timeout. window.productSaleActiveDiscount:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
          if (window.productSaleActiveDiscount !== null || (productJSON.metafields && productJSON.metafields.sale && productJSON.metafields.sale.active_discount)) {
             // If productJSON contains the metafield, prefer that for consistency on variant switch
-            const discountForJs = window.productSaleActiveDiscount || 
-                                 (productJSON.metafields && productJSON.metafields.sale ? productJSON.metafields.sale.active_discount : null);
+            const discountForJs = window.productSaleActiveDiscount;
+            
+            console.log('[Custom Price Logic] Initial render timeout. Using discountForJs:', JSON.parse(JSON.stringify(discountForJs || null)));
+
             if (productJSON.selected_or_first_available_variant) {
                  renderCustomProductPrice(productJSON.selected_or_first_available_variant, discountForJs);
             } else if (productJSON.variants && productJSON.variants.length > 0) {
