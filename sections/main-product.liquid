@@ -1009,9 +1009,11 @@
 {%- render 'product-script' -%}
 
 <script>
-  // Restoring full JS logic from before syntax error hunt, then modifying for new sale tag element
+  // --- State Management ---
+  let selectedVariant = null;
+  let discountDetails = window.productSaleActiveDiscount || null;
+
   function formatShopifyMoney(cents, format) {
-    console.log('[Custom Price Logic] Entering formatShopifyMoney');
     if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
       return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
     }
@@ -1032,214 +1034,135 @@
     return formattedValue;
   }
 
-  function renderCustomProductPrice(variant, discountDetails) {
-    console.log('[Custom Price Logic] Entering renderCustomProductPrice');
-    console.log('[Custom Price Logic] Variant received:', JSON.parse(JSON.stringify(variant || {})));
-    console.log('[Custom Price Logic] DiscountDetails received:', JSON.parse(JSON.stringify(discountDetails || null)));
-
-    const priceElement = document.getElementById('js-product-price');
-    const productPriceContainer = document.querySelector('[data-js-product-price]'); 
-    const customSaleTagElement = document.getElementById('my-custom-sale-tag-container').querySelector('.custom-sale-tag'); // Target new custom sale tag
-    
-    if (!variant || !priceElement || !productPriceContainer || !customSaleTagElement) {
-      console.warn('renderCustomProductPrice: Missing variant or essential DOM elements (priceElement, productPriceContainer, or customSaleTagElement).');
-      return;
+  function getDiscountedPrice(variant, discount) {
+    if (!discount) return variant.price;
+    if (discount.type === "percentage") {
+      return Math.round(variant.price * (1 - parseFloat(discount.value) / 100));
     }
+    if (discount.type === "fixed") {
+      return Math.max(0, Math.round(variant.price - parseFloat(discount.value) * 100));
+    }
+    return variant.price;
+  }
 
-    let displayPriceInCents = variant.price;
-    let compareAtPriceInCents = variant.compare_at_price;
-    let saleTagText = '';
+  function updateDiscountUI(variant, discount) {
+    const priceElement = document.getElementById('js-product-price');
+    const productPriceContainer = document.querySelector('[data-js-product-price]');
+    const compareElement = productPriceContainer ? productPriceContainer.querySelector('.compare') : null;
+    const customSaleTagElement = document.getElementById('my-custom-sale-tag-container')?.querySelector('.custom-sale-tag');
+
     let useCustomDiscount = false;
-    let RRPForDisplayInCents = variant.price; 
+    let discountedPrice = variant.price;
+    let saleTagText = '';
+    let compareAtPrice = variant.compare_at_price;
 
-    if (discountDetails && typeof discountDetails === 'object' && discountDetails.value !== undefined) {
+    // Check if discount is active
+    if (discount && discount.value !== undefined) {
       const now = new Date();
-      const startDate = discountDetails.start_date ? new Date(discountDetails.start_date) : null;
-      const endDate = discountDetails.end_date ? new Date(discountDetails.end_date) : null;
-
+      const startDate = discount.start_date ? new Date(discount.start_date) : null;
+      const endDate = discount.end_date ? new Date(discount.end_date) : null;
       const isAfterStartDate = !startDate || now >= startDate;
       const isBeforeEndDate = !endDate || now <= endDate;
-
       if (isAfterStartDate && isBeforeEndDate) {
-        const basePriceForCalcCents = variant.price; 
-        RRPForDisplayInCents = basePriceForCalcCents; 
-        let calculatedSalePriceCents = basePriceForCalcCents;
-
-        if (discountDetails.type === "percentage") {
-          const discountPercentageValue = parseFloat(discountDetails.value);
-          if (discountPercentageValue > 0 && discountPercentageValue < 100) {
-            calculatedSalePriceCents = basePriceForCalcCents * (1 - discountPercentageValue / 100);
-            useCustomDiscount = true;
-          }
-        } else if (discountDetails.type === "fixed") {
-          const discountFixedAmountCents = parseFloat(discountDetails.value) * 100;
-          if (discountFixedAmountCents > 0 && discountFixedAmountCents < basePriceForCalcCents) {
-            calculatedSalePriceCents = basePriceForCalcCents - discountFixedAmountCents;
-            useCustomDiscount = true;
-          }
-        }
-
-        if (useCustomDiscount) {
-          if (calculatedSalePriceCents < 0) calculatedSalePriceCents = 0;
-          if (calculatedSalePriceCents >= basePriceForCalcCents) {
-            useCustomDiscount = false; 
-          } else {
-            displayPriceInCents = Math.round(calculatedSalePriceCents); 
-            compareAtPriceInCents = RRPForDisplayInCents; 
-            saleTagText = discountDetails.display_value;
-          }
+        discountedPrice = getDiscountedPrice(variant, discount);
+        if (discountedPrice < variant.price) {
+          useCustomDiscount = true;
+          saleTagText = discount.display_value;
+          compareAtPrice = variant.price;
         }
       }
     }
 
-    console.log('[Custom Price Logic] About to update DOM. Display Price Cents:', displayPriceInCents, 'Use Custom Discount:', useCustomDiscount, 'Sale Tag:', saleTagText);
-    priceElement.innerHTML = formatShopifyMoney(displayPriceInCents);
-    priceElement.setAttribute('content', (displayPriceInCents / 100.0).toFixed(2));
-
-    let compareElement = productPriceContainer.querySelector('.compare');
-    if (useCustomDiscount || (variant.compare_at_price && variant.compare_at_price > variant.price && !useCustomDiscount) ) { // Added !useCustomDiscount for standard sale case
-      productPriceContainer.classList.add('price--sale');
-      if (!compareElement) {
-        compareElement = document.createElement('span');
-        compareElement.className = 'compare';
-        if (priceElement.nextSibling) {
-            productPriceContainer.insertBefore(compareElement, priceElement.nextSibling);
-        } else {
-            productPriceContainer.appendChild(compareElement);
-        }
-      }
-      compareElement.innerHTML = formatShopifyMoney(useCustomDiscount ? compareAtPriceInCents : variant.compare_at_price);
-      compareElement.style.display = '';
-      if (useCustomDiscount) {
-        // Force styles typically associated with compare-at prices if it's our custom discount
-        compareElement.style.textDecoration = 'line-through';
-        compareElement.style.opacity = '0.7'; // Example, adjust as needed
-        // Ensure the main price element (current) doesn't have these
-        priceElement.style.textDecoration = 'none'; 
-        priceElement.style.opacity = '1';
-      }
-    } else {
-      productPriceContainer.classList.remove('price--sale');
-      if (compareElement) {
-        compareElement.style.display = 'none';
-        compareElement.style.textDecoration = 'none'; // Clear forced style
-        compareElement.style.opacity = '1'; // Clear forced style
-      }
-      // Ensure the main price element (current) also has no forced strikethrough
-      priceElement.style.textDecoration = 'none'; 
+    // Update price
+    if (priceElement) {
+      priceElement.innerHTML = formatShopifyMoney(discountedPrice);
+      priceElement.setAttribute('content', (discountedPrice / 100.0).toFixed(2));
+      priceElement.style.textDecoration = 'none';
       priceElement.style.opacity = '1';
     }
 
-    // Update the new custom sale tag element
-    if (useCustomDiscount && saleTagText) {
-      customSaleTagElement.innerHTML = saleTagText;
-      customSaleTagElement.style.display = ''; // Or 'block', 'inline-block' as appropriate
-    } else {
-      customSaleTagElement.innerHTML = '';
-      customSaleTagElement.style.display = 'none';
+    // Update compare price
+    if (compareElement) {
+      if (useCustomDiscount) {
+        compareElement.innerHTML = formatShopifyMoney(compareAtPrice);
+        compareElement.style.display = '';
+        compareElement.style.textDecoration = 'line-through';
+        compareElement.style.opacity = '0.7';
+        productPriceContainer.classList.add('price--sale');
+      } else if (variant.compare_at_price && variant.compare_at_price > variant.price) {
+        compareElement.innerHTML = formatShopifyMoney(variant.compare_at_price);
+        compareElement.style.display = '';
+        compareElement.style.textDecoration = 'line-through';
+        compareElement.style.opacity = '0.7';
+        productPriceContainer.classList.add('price--sale');
+      } else {
+        compareElement.style.display = 'none';
+        compareElement.style.textDecoration = 'none';
+        compareElement.style.opacity = '1';
+        productPriceContainer.classList.remove('price--sale');
+      }
     }
-    
-    const availabilityLink = productPriceContainer.parentNode.querySelector('link[itemprop="availability"]');
-    if (availabilityLink) {
-        availabilityLink.setAttribute('href', `http://schema.org/${variant.available ? 'InStock' : 'OutOfStock'}`);
-    }
-    const variantInput = document.querySelector('input[name="id"][data-js-product-variant-input]');
-    if (variantInput) {
-        variantInput.value = variant.id;
+
+    // Update custom sale tag
+    if (customSaleTagElement) {
+      if (useCustomDiscount && saleTagText) {
+        customSaleTagElement.innerHTML = saleTagText;
+        customSaleTagElement.style.display = '';
+      } else {
+        customSaleTagElement.innerHTML = '';
+        customSaleTagElement.style.display = 'none';
+      }
     }
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('[Custom Price Logic] DOMContentLoaded event fired.');
-
-    const productSingleElement = document.getElementById('product-single');
     const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
-    console.log('[Custom Price Logic] productForm element:', productForm);
-
     let productJSON = null;
     const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
-    console.log('[Custom Price Logic] productJsonScript element:', productJsonScript);
-
     if (productJsonScript) {
-        try {
-            productJSON = JSON.parse(productJsonScript.innerHTML);
-            console.log('[Custom Price Logic] Parsed productJSON:', productJSON);
-        } catch (e) {
-            console.error("[Custom Price Logic] Failed to parse product JSON for variant changes:", e);
-            productJSON = null; 
-        }
-    } else {
-        console.warn('[Custom Price Logic] productJsonScript element NOT FOUND.');
+      try {
+        productJSON = JSON.parse(productJsonScript.innerHTML);
+      } catch (e) {
+        productJSON = null;
+      }
     }
-    
-    function handleVariantChange(variantId) {
-        console.log('[Custom Price Logic] handleVariantChange triggered with variantId:', variantId);
-        console.log('[Custom Price Logic] Current window.productSaleActiveDiscount in handleVariantChange:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
+    if (!productJSON) return;
+    selectedVariant = productJSON.selected_or_first_available_variant || productJSON.variants[0];
+    updateDiscountUI(selectedVariant, discountDetails);
 
-        if (!productJSON || !productJSON.variants) {
-            console.warn("Product JSON or variants not available for handleVariantChange.");
-            return;
-        }
-        
-        const selectedVariant = productJSON.variants.find(v => v.id == variantId);
-        
-        if (selectedVariant) {
-            console.log('[Custom Price Logic] Variant changed/selected in productJSON:', selectedVariant);
-            renderCustomProductPrice(selectedVariant, window.productSaleActiveDiscount);
-        } else {
-            console.warn('Selected variant not found in product JSON for ID:', variantId);
-        }
-    }
-
+    // Listen for variant changes
     if (productForm) {
       const variantSelectors = productForm.querySelectorAll('input[name="id"], select[name="id"], input[type="radio"][name^="options"], select[data-single-option-selector]');
-      console.log('[Custom Price Logic] Found variantSelectors:', variantSelectors);
-      
       variantSelectors.forEach(selector => {
-        console.log('[Custom Price Logic] Attaching change listener to selector:', selector);
         selector.addEventListener('change', function(event) {
           let currentVariantId = null;
-          if (productForm.elements.id) { 
-             currentVariantId = productForm.elements.id.value;
+          if (productForm.elements.id) {
+            currentVariantId = productForm.elements.id.value;
           }
-          
-          if(currentVariantId) {
-            handleVariantChange(currentVariantId);
-          } else {
-            console.log("[Custom Price Logic] Variant ID input not found or not updated, can't trigger price refresh reliably from option change.");
+          if (currentVariantId && productJSON.variants) {
+            const variant = productJSON.variants.find(v => v.id == currentVariantId);
+            if (variant) {
+              selectedVariant = variant;
+              updateDiscountUI(selectedVariant, discountDetails);
+            }
           }
         });
       });
-
-      const hiddenIdInput = productForm.querySelector('input[type="hidden"][name="id"]');
-      if (hiddenIdInput) {
-          const observer = new MutationObserver(function(mutationsList) {
-              for(let mutation of mutationsList) {
-                  if (mutation.type === 'attributes' && mutation.attributeName === 'value') {
-                      console.log('[Custom Price Logic] Hidden variant ID changed by MutationObserver to:', hiddenIdInput.value);
-                      handleVariantChange(hiddenIdInput.value);
-                  }
-              }
-          });
-          observer.observe(hiddenIdInput, { attributes: true });
-      }
     }
 
-    console.log('[Custom Price Logic] Preparing for initial render call. productJSON available?', !!productJSON);
-    if (productJSON && productJSON.selected_or_first_available_variant) {
-       setTimeout(function() {
-         console.log('[Custom Price Logic] Initial render timeout. window.productSaleActiveDiscount:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
-         if (window.productSaleActiveDiscount !== null || (productJSON.metafields && productJSON.metafields.sale && productJSON.metafields.sale.active_discount)) {
-            const discountForJs = window.productSaleActiveDiscount;
-            console.log('[Custom Price Logic] Initial render timeout. Using discountForJs:', JSON.parse(JSON.stringify(discountForJs || null)));
-
-            if (productJSON.selected_or_first_available_variant) {
-                 renderCustomProductPrice(productJSON.selected_or_first_available_variant, discountForJs);
-            } else if (productJSON.variants && productJSON.variants.length > 0) {
-                 renderCustomProductPrice(productJSON.variants[0], discountForJs);
-            }
-         }
-       }, 100); 
+    // --- MutationObserver to re-apply discount logic if theme JS overwrites price area ---
+    const priceContainer = document.querySelector('.product-price');
+    if (priceContainer) {
+      let observerTimeout = null;
+      const observer = new MutationObserver(function(mutationsList) {
+        if (observerTimeout) clearTimeout(observerTimeout);
+        observerTimeout = setTimeout(() => {
+          if (selectedVariant) {
+            updateDiscountUI(selectedVariant, discountDetails);
+          }
+        }, 50); // Debounce to avoid rapid-fire updates
+      });
+      observer.observe(priceContainer, { childList: true, subtree: true });
     }
   });
 </script>
