@@ -1013,17 +1013,17 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] LET Test - Script START.');
+  console.log('[Custom Price Logic] LET Test 1 - Script START.');
 
-  // --- State Management ---
   let selectedVariant = null;
+  console.log('[Custom Price Logic] LET Test 1 - selectedVariant defined.');
+
   let discountDetails = window.productSaleActiveDiscount || null; 
+  console.log('[Custom Price Logic] LET Test 1 - discountDetails defined.');
   let isUpdatingByObserver = false; 
-  console.log('[Custom Price Logic] LET Test - State variables defined.');
+  console.log('[Custom Price Logic] LET Test 1 - isUpdatingByObserver defined.');
 
-  // All function definitions and DOMContentLoaded are removed for this specific test
-
-  console.log('[Custom Price Logic] LET Test - Script END.');
+  console.log('[Custom Price Logic] LET Test 1 - Script END.');
 </script>
 
 {% schema %}
