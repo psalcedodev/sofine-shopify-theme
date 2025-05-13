@@ -108,10 +108,10 @@
                             {%- assign sale_tag_display = "" -%}
 
                             {%- comment %} Check for the custom sale metafield {% endcomment %}
-                            {%- if product.metafields.sale.active_discount and product.metafields.sale.active_discount.value != blank -%}
-                              {%- assign discount_info = product.metafields.sale.active_discount -%}
+                            {%- if product.metafields.sale.active_discount.value != blank -%}
+                              {%- assign discount_info = product.metafields.sale.active_discount.value -%}
                               {%- comment %} LOGGING: Output the raw metafield value for debugging {% endcomment %}
-                              <!-- sale.active_discount: {{ product.metafields.sale.active_discount | json }} -->
+                              <!-- sale.active_discount: {{ product.metafields.sale.active_discount.value | json }} -->
                               <script>
                                 try {
                                   var saleActiveDiscount = {{ product.metafields.sale.active_discount.value | json }};
@@ -120,6 +120,7 @@
                                   console.log('sale.active_discount: unable to parse', e);
                                 }
                               </script>
+                              <!-- DEBUG: now_s: {{ now_s }}, start_date_s: {% if discount_info.start_date %}{{ discount_info.start_date | date: '%s' | plus: 0 }}{% else %}blank{% endif %}, end_date_s: {% if discount_info.end_date %}{{ discount_info.end_date | date: '%s' | plus: 0 }}{% else %}blank{% endif %}, is_after_start_date: {{ is_after_start_date }}, is_before_end_date: {{ is_before_end_date }}, calculated_sale_price: {{ calculated_sale_price }} -->
                               {%- assign now_s = 'now' | date: '%s' | plus: 0 -%}
 
                               {%- assign is_after_start_date = false -%}
