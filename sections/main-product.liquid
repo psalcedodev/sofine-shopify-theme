@@ -179,6 +179,7 @@
 
                             <div class="product-price">
                               {%- if active_metafield_discount -%}
+                                <span>HOLA</span>
                                 <span class="price price--sale" data-js-product-price>
                                   <span id="js-product-price" class="current" itemprop="price" content="{{ calculated_sale_price | divided_by: 100.00 }}">{{ calculated_sale_price | money }}</span>
                                   <meta itemprop="priceCurrency" content="{{ shop.currency }}">
