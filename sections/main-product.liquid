@@ -1004,11 +1004,245 @@
 {%- render 'product-script' -%}
 
 <script>
-  console.log('[Custom Price Logic] BIG SCRIPT BLOCK START - Test');
+  function formatShopifyMoney(cents, format) {
+    // console.log('[TEMP DEBUG] formatShopifyMoney called');
+    /* 
+    if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
+      return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
+    }
+    const moneyFormat = format || '${{amount}}'; 
+    let value = (cents / 100.0).toFixed(2);
+    if (moneyFormat.includes('{{amount_no_decimals}}')) {
+        value = (cents / 100.0).toFixed(0);
+    } else if (moneyFormat.includes('{{amount_with_comma_separator}}')) {
+        value = (cents / 100.0).toFixed(2).replace('.', ',');
+    } else if (moneyFormat.includes('{{amount_no_decimals_with_comma_separator}}')) {
+        value = (cents / 100.0).toFixed(0).replace('.', ',');
+    }
+    let formattedValue = moneyFormat.replace(/\{\{\s*.*\s*\}\}/, value);
+    if (!formattedValue.includes(value)) { 
+        formattedValue = moneyFormat.replace('{{amount}}', value)
+                                  .replace('{{ amount }}', value); 
+    }
+    return formattedValue;
+    */
+   return "$0.00 (TEMP)"; // Temporary return for syntax checking
+  }
+
+  function renderCustomProductPrice(variant, discountDetails) {
+    // console.log('[TEMP DEBUG] renderCustomProductPrice called');
+    /*
+    console.log('[Custom Price Logic] Entering renderCustomProductPrice');
+    console.log('[Custom Price Logic] Variant received:', JSON.parse(JSON.stringify(variant || {})));
+    console.log('[Custom Price Logic] DiscountDetails received:', JSON.parse(JSON.stringify(discountDetails || null)));
+
+    const priceElement = document.getElementById('js-product-price');
+    const productPriceContainer = document.querySelector('[data-js-product-price]'); 
+    const saleDetailsElement = document.querySelector('[data-js-product-price-sale-details]'); 
+    
+    if (!variant || !priceElement || !productPriceContainer) {
+      console.warn('renderCustomProductPrice: Missing variant or essential price DOM elements.');
+      return;
+    }
+
+    let displayPriceInCents = variant.price;
+    let compareAtPriceInCents = variant.compare_at_price;
+    let saleTagText = '';
+    let useCustomDiscount = false;
+    let RRPForDisplayInCents = variant.price; 
+
+    if (discountDetails && typeof discountDetails === 'object' && discountDetails.value !== undefined) {
+      const now = new Date();
+      const startDate = discountDetails.start_date ? new Date(discountDetails.start_date) : null;
+      const endDate = discountDetails.end_date ? new Date(discountDetails.end_date) : null;
+
+      const isAfterStartDate = !startDate || now >= startDate;
+      const isBeforeEndDate = !endDate || now <= endDate;
+
+      if (isAfterStartDate && isBeforeEndDate) {
+        const basePriceForCalcCents = variant.price; 
+        RRPForDisplayInCents = basePriceForCalcCents; 
+        let calculatedSalePriceCents = basePriceForCalcCents;
+
+        if (discountDetails.type === "percentage") {
+          const discountPercentageValue = parseFloat(discountDetails.value);
+          if (discountPercentageValue > 0 && discountPercentageValue < 100) {
+            calculatedSalePriceCents = basePriceForCalcCents * (1 - discountPercentageValue / 100);
+            useCustomDiscount = true;
+          }
+        } else if (discountDetails.type === "fixed") {
+          const discountFixedAmountCents = parseFloat(discountDetails.value) * 100;
+          if (discountFixedAmountCents > 0 && discountFixedAmountCents < basePriceForCalcCents) {
+            calculatedSalePriceCents = basePriceForCalcCents - discountFixedAmountCents;
+            useCustomDiscount = true;
+          }
+        }
+
+        if (useCustomDiscount) {
+          if (calculatedSalePriceCents < 0) calculatedSalePriceCents = 0;
+          if (calculatedSalePriceCents >= basePriceForCalcCents) {
+            useCustomDiscount = false; 
+          } else {
+            displayPriceInCents = Math.round(calculatedSalePriceCents); 
+            compareAtPriceInCents = RRPForDisplayInCents; 
+            saleTagText = discountDetails.display_value;
+          }
+        }
+      }
+    }
+
+    console.log('[Custom Price Logic] About to update DOM. Display Price Cents:', displayPriceInCents, 'Use Custom Discount:', useCustomDiscount, 'Sale Tag:', saleTagText);
+    priceElement.innerHTML = formatShopifyMoney(displayPriceInCents);
+    priceElement.setAttribute('content', (displayPriceInCents / 100.0).toFixed(2));
+
+    let compareElement = productPriceContainer.querySelector('.compare');
+    if (useCustomDiscount || (variant.compare_at_price && variant.compare_at_price > variant.price)) {
+      productPriceContainer.classList.add('price--sale');
+      if (!compareElement) {
+        compareElement = document.createElement('span');
+        compareElement.className = 'compare';
+        if (priceElement.nextSibling) {
+            productPriceContainer.insertBefore(compareElement, priceElement.nextSibling);
+        } else {
+            productPriceContainer.appendChild(compareElement);
+        }
+      }
+      compareElement.innerHTML = formatShopifyMoney(useCustomDiscount ? compareAtPriceInCents : variant.compare_at_price);
+      compareElement.style.display = '';
+    } else {
+      productPriceContainer.classList.remove('price--sale');
+      if (compareElement) {
+        compareElement.style.display = 'none';
+      }
+    }
+
+    if (saleDetailsElement) {
+      if (useCustomDiscount && saleTagText) {
+        saleDetailsElement.innerHTML = saleTagText;
+        saleDetailsElement.classList.add('custom-sale-tag');
+        saleDetailsElement.style.display = 'block';
+      } else if (variant.compare_at_price && variant.compare_at_price > variant.price && !useCustomDiscount) {
+         if (theme.strings && theme.strings.priceSaleDetails) { 
+             const priceSave = variant.compare_at_price - variant.price;
+             const priceSaveProcent = Math.round((priceSave / variant.compare_at_price) * 100);
+             saleDetailsElement.innerHTML = theme.strings.priceSaleDetails.replace('[price]', formatShopifyMoney(priceSave)).replace('[procent]', priceSaveProcent);
+             saleDetailsElement.classList.remove('custom-sale-tag');
+             saleDetailsElement.style.display = 'block';
+         } else {
+            saleDetailsElement.style.display = 'none'; 
+         }
+      } else {
+        saleDetailsElement.style.display = 'none';
+        saleDetailsElement.classList.remove('custom-sale-tag');
+      }
+    }
+    
+    const availabilityLink = productPriceContainer.parentNode.querySelector('link[itemprop="availability"]');
+    if (availabilityLink) {
+        availabilityLink.setAttribute('href', `http://schema.org/${variant.available ? 'InStock' : 'OutOfStock'}`);
+    }
+    const variantInput = document.querySelector('input[name="id"][data-js-product-variant-input]');
+    if (variantInput) {
+        variantInput.value = variant.id;
+    }
+    */
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('[Custom Price Logic] DOMContentLoaded in BIG SCRIPT BLOCK fired - Test');
+    console.log('[Custom Price Logic] DOMContentLoaded event fired.');
+
+    const productSingleElement = document.getElementById('product-single');
+    const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
+    console.log('[Custom Price Logic] productForm element:', productForm);
+
+    let productJSON = null;
+    const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
+    console.log('[Custom Price Logic] productJsonScript element:', productJsonScript);
+
+    if (productJsonScript) {
+        try {
+            productJSON = JSON.parse(productJsonScript.innerHTML);
+            console.log('[Custom Price Logic] Parsed productJSON:', productJSON);
+        } catch (e) {
+            console.error("[Custom Price Logic] Failed to parse product JSON for variant changes:", e);
+            productJSON = null; 
+        }
+    } else {
+        console.warn('[Custom Price Logic] productJsonScript element NOT FOUND.');
+    }
+    
+    /* The following event handling logic is temporarily commented out for syntax error isolation
+    function handleVariantChange(variantId) {
+        console.log('[Custom Price Logic] handleVariantChange triggered with variantId:', variantId);
+        console.log('[Custom Price Logic] Current window.productSaleActiveDiscount in handleVariantChange:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
+
+        if (!productJSON || !productJSON.variants) {
+            console.warn("Product JSON or variants not available for handleVariantChange.");
+            return;
+        }
+        
+        const selectedVariant = productJSON.variants.find(v => v.id == variantId);
+        
+        if (selectedVariant) {
+            console.log('[Custom Price Logic] Variant changed/selected in productJSON:', selectedVariant);
+            renderCustomProductPrice(selectedVariant, window.productSaleActiveDiscount);
+        } else {
+            console.warn('Selected variant not found in product JSON for ID:', variantId);
+        }
+    }
+
+    if (productForm) {
+      const variantSelectors = productForm.querySelectorAll('input[name="id"], select[name="id"], input[type="radio"][name^="options"], select[data-single-option-selector]');
+      console.log('[Custom Price Logic] Found variantSelectors:', variantSelectors);
+      
+      variantSelectors.forEach(selector => {
+        console.log('[Custom Price Logic] Attaching change listener to selector:', selector);
+        selector.addEventListener('change', function(event) {
+          let currentVariantId = null;
+          if (productForm.elements.id) { 
+             currentVariantId = productForm.elements.id.value;
+          }
+          
+          if(currentVariantId) {
+            handleVariantChange(currentVariantId);
+          } else {
+            console.log("[Custom Price Logic] Variant ID input not found or not updated, can't trigger price refresh reliably from option change.");
+          }
+        });
+      });
+
+      const hiddenIdInput = productForm.querySelector('input[type="hidden"][name="id"]');
+      if (hiddenIdInput) {
+          const observer = new MutationObserver(function(mutationsList) {
+              for(let mutation of mutationsList) {
+                  if (mutation.type === 'attributes' && mutation.attributeName === 'value') {
+                      console.log('[Custom Price Logic] Hidden variant ID changed by MutationObserver to:', hiddenIdInput.value);
+                      handleVariantChange(hiddenIdInput.value);
+                  }
+              }
+          });
+          observer.observe(hiddenIdInput, { attributes: true });
+      }
+    }
+
+    console.log('[Custom Price Logic] Preparing for initial render call. productJSON available?', !!productJSON);
+    if (productJSON && productJSON.selected_or_first_available_variant) {
+       setTimeout(function() {
+         console.log('[Custom Price Logic] Initial render timeout. window.productSaleActiveDiscount:', JSON.parse(JSON.stringify(window.productSaleActiveDiscount || null)));
+         if (window.productSaleActiveDiscount !== null || (productJSON.metafields && productJSON.metafields.sale && productJSON.metafields.sale.active_discount)) {
+            const discountForJs = window.productSaleActiveDiscount;
+            console.log('[Custom Price Logic] Initial render timeout. Using discountForJs:', JSON.parse(JSON.stringify(discountForJs || null)));
+
+            if (productJSON.selected_or_first_available_variant) {
+                 renderCustomProductPrice(productJSON.selected_or_first_available_variant, discountForJs);
+            } else if (productJSON.variants && productJSON.variants.length > 0) {
+                 renderCustomProductPrice(productJSON.variants[0], discountForJs);
+            }
+         }
+       }, 100); 
+    }
+    */
   });
-  console.log('[Custom Price Logic] BIG SCRIPT BLOCK END - Test');
 </script>
 
 {% schema %}
