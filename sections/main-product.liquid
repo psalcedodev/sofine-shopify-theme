@@ -1009,217 +1009,62 @@
 {%- render 'product-script' -%}
 
 <script>
-  // --- State Management ---
+  console.log('[Custom Price Logic] Main script block START.');
+
+  // --- State Management (global to this script block scope) ---
   let selectedVariant = null;
   let discountDetails = window.productSaleActiveDiscount || null; // Populated by earlier script tag
-  let isUpdatingByObserver = false; // Re-entrancy guard for MutationObserver
+  let isUpdatingByObserver = false; 
 
   function formatShopifyMoney(cents, format) {
+    console.log('[Custom Price Logic] formatShopifyMoney definition parsed.');
+    // Simplified body for syntax testing
     if (typeof Shopify !== 'undefined' && Shopify.formatMoney) {
       return Shopify.formatMoney(cents, format || Shopify.currency.money_format);
     }
-    const moneyFormat = format || '${{amount}}'; 
-    let value = (cents / 100.0).toFixed(2);
-    if (moneyFormat.includes('{{amount_no_decimals}}')) {
-        value = (cents / 100.0).toFixed(0);
-    } else if (moneyFormat.includes('{{amount_with_comma_separator}}')) {
-        value = (cents / 100.0).toFixed(2).replace('.', ',');
-    } else if (moneyFormat.includes('{{amount_no_decimals_with_comma_separator}}')) {
-        value = (cents / 100.0).toFixed(0).replace('.', ',');
-    }
-    let formattedValue = moneyFormat.replace(/\{\{\s*.*\s*\}\}/, value);
-    if (!formattedValue.includes(value)) { 
-        formattedValue = moneyFormat.replace('{{amount}}', value)
-                                  .replace('{{ amount }}', value); 
-    }
-    return formattedValue;
+    return "$0.00 (Test)";
   }
 
-  function getDiscountedPriceInCents(variant, discount) { // Renamed for clarity
+  function getDiscountedPriceInCents(variant, discount) {
+    console.log('[Custom Price Logic] getDiscountedPriceInCents definition parsed.');
+    // Simplified body for syntax testing
     if (!variant) return 0;
-    let priceInCents = variant.price;
-
-    if (discount && discount.value !== undefined) {
-        const now = new Date();
-        const startDate = discount.start_date ? new Date(discount.start_date) : null;
-        const endDate = discount.end_date ? new Date(discount.end_date) : null;
-        const isAfterStartDate = !startDate || now >= startDate;
-        const isBeforeEndDate = !endDate || now <= endDate;
-
-        if (isAfterStartDate && isBeforeEndDate) {
-            if (discount.type === "percentage") {
-                const percentageValue = parseFloat(discount.value);
-                if (percentageValue > 0 && percentageValue < 100) {
-                    priceInCents = Math.round(variant.price * (1 - percentageValue / 100));
-                }
-            } else if (discount.type === "fixed") {
-                const fixedAmountCents = parseFloat(discount.value) * 100;
-                if (fixedAmountCents > 0 && fixedAmountCents < variant.price) {
-                    priceInCents = Math.round(variant.price - fixedAmountCents);
-                }
-            }
-        }
-    }
-    return priceInCents < 0 ? 0 : priceInCents; // Ensure not negative
+    return variant.price;
   }
 
   function updateDiscountUI() {
-    if (isUpdatingByObserver) return; // Prevent re-entrancy if our own update triggers observer
-    if (!selectedVariant) {
-        console.warn('[Custom Price Logic] updateDiscountUI called but selectedVariant is null.');
-        return;
-    }
-
-    isUpdatingByObserver = true; // Set guard
-    console.log('[Custom Price Logic] updateDiscountUI CALLED. Variant ID:', selectedVariant.id, 'Discount Details:', discountDetails);
-
-    const productPriceWrapper = document.querySelector('.product-price');
-    if (!productPriceWrapper) {
-      console.warn('[Custom Price Logic] .product-price wrapper not found for UI update.');
-      isUpdatingByObserver = false; return;
-    }
-
-    // --- Defensively ensure core price structure exists or recreate it --- 
-    let priceDisplayContainer = productPriceWrapper.querySelector('[data-js-product-price]');
-    if (!priceDisplayContainer) {
-        console.log('[Custom Price Logic] [data-js-product-price] container not found, CREATING...');
-        priceDisplayContainer = document.createElement('span');
-        priceDisplayContainer.setAttribute('data-js-product-price', '');
-        // To preserve other children of .product-price (like link itemprop=availability), clear only if necessary or append carefully.
-        // For this iteration, let's clear and rebuild the core price part IF data-js-product-price is missing.
-        // A safer but more complex approach might be to find existing children and re-parent them.
-        const linkChild = productPriceWrapper.querySelector('link[itemprop="availability"]');
-        productPriceWrapper.innerHTML = ''; // Clear previous content of .product-price before rebuilding
-        productPriceWrapper.appendChild(priceDisplayContainer);
-        if (linkChild) productPriceWrapper.appendChild(linkChild); // Re-append availability link if it existed
-    }
-
-    let priceElement = priceDisplayContainer.querySelector('#js-product-price');
-    if (!priceElement) {
-        console.log('[Custom Price Logic] #js-product-price element not found, CREATING...');
-        priceElement = document.createElement('span');
-        priceElement.id = 'js-product-price';
-        priceElement.className = 'current';
-        priceElement.setAttribute('itemprop', 'price');
-        priceDisplayContainer.appendChild(priceElement);
-    }
-
-    let compareElement = priceDisplayContainer.querySelector('.compare');
-    if (!compareElement) {
-        console.log('[Custom Price Logic] .compare element not found, CREATING...');
-        compareElement = document.createElement('span');
-        compareElement.className = 'compare';
-        priceDisplayContainer.appendChild(compareElement); 
-    }
-    
-    let currencyMeta = priceDisplayContainer.querySelector('meta[itemprop="priceCurrency"]');
-    if (!currencyMeta && typeof Shopify !== 'undefined' && Shopify.currency && Shopify.currency.active) {
-        console.log('[Custom Price Logic] meta[itemprop="priceCurrency"] not found, CREATING...');
-        currencyMeta = document.createElement('meta');
-        currencyMeta.setAttribute('itemprop', 'priceCurrency');
-        currencyMeta.setAttribute('content', Shopify.currency.active);
-        priceDisplayContainer.insertBefore(currencyMeta, priceElement.nextSibling); 
-    }
-    // --- End of structure check/recreation ---
-
-    let displayPriceCents = selectedVariant.price;
-    let originalPriceCents = selectedVariant.price;
-    let showAsSale = false;
-    let saleTagText = '';
-
-    const calculatedDiscountPriceCents = getDiscountedPriceInCents(selectedVariant, discountDetails);
-
-    if (discountDetails && calculatedDiscountPriceCents < selectedVariant.price) {
-        // Custom discount is active and valid
-        displayPriceCents = calculatedDiscountPriceCents;
-        originalPriceCents = selectedVariant.price; // Original price becomes the RRP
-        showAsSale = true;
-        saleTagText = discountDetails.display_value;
-        console.log('[Custom Price Logic] Applying CUSTOM discount. Sale Price:', displayPriceCents, 'Original Price:', originalPriceCents);
-    } else if (selectedVariant.compare_at_price && selectedVariant.compare_at_price > selectedVariant.price) {
-        // Standard Shopify sale (no active custom discount or custom discount not better)
-        displayPriceCents = selectedVariant.price;
-        originalPriceCents = selectedVariant.compare_at_price;
-        showAsSale = true;
-        // Standard sale text could be generated here if needed, or rely on theme default if element exists.
-        console.log('[Custom Price Logic] Applying STANDARD Shopify sale. Sale Price:', displayPriceCents, 'Original Price:', originalPriceCents);
-    } else {
-        // No sale
-        displayPriceCents = selectedVariant.price;
-        originalPriceCents = selectedVariant.price; 
-        showAsSale = false;
-        console.log('[Custom Price Logic] NO SALE. Regular Price:', displayPriceCents);
-    }
-
-    // Update price element
-    priceElement.innerHTML = formatShopifyMoney(displayPriceCents);
-    priceElement.setAttribute('content', (displayPriceCents / 100.0).toFixed(2));
-    priceElement.style.textDecoration = 'none';
-    priceElement.style.opacity = '1';
-
-    // Update compare-at price element and sale styling
-    if (showAsSale) {
-        priceDisplayContainer.classList.add('price--sale');
-        compareElement.innerHTML = formatShopifyMoney(originalPriceCents);
-        compareElement.style.display = '';
-        compareElement.style.textDecoration = 'line-through';
-        compareElement.style.opacity = '0.7';
-    } else {
-        priceDisplayContainer.classList.remove('price--sale');
-        compareElement.style.display = 'none';
-        compareElement.style.textDecoration = 'none';
-        compareElement.style.opacity = '1';
-    }
-
-    // Update your separate custom sale tag
-    const customSaleTagElement = document.getElementById('my-custom-sale-tag-container')?.querySelector('.custom-sale-tag');
-    if (customSaleTagElement) {
-        if (discountDetails && calculatedDiscountPriceCents < selectedVariant.price && saleTagText) {
-            customSaleTagElement.innerHTML = saleTagText;
-            customSaleTagElement.style.display = '';
-        } else {
-            customSaleTagElement.innerHTML = '';
-            customSaleTagElement.style.display = 'none';
-        }
-    }
-    
-    // Update availability link (if it was preserved or recreated)
-    const linkChild = productPriceWrapper.querySelector('link[itemprop="availability"]');
-    if(linkChild && selectedVariant.available !== undefined){
-        linkChild.setAttribute('href', `http://schema.org/${selectedVariant.available ? 'InStock' : 'OutOfStock'}`);
-    }
-
-    // Update hidden variant ID input (if it exists)
-    const formVariantInput = document.querySelector('form[data-type="add-to-cart-form"] input[name="id"]');
-    if(formVariantInput && formVariantInput.value != selectedVariant.id) {
-        formVariantInput.value = selectedVariant.id;
-    }
-
-    setTimeout(() => { isUpdatingByObserver = false; }, 0); // Release guard after updates
+    console.log('[Custom Price Logic] updateDiscountUI definition parsed.');
+    // Simplified body for syntax testing
+    return;
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('[Custom Price Logic] DOMContentLoaded.');
+    console.log('[Custom Price Logic] DOMContentLoaded event FIRED.');
 
     const productForm = document.querySelector('form[data-type="add-to-cart-form"]');
+    console.log('[Custom Price Logic] productForm element in DOMContentLoaded:', productForm);
+
     let productJSON = null;
     const productJsonScript = document.querySelector('script.data-json-product[type="application/json"]');
+    console.log('[Custom Price Logic] productJsonScript element in DOMContentLoaded:', productJsonScript);
 
     if (productJsonScript) {
         try {
             productJSON = JSON.parse(productJsonScript.innerHTML);
-            console.log('[Custom Price Logic] Parsed productJSON.');
+            console.log('[Custom Price Logic] Parsed productJSON in DOMContentLoaded.');
         } catch (e) {
-            console.error("[Custom Price Logic] Failed to parse productJSON:", e);
+            console.error("[Custom Price Logic] Failed to parse productJSON in DOMContentLoaded:", e);
             productJSON = null;
         }
     }
 
     if (!productJSON || !productJSON.variants || productJSON.variants.length === 0) {
-        console.warn('[Custom Price Logic] productJSON or variants not available. Cannot initialize.');
-        return;
+        console.warn('[Custom Price Logic] productJSON or variants not available in DOMContentLoaded. Cannot initialize further.');
+        // return; // Allow script to continue to see if other parts run
     }
 
+    // All event listeners and MutationObserver setup are COMMENTED OUT for this test
+    /*
     selectedVariant = productJSON.selected_or_first_available_variant || productJSON.variants[0];
     if (selectedVariant) {
         console.log('[Custom Price Logic] Initial variant selected ID:', selectedVariant.id);
@@ -1230,61 +1075,19 @@
 
     // Event listener for variant changes
     if (productForm) {
-      const variantSelectors = productForm.querySelectorAll('input[name="id"], select[name="id"], input[type="radio"][name^="options"], select[data-single-option-selector]');
-      variantSelectors.forEach(selector => {
-        selector.addEventListener('change', function(event) {
-          let currentVariantId = productForm.elements.id ? productForm.elements.id.value : null;
-          // Add more sophisticated variant finding logic if theme uses separate option selectors
-          // This part might need to be very theme-specific if ID isn't directly available.
-          
-          if (currentVariantId) {
-            const foundVariant = productJSON.variants.find(v => v.id == currentVariantId);
-            if (foundVariant) {
-              selectedVariant = foundVariant;
-              console.log('[Custom Price Logic] Variant changed by user selection. New ID:', selectedVariant.id);
-              updateDiscountUI();
-            } else {
-              console.warn('[Custom Price Logic] Selected variant ID not found in productJSON:', currentVariantId);
-            }
-          }
-        });
-      });
+      // ... event listener logic ...
     }
 
     // MutationObserver to watch the product price area
     const priceWrapperToObserve = document.querySelector('.product-price');
     if (priceWrapperToObserve) {
-      console.log('[Custom Price Logic] Setting up MutationObserver for .product-price');
-      let observerDebounceTimeout = null;
-      const observer = new MutationObserver(function(mutationsList, observerInstance) {
-        if (isUpdatingByObserver) return; // Don't react to our own DOM changes
-
-        console.log('[Custom Price Logic] MutationObserver DETECTED CHANGE in .product-price. Mutations:', mutationsList);
-        
-        // It's possible the theme is updating the *selectedVariant* state elsewhere or via its own JS.
-        // We should try to get the most current selected variant ID if the theme updates a hidden input.
-        let currentVariantIdFromForm = productForm && productForm.elements.id ? productForm.elements.id.value : null;
-        if (currentVariantIdFromForm && selectedVariant && currentVariantIdFromForm != selectedVariant.id) {
-            const newlySelectedVariant = productJSON.variants.find(v => v.id == currentVariantIdFromForm);
-            if (newlySelectedVariant) {
-                selectedVariant = newlySelectedVariant;
-                console.log('[Custom Price Logic] Observer detected variant ID change via form input to:', selectedVariant.id);
-            }
-        }
-
-        if (observerDebounceTimeout) clearTimeout(observerDebounceTimeout);
-        observerDebounceTimeout = setTimeout(() => {
-          if (selectedVariant) {
-            console.log('[Custom Price Logic] MutationObserver triggering updateDiscountUI. Variant ID:', selectedVariant.id);
-            updateDiscountUI();
-          }
-        }, 75); // Slightly longer debounce for observer
-      });
-      observer.observe(priceWrapperToObserve, { childList: true, subtree: true, attributes: false });
-    } else {
-      console.warn('[Custom Price Logic] .product-price element not found for MutationObserver.');
+      // ... observer logic ...
     }
+    */
+    console.log('[Custom Price Logic] DOMContentLoaded basic setup COMPLETE.');
   });
+
+  console.log('[Custom Price Logic] Main script block END.');
 </script>
 
 {% schema %}
