@@ -110,6 +110,11 @@
                             {%- comment %} Check for the custom sale metafield {% endcomment %}
                             {%- if product.metafields.sale.active_discount and product.metafields.sale.active_discount.value != blank -%}
                               {%- assign discount_info = product.metafields.sale.active_discount -%}
+<<<<<<< Updated upstream
+=======
+                              {%- comment %} LOGGING: Output the raw metafield value for debugging {% endcomment %}
+                              <!-- sale.active_discount: {{ product.metafields.sale.active_discount | json }} -->
+>>>>>>> Stashed changes
                               {%- assign now_s = 'now' | date: '%s' | plus: 0 -%}
 
                               {%- assign is_after_start_date = false -%}
