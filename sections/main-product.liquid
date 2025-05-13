@@ -1017,9 +1017,11 @@
 
   // --- State Management ---
   let selectedVariant = null;
+  console.log('[Custom Price Logic] FuncDef Test - selectedVariant defined.');
   let discountDetails = window.productSaleActiveDiscount || null; 
+  console.log('[Custom Price Logic] FuncDef Test - discountDetails defined.');
   let isUpdatingByObserver = false; 
-  console.log('[Custom Price Logic] FuncDef Test - State variables defined.');
+  console.log('[Custom Price Logic] FuncDef Test - isUpdatingByObserver defined.');
 
   function formatShopifyMoney(cents, format) {
     // Minimal body for syntax check
