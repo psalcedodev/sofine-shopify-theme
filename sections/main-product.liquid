@@ -179,9 +179,7 @@
 
                             <div class="product-price">
                               {%- if active_metafield_discount -%}
-                                <span>HOLA 1</span>
                                 <span class="price price--sale" data-js-product-price>
-                                  <span>HOLA 2</span>
                                   <span id="js-product-price" class="current" itemprop="price" content="{{ calculated_sale_price | divided_by: 100.00 }}">{{ calculated_sale_price | money }}</span>
                                   <meta itemprop="priceCurrency" content="{{ shop.currency }}">
                                   <span class="compare">{{ RRP_for_display | money }}</span>
@@ -191,9 +189,7 @@
                                 <p class="price-sale-details" data-js-product-price-sale-details style="display:none;"></p>
                               {%- else -%}
                                 {%- comment %} Fallback: JS will handle displaying standard or custom sale if applicable. Liquid provides basic price structure. {% endcomment %}
-                                <span>HOLA 3</span>
                                 <span class="price" data-js-product-price>
-                                  <span>HOLA 4</span>
                                   <span id="js-product-price" class="current" itemprop="price" content="{{ V_current_variant.price | divided_by: 100.00 }}">{{ V_current_variant.price | money }}</span>
                                   <meta itemprop="priceCurrency" content="{{ shop.currency }}">
                                   <span class="compare" style="display:none;"></span>
