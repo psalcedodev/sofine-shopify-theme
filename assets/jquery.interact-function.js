@@ -1012,6 +1012,7 @@ Alothemes.ProductOptions = (function () {
       var $price = $product.add($clone_product).find("[data-js-product-price]"),
         $details = $product.find("[data-js-product-price-sale-details]"),
         details;
+
       if ($price.length) {
         Alothemes.ProductCurrency.setPrice(
           $price,
