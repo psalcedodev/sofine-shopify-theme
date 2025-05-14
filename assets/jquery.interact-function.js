@@ -1012,6 +1012,13 @@ Alothemes.ProductOptions = (function () {
       var $price = $product.add($clone_product).find("[data-js-product-price]"),
         $details = $product.find("[data-js-product-price-sale-details]"),
         details;
+
+      console.log(
+        "[Custom Price Logic] Full Script v2 - data.update_variant:",
+        data,
+        $product,
+        $clone_product
+      );
       if ($price.length) {
         Alothemes.ProductCurrency.setPrice(
           $price,
