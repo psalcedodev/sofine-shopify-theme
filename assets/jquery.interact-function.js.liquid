@@ -829,6 +829,11 @@ Alothemes.ProductOptions = function () {
             }
         },
         _updatePrice: function ($product, $clone_product, data) {
+            console.log({
+                $product,
+                $clone_product,
+                data
+            });
             var $price = $product.add($clone_product).find('[data-js-product-price]'),
                 $details = $product.find('[data-js-product-price-sale-details]'),
                 details;
