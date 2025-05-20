@@ -3848,8 +3848,8 @@
           "b68a79f6-452b-4be4-9485-ab2e5ec818bd": {
             "type": "img",
             "settings": {
-              "image_sl": "shopify://shop_images/HER6.1Small.jpg",
-              "image_sl_mobile": "shopify://shop_images/HER6.1Small.jpg",
+              "image_sl": "shopify://shop_images/IMG_7414-Enhanced-NR.jpg",
+              "image_sl_mobile": "shopify://shop_images/IMG_7414-Enhanced-NR.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "2",
@@ -3965,8 +3965,8 @@
           "img_Y67zm6": {
             "type": "img",
             "settings": {
-              "image_sl": "shopify://shop_images/Gift_for_Him_Banner_1c69559c-bfeb-4536-85ed-c97f52301068.jpg",
-              "image_sl_mobile": "shopify://shop_images/HIM2.1Small_2.jpg",
+              "image_sl": "shopify://shop_images/IMG_7250-Enhanced-NR.jpg",
+              "image_sl_mobile": "shopify://shop_images/IMG_7250-Enhanced-NR.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "2",
@@ -4097,7 +4097,7 @@
             "type": "hd",
             "settings": {
               "hide": false,
-              "title": "Gift for Two",
+              "title": "Gifts for Couples",
               "text_animate": "fadeInUp",
               "text_time": 2.5,
               "color": "#1a1a1a",
