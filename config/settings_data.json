@@ -4082,7 +4082,8 @@
           "img_eP9LCp": {
             "type": "img",
             "settings": {
-              "image_sl": "shopify://shop_images/TWO3.1M_-_Shared_Journey_-_Olive_Tumbler_2.jpg",
+              "image_sl": "shopify://shop_images/TWO4.4M_-_Shared_Serenity_-_Bath_Salt_2.jpg",
+              "image_sl_mobile": "shopify://shop_images/TWO4.4M_-_Shared_Serenity_-_Bath_Salt_2.jpg",
               "link_img": "",
               "open_link": "_blank",
               "caption_w": "2",
@@ -4386,11 +4387,20 @@
       "165511688031d3eb34": {
         "type": "collection-featured",
         "blocks": {
+          "menu_VckyKf": {
+            "type": "menu",
+            "settings": {
+              "image": "shopify://shop_images/Candle_Listing_Dad_-_Father_Definition.jpg",
+              "title": "Gifts for Dad",
+              "collection": "gift-for-dad",
+              "open_link": "_self"
+            }
+          },
           "165511688031d3eb34-2": {
             "type": "menu",
             "settings": {
               "image": "shopify://shop_images/IMG_6997_9dc5f958-5fa8-4e14-85c3-f5e6a64f8e2c.jpg",
-              "title": "Gift for Mom",
+              "title": "Gifts for Mom",
               "collection": "giftformom",
               "open_link": "_blank"
             }
@@ -4424,6 +4434,7 @@
           }
         },
         "block_order": [
+          "menu_VckyKf",
           "165511688031d3eb34-2",
           "165511688031d3eb34-0",
           "165511688031d3eb34-1",
