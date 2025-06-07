@@ -4615,7 +4615,7 @@
             "type": "menu",
             "settings": {
               "title": "Help",
-              "menu": "help",
+              "menu": "shop",
               "cl": "3",
               "cl_tb": "4",
               "cl_mb": "12",
