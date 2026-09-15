@@ -67,7 +67,7 @@
                           <option data-img="{{variant.image | default:product.featured_image | img_url: '1x1'}}" data-ogprice="{{variant.compare_at_price |default:variant.price}}" data-price="{{variant.price}}" value="{{ variant.id }}"{% if variant.id == cur_var_id %} selected="selected"{% endif %}>{{ variant.title | escape }}</option>
                           {%- endfor -%}
                         </select>                        
-                        {% include 'product-get-options' with options_type: 3 select_dropdown_position: 'top' options_show_title: true trigger: 'footbar' %}
+                        {% include 'product-get-options' with options_type, options_type: 3, select_dropdown_position: 'top', options_show_title: true, trigger: 'footbar' %}
                    {% endif %}
                  {%- endif -%} 
                </div>
@@ -140,4 +140,15 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-get-options' with options_type: 3 select_dropdown_position:
+    'top' options_show_title: true trigger: 'footbar' %}"
+  to: "{% include 'product-get-options' with options_type, options_type: 3, select_dropdown_position:
+    'top', options_show_title: true, trigger: 'footbar' %}"
+  position: 4425..4574
+{%- endcomment -%}

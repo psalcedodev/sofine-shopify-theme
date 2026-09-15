@@ -27,7 +27,7 @@
       			{%- render 'banner-item',block:se_blocks[0], cimg:'https://placehold.jp/100/f76b6a/fff/1080x818.png?text=1080x818',ratio_demo:'16.7939%' ,ccol:'laber-col col-sm-12',for_i:1 -%}
 			{%- when 2 -%}
       			{%- render 'banner-item',block:se_blocks[0], cimg:'https://placehold.jp/100/f76b6a/fff/692x400.png?text=692x400',ratio_demo:'57.803' ,ccol:'laber-col col-md-6 col-sm-12',for_i:1 -%}
-      			{%- render 'banner-item',block:se_blocks[1,  cimg:'https://placehold.jp/100/f76b6a/fff/692x400.png?text=692x400',ratio_demo:'57.803' ,ccol:'laber-col col-md-6 col-sm-12',for_i:1 -%}	
+      			{%- render 'banner-item', block: se_blocks['1'], cimg: 'https://placehold.jp/100/f76b6a/fff/692x400.png?text=692x400', ratio_demo: '57.803', ccol: 'laber-col col-md-6 col-sm-12', for_i: 1 -%}	
       		{%- when 3 -%}
       			{%- render 'banner-item',block:se_blocks[0], cimg:'https://placehold.jp/50/aec7cb/aec7cb/642x397.png?text=642x397',ratio_demo:'61.838' ,ccol:'laber-col col-lg-4 col-md-4 col-sm-12',for_i:1 -%}
       			{%- render 'banner-item',block:se_blocks[1], cimg:'https://placehold.jp/50/ebc7bb/ebc7bb/475x475.png?text=475x475',ratio_demo:'100' ,ccol:'laber-col col-lg-4 col-md-4 col-sm-12',for_i:2 -%}
@@ -302,3 +302,15 @@
     ]
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'banner-item',block:se_blocks[1,  cimg:'https://placehold.jp/100/f76b6a/fff/692x400.png?text=692x400',ratio_demo:'57.803'
+    ,ccol:'laber-col col-md-6 col-sm-12',for_i:1 -%}"
+  to: "{%- render 'banner-item', block: se_blocks['1'], cimg: 'https://placehold.jp/100/f76b6a/fff/692x400.png?text=692x400',
+    ratio_demo: '57.803', ccol: 'laber-col col-md-6 col-sm-12', for_i: 1 -%}"
+  position: 1327..1518
+{% endcomment %}

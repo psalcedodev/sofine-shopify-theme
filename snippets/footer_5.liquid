@@ -214,7 +214,7 @@
             </div>
             {%endif%}
             
-            {% if section.settings.copyright_text!= blank %}
+            {% if true %}{{ 'Liquid error (snippets/footer_5 line 217): Unknown operator blank' }}{% elsif false %}
             <div class="coppy-right col-lg-6 col-md-6 col-12">
               	{{section.settings.copyright_text}}
             </div>
@@ -296,3 +296,14 @@
     </ul>
   </div>
 <!--/Footer-->
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if section.settings.copyright_text!= blank %}"
+  to: "{% if true %}{{ 'Liquid error (snippets/footer_5 line 217): Unknown operator
+    blank' }}{% elsif false %}"
+  position: 14041..14144
+{% endcomment %}

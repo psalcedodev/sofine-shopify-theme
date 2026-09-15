@@ -39,7 +39,7 @@
       {%- endif -%}
       {%- if label_present -%}
       <div class="product-image__overlay-top-left ">
-        {% include 'product-get-label' with product: product %}
+        {% include 'product-get-label' with product, product: product %}
       </div>
       {%- endif -%}
       {%- if show_button_add_to_cart  or show_button_quick_view -%}
@@ -87,9 +87,23 @@
       </div>
       <div class="frm-price-color">
       <div class="product-collection__price ">
-        {% render 'product-get-price' with price: price compare_at_price: product.compare_at_price %}
+        {% render 'product-get-price' with price, price: price, compare_at_price: product.compare_at_price %}
       </div>
       </div>
     </div>
 </div>  
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-get-label' with product: product %}"
+  to: "{% include 'product-get-label' with product, product: product %}"
+  position: 2366..2430
+- from: "{% render 'product-get-price' with price: price compare_at_price: product.compare_at_price
+    %}"
+  to: "{% render 'product-get-price' with price, price: price, compare_at_price: product.compare_at_price
+    %}"
+  position: 4584..4685
+{%- endcomment -%}

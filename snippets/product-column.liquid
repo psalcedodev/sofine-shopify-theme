@@ -79,12 +79,12 @@
           {% include 'reviews-count' %}
           {% if product_reviews_count > 0 %}
             <div class="product-collection__reviews">
-              {% render 'product-get-review' with id: id hide_counter: hide_reviews_counter %}
+              {% render 'product-get-review' with id, id: id, hide_counter: hide_reviews_counter %}
             </div>
           {% endif %}
           <div class="frm-price-color">
             <div class="product-collection__price ">
-              {% render 'product-get-price' with price: price compare_at_price: product.compare_at_price %}
+              {% render 'product-get-price' with price, price: price, compare_at_price: product.compare_at_price %}
             </div>
           </div>
         </div>
@@ -92,3 +92,20 @@
     </div>
   </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'product-get-review' with id: id hide_counter: hide_reviews_counter
+    %}"
+  to: "{% render 'product-get-review' with id, id: id, hide_counter: hide_reviews_counter
+    %}"
+  position: 3864..3949
+- from: "{% render 'product-get-price' with price: price compare_at_price: product.compare_at_price
+    %}"
+  to: "{% render 'product-get-price' with price, price: price, compare_at_price: product.compare_at_price
+    %}"
+  position: 4098..4199
+{% endcomment %}

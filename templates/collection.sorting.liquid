@@ -51,6 +51,15 @@
 {% capture first_grid %}col-xs-12 col-sm-6 col-md-6 col-lg-6 first-product{% endcapture %}
 {%- for product in collections[collection.handle].products limit: count_limit -%}
     <div {% if slider != "true" and first_col_50 == "false"%}class="{{ grid_classes }}" {% else %} {%if first_col_50 == "true"  %} {% if forloop.first %} class="{{ first_grid }}" {% else %} class="{{ grid_classes }}"  {% endif%} {% endif %} {% endif %}>
-        {% include 'product_style' with product: product, column: column %}
+        {% include 'product_style' with product, product: product, column: column %}
     </div>
-{%- endfor -%}
+{%- endfor -%}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product_style' with product: product, column: column %}"
+  to: "{% include 'product_style' with product, product: product, column: column %}"
+  position: 3590..3666
+{%- endcomment -%}

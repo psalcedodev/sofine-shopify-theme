@@ -19,7 +19,7 @@
                   {%- else -%}
                       <div class="product_list_widget">
                          {%- for product in collections[block.settings.collection].products limit: block.settings.limit -%}
-                             {% include 'product-column' with product: product %}
+                             {% include 'product-column' with product, product: product %}
                          {%- endfor -%}
                       </div>
                   {%- endif -%}
@@ -405,3 +405,13 @@
     ]
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-column' with product: product %}"
+  to: "{% include 'product-column' with product, product: product %}"
+  position: 1268..1329
+{% endcomment %}

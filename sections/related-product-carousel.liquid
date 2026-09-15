@@ -78,7 +78,7 @@
           {% for product_r in collections[handle].products limit: max_count %}              
           {% if handle_current != product_r.handle %}   
           		
-          			{% include 'product_style' with product: product_r data-col:col_pr %}   
+          			{% include 'product_style' with product, product: product_r, data-col: col_pr %}   
                      
           {% endif %}
           {% endfor %} 
@@ -502,3 +502,14 @@
 {% javascript %}
 
 {% endjavascript %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product_style' with product: product_r data-col:col_pr %}"
+  to: "{% include 'product_style' with product, product: product_r, data-col: col_pr
+    %}"
+  position: 4130..4210
+{% endcomment %}
